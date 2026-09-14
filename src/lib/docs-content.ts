@@ -186,10 +186,36 @@ function resolveDocFile(slug: string): ResolvedDocFile | null {
   return null;
 }
 
+const HTML_ENTITIES: Record<string, string> = {
+  amp: "&",
+  apos: "'",
+  gt: ">",
+  lt: "<",
+  quot: '"',
+};
+
+/** Labels render as plain text, so entities the translator emitted must be decoded. */
+function decodeHtmlEntities(value: string): string {
+  return value.replace(
+    /&(#x[0-9a-f]+|#\d+|[a-z]+);/gi,
+    (entity, code: string) => {
+      if (code.startsWith("#x") || code.startsWith("#X")) {
+        return String.fromCodePoint(Number.parseInt(code.slice(2), 16));
+      }
+      if (code.startsWith("#")) {
+        return String.fromCodePoint(Number.parseInt(code.slice(1), 10));
+      }
+      return HTML_ENTITIES[code.toLowerCase()] ?? entity;
+    },
+  );
+}
+
 function readFirstMarkdownHeading(content: string): string | null {
   const match = content.match(/^#\s+(.+)$/m);
   // Translated docs carry `\{#id\}` anchors on headings; labels never show them.
-  return match ? splitExplicitHeadingId(match[1].trim()).text : null;
+  return match
+    ? decodeHtmlEntities(splitExplicitHeadingId(match[1].trim()).text)
+    : null;
 }
 
 /**
@@ -235,7 +261,7 @@ function resolveDocSidebarLabel({
   title: string;
 }): string {
   if (typeof sidebarLabel === "string" && sidebarLabel.trim() !== "") {
-    return sidebarLabel;
+    return decodeHtmlEntities(sidebarLabel);
   }
 
   if (slug.startsWith("appkit/v0/api/") && title.startsWith("@databricks/")) {
@@ -251,7 +277,7 @@ function readDocMeta(resolved: ResolvedDocFile, locale: string): DocMeta {
   const { data, content } = matter(source);
   const title =
     typeof data.title === "string" && data.title.trim() !== ""
-      ? data.title
+      ? decodeHtmlEntities(data.title)
       : (readFirstMarkdownHeading(content) ??
         slug.split("/").at(-1)?.replace(/-/g, " ") ??
         "Documentation");

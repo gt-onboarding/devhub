@@ -665,6 +665,18 @@
   "7aeaeca807098e55": "Objetivo:",
   "7b29b1276852153d": "Lista de verificación del hackathon",
   "7b32a52352c34ab6": "Cree aplicaciones de datos full-stack en Databricks Apps con tablas sincronizadas de Lakebase que replican datos de Unity Catalog en segundos, y entregue todo como código con Databricks Asset Bundles.",
+  "7b8a9990b219107f": {
+    "c": [
+      "Tamaño: ",
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      }
+    ],
+    "i": 1,
+    "t": "span"
+  },
   "7bbd433c36bf1e5d": "Ruta de navegación",
   "7bc32d1f05388c05": "Respuestas a preguntas frecuentes sobre la creación de aplicaciones de datos y agentes de IA en Databricks.",
   "7c7c2e72a62e8349": "Postgres administrado, diseñado para cargas de trabajo agénticas modernas.",
@@ -877,8 +889,7 @@
   "9528a097943bed20": "Página no encontrada",
   "95376acec7b330c9": "Ver recursos",
   "9553c0ca551dad21": "¿Puedo agregar miembros del equipo a mi workspace de Free Edition?",
-  "964b55b174ee870d": "Genera embeddings de texto desde un endpoint de modelo fundacional de Databricks mediante Databricks SDK.",
-  "964e2b282b6daaeb": {
+  "95ea5df7c799b732": {
     "c": [
       "Tablas: ",
       {
@@ -890,6 +901,7 @@
     "i": 1,
     "t": "span"
   },
+  "964b55b174ee870d": "Genera embeddings de texto desde un endpoint de modelo fundacional de Databricks mediante Databricks SDK.",
   "96e144003acb2072": "Recorra una aplicación de solicitud de vacaciones que usa Lakebase como capa operativa de Postgres detrás de Databricks Apps, desde la configuración de la base de datos hasta un frontend totalmente conectado.",
   "970120049f38350c": "Flujo de trabajo de desarrollo con branches de bases de datos de Lakebase para una funcionalidad y un cambio de esquema aislados",
   "9756b09ffd8a55c6": "En curso",
@@ -1082,18 +1094,6 @@
     ],
     "i": 1,
     "t": "ol"
-  },
-  "c64d0a6b3cad108c": {
-    "c": [
-      "Tam.: ",
-      {
-        "i": 2,
-        "k": "_gt_value_2",
-        "v": "v"
-      }
-    ],
-    "i": 1,
-    "t": "span"
   },
   "c80bfd502a0cc57b": "Entregue agentes de IA empresariales de calidad a usuarios de negocio con Agent Bricks y Databricks Apps",
   "c8421a54c9369bff": "Free Edition solo funciona sin servidor y tiene cuotas limitadas. Planifica el desarrollo de forma eficiente, detén las cargas de trabajo que no uses y evita los trabajos de larga ejecución siempre que sea posible.",
