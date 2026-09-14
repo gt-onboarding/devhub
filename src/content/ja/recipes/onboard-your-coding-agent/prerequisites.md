@@ -1,0 +1,6 @@
+このテンプレートは、Databricks のリポジトリをエージェント対応にします。Databricks プラットフォームの知識をユーザーの coding agent にインストールし、DevHub Docs MCP server を接続し、この codebase 上でエージェントが正しく動作するために必要なワークスペースのデフォルト設定を固定した `AGENTS.md` (`CLAUDE.md` はシンボリックリンク) を書き出します。
+
+* **エージェントをオンボードする対象のリポジトリ。** エージェントが作業するプロジェクトのルートで実行してください。まだプロジェクトがない場合は、先に [Spin Up a Databricks App](/templates/spin-up-databricks-app) を実行し、スキャフォールディングされたディレクトリ内からここに戻ってきてください。
+* **ローカルにインストール済みの coding agent。** Databricks aitools インストーラーは Cursor、Claude Code、Codex CLI、OpenCode、GitHub Copilot、Antigravity を検出します。`npx add-mcp` 経由の DevHub MCP server のインストールは、これらに加えて VS Code にも対応しています。
+* **`npx` が利用できること。** DevHub MCP のインストールは `npx add-mcp` を通じて実行されます。`npx` は Node.js `18+` に付属しています。エージェントがヘッドレスシェルで実行する際にインストールが非対話的に進むよう、`--yes` を付けて実行してください。
+* **このリポジトリが使用する Databricks リソースの把握。** `AGENTS.md` を書き出す前に、このリポジトリのデフォルトとして扱う CLI profile、ワークスペース URL、Unity Catalog のカタログ/スキーマ、Lakebase の project/branch、Genie Agent、Model Serving endpoint をユーザーに確認します。まだ分からない項目は `TODO:` マーカーを付けて空欄のままにしておいても構いません。

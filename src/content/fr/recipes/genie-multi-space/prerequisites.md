@@ -1,0 +1,6 @@
+Ce modèle met à niveau une application Genie mono-agent existante afin de permettre le basculement entre plusieurs Genie Agents. Vérifiez que ces fonctionnalités du workspace Databricks sont activées avant de commencer. Si l&#39;une des vérifications échoue, demandez à l&#39;administrateur de votre workspace d&#39;activer la fonctionnalité.
+
+* **AI/BI Genie activé.** Exécutez `databricks genie list-spaces --profile <PROFILE>` et vérifiez que la commande aboutit.
+* **Au moins deux Genie Agents configurés.** La liste ci-dessus doit renvoyer au moins deux Genie Agents — un pour chaque entrée que vous souhaitez voir dans le sélecteur. Si vous en avez moins, créez des Genie Agents supplémentaires dans **AI/BI Genie** depuis l&#39;interface Databricks.
+* **Databricks Apps activé.** Exécutez `databricks apps list --profile <PROFILE>` et vérifiez que la commande aboutit.
+* **Une AppKit app dont l&#39;ossature a été générée avec la fonctionnalité Genie.** Suivez d&#39;abord le modèle [Genie Conversational Analytics](/templates/genie-conversational-analytics) jusqu&#39;au bout. Ce modèle couvre uniquement le passage d&#39;un seul Genie Agent à plusieurs — et non la mise en place initiale de Genie.

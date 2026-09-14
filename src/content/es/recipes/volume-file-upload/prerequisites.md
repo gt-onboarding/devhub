@@ -1,0 +1,4 @@
+Verifica que estas funcionalidades del workspace de Databricks estén habilitadas antes de empezar. Si alguna comprobación falla, pide al administrador de tu workspace que habilite la funcionalidad.
+
+* **Unity Catalog habilitado con acceso a un catálogo y un schema.** Ejecuta `databricks catalogs list --profile <PROFILE>` y confirma que aparece al menos un catálogo con permisos de escritura. También necesitas `USE_CATALOG` sobre el catálogo y `USE_SCHEMA` + `CREATE_VOLUME` sobre el schema donde el template crea el Volume gestionado. Un error `PERMISSION_DENIED` en `databricks volumes create` en el Paso 1 indica que falta alguno de esos grants.
+* **Databricks Apps habilitado.** Ejecuta `databricks apps list --profile <PROFILE>` y confirma que el comando se ejecuta correctamente (una lista vacía es válida). El template despliega una AppKit app que lee y escribe a través del plugin `files`.

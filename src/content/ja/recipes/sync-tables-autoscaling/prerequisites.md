@@ -1,0 +1,6 @@
+このテンプレートは、Unity Catalog のテーブルを Lakebase Postgres にミラーリングする synced table を作成します。開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。
+
+* **Lakebase Autoscaling が利用可能であること。** `databricks postgres list-projects --profile <PROFILE>` を実行し、Autoscaling project が一覧に表示されることを確認します。`not enabled` エラーが返る場合、この ID では Lakebase を利用できません。
+* **synced table に対応した CLI であること。** Autoscaling project 上の synced table は `databricks postgres create-synced-table` (Beta) で作成します。`databricks postgres create-synced-table --help` を実行してコマンドが存在することを確認し、存在しない場合は Databricks CLI をアップグレードしてください。Databricks UI (**Catalog** → ソーステーブル → **Create synced table**) から synced table を作成することもできます。
+* **Unity Catalog のソーステーブルがあること。** `databricks tables get <CATALOG>.<SCHEMA>.<SOURCE_TABLE> --profile <PROFILE>` を実行してソースが存在することを確認し、synced table の主キーとして使用する列を決めます。決めた列は、作成スペックの `primary_key_columns` に指定します。ソース側に主キー制約が宣言されている必要はありません。
+* **ソーステーブルで Change Data Feed が有効であること (Triggered / Continuous モードの場合のみ) 。** Snapshot モードを使用する場合は、この確認は不要です。それ以外の場合は、ステップ 1 の `ALTER TABLE <catalog>.<schema>.<table> SET TBLPROPERTIES (delta.enableChangeDataFeed = true);` 文を SQL warehouse で実行します。

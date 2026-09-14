@@ -1,0 +1,5 @@
+開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。Lakebase Change Data Feed (CDF、旧称 Lakehouse Sync) はパブリックプレビュー段階であり、他のほとんどの templates よりもワークスペース要件が厳格です。
+
+* **Lakebase オートスケーリング対応リージョンにある AWS または Azure 上のワークスペース。** Change Data Feed は AWS (`*.cloud.databricks.com`) と Azure (`*.azuredatabricks.net`) の両方でパブリックプレビューとして利用できます。事前にワークスペース管理者が、ワークスペースの **Previews** ページから **Lakebase Change Data Feed** プレビューを有効にする必要があります。
+* **テーブルを含む Lakebase オートスケーリングプロジェクト。** `databricks postgres list-projects --profile <PROFILE>` を実行し、オートスケーリングプロジェクトが一覧に表示されることを確認してください。`not enabled` エラーが返る場合、この ID では Lakebase を利用できません。このテンプレートではプロジェクトの作成は扱いません。作成が必要な場合は [Create a Lakebase Project](/templates/lakebase-create-instance) を参照してください。
+* **Unity Catalog へのアクセス。** `databricks catalogs list --profile <PROFILE>` を実行し、レプリケート先として使用するカタログと schema が存在することを確認してください。これらは Change Data Feed を有効にする際に選択します。

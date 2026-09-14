@@ -1,0 +1,5 @@
+Confirme se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do seu workspace para habilitar o recurso.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e verifique se o comando é concluído com êxito. Um erro `not enabled` indica que o Lakebase não está disponível para essa identidade.
+* **Um projeto Lakebase provisionado.** Conclua primeiro o modelo [Criar um projeto Lakebase](/templates/lakebase-create-instance). Você habilitará a extensão `vector` no endpoint primário dele.
+* **`databricks psql` disponível na sua CLI.** Execute `databricks psql --help` e verifique se o subcomando existe. Caso não exista, atualize a Databricks CLI (consulte [Configurar seu ambiente de desenvolvimento local](/templates/set-up-your-local-dev-environment)).

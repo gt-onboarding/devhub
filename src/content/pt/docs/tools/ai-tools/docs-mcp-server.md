@@ -30,16 +30,17 @@ npx add-mcp __DEVHUB_SITE_URL__/api/mcp --name devhub-docs -g -a cursor
 
 Reinicie seu editor após adicionar o servidor. Alguns editores, como o Cursor, exigem que você acesse a página de configurações do MCP e ative o novo servidor.
 
+
 ## Verifique a conexão \{#verify-the-connection\}
 
 Após a instalação, confirme se o servidor está funcionando:
 
 1. Verifique se `devhub-docs` aparece nas listagens de ferramentas.
-   * Exemplo: &quot;Você tem o MCP devhub-docs instalado?&quot;
+   - Exemplo: "Você tem o MCP devhub-docs instalado?"
 2. Peça ao seu agente para chamar `list_docs_resources` e confirme se ele retorna um índice da documentação.
-   * Exemplo: &quot;Quais documentos estão disponíveis no devhub?&quot;
+   - Exemplo: "Quais documentos estão disponíveis no devhub?"
 3. Peça ao seu agente para buscar uma página específica com `get_doc_resource`.
-   * Exemplo: &quot;Qual é o conteúdo da página start-here?&quot;
+   - Exemplo: "Qual é o conteúdo da página start-here?"
 
 Na prática, você não precisa se preocupar em chamar as ferramentas diretamente. Basta pedir ao agente que faça o trabalho por você, e ele chamará as ferramentas internamente.
 
@@ -58,6 +59,7 @@ list_docs_resources()
 → markdown index of all doc pages with slugs and titles
 ```
 
+
 ### `get_doc_resource` \{#get_doc_resource\}
 
 Obtém uma única página da documentação para desenvolvedores do Databricks em markdown. Use primeiro `list_docs_resources` para descobrir os slugs disponíveis.
@@ -73,8 +75,9 @@ get_doc_resource(slug: "start-here")
 
 As páginas que declaram uma fonte da verdade começam com uma breve linha **Source of truth** que indica a(s) agent skill(s) e a documentação canônica a carregar para refletir o comportamento atual do produto.
 
+
 ## Próximos passos \{#where-to-next\}
 
-Com a [Databricks CLI](/pt/docs/tools/databricks-cli), as [agent skills](/pt/docs/tools/ai-tools/agent-skills) e o Docs MCP Server instalados, seu agente de programação tem tudo o que precisa para desenvolver e implantar.
+Com a [Databricks CLI](/docs/tools/databricks-cli), as [agent skills](/docs/tools/ai-tools/agent-skills) e o Docs MCP Server instalados, seu agente de programação tem tudo o que precisa para desenvolver e implantar.
 
-Pronto para começar? Veja como os [templates](/pt/docs/templates) podem ajudar você a fazer o scaffold do seu projeto rapidamente ou vá direto ao ponto e explore o [catálogo de templates](/pt/templates).
+Pronto para começar? Veja como os [templates](/docs/templates) podem ajudar você a fazer o scaffold do seu projeto rapidamente ou vá direto ao ponto e explore o [catálogo de templates](/templates).

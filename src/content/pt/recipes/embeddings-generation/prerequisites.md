@@ -1,0 +1,3 @@
+Verifique se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do workspace que habilite o recurso.
+
+* **Um endpoint de embedding no Model Serving.** Execute `databricks serving-endpoints list --profile <PROFILE>` e confirme que pelo menos um endpoint de embedding aparece na lista (por exemplo, `databricks-gte-large-en` ou `databricks-bge-large-en`, ambos de 1024 dimensões). A disponibilidade de endpoints varia conforme o workspace; anote o nome do endpoint que você pretende definir em `DATABRICKS_EMBEDDING_ENDPOINT`.

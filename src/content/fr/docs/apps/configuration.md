@@ -9,13 +9,13 @@ sourceOfTruth:
     - https://docs.databricks.com/aws/en/dev-tools/databricks-apps/
 ---
 
-# Configuration de l&#39;application \{#app-configuration\}
+# Configuration de l'application \{#app-configuration\}
 
-Deux fichiers déterminent la façon dont votre application AppKit démarre et ce à quoi elle se connecte : `app.yaml` (comportement d&#39;exécution et variables d&#39;environnement) et `databricks.yml` (ressources Databricks). Chaque application se voit attribuer une URL fixe à sa création. Celle-ci ne peut pas être modifiée.
+Deux fichiers déterminent la façon dont votre application AppKit démarre et ce à quoi elle se connecte : `app.yaml` (comportement d'exécution et variables d'environnement) et `databricks.yml` (ressources Databricks). Chaque application se voit attribuer une URL fixe à sa création. Celle-ci ne peut pas être modifiée.
 
 :::tip[Vous développez en Python ?]
 
-AppKit cible TypeScript sur Node.js. Le développement d&#39;applications Python n&#39;est pas traité sur ce site. Consultez la [documentation Databricks Apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/) pour les frameworks Python (Gradio, Streamlit, Dash).
+AppKit cible TypeScript sur Node.js. Le développement d'applications Python n'est pas traité sur ce site. Consultez la [documentation Databricks Apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/) pour les frameworks Python (Gradio, Streamlit, Dash).
 
 :::
 
@@ -50,7 +50,8 @@ resources:
 
 Les variables telles que `${var.postgres_branch}` sont résolues à partir de la section `variables` du fichier `databricks.yml` ou à partir des options de la CLI au moment du déploiement.
 
-Pour la référence complète du fichier `app.yaml` propre à AppKit, y compris les liaisons de ressources des plugins, consultez [Configuration d&#39;AppKit](/fr/docs/appkit/v0/configuration).
+Pour la référence complète du fichier `app.yaml` propre à AppKit, y compris les liaisons de ressources des plugins, consultez [Configuration d&#39;AppKit](/docs/appkit/v0/configuration).
+
 
 ## Manifeste des plugins \{#plugin-manifest\}
 
@@ -62,26 +63,27 @@ npx @databricks/appkit plugin sync --write
 
 Cette opération s&#39;exécute automatiquement lors de `npm run dev` et `npm run build`. Commitez le fichier avec votre code : la CLI et le pipeline de déploiement s&#39;en servent pour provisionner les ressources.
 
+
 ## Ressources \{#resources\}
 
 Les apps accèdent aux services Databricks via des ressources déclarées. Chaque ressource possède un `name` dans `databricks.yml`. Utilisez ce nom comme valeur de `valueFrom` dans `app.yaml`.
 
 Les templates AppKit utilisent des noms conventionnels pour les ressources gérées par les plugins :
 
-| Ressource                                                                     | Nom de la ressource | Ce qu&#39;elle fournit                        |
+| Ressource                                                                     | Nom de la ressource | Ce qu'elle fournit                        |
 | ----------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| [Lakebase Postgres](/fr/docs/lakebase/quickstart)                                | `postgres`         | Connexion PostgreSQL          |
+| [Lakebase Postgres](/docs/lakebase/quickstart)                                | `postgres`         | Connexion PostgreSQL          |
 | [SQL Warehouse](https://docs.databricks.com/aws/en/compute/sql-warehouse/)    | `sql-warehouse`    | Exécution de requêtes SQL     |
-| [Model Serving](/fr/docs/agents/ai-gateway)                                      | `serving-endpoint` | Inférence de modèles d&#39;IA     |
-| [Genie Agent](/fr/docs/agents/genie)                                             | `genie-space`      | Requêtes de données en langage naturel |
+| [Model Serving](/docs/agents/ai-gateway)                                      | `serving-endpoint` | Inférence de modèles d'IA     |
+| [Genie Agent](/docs/agents/genie)                                             | `genie-space`      | Requêtes de données en langage naturel |
 | [Job](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources) | `job`              | Job planifié ou déclenché     |
 | [UC Volumes](https://docs.databricks.com/aws/en/files/)                       | `volume`           | Stockage de fichiers          |
 
-D&#39;autres types de ressources (tables Unity Catalog, connexions, index AI Search (anciennement Vector Search), expériences MLflow, etc.) sont répertoriés dans la [documentation officielle sur les ressources](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources).
+D'autres types de ressources (tables Unity Catalog, connexions, index AI Search (anciennement Vector Search), expériences MLflow, etc.) sont répertoriés dans la [documentation officielle sur les ressources](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources).
 
 ### Secrets \{#secrets\}
 
-Aucun des deux fichiers de configuration ne contient la valeur du secret. `databricks.yml` déclare une ressource pointant vers un [scope de secrets](https://docs.databricks.com/aws/en/security/secrets) et une clé que vous définissez, tandis qu&#39;`app.yaml` référence cette ressource par son nom. La plateforme injecte la valeur déchiffrée à l&#39;exécution.
+Aucun des deux fichiers de configuration ne contient la valeur du secret. `databricks.yml` déclare une ressource pointant vers un [scope de secrets](https://docs.databricks.com/aws/en/security/secrets) et une clé que vous définissez, tandis qu'`app.yaml` référence cette ressource par son nom. La plateforme injecte la valeur déchiffrée à l'exécution.
 
 1. Stockez la valeur du secret avec la Databricks CLI :
 
@@ -104,7 +106,7 @@ Aucun des deux fichiers de configuration ne contient la valeur du secret. `datab
                permission: READ
    ```
 
-3. Associez-la à une variable d&#39;environnement dans `app.yaml` :
+3. Associez-la à une variable d'environnement dans `app.yaml` :
 
    ```yaml
    env:
@@ -112,51 +114,51 @@ Aucun des deux fichiers de configuration ne contient la valeur du secret. `datab
        valueFrom: my-secret # référence le nom de la ressource ci-dessus, et non la valeur du secret
    ```
 
-À l&#39;exécution, `MY_SECRET` contient la valeur déchiffrée du secret. Aucun des deux fichiers ne contient la valeur elle-même.
+À l'exécution, `MY_SECRET` contient la valeur déchiffrée du secret. Aucun des deux fichiers ne contient la valeur elle-même.
 
-## Variables d&#39;environnement \{#environment-variables\}
+## Variables d'environnement \{#environment-variables\}
 
-La plateforme injecte automatiquement ces variables au moment de l&#39;exécution :
+La plateforme injecte automatiquement ces variables au moment de l'exécution :
 
 | Variable                   | Description                            |
 | -------------------------- | -------------------------------------- |
 | `DATABRICKS_HOST`          | URL du workspace                       |
 | `DATABRICKS_APP_PORT`      | Port sur lequel votre app doit écouter |
-| `DATABRICKS_APP_NAME`      | Nom de l&#39;app                           |
+| `DATABRICKS_APP_NAME`      | Nom de l'app                           |
 | `DATABRICKS_CLIENT_ID`     | ID client du service principal         |
 | `DATABRICKS_CLIENT_SECRET` | Secret client du service principal     |
 | `DATABRICKS_WORKSPACE_ID`  | ID du workspace                        |
 
 Les variables personnalisées se déclarent dans `app.yaml`, sous `env`. Utilisez `value` pour du texte brut et `valueFrom` pour les [noms de ressources](#resources). Ne placez jamais de secrets dans `value`.
 
-## Modèle d&#39;authentification \{#auth-model\}
+## Modèle d'authentification \{#auth-model\}
 
-Chaque application dispose d&#39;un service principal dédié. Databricks injecte automatiquement `DATABRICKS_CLIENT_ID` et `DATABRICKS_CLIENT_SECRET` à l&#39;exécution, et supprime le service principal en même temps que l&#39;application.
+Chaque application dispose d'un service principal dédié. Databricks injecte automatiquement `DATABRICKS_CLIENT_ID` et `DATABRICKS_CLIENT_SECRET` à l'exécution, et supprime le service principal en même temps que l'application.
 
-L&#39;**autorisation utilisateur** (Public Preview) transmet le jeton de l&#39;utilisateur connecté via l&#39;en-tête HTTP `x-forwarded-access-token`. Les portées (par exemple `sql`, `genie`, `files`) se configurent dans l&#39;interface du workspace. Les plugins [Genie](/fr/docs/agents/genie) et [Model Serving](/fr/docs/agents/ai-gateway) intégrés à AppKit l&#39;utilisent automatiquement. Consultez le [contexte d&#39;exécution](/fr/docs/appkit/v0/plugins/execution-context) pour l&#39;implémentation AppKit, ou [app authorization](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) pour le détail complet côté plateforme.
+L'**autorisation utilisateur** (Public Preview) transmet le jeton de l'utilisateur connecté via l'en-tête HTTP `x-forwarded-access-token`. Les portées (par exemple `sql`, `genie`, `files`) se configurent dans l'interface du workspace. Les plugins [Genie](/docs/agents/genie) et [Model Serving](/docs/agents/ai-gateway) intégrés à AppKit l'utilisent automatiquement. Consultez le [contexte d'exécution](/docs/appkit/v0/plugins/execution-context) pour l'implémentation AppKit, ou [app authorization](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) pour le détail complet côté plateforme.
 
 ## Compute \{#compute\}
 
-Les tailles de compute disponibles sont `MEDIUM` (valeur par défaut), `LARGE` et `XLARGE` (la disponibilité varie selon le workspace). Définissez la taille dans l&#39;interface du workspace ou via l&#39;option `--compute-size` des commandes `databricks apps create` et `databricks apps update`. Consultez la [documentation Databricks Apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/) pour connaître le nombre de vCPU, la RAM et les DBU associés à chaque taille.
+Les tailles de compute disponibles sont `MEDIUM` (valeur par défaut), `LARGE` et `XLARGE` (la disponibilité varie selon le workspace). Définissez la taille dans l'interface du workspace ou via l'option `--compute-size` des commandes `databricks apps create` et `databricks apps update`. Consultez la [documentation Databricks Apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/) pour connaître le nombre de vCPU, la RAM et les DBU associés à chaque taille.
 
 ## Contraintes \{#constraints\}
 
-* Pas de système de fichiers persistant (utilisez [Lakebase Postgres](/fr/docs/lakebase/quickstart), DBSQL ou les UC Volumes pour la persistance)
-* Les fichiers de plus de 10 Mo font échouer le déploiement
-* SIGTERM laisse 15 secondes avant SIGKILL
-* Runtime : Ubuntu 22.04, Node 22, Python 3.11
+- Pas de système de fichiers persistant (utilisez [Lakebase Postgres](/docs/lakebase/quickstart), DBSQL ou les UC Volumes pour la persistance)
+- Les fichiers de plus de 10 Mo font échouer le déploiement
+- SIGTERM laisse 15 secondes avant SIGKILL
+- Runtime : Ubuntu 22.04, Node 22, Python 3.11
 
-Consultez les [Bonnes pratiques](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/best-practices) pour des recommandations sur la gestion de l&#39;arrêt, la gestion des secrets et le réseau.
+Consultez les [Bonnes pratiques](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/best-practices) pour des recommandations sur la gestion de l'arrêt, la gestion des secrets et le réseau.
 
-## Statuts d&#39;application \{#app-statuses\}
+## Statuts d'application \{#app-statuses\}
 
 | Statut    | Signification                                        |
 | --------- | ---------------------------------------------------- |
-| Running   | L&#39;application fonctionne et traite le trafic         |
+| Running   | L'application fonctionne et traite le trafic         |
 | Deploying | Un nouveau déploiement est en cours                  |
-| Crashed   | L&#39;application n&#39;a pas pu démarrer ou s&#39;est arrêtée   |
-| Stopped   | L&#39;application a été arrêtée manuellement             |
+| Crashed   | L'application n'a pas pu démarrer ou s'est arrêtée   |
+| Stopped   | L'application a été arrêtée manuellement             |
 
 ## Pour aller plus loin \{#where-to-next\}
 
-Consultez [Développement d&#39;applications](/fr/docs/apps/development) pour la configuration locale, les options de déploiement et l&#39;API complète des plugins, ou parcourez le [catalogue de templates](/fr/templates) pour découvrir des modèles d&#39;implémentation complets.
+Consultez [Développement d'applications](/docs/apps/development) pour la configuration locale, les options de déploiement et l'API complète des plugins, ou parcourez le [catalogue de templates](/templates) pour découvrir des modèles d'implémentation complets.

@@ -1,6 +1,6 @@
 ---
-title: custom agent の endpoint
-sidebar_label: custom agent
+title: カスタムエージェントのエンドポイント
+sidebar_label: カスタムエージェント
 description: Knowledge Assistant、Supervisor Agent、またはカスタム Python エージェントを AppKit アプリから呼び出します。いずれも Model Serving プラグインに接続できます。
 sourceOfTruth:
   skills:
@@ -16,18 +16,18 @@ sourceOfTruth:
 
 AppKit アプリで foundation model の応答や Genie 形式のデータクエリだけでは足りない場合は、**custom agent** を使います。これは、指示、ツール、ドキュメントによるグラウンディング、マルチエージェントのオーケストレーションによって形作られた LLM です。AppKit からは次の方法で実行できます。
 
-* [`agents` プラグイン](/ja/docs/appkit/v0/plugins/agents)で **アプリ内で実行する**。エージェントをコードまたは Markdown で定義するか、Supervisor API アダプター経由でマネージドな Supervisor を実行します。別途 endpoint をデプロイする必要はありません。エージェントを自分で新規に構築する場合は、まずこの方法から始めてください。
-* [Model Serving プラグイン](/ja/docs/appkit/v0/plugins/model-serving)で **すでに serving endpoint になっているエージェントを呼び出す**。Knowledge Assistant や、共有 endpoint としてすでにデプロイ済みのエージェントにはこちらを使用します。
+- [`agents` プラグイン](/docs/appkit/v0/plugins/agents)で **アプリ内で実行する**。エージェントをコードまたは Markdown で定義するか、Supervisor API アダプター経由でマネージドな Supervisor を実行します。別途 endpoint をデプロイする必要はありません。エージェントを自分で新規に構築する場合は、まずこの方法から始めてください。
+- [Model Serving プラグイン](/docs/appkit/v0/plugins/model-serving)で **すでに serving endpoint になっているエージェントを呼び出す**。Knowledge Assistant や、共有 endpoint としてすでにデプロイ済みのエージェントにはこちらを使用します。
 
 ## 前提条件 \{#prerequisites\}
 
-* [認証済みプロファイル](/ja/docs/tools/databricks-cli#authenticate)を設定した Databricks CLI `v1.0.0+`。
-* 実行中の AppKit アプリ。[Apps クイックスタート](/ja/docs/apps/quickstart)を参照してください。
-* 以下の endpoint パスを使う場合は、サービング endpoint としてデプロイ済みのエージェント。
+- [認証済みプロファイル](/docs/tools/databricks-cli#authenticate)を設定した Databricks CLI `v1.0.0+`。
+- 実行中の AppKit アプリ。[Apps クイックスタート](/docs/apps/quickstart)を参照してください。
+- 以下の endpoint パスを使う場合は、サービング endpoint としてデプロイ済みのエージェント。
 
 ## App 内でエージェントを実行する \{#run-an-agent-inside-your-app\}
 
-[`agents` プラグイン](/ja/docs/appkit/v0/plugins/agents)は、App 内でエージェントをホストします。Markdown またはコードでエージェントを定義してツールを接続すれば、組み込みのルートで提供されるため、プロビジョニングが必要な endpoint はありません。新しいカスタムエージェントや Supervisor Agent を作成する場合は、ここから始めてください。
+[`agents` プラグイン](/docs/appkit/v0/plugins/agents)は、App 内でエージェントをホストします。Markdown またはコードでエージェントを定義してツールを接続すれば、組み込みのルートで提供されるため、プロビジョニングが必要な endpoint はありません。新しいカスタムエージェントや Supervisor Agent を作成する場合は、ここから始めてください。
 
 Genie space、Unity Catalog 関数、その他のエージェントを統括する Supervisor の場合は、Supervisor API アダプターがそのエージェントを Databricks 上のマネージドサービスとして実行します。
 
@@ -55,7 +55,7 @@ await createApp({
 });
 ```
 
-マークダウンエージェント、ツールのスコープ設定、サブエージェント、ホスト型 Supervisor ツールについては、[`agents` プラグインリファレンス](/ja/docs/appkit/v0/plugins/agents)を参照してください。
+マークダウンエージェント、ツールのスコープ設定、サブエージェント、ホスト型 Supervisor ツールについては、[`agents` プラグインリファレンス](/docs/appkit/v0/plugins/agents)を参照してください。
 
 ## 既存のエージェント endpoint を呼び出す \{#call-an-existing-agent-endpoint\}
 
@@ -63,11 +63,11 @@ await createApp({
 
 | ビルダー             | 用途                                                                       | セットアップ                                                                                                                                                                                                                                |
 | ------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Knowledge Assistant | ドキュメントに対する Q&amp;A (引用付き)                                         | [Knowledge Assistant](https://docs.databricks.com/aws/en/agents/agent-bricks/knowledge-assistant) (ワークスペース UI)                                                                                                                       |
-| Supervisor Agent    | Genie Agent、他のエージェント、Unity Catalog 関数、MCP サーバーを連携させる | [Supervisor Agent](https://docs.databricks.com/aws/en/agents/agent-bricks/multi-agent-supervisor) (ワークスペース UI) 、またはコードで構築する場合は [Supervisor API](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) |
+| Knowledge Assistant | ドキュメントに対する Q&A（引用付き）                                        | [Knowledge Assistant](https://docs.databricks.com/aws/en/agents/agent-bricks/knowledge-assistant)（ワークスペース UI）                                                                                                                      |
+| Supervisor Agent    | Genie Agent、他のエージェント、Unity Catalog 関数、MCP サーバーを連携させる | [Supervisor Agent](https://docs.databricks.com/aws/en/agents/agent-bricks/multi-agent-supervisor)（ワークスペース UI）、またはコードで構築する場合は [Supervisor API](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) |
 | カスタム Python エージェント | 他のどれも当てはまらない場合：独自のオーケストレーション、ツール、フレームワーク                 | Python で [エージェントを作成する](https://docs.databricks.com/aws/en/agents/custom-agents/author-agent)                                                                                                                                     |
 
-Knowledge Assistant と Supervisor Agent のビルダーは、ワークスペース上でクリック操作だけで利用できます。[`databricks-agent-bricks`](/ja/docs/tools/ai-tools/agent-skills) エージェントスキルを使って、コーディングエージェントから作成することもできます。[Supervisor API](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) は Supervisor Agent を Python で定義するためのもので、ワークスペース UI よりもコードを好むチームに適しています。
+Knowledge Assistant と Supervisor Agent のビルダーは、ワークスペース上でクリック操作だけで利用できます。[`databricks-agent-bricks`](/docs/tools/ai-tools/agent-skills) エージェントスキルを使って、コーディングエージェントから作成することもできます。[Supervisor API](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) は Supervisor Agent を Python で定義するためのもので、ワークスペース UI よりもコードを好むチームに適しています。
 
 `agents.deploy()` でカスタムエージェントを専用の Model Serving endpoint にデプロイする方法はレガシーな手段です。上記のとおりアプリ内で実行することを推奨します。詳しくは [エージェントを作成する](https://docs.databricks.com/aws/en/agents/custom-agents/author-agent) および [Databricks Apps への移行](https://docs.databricks.com/aws/en/agents/custom-agents/migrate-agent-to-apps) を参照してください。
 
@@ -93,11 +93,11 @@ env:
 
 エージェントの endpoint をアプリのリソースとして追加すると (Databricks Apps の UI または CLI から) 、Databricks はアプリのサービスプリンシパルにその endpoint に対する `CAN QUERY` を付与します。
 
-`createApp`、`useServingStream`、カスタムルートハンドラーを含む完全な連携パターンについては、[AppKit からガバナンス適用済みの endpoint を呼び出す](/ja/docs/agents/ai-gateway#call-a-governed-endpoint-from-appkit)を参照してください。
+`createApp`、`useServingStream`、カスタムルートハンドラーを含む完全な連携パターンについては、[AppKit からガバナンス適用済みの endpoint を呼び出す](/docs/agents/ai-gateway#call-a-governed-endpoint-from-appkit)を参照してください。
 
 ## レスポンスの形式 \{#what-the-response-looks-like\}
 
-ストリーミングレスポンスは `useServingStream` のチャンクとして届きます。非ストリーミングの呼び出しでは、`useServingInvoke` が完全なオブジェクトを返します。リクエストの形式は通常 OpenAI Chat Completions 互換です (`messages`、`max_tokens`、任意で `stream`) 。`ResponsesAgent` をベースに構築された endpoint では、代わりに OpenAI Responses API を使用します (`messages` の代わりに `input`) 。
+ストリーミングレスポンスは `useServingStream` のチャンクとして届きます。非ストリーミングの呼び出しでは、`useServingInvoke` が完全なオブジェクトを返します。リクエストの形式は通常 OpenAI Chat Completions 互換です（`messages`、`max_tokens`、任意で `stream`）。`ResponsesAgent` をベースに構築された endpoint では、代わりに OpenAI Responses API を使用します（`messages` の代わりに `input`）。
 
 レスポンスの形式はビルダーによって異なるため、推測せず次の手順で確認してください。
 
@@ -107,10 +107,10 @@ env:
 
 ## ユーザーごとの権限 \{#per-user-permissions\}
 
-AppKit のサービングルートは、デフォルトで認証済みユーザーとして実行されます。エージェントがユーザースコープのデータにアクセスする場合 (たとえば、ユーザーがクエリできる Genie Agent にルーティングする Supervisor Agent など) 、そのユーザーに閲覧権限のあるデータだけが表示されます。追加の認証コードは必要ありません。
+AppKit のサービングルートは、デフォルトで認証済みユーザーとして実行されます。エージェントがユーザースコープのデータにアクセスする場合（たとえば、ユーザーがクエリできる Genie Agent にルーティングする Supervisor Agent など）、そのユーザーに閲覧権限のあるデータだけが表示されます。追加の認証コードは必要ありません。
 
-組み込みプラグインルート以外のサーバーロジック (カスタムの Express ルートなど) では、`AppKit.serving("assistant").asUser(req).invoke(...)` を呼び出すことでユーザーごとの動作を維持できます。リクエストを伴わないバックグラウンド処理 (スケジュールされたタスクやワーカーなど) では `asUser` を省略すると、アプリのサービスプリンシパルとして実行されます。
+組み込みプラグインルート以外のサーバーロジック（カスタムの Express ルートなど）では、`AppKit.serving("assistant").asUser(req).invoke(...)` を呼び出すことでユーザーごとの動作を維持できます。リクエストを伴わないバックグラウンド処理（スケジュールされたタスクやワーカーなど）では `asUser` を省略すると、アプリのサービスプリンシパルとして実行されます。
 
 ## 次のステップ \{#where-to-next\}
 
-AppKit とエージェントの一通りのセットアップを試すには [AI Chat App](/ja/templates/ai-chat-app) を、その他のパターンを探すには [テンプレートカタログ](/ja/templates) をご覧ください。
+AppKit とエージェントの一通りのセットアップを試すには [AI Chat App](/templates/ai-chat-app) を、その他のパターンを探すには [テンプレートカタログ](/templates) をご覧ください。

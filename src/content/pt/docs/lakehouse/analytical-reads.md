@@ -14,26 +14,26 @@ sourceOfTruth:
 
 # Ler tabelas do Unity Catalog \{#read-unity-catalog-tables\}
 
-Para executar consultas analíticas em tabelas no Databricks a partir do seu app AppKit, você precisa de um SQL warehouse (o compute SQL do Databricks). O [Analytics plugin](/pt/docs/appkit/v0/plugins/analytics) conecta seu handler a um: os arquivos SQL ficam em `config/queries/`, o warehouse os executa e as linhas tipadas são retornadas. Seu handler não verifica permissões.
+Para executar consultas analíticas em tabelas no Databricks a partir do seu app AppKit, você precisa de um SQL warehouse (o compute SQL do Databricks). O [Analytics plugin](/docs/appkit/v0/plugins/analytics) conecta seu handler a um: os arquivos SQL ficam em `config/queries/`, o warehouse os executa e as linhas tipadas são retornadas. Seu handler não verifica permissões.
 
 As tabelas consultadas pelo warehouse são governadas pelo Unity Catalog (UC). O UC controla o namespace de três níveis (`catalog.schema.object`) e aplica grants, filtros de linha, máscaras de coluna e políticas ABAC (controle de acesso baseado em atributos) a cada acesso. Além das tabelas, o UC também governa views, visualizações materializadas, volumes, modelos, índices de vector search e funções registradas.
 
 ## Pré-requisitos \{#prerequisites\}
 
-* Databricks CLI `v1.0.0+` com um [perfil autenticado](/pt/docs/tools/databricks-cli#authenticate).
-* Um app AppKit em execução. Consulte o [guia rápido de Apps](/pt/docs/apps/quickstart).
-* Um SQL warehouse declarado como recurso do app no `databricks.yml`. O service principal do seu app recebe `CAN_USE` automaticamente ao vincular o recurso. As permissões de usuário final são tratadas [abaixo](#where-403s-come-from).
+- Databricks CLI `v1.0.0+` com um [perfil autenticado](/docs/tools/databricks-cli#authenticate).
+- Um app AppKit em execução. Consulte o [guia rápido de Apps](/docs/apps/quickstart).
+- Um SQL warehouse declarado como recurso do app no `databricks.yml`. O service principal do seu app recebe `CAN_USE` automaticamente ao vincular o recurso. As permissões de usuário final são tratadas [abaixo](#where-403s-come-from).
 
 ## O que o Analytics plugin lê \{#what-the-analytics-plugin-reads\}
 
 Todos os objetos do UC ficam em um namespace `catalog.schema.object`. Os objetos consultados por este plugin são:
 
-* **Tabelas** (Delta e Iceberg).
-* **Views** e **visualizações materializadas**.
-* **Streaming tables**.
-* **Funções** chamadas como `SELECT my_catalog.my_schema.my_function(...)`.
+- **Tabelas** (Delta e Iceberg).
+- **Views** e **visualizações materializadas**.
+- **Streaming tables**.
+- **Funções** chamadas como `SELECT my_catalog.my_schema.my_function(...)`.
 
-Os demais objetos do UC utilizam outros plugins. Volumes (armazenamento de arquivos) passam pelo [plugin Files](/pt/docs/appkit/v0/plugins/files). A lista completa de objetos do UC está em [Securable objects](https://docs.databricks.com/aws/en/data-governance/unity-catalog/securable-objects).
+Os demais objetos do UC utilizam outros plugins. Volumes (armazenamento de arquivos) passam pelo [plugin Files](/docs/appkit/v0/plugins/files). A lista completa de objetos do UC está em [Securable objects](https://docs.databricks.com/aws/en/data-governance/unity-catalog/securable-objects).
 
 ## Conecte o Analytics plugin \{#wire-the-analytics-plugin\}
 
@@ -55,7 +55,8 @@ env:
     valueFrom: sql-warehouse
 ```
 
-O recurso correspondente fica em `databricks.yml`. Consulte [Configuração do app](/pt/docs/apps/configuration#resources) para ver a lista completa de recursos e as chaves `valueFrom`.
+O recurso correspondente fica em `databricks.yml`. Consulte [Configuração do app](/docs/apps/configuration#resources) para ver a lista completa de recursos e as chaves `valueFrom`.
+
 
 ## Escreva os arquivos SQL \{#author-sql-files\}
 
@@ -76,7 +77,8 @@ O contexto de execução é definido pelo nome do arquivo:
 * `spend_summary.sql` é executado como o **service principal do app**. O cache é compartilhado entre os usuários.
 * `spend_summary.obo.sql` é executado como o **usuário autenticado**. O cache é individual por usuário. O Unity Catalog aplica os grants, os filtros de linha, as máscaras de coluna e as políticas ABAC desse usuário.
 
-Para conhecer a API completa do plugin, incluindo tipos de parâmetros e streaming Arrow, consulte a [referência do Analytics plugin](/pt/docs/appkit/v0/plugins/analytics).
+Para conhecer a API completa do plugin, incluindo tipos de parâmetros e streaming Arrow, consulte a [referência do Analytics plugin](/docs/appkit/v0/plugins/analytics).
+
 
 ## Renderizar em React com `useAnalyticsQuery` \{#render-in-react-with-useanalyticsquery\}
 
@@ -114,12 +116,13 @@ export function SpendTable() {
 O `useAnalyticsQuery` refaz a busca sempre que a referência dos seus parâmetros muda. Um objeto inline cria uma nova referência em cada renderização, o que causa um loop infinito. Envolva os parâmetros em `useMemo`.
 :::
 
+
 ## De onde vêm os erros 403 \{#where-403s-come-from\}
 
 A identidade associada a cada consulta é definida pelo nome do arquivo:
 
-* **Consultas com service principal** (`*.sql`) usam o service principal do app. O SP precisa de `SELECT` nas tabelas subjacentes. Erros de permissão retornam `403` do warehouse.
-* **Consultas on-behalf-of-user** (`*.obo.sql`) usam o usuário autenticado. O UC aplica os grants desse usuário automaticamente. Se o usuário não tiver `SELECT`, ou se um filtro de linha ou uma máscara de coluna ocultar os dados, a chamada retorna `403` ou devolve menos linhas. Você não precisa escrever a verificação de permissão.
+- **Consultas com service principal** (`*.sql`) usam o service principal do app. O SP precisa de `SELECT` nas tabelas subjacentes. Erros de permissão retornam `403` do warehouse.
+- **Consultas on-behalf-of-user** (`*.obo.sql`) usam o usuário autenticado. O UC aplica os grants desse usuário automaticamente. Se o usuário não tiver `SELECT`, ou se um filtro de linha ou uma máscara de coluna ocultar os dados, a chamada retorna `403` ou devolve menos linhas. Você não precisa escrever a verificação de permissão.
 
 :::note[A autorização on-behalf-of-user deve estar habilitada]
 
@@ -133,8 +136,8 @@ O Lakehouse Federation faz com que fontes externas (Snowflake, BigQuery, Oracle,
 
 ## Consultas em linguagem natural \{#natural-language-queries\}
 
-Para perguntas e respostas em linguagem natural sobre tabelas do UC (conjuntos de dados curados, além de um repositório de conhecimento e de um sistema de IA composto que converte perguntas em SQL), use o [Genie](/pt/docs/agents/genie). Para ver uma configuração funcional, consulte o template [Genie Conversational Analytics](/pt/templates/genie-conversational-analytics). O plugin do Genie está na seção Agent Bricks porque se trata de uma integração de agente, e não de SQL.
+Para perguntas e respostas em linguagem natural sobre tabelas do UC (conjuntos de dados curados, além de um repositório de conhecimento e de um sistema de IA composto que converte perguntas em SQL), use o [Genie](/docs/agents/genie). Para ver uma configuração funcional, consulte o template [Genie Conversational Analytics](/templates/genie-conversational-analytics). O plugin do Genie está na seção Agent Bricks porque se trata de uma integração de agente, e não de SQL.
 
 ## Próximos passos \{#where-to-next\}
 
-Experimente [Set Up Unity Catalog with External Storage](/pt/templates/unity-catalog-setup) para provisionar um catálogo ou [Volume File Manager](/pt/templates/volume-file-upload) para adicionar UC Volumes ao seu app. Depois, explore [Lakeflow Jobs](/pt/docs/lakehouse/jobs) para disparar execuções ou [Pipelines and freshness](/pt/docs/lakehouse/pipelines) para obter sinais de «última atualização».
+Experimente [Set Up Unity Catalog with External Storage](/templates/unity-catalog-setup) para provisionar um catálogo ou [Volume File Manager](/templates/volume-file-upload) para adicionar UC Volumes ao seu app. Depois, explore [Lakeflow Jobs](/docs/lakehouse/jobs) para disparar execuções ou [Pipelines and freshness](/docs/lakehouse/pipelines) para obter sinais de «última atualização».

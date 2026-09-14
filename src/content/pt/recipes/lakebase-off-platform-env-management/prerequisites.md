@@ -1,0 +1,5 @@
+Este modelo reúne as variáveis de ambiente necessárias para acessar o Lakebase a partir de um app executado fora do Databricks App Platform. Antes de começar, verifique se estes recursos do workspace do Databricks estão habilitados.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e confirme que o comando é executado com sucesso. Um erro `not enabled` indica que o Lakebase não está disponível para essa identidade.
+* **Um projeto Lakebase provisionado.** Conclua primeiro o modelo [Criar um projeto Lakebase](/templates/lakebase-create-instance). Os valores de conexão serão obtidos do branch, do endpoint e do banco de dados desse projeto.
+* **OAuth máquina a máquina para produção (opcional).** Se você pretende executar em produção com um service principal, tenha em mãos o `DATABRICKS_CLIENT_ID` / `DATABRICKS_CLIENT_SECRET` desse service principal. Para desenvolvimento local, basta um token do workspace obtido com `databricks auth token --profile <PROFILE>`.

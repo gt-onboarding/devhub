@@ -12,15 +12,15 @@ sourceOfTruth:
 
 # Lakeflow Jobs \{#lakeflow-jobs\}
 
-Para delegar trabalhos lentos ou pesados demais para um handler de requisição, você precisa de um Lakeflow Job, o executor gerenciado da Databricks para notebooks, SQL, dbt e tarefas de Python wheel. Exemplos típicos de trabalho disparado por uma ação do usuário: retreinamento de modelos, ETL multitarefa ou um backfill SQL demorado. O [plugin Jobs](/pt/docs/appkit/v0/plugins/jobs) conecta seu handler a um job: declare-o em `databricks.yml` e depois chame `AppKit.jobs("default").runNow(params)` para disparar uma execução ou itere sobre `runAndWait` para acompanhar o progresso em streaming.
+Para delegar trabalhos lentos ou pesados demais para um handler de requisição, você precisa de um Lakeflow Job, o executor gerenciado da Databricks para notebooks, SQL, dbt e tarefas de Python wheel. Exemplos típicos de trabalho disparado por uma ação do usuário: retreinamento de modelos, ETL multitarefa ou um backfill SQL demorado. O [plugin Jobs](/docs/appkit/v0/plugins/jobs) conecta seu handler a um job: declare-o em `databricks.yml` e depois chame `AppKit.jobs("default").runNow(params)` para disparar uma execução ou itere sobre `runAndWait` para acompanhar o progresso em streaming.
 
 A criação de jobs é uma tarefa de workspace, feita no Databricks ou com [Declarative Automation Bundles](https://docs.databricks.com/aws/en/dev-tools/bundles/). A partir de um app AppKit, você apenas os dispara. O plugin cuida do polling das execuções, do streaming via SSE (Server-Sent Events) e da validação de parâmetros com Zod.
 
 ## Pré-requisitos \{#prerequisites\}
 
-* Databricks CLI `v1.0.0+` com um [perfil autenticado](/pt/docs/tools/databricks-cli#authenticate).
-* Um app AppKit em execução. Consulte o [Início rápido de Apps](/pt/docs/apps/quickstart).
-* Um Lakeflow Job definido no seu workspace. Consulte [Create your first job](https://docs.databricks.com/aws/en/jobs/) para saber como configurá-lo.
+- Databricks CLI `v1.0.0+` com um [perfil autenticado](/docs/tools/databricks-cli#authenticate).
+- Um app AppKit em execução. Consulte o [Início rápido de Apps](/docs/apps/quickstart).
+- Um Lakeflow Job definido no seu workspace. Consulte [Create your first job](https://docs.databricks.com/aws/en/jobs/) para saber como configurá-lo.
 
 ## Integrar o plugin Jobs \{#wire-the-jobs-plugin\}
 
@@ -35,6 +35,7 @@ await createApp({
 ```
 
 Sem uma configuração `jobs` explícita, o plugin lê `DATABRICKS_JOB_ID` do ambiente e o registra sob a chave `default`. No momento, não há suporte a múltiplos jobs nomeados durante o deploy, portanto vincule um único job a `DATABRICKS_JOB_ID`.
+
 
 ## Vincular o job \{#bind-the-job\}
 
@@ -59,7 +60,8 @@ env:
     valueFrom: etl-job
 ```
 
-Consulte [Configuração do app](/pt/docs/apps/configuration#resources) para ver a lista completa de recursos e a [referência do plugin Jobs](/pt/docs/appkit/v0/plugins/jobs) para as regras de nomenclatura das variáveis de ambiente.
+Consulte [Configuração do app](/docs/apps/configuration#resources) para ver a lista completa de recursos e a [referência do plugin Jobs](/docs/appkit/v0/plugins/jobs) para as regras de nomenclatura das variáveis de ambiente.
+
 
 ## Acionar a partir de um manipulador de rota \{#trigger-from-a-route-handler\}
 
@@ -98,9 +100,10 @@ AppKit.server.extend((app) => {
 });
 ```
 
-Todos os métodos do plugin Jobs retornam [`ExecutionResult<T>`](/pt/docs/appkit/v0/api/appkit/TypeAlias.ExecutionResult). Verifique `result.ok` antes de ler `result.data`.
+Todos os métodos do plugin Jobs retornam [`ExecutionResult<T>`](/docs/appkit/v0/api/appkit/TypeAlias.ExecutionResult). Verifique `result.ok` antes de ler `result.data`.
 
 Os jobs são executados como o **service principal** do app. A vinculação de recurso concede a ele `CAN_MANAGE_RUN`, de modo que os usuários disparam execuções sem precisar de permissões individuais, e a interface de Jobs atribui cada execução ao service principal, e não ao usuário humano. O AppKit não executa jobs em nome do usuário autenticado, portanto não há execução de job por usuário para configurar.
+
 
 ## Transmita o progresso em tempo real \{#stream-live-progress\}
 
@@ -117,7 +120,8 @@ for await (const status of AppKit.jobs("default").runAndWait({
 }
 ```
 
-A API completa do hook e os utilitários de paginação estão documentados na [referência do plugin Jobs](/pt/docs/appkit/v0/plugins/jobs).
+A API completa do hook e os utilitários de paginação estão documentados na [referência do plugin Jobs](/docs/appkit/v0/plugins/jobs).
+
 
 ## Permissões \{#permissions\}
 
@@ -133,10 +137,10 @@ Defina `permission: CAN_MANAGE_RUN` na vinculação de recurso de job. Essa é a
 
 Escolha o padrão que melhor se adequa à duração da execução e à sua interface:
 
-* **O endpoint integrado de executar e aguardar do plugin** funciona bem quando o usuário está disposto a esperar na página. O navegador mantém uma conexão SSE enquanto o plugin consulta o SDK a cada poucos segundos (5s por padrão, com tempo limite de até 10 minutos).
-* **Notificações por webhook** são a melhor opção quando o usuário fecha a aba e você precisa do resultado mais tarde. Configure os destinos `webhook_notifications.on_success` / `on_failure`, grave o estado da execução em algum local durável (o Lakebase é conveniente se o seu app já o utiliza) e transmita as atualizações ao cliente quando ele recarregar a página.
-* **`system.lakeflow.job_run_timeline`** pode ser consultada pelo [Analytics plugin](/pt/docs/appkit/v0/plugins/analytics) assim que o seu service principal tiver `SELECT` sobre ela. Útil para painéis de histórico de execuções ou análises entre jobs.
+- **O endpoint integrado de executar e aguardar do plugin** funciona bem quando o usuário está disposto a esperar na página. O navegador mantém uma conexão SSE enquanto o plugin consulta o SDK a cada poucos segundos (5s por padrão, com tempo limite de até 10 minutos).
+- **Notificações por webhook** são a melhor opção quando o usuário fecha a aba e você precisa do resultado mais tarde. Configure os destinos `webhook_notifications.on_success` / `on_failure`, grave o estado da execução em algum local durável (o Lakebase é conveniente se o seu app já o utiliza) e transmita as atualizações ao cliente quando ele recarregar a página.
+- **`system.lakeflow.job_run_timeline`** pode ser consultada pelo [Analytics plugin](/docs/appkit/v0/plugins/analytics) assim que o seu service principal tiver `SELECT` sobre ela. Útil para painéis de histórico de execuções ou análises entre jobs.
 
 ## Próximos passos \{#where-to-next\}
 
-Consulte [Pipelines e atualidade dos dados](/pt/docs/lakehouse/pipelines) para ver o lado da leitura: como exibir o carimbo de &quot;última atualização&quot; ao lado dos dados preenchidos por um job. Ou explore o [catálogo de templates](/pt/templates) em busca de pontos de partida relacionados.
+Consulte [Pipelines e atualidade dos dados](/docs/lakehouse/pipelines) para ver o lado da leitura: como exibir o carimbo de "última atualização" ao lado dos dados preenchidos por um job. Ou explore o [catálogo de templates](/templates) em busca de pontos de partida relacionados.

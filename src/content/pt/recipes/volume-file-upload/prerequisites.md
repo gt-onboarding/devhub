@@ -1,0 +1,4 @@
+Verifique se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do workspace que habilite o recurso.
+
+* **Unity Catalog habilitado com acesso a um catalog e a um schema.** Execute `databricks catalogs list --profile <PROFILE>` e confirme que pelo menos um catalog gravável aparece na lista. Você também precisa de `USE_CATALOG` no catalog e de `USE_SCHEMA` + `CREATE_VOLUME` no schema em que o modelo cria o Volume gerenciado. Um erro `PERMISSION_DENIED` em `databricks volumes create` no Passo 1 indica que falta um desses grants.
+* **Databricks Apps habilitado.** Execute `databricks apps list --profile <PROFILE>` e confirme que o comando é executado com sucesso (uma lista vazia não é problema). O modelo faz o deploy de um app AppKit que lê e grava por meio do plugin `files`.

@@ -31,6 +31,8 @@
   "02f0ca73d0ccc83b": "Logo de {company}",
   "03125e3ae9616ee7": "Perspectives",
   "031b5bee1f08ebb0": "Lakebase permet à une équipe axée sur les agents d’accéder rapidement en libre-service aux données nécessaires à ses modèles, qu’il s’agisse de sinistres historiques ou de transactions en temps réel. C’est particulièrement puissant.",
+  "03328e94c9672955": "Créez-moi une application permettant à notre équipe commerciale de suivre le chiffre d’affaires et les quotas par région.\nAjoutez de l’IA pour détecter les problèmes et suggérer les prochaines étapes.",
+  "03b983e938678b7e": "Chiffre d’affaires :",
   "041ac8ef8227a23e": "Connexion au workspace...",
   "057f4075155ea512": "Analytique conversationnelle Genie",
   "058330eee13eebfc": "Quelle peut être la taille de mon équipe ?",
@@ -76,7 +78,9 @@
   "1386c46f32f117ab": "Afficher le Markdown brut",
   "139961ffeb53cbe6": "Créez des apps avec Lakebase",
   "153a330b781f999f": "Exécutez des environnements de base de données distincts pour chaque tenant afin de les mettre à l’échelle indépendamment.",
+  "153d54e2f2d1e8f6": "Vous pouvez désormais créer et déployer des applications sur Databricks.",
   "1561bf00337a8eeb": "Créez des applications avec Agent Bricks",
+  "15d7653343aaead7": "Chiffre d’affaires total",
   "162ac5ea47538ce2": "Rechercher dans DevHub",
   "19173aca84fa3703": "Architecture de branchement de bases de données en copy-on-write et pratiques qu’elle permet sur Databricks Lakebase",
   "19aa17a80ac7d9cd": "Appliquez les contrôles d’accès et la gouvernance par défaut",
@@ -198,6 +202,7 @@
       "t": "span"
     }
   ],
+  "283bb584ddf13a42": "Amérique latine",
   "28822290c487cf51": "Lakebase pgvector",
   "289137b2f8d3ba70": "Exécutez votre application dans Databricks.",
   "28aadb8b0fa9ff77": "Produit",
@@ -296,9 +301,22 @@
   "3658e7da7ef0d7f3": "Commencez ici",
   "366b6867b7bedfe4": "COMMUNAUTÉ",
   "37795f21f33b3689": "Le défi",
+  "380758e77a67ba8d": "Taux d’atteinte",
   "388581c5721db6d8": "Créez instantanément une branche de votre base de données.",
   "38f5ac2d666baf87": "Ouvrir le prompt dans",
   "397910ae0dbad34d": "Créez une Databricks App qui transforme des données désordonnées sur les établissements de santé en décisions auxquelles un responsable de la planification non technique peut se fier. Consultez la consigne complète, la présentation du jeu de données et les quatre volets ci-dessous.",
+  "39eb021a9074dc48": [
+    {
+      "c": "Chiffre d’affaires par région",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": "Contribution cumulée depuis le début de l’année",
+      "i": 2,
+      "t": "p"
+    }
+  ],
   "3a01edd710b0d236": "Mémoire d’agent Lakebase",
   "3a6df8380eed44aa": "Accéder à la page d’accueil",
   "3a70e5b58c56d3ad": "Créez et validez un point de terminaison Databricks Model Serving pour l’inférence de chat IA dans Databricks Apps.",
@@ -306,9 +324,11 @@
   "3b2f2d75bc3e75fa": "Connexion des sources de données...",
   "3b5637a4ba92818b": "Systèmes de prise de décision",
   "3ba76af8c7680eb7": "Configurez votre environnement de développement local",
+  "3bd137a67be27f67": "Démarrage de la génération et du déploiement",
   "3c21948c11730f22": "Modèle de démarrage du hackathon",
   "3ccaea378118f9e5": "Capturez les écritures des apps à des fins d’analytique, sans pipelines personnalisés.",
   "3cf5488da17389dc": "Favoriser le développement évolutif de bases de données : branchement de bases de données avec Lakebase, conclusion",
+  "3d8e93391cd656db": "Générer l’ossature d’une application avec AppKit",
   "3d94278ca56d7f65": "Hébergement d’applications sans serveur",
   "3dc0618ca606e37f": [
     {
@@ -341,12 +361,14 @@
   "449987b3759e9413": "Utilisez vos données, avec les autorisations appropriées.",
   "45c063246b34dde6": "Aucun résultat trouvé.",
   "45e783dde0a0d139": "Une plateforme de déploiement d’applications avec authentification, hébergement et intégrations intégrés.",
+  "46099c299b702bcd": "Europe",
   "4661881982e4e50f": "S’inscrire",
   "477a176670b421b9": "Déployé",
   "478f3e3a3328fa8f": "Applications combinant analytique, modèles et interactions utilisateur au même endroit.",
   "47c0be618bd54d75": "Créez un compte Free Edition distinct pour le hackathon avec une autre adresse e-mail ou un alias.",
   "480646ceb98c7163": "Fermer",
   "483692789d5b927c": "Routage multimodèle",
+  "485e6d90e6eaf822": "Chiffre d’affaires par période",
   "48c9589191a6dfab": "Responsable de la plateforme de données",
   "4961525706b9774d": "Interrogez les données avec des autorisations au niveau de l’utilisateur",
   "49623ba0a2971530": "Assistants IA sur vos données",
@@ -374,6 +396,7 @@
     "i": 1,
     "t": "div"
   },
+  "4d8606f1ccd34ce0": "Déploiement d’une application sur Databricks Apps",
   "4de43011424bf18e": "Chez Tibber, donner aux clients les moyens de maîtriser leur consommation d’énergie exige une infrastructure de données flexible. L’intégration de Lakebase à Databricks facilite la mise à disposition de données analytiques et transactionnelles, ce qui nous aide à fournir des informations en temps réel à nos clients.",
   "4ded17e4d1651f93": "Blog Databricks",
   "4e9bb669d40e3e7b": "Grâce à Databricks Apps, nous avons évité de nombreux allers-retours avec les équipes sécurité et infrastructure et avons pu partager instantanément notre app avec les parties prenantes en production.",
@@ -422,6 +445,7 @@
   "63c4174550503719": "Perspectives axées sur les développeurs pour créer sur Databricks.",
   "643ff3527999c647": "Des apps full-stack pour les outils internes, les interfaces d’IA, les systèmes en temps réel et bien plus encore.",
   "64653c98a45b7f61": "Configuration au niveau du schéma pour la réplication sortante",
+  "64b4a35e13a9f10c": "Taux de réussite",
   "65648b505420772b": "Basculez entre des modèles de pointe comme GPT, Claude, Llama et bien d’autres.",
   "65b4e9116911c4f4": "Comment créer des applications de données et d’IA prêtes pour la production avec Databricks Apps et Lakebase",
   "6643671d462eb454": "Commencer à créer",
@@ -527,6 +551,7 @@
   "708ef635564205e7": "Illustration de couverture pour utiliser Lakebase comme couche de données transactionnelles pour Databricks Apps",
   "70906edd7f7182f2": "Ingénieur Data et MLOps",
   "70db1d70ae962f16": "Que faire si des ressources sont en cours d’exécution sur mon compte Free Edition existant et que je ne souhaite pas les arrêter ?",
+  "70e326079567af4d": "Atteinte des objectifs",
   "7128196dc33f73fe": "Défi",
   "712a7a0e502bb1d9": "[À la une]",
   "71e4d3449aa23478": "Appliquer les filtres ({count})",
@@ -637,6 +662,7 @@
   "7a98677c84135c1a": "Dois-je être inscrit au Data + AI Summit 2026 ?",
   "7ab8db26fa581bbc": "Générez et validez du contenu à grande échelle grâce aux évaluations intégrées afin de garantir une qualité des résultats constante.",
   "7aea567a09c91495": "Hub d’outils d’inférence",
+  "7aeaeca807098e55": "Objectif :",
   "7b29b1276852153d": "Liste de contrôle du hackathon",
   "7b32a52352c34ab6": "Créez des applications de données full stack sur Databricks Apps avec des tables synchronisées dans Lakebase qui répliquent les données Unity Catalog en quelques secondes, et déployez le tout sous forme de code avec Databricks Asset Bundles.",
   "7b8a9990b219107f": {
@@ -691,7 +717,10 @@
   "7d64c7c294e6a875": "Communauté Discord",
   "7dbe0e1e4cbce461": "Supprimer le filtre {service}",
   "7dd7c70f341cb23f": "Diapositive suivante",
+  "7e205f8d2de71850": "CLI Databricks installé avec succès.",
+  "7e5da0a427997835": "Objectif par période",
   "7e6fca5c143fe0ee": "Sur cette page",
+  "7eec7341928c97c3": "Configuration de l’IA sur Agent Bricks",
   "7f37e458884d7552": "Le besoin de l’utilisateur est-il clairement défini ? Le flux de travail et les compromis sont-ils bien réfléchis ?",
   "7f3bbd1b427c4776": "Sections de solution",
   "7f485d3cbfd284c9": "Tout effacer",
@@ -875,6 +904,7 @@
   "964b55b174ee870d": "Générez des embeddings de texte à partir d’un point de terminaison de modèle de fondation Databricks à l’aide du SDK Databricks.",
   "96e144003acb2072": "Découvrez une application de demande de congés qui utilise Lakebase comme couche Postgres opérationnelle derrière Databricks Apps, de la configuration de la base de données à un frontend entièrement connecté.",
   "970120049f38350c": "Workflow développeur utilisant des branches de bases de données Lakebase pour une fonctionnalité isolée et une modification de schéma",
+  "9756b09ffd8a55c6": "En cours",
   "975cd88e1c735b31": "De l’idée à l’agent",
   "975eee695c5df05b": "Connectez votre app à votre Lakehouse.",
   "97a93d0241052869": "Assurez-vous que votre CLI est authentifiée",
@@ -906,6 +936,7 @@
   "9ecbd9988d649083": "Comment les modèles DevHub facilitent la création d’applications Databricks.",
   "9ef0ec1d65eeb078": "Boucler la boucle des données",
   "a23bbdecce1a11a5": "Une journée complète de hackathon, qui commence par la cérémonie d’ouverture au Marriott Marquis de San Francisco.",
+  "a280124d5deb4ef8": "Montant moyen des transactions",
   "a31c8e916da4a3ef": "Documentation",
   "a341adca67b1de2e": "Annonce du site",
   "a37beeead02714c0": "Interfaces permettant de surveiller, déboguer et gérer les flux de travail et actions des agents d’IA.",
@@ -919,6 +950,7 @@
   "a5097e5b92296a8b": "Hackathon",
   "a531c1462a6810a4": "Onglets de contenu",
   "a549b76492c43d18": "Barre latérale de la documentation",
+  "a670251798ca37b5": "Amérique du Nord",
   "a71f9979d2c9125f": "Fermer les filtres",
   "a87f3d31e59298e5": "En présentiel uniquement au Marriott Marquis de San Francisco, en parallèle du Data + AI Summit 2026.",
   "a929bf765f0e14e2": "L’architecture derrière le branchement en copy-on-write et le guide actualisé de onze pratiques qu’il rend possible, des migrations idempotentes et tests destructifs au prototypage de schémas A/B sur des branches parallèles.",
@@ -952,6 +984,23 @@
   "b11dd2ed45b1e1a4": "Créer un compte Free Edition",
   "b1724261441a366a": "Copier",
   "b334084b5da61a48": "Principal",
+  "b3fe67a421bfc87e": {
+    "c": [
+      {
+        "c": "Vue d’ensemble des ventes",
+        "i": 2,
+        "t": "h2"
+      },
+      {
+        "c": "Performances annuelles en un coup d’œil",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "header"
+  },
+  "b4246a222c338292": "Terminé : votre application est en ligne",
   "b4a2b2d653dd965d": "Outil interne de suivi des abonnements SaaS de l’équipe, de leurs responsables, de leurs coûts et de leurs renouvellements, avec persistance dans Lakebase et analyses des dépenses avec Genie.",
   "b5a602ee596b46b4": "L’application fonctionne-t-elle de manière fiable lors d’une démonstration en direct ? Les fonctionnalités Databricks sont-elles bien utilisées ?",
   "b60eb1a5a9502314": "Vice-président de l’ingénierie",
@@ -985,6 +1034,22 @@
   "be14921f5e8f2b10": "Ingénieur machine learning senior",
   "be1da3273ffdb5bd": "Réessayer",
   "bf7795b295923bb9": "Contrôlez et améliorez la qualité des résultats.",
+  "c0cbb7021082b72f": {
+    "c": [
+      {
+        "c": "Chiffre d’affaires par rapport à l’objectif",
+        "i": 2,
+        "t": "h3"
+      },
+      {
+        "c": "Résultats mensuels comparés au quota",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
   "c0e024dccd684c0a": "En savoir plus sur {title}",
   "c0ec251b1f1970ca": {
     "c": "Plus",
@@ -1044,6 +1109,7 @@
   "ca52d68ee5c207d4": "Parcourez les catégories ci-dessus ou essayez un autre terme de recherche.",
   "cad8f9d6d4f1c37f": "Créez un projet Lakebase",
   "cb920a9246480622": "Guide de configuration",
+  "cbd854730f929448": "OK",
   "cbe7f5ae748e6ff2": [
     {
       "c": [
@@ -1081,6 +1147,7 @@
   "cbe86d0e835ac172": "branche",
   "cc3c8fdbb03ea32c": "Gestion des stocks de détail avec prévision de la demande optimisée par l’IA, recommandations de réapprovisionnement et analyses Genie facultatives. Basée sur un pipeline en médaillon en temps réel synchronisé avec Lakebase.",
   "cc5973167bcdf1c7": "Soumettez votre projet",
+  "cca38753e198df12": "Provisionnement de Postgres sur Lakebase",
   "cca9275f932ffd57": "Copie en cours",
   "ccb134d4e44589fd": "Synchronisation par instantané, déclenchée ou continue",
   "ccd2ff15ae04a574": "Solutions",

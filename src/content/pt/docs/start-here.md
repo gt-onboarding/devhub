@@ -20,9 +20,9 @@ O DevHub é o recurso para desenvolvedores que criam **aplicativos empresariais*
 
 A plataforma Databricks combina uma experiência de desenvolvimento de primeira linha com a maturidade de produção e a governança que as grandes organizações exigem:
 
-* **Experiência de desenvolvimento**: ferramentas com foco em agentes permitem que qualquer pessoa entregue aplicativos reais rapidamente, com agentes de codificação fazendo o trabalho pesado.
-* **Maturidade de produção**: implantações gerenciadas e estáveis desde o início, além de escalabilidade horizontal com implantações sem tempo de inatividade e afinidade de sessão.
-* **Governança e administração**: as permissões no nível do workspace e o SSO se aplicam automaticamente a todos os aplicativos, e os controles de compute por aplicativo (tamanhos fixos, parar e iniciar sob demanda) mantêm os gastos sob controle.
+- **Experiência de desenvolvimento**: ferramentas com foco em agentes permitem que qualquer pessoa entregue aplicativos reais rapidamente, com agentes de codificação fazendo o trabalho pesado.
+- **Maturidade de produção**: implantações gerenciadas e estáveis desde o início, além de escalabilidade horizontal com implantações sem tempo de inatividade e afinidade de sessão.
+- **Governança e administração**: as permissões no nível do workspace e o SSO se aplicam automaticamente a todos os aplicativos, e os controles de compute por aplicativo (tamanhos fixos, parar e iniciar sob demanda) mantêm os gastos sob controle.
 
 ## O workspace é a base de tudo \{#your-workspace-is-the-foundation\}
 
@@ -34,10 +34,10 @@ Os workspaces são isolados, seguros e governados. Para cada app que você cria,
 
 ## O que você vai usar para construir \{#what-youll-build-with\}
 
-Os apps criados no Databricks usam diversos serviços do workspace: [Databricks Apps](/pt/docs/apps/overview), [Lakebase Postgres](/pt/docs/lakebase/overview), [Agent Bricks](/pt/docs/agents/overview) e o [Data Lakehouse](/pt/docs/lakehouse/overview). Consulte a [Visão geral da plataforma](/pt/docs/platform-overview) para mais detalhes sobre cada serviço.
+Os apps criados no Databricks usam diversos serviços do workspace: [Databricks Apps](/docs/apps/overview), [Lakebase Postgres](/docs/lakebase/overview), [Agent Bricks](/docs/agents/overview) e o [Data Lakehouse](/docs/lakehouse/overview). Consulte a [Visão geral da plataforma](/docs/platform-overview) para mais detalhes sobre cada serviço.
 
 ## Próximos passos \{#where-to-go-next\}
 
-* Leia a [Visão geral da plataforma](/pt/docs/platform-overview) para entender como os serviços se integram.
-* [Configure seu ambiente](/pt/docs/tools/databricks-cli) para começar a criar apps.
-* Saiba o que são os [templates](/pt/docs/templates) e como eles ajudam a estruturar um app rapidamente.
+- Leia a [Visão geral da plataforma](/docs/platform-overview) para entender como os serviços se integram.
+- [Configure seu ambiente](/docs/tools/databricks-cli) para começar a criar apps.
+- Saiba o que são os [templates](/docs/templates) e como eles ajudam a estruturar um app rapidamente.

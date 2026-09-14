@@ -16,18 +16,18 @@ sourceOfTruth:
 
 Cuando tu app de AppKit necesita algo más que la respuesta de un modelo fundacional o una consulta de datos al estilo de Genie, recurres a un **agente personalizado**: un LLM moldeado por instrucciones, herramientas, anclaje en documentos u orquestación multiagente. Puedes ejecutarlo desde AppKit de estas maneras:
 
-* **Ejecútalo dentro de tu App** con el [plugin `agents`](/es/docs/appkit/v0/plugins/agents). Defines el agente en código o en markdown, o ejecutas un Supervisor gestionado a través del adaptador de la API de Supervisor, sin necesidad de desplegar un endpoint aparte. Empieza por aquí si vas a crear tú mismo un agente nuevo.
-* **Llama a un agente que ya sea un endpoint de serving** con el [plugin de Model Serving](/es/docs/appkit/v0/plugins/model-serving). Usa esta opción para un Knowledge Assistant o para cualquier agente ya desplegado como endpoint compartido.
+- **Ejecútalo dentro de tu App** con el [plugin `agents`](/docs/appkit/v0/plugins/agents). Defines el agente en código o en markdown, o ejecutas un Supervisor gestionado a través del adaptador de la API de Supervisor, sin necesidad de desplegar un endpoint aparte. Empieza por aquí si vas a crear tú mismo un agente nuevo.
+- **Llama a un agente que ya sea un endpoint de serving** con el [plugin de Model Serving](/docs/appkit/v0/plugins/model-serving). Usa esta opción para un Knowledge Assistant o para cualquier agente ya desplegado como endpoint compartido.
 
 ## Requisitos previos \{#prerequisites\}
 
-* Databricks CLI `v1.0.0+` con un [perfil autenticado](/es/docs/tools/databricks-cli#authenticate).
-* Una app de AppKit en ejecución. Consulta [Inicio rápido de Apps](/es/docs/apps/quickstart).
-* Para la ruta del endpoint que se indica a continuación, un agente ya desplegado como endpoint de serving.
+- Databricks CLI `v1.0.0+` con un [perfil autenticado](/docs/tools/databricks-cli#authenticate).
+- Una app de AppKit en ejecución. Consulta [Inicio rápido de Apps](/docs/apps/quickstart).
+- Para la ruta del endpoint que se indica a continuación, un agente ya desplegado como endpoint de serving.
 
 ## Ejecuta un agente dentro de tu App \{#run-an-agent-inside-your-app\}
 
-El [plugin `agents`](/es/docs/appkit/v0/plugins/agents) aloja el agente en tu App. Lo defines en markdown o en código, conectas las herramientas y queda disponible en rutas integradas, sin necesidad de aprovisionar ningún endpoint. Si vas a crear un agente personalizado o un Supervisor Agent nuevo, empieza aquí.
+El [plugin `agents`](/docs/appkit/v0/plugins/agents) aloja el agente en tu App. Lo defines en markdown o en código, conectas las herramientas y queda disponible en rutas integradas, sin necesidad de aprovisionar ningún endpoint. Si vas a crear un agente personalizado o un Supervisor Agent nuevo, empieza aquí.
 
 Para un Supervisor Agent que coordina espacios de Genie, funciones de Unity Catalog u otros agentes, el adaptador de la API de Supervisor ejecuta el agente como un servicio gestionado en Databricks:
 
@@ -55,7 +55,8 @@ await createApp({
 });
 ```
 
-Consulta la [referencia del plugin `agents`](/es/docs/appkit/v0/plugins/agents) para conocer los agentes en markdown, el alcance de las herramientas, los subagentes y las herramientas Supervisor alojadas.
+Consulta la [referencia del plugin `agents`](/docs/appkit/v0/plugins/agents) para conocer los agentes en markdown, el alcance de las herramientas, los subagentes y las herramientas Supervisor alojadas.
+
 
 ## Llamar a un endpoint de agente existente \{#call-an-existing-agent-endpoint\}
 
@@ -67,7 +68,7 @@ A algunos agentes se accede como un endpoint de Model Serving en lugar de ejecut
 | Supervisor Agent    | Coordinar Genie Agents, otros agentes, funciones de Unity Catalog o servidores MCP | [Supervisor Agent](https://docs.databricks.com/aws/en/agents/agent-bricks/multi-agent-supervisor) (interfaz del workspace), o la [API de Supervisor](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) para crear uno mediante código |
 | Agente de Python personalizado | Ninguna otra opción encaja: tu propia orquestación, herramientas o framework                 | [Crear un agente](https://docs.databricks.com/aws/en/agents/custom-agents/author-agent) en Python                                                                                                                                     |
 
-Los builders de Knowledge Assistant y Supervisor Agent se configuran con unos cuantos clics en el workspace. También puedes crearlos desde tu agente de programación con la habilidad de agente [`databricks-agent-bricks`](/es/docs/tools/ai-tools/agent-skills). La [API de Supervisor](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) define un Supervisor Agent en Python, para los equipos que prefieren el código a la interfaz del workspace.
+Los builders de Knowledge Assistant y Supervisor Agent se configuran con unos cuantos clics en el workspace. También puedes crearlos desde tu agente de programación con la habilidad de agente [`databricks-agent-bricks`](/docs/tools/ai-tools/agent-skills). La [API de Supervisor](https://docs.databricks.com/aws/en/agents/agent-bricks/supervisor-api) define un Supervisor Agent en Python, para los equipos que prefieren el código a la interfaz del workspace.
 
 Desplegar un agente personalizado en su propio endpoint de Model Serving con `agents.deploy()` es una vía heredada. Es preferible ejecutarlo dentro de la app (más arriba); también puedes consultar [Crear un agente](https://docs.databricks.com/aws/en/agents/custom-agents/author-agent) y [Migrar a Databricks Apps](https://docs.databricks.com/aws/en/agents/custom-agents/migrate-agent-to-apps).
 
@@ -93,7 +94,8 @@ env:
 
 Cuando agregas el endpoint del agente como recurso de la app (desde la interfaz de Databricks Apps o la CLI), Databricks otorga el permiso `CAN QUERY` sobre el endpoint al service principal de tu app.
 
-Para ver el patrón de integración completo, incluidos `createApp`, `useServingStream` y los manejadores de rutas personalizados, consulta [Llamar a un endpoint gobernado desde AppKit](/es/docs/agents/ai-gateway#call-a-governed-endpoint-from-appkit).
+Para ver el patrón de integración completo, incluidos `createApp`, `useServingStream` y los manejadores de rutas personalizados, consulta [Llamar a un endpoint gobernado desde AppKit](/docs/agents/ai-gateway#call-a-governed-endpoint-from-appkit).
+
 
 ## Cómo se ve la respuesta \{#what-the-response-looks-like\}
 
@@ -113,4 +115,4 @@ Para la lógica de servidor fuera de las rutas integradas del plugin (por ejempl
 
 ## Siguientes pasos \{#where-to-next\}
 
-Prueba la [AI Chat App](/es/templates/ai-chat-app) para ver una configuración completa de AppKit y agentes, o explora el [catálogo de plantillas](/es/templates) para descubrir más patrones.
+Prueba la [AI Chat App](/templates/ai-chat-app) para ver una configuración completa de AppKit y agentes, o explora el [catálogo de plantillas](/templates) para descubrir más patrones.

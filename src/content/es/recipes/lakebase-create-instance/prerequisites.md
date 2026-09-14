@@ -1,0 +1,3 @@
+Verifica que estas funcionalidades del workspace de Databricks estén habilitadas antes de comenzar. Si alguna comprobación falla, pide al administrador de tu workspace que habilite la funcionalidad.
+
+* **Lakebase Postgres disponible en el workspace.** Ejecuta `databricks postgres list-projects --profile <PROFILE>` y confirma que el comando se ejecuta correctamente (una lista vacía es normal: estás a punto de crear el primer project). Un error de `not enabled` o de permisos indica que Lakebase no está disponible para esta identidad.

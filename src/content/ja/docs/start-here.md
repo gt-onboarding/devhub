@@ -20,9 +20,9 @@ DevHub は、Databricks で**エンタープライズアプリ**を構築する�
 
 Databricks プラットフォームは、優れた開発者体験と、大規模組織が求める本番運用への対応力およびガバナンスを兼ね備えています。
 
-* **開発者体験**: エージェントファーストのツールにより、コーディングエージェントが面倒な作業を引き受け、誰でも実用的なアプリを素早くリリースできます。
-* **本番運用への対応力**: 追加設定なしで安定したマネージドデプロイを利用でき、ダウンタイムゼロのロールアウトとセッションアフィニティを備えた水平スケーリングにも対応します。
-* **ガバナンスと管理**: workspace レベルの権限と SSO がすべてのアプリに自動的に適用され、アプリ単位の compute 制御 (固定サイズ、オンデマンドでの停止・起動) によってコストを抑えられます。
+- **開発者体験**: エージェントファーストのツールにより、コーディングエージェントが面倒な作業を引き受け、誰でも実用的なアプリを素早くリリースできます。
+- **本番運用への対応力**: 追加設定なしで安定したマネージドデプロイを利用でき、ダウンタイムゼロのロールアウトとセッションアフィニティを備えた水平スケーリングにも対応します。
+- **ガバナンスと管理**: workspace レベルの権限と SSO がすべてのアプリに自動的に適用され、アプリ単位の compute 制御（固定サイズ、オンデマンドでの停止・起動）によってコストを抑えられます。
 
 ## workspace がすべての基盤 \{#your-workspace-is-the-foundation\}
 
@@ -34,10 +34,10 @@ workspace は分離され、セキュアで、ガバナンスが効いた環境�
 
 ## 利用するサービス \{#what-youll-build-with\}
 
-Databricks 上に構築するアプリでは、[Databricks Apps](/ja/docs/apps/overview)、[Lakebase Postgres](/ja/docs/lakebase/overview)、[Agent Bricks](/ja/docs/agents/overview)、[Data Lakehouse](/ja/docs/lakehouse/overview) など、複数の workspace サービスを利用します。各サービスの詳細は [プラットフォーム概要](/ja/docs/platform-overview) を参照してください。
+Databricks 上に構築するアプリでは、[Databricks Apps](/docs/apps/overview)、[Lakebase Postgres](/docs/lakebase/overview)、[Agent Bricks](/docs/agents/overview)、[Data Lakehouse](/docs/lakehouse/overview) など、複数の workspace サービスを利用します。各サービスの詳細は [プラットフォーム概要](/docs/platform-overview) を参照してください。
 
 ## 次のステップ \{#where-to-go-next\}
 
-* [プラットフォーム概要](/ja/docs/platform-overview)で、各サービスがどのように連携するかを確認する。
-* [環境をセットアップ](/ja/docs/tools/databricks-cli)して、アプリの構築を始める。
-* [テンプレート](/ja/docs/templates)とは何か、アプリの雛形を素早く作成するのにどう役立つかを学ぶ。
+- [プラットフォーム概要](/docs/platform-overview)で、各サービスがどのように連携するかを確認する。
+- [環境をセットアップ](/docs/tools/databricks-cli)して、アプリの構築を始める。
+- [テンプレート](/docs/templates)とは何か、アプリの雛形を素早く作成するのにどう役立つかを学ぶ。

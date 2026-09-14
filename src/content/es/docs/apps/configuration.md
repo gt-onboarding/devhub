@@ -50,7 +50,8 @@ resources:
 
 Las variables como `${var.postgres_branch}` se resuelven a partir de la sección `variables` de `databricks.yml` o de los flags de la CLI en el momento del despliegue.
 
-Para ver la referencia completa de `app.yaml` específica de AppKit, incluidos los resource bindings de plugins, consulta [Configuración de AppKit](/es/docs/appkit/v0/configuration).
+Para ver la referencia completa de `app.yaml` específica de AppKit, incluidos los resource bindings de plugins, consulta [Configuración de AppKit](/docs/appkit/v0/configuration).
+
 
 ## Manifiesto de plugins \{#plugin-manifest\}
 
@@ -62,6 +63,7 @@ npx @databricks/appkit plugin sync --write
 
 Esto se ejecuta automáticamente durante `npm run dev` y `npm run build`. Haz commit del archivo junto con tu código. La CLI y el pipeline de despliegue lo usan para aprovisionar recursos.
 
+
 ## Recursos \{#resources\}
 
 Las apps acceden a los servicios de Databricks mediante recursos declarados. Cada recurso tiene un `name` en `databricks.yml`. Usa ese nombre como valor de `valueFrom` en `app.yaml`.
@@ -70,10 +72,10 @@ Las plantillas de AppKit usan nombres convencionales para los recursos gestionad
 
 | Recurso                                                                       | Nombre del recurso | Qué proporciona                          |
 | ----------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| [Lakebase Postgres](/es/docs/lakebase/quickstart)                                | `postgres`         | Conexión a PostgreSQL         |
+| [Lakebase Postgres](/docs/lakebase/quickstart)                                | `postgres`         | Conexión a PostgreSQL         |
 | [SQL Warehouse](https://docs.databricks.com/aws/en/compute/sql-warehouse/)    | `sql-warehouse`    | Ejecución de consultas SQL           |
-| [Model Serving](/es/docs/agents/ai-gateway)                                      | `serving-endpoint` | Inferencia de modelos de IA            |
-| [Genie Agent](/es/docs/agents/genie)                                             | `genie-space`      | Consultas de datos en lenguaje natural |
+| [Model Serving](/docs/agents/ai-gateway)                                      | `serving-endpoint` | Inferencia de modelos de IA            |
+| [Genie Agent](/docs/agents/genie)                                             | `genie-space`      | Consultas de datos en lenguaje natural |
 | [Job](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources) | `job`              | Job programado o activado    |
 | [UC Volumes](https://docs.databricks.com/aws/en/files/)                       | `volume`           | Almacenamiento de archivos                  |
 
@@ -133,7 +135,7 @@ Las variables personalizadas se definen en `app.yaml`, dentro de `env`. Usa `val
 
 Cada app cuenta con un service principal dedicado. Databricks inyecta `DATABRICKS_CLIENT_ID` y `DATABRICKS_CLIENT_SECRET` automáticamente en runtime y elimina el service principal cuando se elimina la app.
 
-**La autorización de usuario** (Public Preview) reenvía el token del usuario autenticado mediante la cabecera HTTP `x-forwarded-access-token`. Los ámbitos (por ejemplo, `sql`, `genie`, `files`) se configuran en la interfaz del workspace. Los plugins integrados de [Genie](/es/docs/agents/genie) y [Model Serving](/es/docs/agents/ai-gateway) de AppKit lo usan automáticamente. Consulta [contexto de ejecución](/es/docs/appkit/v0/plugins/execution-context) para ver la implementación en AppKit, o [autorización de apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) para conocer todos los detalles de la plataforma.
+**La autorización de usuario** (Public Preview) reenvía el token del usuario autenticado mediante la cabecera HTTP `x-forwarded-access-token`. Los ámbitos (por ejemplo, `sql`, `genie`, `files`) se configuran en la interfaz del workspace. Los plugins integrados de [Genie](/docs/agents/genie) y [Model Serving](/docs/agents/ai-gateway) de AppKit lo usan automáticamente. Consulta [contexto de ejecución](/docs/appkit/v0/plugins/execution-context) para ver la implementación en AppKit, o [autorización de apps](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) para conocer todos los detalles de la plataforma.
 
 ## Compute \{#compute\}
 
@@ -141,10 +143,10 @@ Los tamaños de compute son `MEDIUM` (el predeterminado), `LARGE` y `XLARGE` (la
 
 ## Restricciones \{#constraints\}
 
-* No hay sistema de archivos persistente (usa [Lakebase Postgres](/es/docs/lakebase/quickstart), DBSQL o UC Volumes para la persistencia)
-* Los archivos de más de 10 MB hacen que falle el despliegue
-* SIGTERM concede 15 segundos antes de SIGKILL
-* Runtime: Ubuntu 22.04, Node 22, Python 3.11
+- No hay sistema de archivos persistente (usa [Lakebase Postgres](/docs/lakebase/quickstart), DBSQL o UC Volumes para la persistencia)
+- Los archivos de más de 10 MB hacen que falle el despliegue
+- SIGTERM concede 15 segundos antes de SIGKILL
+- Runtime: Ubuntu 22.04, Node 22, Python 3.11
 
 Consulta [Mejores prácticas](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/best-practices) para ver las pautas sobre la gestión del apagado, el manejo seguro de los secrets y las redes.
 
@@ -159,4 +161,4 @@ Consulta [Mejores prácticas](https://docs.databricks.com/aws/en/dev-tools/datab
 
 ## Qué sigue \{#where-to-next\}
 
-Consulta [Desarrollo de apps](/es/docs/apps/development) para conocer la configuración local, los flags de despliegue y la API completa de plugins, o explora el [catálogo de plantillas](/es/templates) para ver patrones completos.
+Consulta [Desarrollo de apps](/docs/apps/development) para conocer la configuración local, los flags de despliegue y la API completa de plugins, o explora el [catálogo de plantillas](/templates) para ver patrones completos.

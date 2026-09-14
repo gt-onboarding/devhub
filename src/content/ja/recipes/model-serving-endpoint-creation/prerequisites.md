@@ -1,0 +1,5 @@
+開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。いずれかの確認に失敗した場合は、ワークスペース管理者に機能の有効化を依頼してください。
+
+* **Model Serving が有効であること。** `databricks serving-endpoints list --profile <PROFILE>` を実行し、コマンドが成功することを確認します (一覧が空でも問題ありません。これから endpoint を作成します) 。permission エラーや `not enabled` エラーが返る場合、この identity では Model Serving を利用できません。
+* **サービング endpoint を作成する permission があること。** endpoint の作成には、`workspace-access` エンタイトルメントを持つワークスペースメンバーである必要があります。`CAN_MANAGE` は endpoint ごとの ACL で、作成済み endpoint の管理を制御するものです。`databricks serving-endpoints create` が `PERMISSION_DENIED` を返す場合は、管理者にエンタイトルメントを確認してもらってください。
+* **サービングする foundation model または登録済み MLflow モデルがあること。** ワークスペースで既に利用できる foundation model の endpoint は、`databricks serving-endpoints list --profile <PROFILE> -o json` で一覧表示できます (`databricks-` で始まる名前を探してください) 。代わりに登録済みの Unity Catalog モデルをサービングする場合は、`databricks serving-endpoints create` を実行する前に、Databricks UI の **Models** にそのモデルが存在することを確認してください。

@@ -30,16 +30,17 @@ npx add-mcp __DEVHUB_SITE_URL__/api/mcp --name devhub-docs -g -a cursor
 
 サーバーを追加したら、エディタを再起動してください。Cursor などの一部のエディタでは、MCP 設定ページを開いて新しいサーバーを有効化する必要があります。
 
+
 ## 接続を確認する \{#verify-the-connection\}
 
 インストール後、サーバーが動作していることを確認します。
 
 1. ツール一覧に `devhub-docs` が表示されていることを確認します。
-   * 例: 「devhub-docs の MCP はインストールされていますか?」
+   - 例: 「devhub-docs の MCP はインストールされていますか?」
 2. エージェントに `list_docs_resources` の呼び出しを依頼し、ドキュメントのインデックスが返ることを確認します。
-   * 例: 「devhub で利用できるドキュメントは何ですか?」
+   - 例: 「devhub で利用できるドキュメントは何ですか?」
 3. エージェントに `get_doc_resource` で特定のページを取得するよう依頼します。
-   * 例: 「start-here ページの内容を教えてください」
+   - 例: 「start-here ページの内容を教えてください」
 
 実際には、これらのツールを直接呼び出すことを意識する必要はありません。エージェントに作業を頼めば、内部でツールが呼び出されます。
 
@@ -58,6 +59,7 @@ list_docs_resources()
 → markdown index of all doc pages with slugs and titles
 ```
 
+
 ### `get_doc_resource` \{#get_doc_resource\}
 
 Databricks 開発者向けドキュメントのページを 1 件、Markdown形式で取得します。まず `list_docs_resources` で利用可能なスラッグを確認してください。
@@ -75,6 +77,6 @@ get_doc_resource(slug: "start-here")
 
 ## 次のステップ \{#where-to-next\}
 
-[Databricks CLI](/ja/docs/tools/databricks-cli)、[エージェントスキル](/ja/docs/tools/ai-tools/agent-skills)、Docs MCP Server がすべて揃えば、コーディングエージェントはビルドとデプロイに必要なものをすべて備えた状態になります。
+[Databricks CLI](/docs/tools/databricks-cli)、[エージェントスキル](/docs/tools/ai-tools/agent-skills)、Docs MCP Server がすべて揃えば、コーディングエージェントはビルドとデプロイに必要なものをすべて備えた状態になります。
 
-さっそく構築を始めましょう。[templates](/ja/docs/templates) を使ってプロジェクトの雛形を素早く作成する方法を確認するか、[templates カタログ](/ja/templates)を直接ご覧ください。
+さっそく構築を始めましょう。[templates](/docs/templates) を使ってプロジェクトの雛形を素早く作成する方法を確認するか、[templates カタログ](/templates)を直接ご覧ください。

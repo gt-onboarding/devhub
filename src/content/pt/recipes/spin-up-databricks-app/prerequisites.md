@@ -1,0 +1,5 @@
+Este modelo cria do zero a estrutura de um Databricks App com AppKit usando `databricks apps init`. Use-o quando o usuário quiser o menor Databricks App possível como ponto de partida — a partir daí, você pode adicionar plugins, rotas e fazer o deploy.
+
+* **Permissão para fazer deploy de Databricks Apps no workspace de destino.** Este modelo termina com `databricks apps deploy`. Se o Apps não estiver habilitado para a identidade do usuário, o deploy falha com `PERMISSION_DENIED`.
+* **Node.js `22+` e `git` no PATH.** Projetos AppKit são em Node/TypeScript e o `npm install` é executado contra o registro público.
+* **Um nome e uma descrição para o app em mente.** Os nomes devem estar em minúsculas, separados por hífen e ter no máximo 26 caracteres. Peça ao usuário um nome e uma descrição de uma frase antes de executar o `apps init`.

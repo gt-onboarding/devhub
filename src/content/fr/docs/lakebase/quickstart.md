@@ -13,29 +13,29 @@ sourceOfTruth:
 
 ## Prérequis \{#prerequisites\}
 
-* Databricks CLI `v1.0.0+` avec un [profil authentifié](/fr/docs/tools/databricks-cli#authenticate)
-* `psql` (client PostgreSQL) si vous utilisez `databricks psql`. Vous pouvez également utiliser [`generate-database-credential`](/fr/docs/lakebase/development#local-database-access) avec n&#39;importe quel client PostgreSQL.
-* Un workspace avec l&#39;accès à Lakebase Postgres activé
+- Databricks CLI `v1.0.0+` avec un [profil authentifié](/docs/tools/databricks-cli#authenticate)
+- `psql` (client PostgreSQL) si vous utilisez `databricks psql`. Vous pouvez également utiliser [`generate-database-credential`](/docs/lakebase/development#local-database-access) avec n'importe quel client PostgreSQL.
+- Un workspace avec l'accès à Lakebase Postgres activé
 
 ## Chemin des modèles \{#template-path\}
 
-Parcourez les modèles ci-dessous, choisissez celui qui correspond à votre cas d&#39;usage et copiez-le dans votre assistant de codage IA. Chacun inclut la ressource [Create a Lakebase Project](/fr/templates/lakebase-create-instance), qui guide la création du projet et la collecte des valeurs de connexion.
+Parcourez les modèles ci-dessous, choisissez celui qui correspond à votre cas d'usage et copiez-le dans votre assistant de codage IA. Chacun inclut la ressource [Create a Lakebase Project](/templates/lakebase-create-instance), qui guide la création du projet et la collecte des valeurs de connexion.
 
 | Modèle                                                              | Idéal pour                                                     |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [App with Lakebase](/fr/templates/app-with-lakebase)                   | Applications CRUD avec stockage persistant                     |
-| [AI Chat App](/fr/templates/ai-chat-app)                               | IA conversationnelle avec historique des conversations          |
-| [Operational Data Analytics](/fr/templates/operational-data-analytics) | Synchronisation bidirectionnelle entre Lakebase Postgres et Unity Catalog |
+| [App with Lakebase](/templates/app-with-lakebase)                   | Applications CRUD avec stockage persistant                     |
+| [AI Chat App](/templates/ai-chat-app)                               | IA conversationnelle avec historique des conversations          |
+| [Operational Data Analytics](/templates/operational-data-analytics) | Synchronisation bidirectionnelle entre Lakebase Postgres et Unity Catalog |
 
 ## Personnaliser votre application \{#customize-your-app\}
 
 Après avoir déployé une application adossée à Lakebase Postgres, envisagez les personnalisations suivantes :
 
-* **Ajouter des tables** : suivez le modèle [Lakebase Data Persistence](/fr/templates/lakebase-data-persistence) pour définir des schémas, générer des types et créer des routes CRUD.
-* **Ajouter une mémoire d&#39;agent** : utilisez le modèle [Lakebase Agent Memory](/fr/templates/lakebase-agent-memory) pour conserver les conversations de votre agent.
-* **Utiliser des branches de fonctionnalités** : créez des branches isolées pour le développement et les tests. La section [Développement : branches de fonctionnalités](/fr/docs/lakebase/development#feature-branches) répertorie les commandes CLI.
-* **Synchroniser des données depuis/vers Unity Catalog** : utilisez [Lakebase Change Data Feed (CDF)](/fr/templates/lakebase-change-data-feed-autoscaling) pour répliquer les tables Lakebase Postgres dans Delta, ou [Sync Tables](/fr/templates/sync-tables-autoscaling) pour exposer les données d&#39;Unity Catalog via Lakebase.
-* **Déployer en dehors de Databricks** : utilisez le modèle [Lakebase Off-Platform](/fr/templates/lakebase-off-platform) pour les applications hébergées sur AWS, Vercel, Netlify et d&#39;autres plateformes.
+- **Ajouter des tables** : suivez le modèle [Lakebase Data Persistence](/templates/lakebase-data-persistence) pour définir des schémas, générer des types et créer des routes CRUD.
+- **Ajouter une mémoire d'agent** : utilisez le modèle [Lakebase Agent Memory](/templates/lakebase-agent-memory) pour conserver les conversations de votre agent.
+- **Utiliser des branches de fonctionnalités** : créez des branches isolées pour le développement et les tests. La section [Développement : branches de fonctionnalités](/docs/lakebase/development#feature-branches) répertorie les commandes CLI.
+- **Synchroniser des données depuis/vers Unity Catalog** : utilisez [Lakebase Change Data Feed (CDF)](/templates/lakebase-change-data-feed-autoscaling) pour répliquer les tables Lakebase Postgres dans Delta, ou [Sync Tables](/templates/sync-tables-autoscaling) pour exposer les données d'Unity Catalog via Lakebase.
+- **Déployer en dehors de Databricks** : utilisez le modèle [Lakebase Off-Platform](/templates/lakebase-off-platform) pour les applications hébergées sur AWS, Vercel, Netlify et d'autres plateformes.
 
 ## Parcours manuel \{#manual-path\}
 
@@ -45,7 +45,7 @@ Lorsque vous générez un projet sans modèle, `databricks apps init` produit un
 databricks postgres create-project <project-id>
 ```
 
-L&#39;identifiant devient le nom de ressource du projet (`projects/<project-id>`). Pour une configuration guidée incluant les branches et les valeurs de connexion, consultez le modèle [Create a Lakebase Project](/fr/templates/lakebase-create-instance) ou la compétence d&#39;agent [`databricks-lakebase`](/fr/docs/tools/ai-tools/agent-skills).
+L&#39;identifiant devient le nom de ressource du projet (`projects/<project-id>`). Pour une configuration guidée incluant les branches et les valeurs de connexion, consultez le modèle [Create a Lakebase Project](/templates/lakebase-create-instance) ou la compétence d&#39;agent [`databricks-lakebase`](/docs/tools/ai-tools/agent-skills).
 
 **Interactif** (recommandé pour le développement local) : exécutez la commande sans options.
 
@@ -72,7 +72,7 @@ databricks apps deploy
 ```
 
 :::tip
-Exécutez `databricks apps deploy` avant `npm run dev`. Le déploiement met en place une identité gérée (le service principal de l&#39;application) qui crée le schéma de base de données au premier démarrage. Si vous lancez `npm run dev` en premier, le schéma sera créé avec vos identifiants personnels et, lors du déploiement ultérieur, l&#39;identité gérée de l&#39;application ne pourra pas y accéder. La page [Configuration locale](/fr/docs/lakebase/development#local-setup) détaille ce point.
+Exécutez `databricks apps deploy` avant `npm run dev`. Le déploiement met en place une identité gérée (le service principal de l&#39;application) qui crée le schéma de base de données au premier démarrage. Si vous lancez `npm run dev` en premier, le schéma sera créé avec vos identifiants personnels et, lors du déploiement ultérieur, l&#39;identité gérée de l&#39;application ne pourra pas y accéder. La page [Configuration locale](/docs/lakebase/development#local-setup) détaille ce point.
 :::
 
 ```bash
@@ -81,4 +81,4 @@ npm install && npm run dev
 
 ## Et ensuite \{#where-to-next\}
 
-Pour le workflow de développement local, les branches de fonctionnalités et l&#39;API complète du plugin, consultez [Développement avec Lakebase Postgres](/fr/docs/lakebase/development).
+Pour le workflow de développement local, les branches de fonctionnalités et l'API complète du plugin, consultez [Développement avec Lakebase Postgres](/docs/lakebase/development).

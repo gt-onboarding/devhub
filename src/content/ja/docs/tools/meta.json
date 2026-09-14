@@ -1,0 +1,8 @@
+{
+  "defaultOpen": true,
+  "pages": [
+    "databricks-cli",
+    "...ai-tools"
+  ],
+  "title": "環境をセットアップする"
+}

@@ -1,0 +1,5 @@
+Verifique se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do workspace que habilite o recurso.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e confirme que o comando é executado com sucesso (uma lista vazia não é problema). Um erro `not enabled` indica que o Lakebase não está disponível para essa identidade neste workspace.
+* **Databricks Apps habilitado.** Execute `databricks apps list --profile <PROFILE>` e confirme que o comando é executado com sucesso (uma lista vazia não é problema). A camada de persistência do chat é executada dentro de um app AppKit implantado no Databricks Apps.
+* **Um app AppKit gerado com o Lakebase já configurado.** Conclua primeiro os modelos [Criar um projeto Lakebase](/templates/lakebase-create-instance) e [Lakebase Data Persistence](/templates/lakebase-data-persistence). Este modelo acrescenta tabelas de chat a essa configuração.

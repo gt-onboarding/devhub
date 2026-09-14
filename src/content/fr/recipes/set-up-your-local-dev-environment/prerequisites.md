@@ -1,0 +1,5 @@
+Ce modèle connecte la CLI Databricks installée sur la machine du développeur à un véritable workspace. C&#39;est le prérequis indispensable à tous les autres modèles de DevHub : une fois cette étape validée, les commandes `databricks` pointent vers un workspace réel et n&#39;importe quel prompt DevHub peut s&#39;exécuter de bout en bout.
+
+* **Un workspace Databricks auquel vous pouvez vous connecter.** Gardez l&#39;URL du workspace à portée de main (par ex. `https://<workspace>.cloud.databricks.com`) ; vous la collerez dans `databricks auth login` à l&#39;étape 3. Si vous n&#39;y avez pas accès, contactez l&#39;administrateur de votre workspace.
+* **Un terminal sous macOS, Windows ou Linux.** Toutes les méthodes d&#39;installation s&#39;exécutent depuis une session de terminal. Sous Windows, privilégiez WSL pour la méthode curl ; PowerShell et cmd conviennent pour `winget`.
+* **La permission d&#39;installer des logiciels sur cette machine.** La CLI s&#39;installe dans `/usr/local/bin` (Homebrew / curl) ou `%LOCALAPPDATA%` (WinGet). Si `/usr/local/bin` n&#39;est pas accessible en écriture, relancez l&#39;installateur curl avec `sudo`.

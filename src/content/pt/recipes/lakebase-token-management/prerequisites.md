@@ -1,0 +1,5 @@
+Este modelo obtém e armazena em cache as credenciais do Lakebase Postgres a partir de um processo Node.js. Antes de começar, verifique se estes recursos do workspace do Databricks estão habilitados.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e confirme que o comando é executado com sucesso. Um erro `not enabled` indica que o Lakebase não está disponível para esta identidade.
+* **Um projeto Lakebase provisionado.** Conclua primeiro o modelo [Criar um projeto Lakebase](/templates/lakebase-create-instance), para que você tenha um caminho de recurso `LAKEBASE_ENDPOINT` para passar à API de credenciais.
+* **Uma configuração de gerenciamento de env.** Conclua primeiro o modelo [Lakebase Env Management for Off-Platform Apps](/templates/lakebase-off-platform-env-management) — este modelo importa o módulo `env` validado e exige que `DATABRICKS_HOST`, `LAKEBASE_ENDPOINT` e `DATABRICKS_TOKEN` ou `DATABRICKS_CLIENT_ID` + `DATABRICKS_CLIENT_SECRET` estejam definidos.

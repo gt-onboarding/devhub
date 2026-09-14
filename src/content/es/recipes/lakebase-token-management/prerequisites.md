@@ -1,0 +1,5 @@
+Este template obtiene y almacena en caché las credenciales de Lakebase Postgres desde un proceso de Node.js. Antes de comenzar, verifica que estas funcionalidades del workspace de Databricks estén habilitadas.
+
+* **Lakebase Postgres disponible.** Ejecuta `databricks postgres list-projects --profile <PROFILE>` y confirma que el comando se ejecute correctamente. Un error `not enabled` indica que Lakebase no está disponible para esta identidad.
+* **Un project de Lakebase aprovisionado.** Completa primero el template [Create a Lakebase Project](/templates/lakebase-create-instance) para contar con una ruta de recurso `LAKEBASE_ENDPOINT` que puedas pasar a la API de credenciales.
+* **Un setup de gestión de variables de entorno.** Completa primero el template [Lakebase Env Management for Off-Platform Apps](/templates/lakebase-off-platform-env-management): este template importa el módulo `env` validado y espera que estén definidos `DATABRICKS_HOST`, `LAKEBASE_ENDPOINT` y `DATABRICKS_TOKEN`, o bien `DATABRICKS_CLIENT_ID` + `DATABRICKS_CLIENT_SECRET`.

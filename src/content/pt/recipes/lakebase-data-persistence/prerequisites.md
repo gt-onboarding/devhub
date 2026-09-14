@@ -1,0 +1,5 @@
+Verifique se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do workspace para habilitar o recurso.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e confirme que o comando é executado com sucesso. Um erro `not enabled` significa que o Lakebase não está disponível para essa identidade.
+* **Databricks Apps habilitado.** Execute `databricks apps list --profile <PROFILE>` e confirme que o comando é executado com sucesso (uma lista vazia não é problema). O modelo faz o deploy de um app AppKit no Databricks Apps.
+* **Um projeto Lakebase provisionado.** Conclua primeiro o modelo [Criar um projeto Lakebase](/templates/lakebase-create-instance) e reúna o host do endpoint, o caminho do recurso do endpoint, o caminho do recurso do banco de dados e o nome do banco de dados PostgreSQL do projeto.

@@ -1,0 +1,6 @@
+Este template actualiza una app de Genie de un solo agent ya existente para que pueda alternar entre varios Genie Agents. Antes de comenzar, verifica que estas funcionalidades del workspace de Databricks estén habilitadas. Si alguna comprobación falla, pídele al administrador de tu workspace que habilite la funcionalidad.
+
+* **AI/BI Genie habilitado.** Ejecuta `databricks genie list-spaces --profile <PROFILE>` y confirma que el comando se complete correctamente.
+* **Dos o más Genie Agents configurados.** La lista anterior debe devolver al menos dos Genie Agents, uno por cada entrada que quieras tener en el selector. Si tienes menos, crea Genie Agents adicionales en **AI/BI Genie** desde la UI de Databricks.
+* **Databricks Apps habilitado.** Ejecuta `databricks apps list --profile <PROFILE>` y confirma que el comando se complete correctamente.
+* **Una AppKit app generada con scaffold que incluya la funcionalidad de Genie.** Completa primero el template [Genie Conversational Analytics](/templates/genie-conversational-analytics). Este template solo cubre la actualización de un Genie Agent a varios, no la configuración inicial de Genie.

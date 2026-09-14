@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "start-here",
+    "platform-overview",
+    "tools",
+    "templates",
+    "apps",
+    "lakebase",
+    "agents",
+    "lakehouse"
+  ],
+  "root": true,
+  "title": "Documentation"
+}

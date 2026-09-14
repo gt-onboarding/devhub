@@ -1,0 +1,5 @@
+このテンプレートは、既存の Lakebase Change Data Feed (CDF) 履歴テーブルの上に Lakeflow Spark Declarative Pipeline を構築します。開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。
+
+* **Lakeflow Spark Declarative Pipelines (serverless) が利用可能であること。** `databricks pipelines list-pipelines --profile <PROFILE>` を実行し、コマンドが成功することを確認します (結果が空のリストでも問題ありません) 。permission エラーや `not enabled` エラーが返る場合、この ID では Lakeflow Pipelines を利用できません。
+* **書き込み可能な出力先 schema を持つ Unity Catalog へのアクセス権。** `databricks catalogs list --profile <PROFILE>` を実行し、出力先カタログが一覧に表示されることを確認します。silver および gold の materialized views を公開するには、カタログに対する `USE_CATALOG`、出力先 schema に対する `USE_SCHEMA` と `CREATE_MATERIALIZED_VIEW` が必要です (pipeline でストリーミングテーブルも作成する場合は `CREATE_TABLE` も必要) 。
+* **ブロンズ CDC 履歴テーブルが Unity Catalog にすでに存在すること。** 先に [Lakebase Change Data Feed (Autoscaling)](/templates/lakebase-change-data-feed-autoscaling) テンプレートを完了し、ブロンズ schema に `lb_<entity>_history` テーブルがある状態にしてください。このテンプレートはそれらのテーブルを読み取るだけで、テーブルの作成は行いません。

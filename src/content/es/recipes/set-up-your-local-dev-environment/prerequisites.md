@@ -1,0 +1,5 @@
+Este template conecta la CLI de Databricks de la máquina del desarrollador con un workspace real. Es el requisito indispensable para todos los demás templates de DevHub: una vez que se completa, los comandos `databricks` apuntan a un workspace real y cualquier prompt de DevHub puede ejecutarse de principio a fin.
+
+* **Un workspace de Databricks en el que puedas iniciar sesión.** Ten a mano la URL del workspace (p. ej. `https://<workspace>.cloud.databricks.com`); la pegarás en `databricks auth login` en el paso 3. Si no tienes acceso, solicítalo al administrador de tu workspace.
+* **Una terminal en macOS, Windows o Linux.** Todos los métodos de instalación se ejecutan desde una sesión de terminal. En Windows, es preferible usar WSL para la instalación con curl; PowerShell y cmd funcionan para `winget`.
+* **Permisos para instalar software en esta máquina.** La CLI se instala en `/usr/local/bin` (Homebrew / curl) o en `%LOCALAPPDATA%` (WinGet). Si `/usr/local/bin` no tiene permisos de escritura, vuelve a ejecutar el instalador de curl con `sudo`.

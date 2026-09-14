@@ -1,0 +1,5 @@
+Verifique se estes recursos do workspace do Databricks estão habilitados antes de começar. Se alguma verificação falhar, peça ao administrador do workspace que habilite o recurso.
+
+* **AI/BI Genie habilitado.** Execute `databricks genie list-spaces --profile <PROFILE>` e confirme que o comando é executado com sucesso. Um erro `not found` ou de permissão indica que o Genie não está disponível para essa identidade.
+* **Pelo menos um Genie Agent configurado.** O comando acima deve retornar pelo menos um space; você usará o `space_id` dele mais adiante. Se não houver nenhum, abra seu workspace do Databricks, acesse **AI/BI Genie** e crie um space conectado às tabelas de dados que você deseja consultar.
+* **Databricks Apps habilitado.** Execute `databricks apps list --profile <PROFILE>` e confirme que o comando é executado com sucesso (uma lista vazia não é problema). O modelo faz o deploy de um app AppKit que hospeda a UI de chat do Genie.

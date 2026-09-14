@@ -1,0 +1,4 @@
+開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。いずれかの確認に失敗した場合は、ワークスペース管理者に機能の有効化を依頼してください。
+
+* **Unity Catalog が有効で、catalog と schema にアクセスできること。** `databricks catalogs list --profile <PROFILE>` を実行し、書き込み可能な catalog が少なくとも 1 つ表示されることを確認します。あわせて、catalog に対する `USE_CATALOG`、およびテンプレートがマネージド Volume を作成する schema に対する `USE_SCHEMA` と `CREATE_VOLUME` が必要です。手順 1 の `databricks volumes create` で `PERMISSION_DENIED` エラーが発生する場合は、これらの grant のいずれかが不足しています。
+* **Databricks Apps が有効であること。** `databricks apps list --profile <PROFILE>` を実行し、コマンドが成功することを確認します (一覧が空でも問題ありません) 。テンプレートは、`files` plugin を介して読み書きを行う AppKit app を deploy します。

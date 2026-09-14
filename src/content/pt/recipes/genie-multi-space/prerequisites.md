@@ -1,0 +1,6 @@
+Este modelo atualiza um app Genie de agente único já existente para permitir alternar entre vários Genie Agents. Antes de começar, verifique se estes recursos do workspace do Databricks estão habilitados. Se alguma verificação falhar, peça ao administrador do seu workspace que habilite o recurso.
+
+* **AI/BI Genie habilitado.** Execute `databricks genie list-spaces --profile <PROFILE>` e confirme que o comando é executado com sucesso.
+* **Dois ou mais Genie Agents configurados.** A listagem acima deve retornar pelo menos dois Genie Agents — um para cada entrada que você quer no seletor. Se tiver menos, crie outros Genie Agents em **AI/BI Genie** na UI do Databricks.
+* **Databricks Apps habilitado.** Execute `databricks apps list --profile <PROFILE>` e confirme que o comando é executado com sucesso.
+* **Um app AppKit já criado com o recurso Genie.** Conclua primeiro o modelo [Genie Conversational Analytics](/templates/genie-conversational-analytics). Este modelo trata apenas da migração de um Genie Agent para vários — não da configuração inicial do Genie.

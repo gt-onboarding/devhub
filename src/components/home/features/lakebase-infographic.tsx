@@ -237,7 +237,10 @@ function BranchCard({
         </Badge>
       </div>
       <div className="mt-2 flex items-center gap-1 text-[8px] leading-tight tracking-tight whitespace-nowrap text-black/60 @md/infographic:mt-3.5 @md/infographic:gap-2 @md/infographic:text-[10px]">
-        <T>
+        <T
+          $context="Very short stat label inside a tiny diagram card; one short word (abbreviate if needed)"
+          $maxChars={10}
+        >
           <span>
             Size: <Var>{size}</Var>
           </span>
@@ -245,7 +248,10 @@ function BranchCard({
         {tables && tables > 0 ? (
           <>
             <span>/</span>
-            <T>
+            <T
+              $context="Very short stat label inside a tiny diagram card; one short word (abbreviate if needed)"
+              $maxChars={12}
+            >
               <span>
                 Tables: <Num>{tables}</Num>
               </span>

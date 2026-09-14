@@ -1,0 +1,5 @@
+Este template genera desde cero la estructura de una nueva Databricks App con AppKit mediante `databricks apps init`. Úsalo cuando el usuario quiera la Databricks App más simple posible como punto de partida: a partir de ahí puedes añadir plugins, rutas y desplegarla.
+
+* **Permiso para desplegar Databricks Apps en el workspace de destino.** Este template termina con `databricks apps deploy`. Si Apps no está habilitado para la identidad del usuario, el despliegue falla con `PERMISSION_DENIED`.
+* **Node.js `22+` y `git` en el PATH.** Los proyectos de AppKit son de Node/TypeScript y `npm install` se ejecuta contra el registro público.
+* **Un nombre y una descripción para la app ya definidos.** Los nombres deben ir en minúsculas, separados por guiones y no superar los 26 caracteres. Pide al usuario un nombre y una descripción de una sola frase antes de ejecutar `apps init`.

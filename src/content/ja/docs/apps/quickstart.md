@@ -12,31 +12,32 @@ sourceOfTruth:
 
 ## 前提条件 \{#prerequisites\}
 
-* Databricks CLI `v1.0.0+` ([認証済みプロファイル](/ja/docs/tools/databricks-cli#authenticate)が設定済みであること) 
-* Node.js 22 以降 (AppKit アプリは Node/TypeScript で動作します) 
-* Apps が有効化された Databricks workspace
+- Databricks CLI `v1.0.0+`（[認証済みプロファイル](/docs/tools/databricks-cli#authenticate)が設定済みであること）
+- Node.js 22 以降（AppKit アプリは Node/TypeScript で動作します）
+- Apps が有効化された Databricks workspace
 
 ## テンプレートを使う \{#template-path\}
 
-[テンプレート](/ja/templates)は、ユースケース別に整理されたエージェント向けのプロンプトです。用途に合うものを選んで AI コーディングアシスタントに貼り付ければ、スキャフォールディング、プラグインの選択、デプロイまでアシスタントが対応します。
+[テンプレート](/templates)は、ユースケース別に整理されたエージェント向けのプロンプトです。用途に合うものを選んで AI コーディングアシスタントに貼り付ければ、スキャフォールディング、プラグインの選択、デプロイまでアシスタントが対応します。
 
 よく使われる出発点:
 
 | テンプレート                                                                            | 適した用途                                    |
 | --------------------------------------------------------------------------------- | ---------------------------------------- |
-| [Set Up Your Local Dev Environment](/ja/templates/set-up-your-local-dev-environment) | CLI のインストール、認証、workspace の確認             |
-| [Spin Up a Databricks App](/ja/templates/spin-up-databricks-app)                     | 新規 AppKit アプリのスキャフォールディング、ローカル実行、デプロイ    |
-| [Onboard Your Coding Agent](/ja/templates/onboard-your-coding-agent)                 | エージェントスキルのインストール、DevHub Docs MCP サーバーの接続 |
-| [AI Chat App](/ja/templates/ai-chat-app)                                             | 対話型 AI、チャットボット、アシスタント                    |
-| [App with Lakebase](/ja/templates/app-with-lakebase)                                 | 永続ストレージを備えた CRUD アプリ                     |
+| [Set Up Your Local Dev Environment](/templates/set-up-your-local-dev-environment) | CLI のインストール、認証、workspace の確認             |
+| [Spin Up a Databricks App](/templates/spin-up-databricks-app)                     | 新規 AppKit アプリのスキャフォールディング、ローカル実行、デプロイ    |
+| [Onboard Your Coding Agent](/templates/onboard-your-coding-agent)                 | エージェントスキルのインストール、DevHub Docs MCP サーバーの接続 |
+| [AI Chat App](/templates/ai-chat-app)                                             | 対話型 AI、チャットボット、アシスタント                    |
+| [App with Lakebase](/templates/app-with-lakebase)                                 | 永続ストレージを備えた CRUD アプリ                     |
 
-[テンプレートカタログ](/ja/templates)には、[Lakebase Postgres](/ja/docs/lakebase/quickstart)、[Genie Agents](/ja/docs/agents/genie)、[Unity AI Gateway](/ja/docs/agents/ai-gateway)、[Agent Bricks](/ja/docs/agents/overview) を含む一覧がすべて掲載されています。
+[テンプレートカタログ](/templates)には、[Lakebase Postgres](/docs/lakebase/quickstart)、[Genie Agents](/docs/agents/genie)、[Unity AI Gateway](/docs/agents/ai-gateway)、[Agent Bricks](/docs/agents/overview) を含む一覧がすべて掲載されています。
 
-テンプレートを貼り付ける前に[エージェントスキル](/ja/docs/tools/ai-tools/agent-skills)をインストールして、AI アシスタントに Databricks プラットフォームのコンテキストを与えましょう:
+テンプレートを貼り付ける前に[エージェントスキル](/docs/tools/ai-tools/agent-skills)をインストールして、AI アシスタントに Databricks プラットフォームのコンテキストを与えましょう:
 
 ```bash
 databricks aitools install
 ```
+
 
 ## 手動での手順 \{#manual-path\}
 
@@ -69,6 +70,7 @@ databricks apps deploy                                   # workspace にデプ�
 
 特定のプラグインを含めてスキャフォールドするには、`--features` にカンマ区切りのリストを渡します。`databricks apps manifest` を実行すると、利用可能なすべてのプラグインと、それぞれに必要なリソースフィールドを確認できます。
 
+
 ## 次のステップ \{#where-to-next\}
 
-ローカル開発ワークフローの全体像、デプロイ時のフラグ、プラグインのセットアップについては、[アプリ開発](/ja/docs/apps/development)を参照してください。
+ローカル開発ワークフローの全体像、デプロイ時のフラグ、プラグインのセットアップについては、[アプリ開発](/docs/apps/development)を参照してください。

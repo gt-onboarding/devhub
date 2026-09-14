@@ -1,0 +1,3 @@
+開始する前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。いずれかの確認に失敗した場合は、ワークスペース管理者に機能の有効化を依頼してください。
+
+* **AI Gateway ガバナンスを備えた Foundation Model API endpoint。** Databricks がホストする foundation-model endpoint には、AI Gateway 機能 (使用状況トラッキング、レート制限、ガードレール) があらかじめ構成されています。endpoint を一覧表示して構成を確認し、利用可能であることを確かめてください。`databricks serving-endpoints list --profile <PROFILE>` では少なくとも 1 つの `databricks-*` foundation-model endpoint が返され、`databricks serving-endpoints get <endpoint-name> --profile <PROFILE> -o json | grep -q '"ai_gateway"' && echo ok` では `ok` が出力されます。endpoint の提供状況はワークスペースやリージョンによって異なります。

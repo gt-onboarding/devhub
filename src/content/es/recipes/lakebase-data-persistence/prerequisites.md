@@ -1,0 +1,5 @@
+Antes de empezar, verifica que estas funciones del workspace de Databricks estén habilitadas. Si alguna comprobación falla, pide al administrador del workspace que habilite la función.
+
+* **Lakebase Postgres disponible.** Ejecuta `databricks postgres list-projects --profile <PROFILE>` y confirma que el comando se ejecuta correctamente. Un error `not enabled` indica que Lakebase no está disponible para esta identidad.
+* **Databricks Apps habilitado.** Ejecuta `databricks apps list --profile <PROFILE>` y confirma que el comando se ejecuta correctamente (no hay problema si la lista está vacía). El template despliega una AppKit app en Databricks Apps.
+* **Un project de Lakebase aprovisionado.** Completa primero el template [Create a Lakebase Project](/templates/lakebase-create-instance) y recopila el host del endpoint, la ruta del recurso del endpoint, la ruta del recurso de la base de datos y el nombre de la base de datos PostgreSQL del project.

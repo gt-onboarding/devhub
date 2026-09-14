@@ -1,0 +1,5 @@
+このテンプレートは、プラットフォーム外の Node.js アプリ (AWS、Vercel、Netlify など) を Lakebase Postgres に接続します。開始前に、以下の Databricks ワークスペース機能が有効になっていることを確認してください。
+
+* **Lakebase Postgres が利用可能であること。** `databricks postgres list-projects --profile <PROFILE>` を実行し、コマンドが成功することを確認します。`not enabled` エラーが返る場合、この ID では Lakebase を利用できません。
+* **プロビジョニング済みの Lakebase project があること。** 先に [Create a Lakebase Project](/templates/lakebase-create-instance) テンプレートを完了し、endpoint ホスト、データベース、endpoint リソースパスを `PGHOST`、`PGDATABASE`、`LAKEBASE_ENDPOINT` として利用できる状態にしておきます。
+* **プラットフォーム外認証向けの環境変数管理 setup が済んでいること。** 先に [Lakebase Env Management for Off-Platform Apps](/templates/lakebase-off-platform-env-management) と [Lakebase Token Management](/templates/lakebase-token-management) のテンプレートを完了してください。このテンプレートは、それらのモジュールから `env` と `getLakebasePostgresToken` をインポートします。

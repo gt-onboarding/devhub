@@ -1,0 +1,5 @@
+Este modelo conecta uma aplicação Node.js fora da plataforma (por exemplo, AWS, Vercel, Netlify) ao Lakebase Postgres. Antes de começar, verifique se estes recursos do workspace do Databricks estão habilitados.
+
+* **Lakebase Postgres disponível.** Execute `databricks postgres list-projects --profile <PROFILE>` e confirme que o comando é executado com sucesso. Um erro `not enabled` indica que o Lakebase não está disponível para essa identidade.
+* **Um projeto Lakebase provisionado.** Conclua primeiro o modelo [Criar um projeto Lakebase](/templates/lakebase-create-instance) para ter à disposição o host do endpoint, o banco de dados e o caminho do recurso do endpoint como `PGHOST`, `PGDATABASE` e `LAKEBASE_ENDPOINT`.
+* **Uma configuração de gerenciamento de variáveis de ambiente para autenticação fora da plataforma.** Conclua primeiro os modelos [Lakebase Env Management for Off-Platform Apps](/templates/lakebase-off-platform-env-management) e [Lakebase Token Management](/templates/lakebase-token-management) — este modelo importa `env` e `getLakebasePostgresToken` desses módulos.

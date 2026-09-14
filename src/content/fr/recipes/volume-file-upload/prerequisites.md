@@ -1,0 +1,4 @@
+Vérifiez que ces fonctionnalités du workspace Databricks sont activées avant de commencer. Si l&#39;une des vérifications échoue, demandez à l&#39;administrateur de votre workspace d&#39;activer la fonctionnalité concernée.
+
+* **Unity Catalog activé, avec accès à un catalogue et à un schéma.** Exécutez `databricks catalogs list --profile <PROFILE>` et vérifiez qu&#39;au moins un catalogue accessible en écriture apparaît dans la liste. Vous devez également disposer de `USE_CATALOG` sur le catalogue, ainsi que de `USE_SCHEMA` + `CREATE_VOLUME` sur le schéma dans lequel le modèle crée le Volume managé. Une erreur `PERMISSION_DENIED` sur `databricks volumes create` à l&#39;étape 1 indique que l&#39;un de ces grants est manquant.
+* **Databricks Apps activé.** Exécutez `databricks apps list --profile <PROFILE>` et vérifiez que la commande aboutit (une liste vide est normale). Le modèle déploie une AppKit app qui lit et écrit via le plugin `files`.

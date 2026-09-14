@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "overview",
+    "ai-gateway",
+    "genie",
+    "custom-agents"
+  ],
+  "title": "Agent Bricks"
+}

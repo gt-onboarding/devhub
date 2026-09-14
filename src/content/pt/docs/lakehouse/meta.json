@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "overview",
+    "analytical-reads",
+    "jobs",
+    "pipelines"
+  ],
+  "title": "Data Lakehouse"
+}

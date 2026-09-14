@@ -1,0 +1,6 @@
+Este modelo cria um catálogo do Unity Catalog respaldado por um bucket S3 externo e exige privilégios específicos da AWS tanto no Databricks quanto no IAM da AWS.
+
+* **Workspace AWS.** Este modelo usa S3 e IAM; não se aplica a workspaces Azure ou GCP. Confirme que o host do seu workspace é `*.cloud.databricks.com`.
+* **Unity Catalog habilitado no workspace.** Execute `databricks catalogs list --profile <PROFILE>` e verifique se o comando é bem-sucedido e se pelo menos um catálogo aparece (por exemplo, o catálogo padrão do seu workspace). Um erro `not enabled` significa que o workspace não está vinculado a um metastore do Unity Catalog.
+* **Privilégios de metastore para criar credenciais e catálogos.** Você precisa de `CREATE STORAGE CREDENTIAL`, `CREATE EXTERNAL LOCATION` e `CREATE_CATALOG` no metastore. Se alguma chamada da CLI neste modelo retornar `PERMISSION_DENIED`, peça ao administrador do metastore que conceda o privilégio que está faltando.
+* **Um bucket S3 e uma role IAM na mesma região da AWS do seu workspace.** O bucket pode estar em outra conta da AWS — o acesso entre contas é justamente o que a role IAM da credencial de armazenamento fornece. O modelo mostra como apontar uma credencial de armazenamento para a role IAM; você já deve ter permissões na AWS para criar a role e a política.

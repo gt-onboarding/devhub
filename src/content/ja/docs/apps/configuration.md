@@ -11,11 +11,11 @@ sourceOfTruth:
 
 # 設定 \{#app-configuration\}
 
-AppKit アプリの起動方法と接続先は、2 つのファイルで制御します。`app.yaml` (ランタイムの動作と環境変数) と `databricks.yml` (Databricks リソース) です。各アプリには作成時に固定の URL が割り当てられ、後から変更することはできません。
+AppKit アプリの起動方法と接続先は、2 つのファイルで制御します。`app.yaml`（ランタイムの動作と環境変数）と `databricks.yml`（Databricks リソース）です。各アプリには作成時に固定の URL が割り当てられ、後から変更することはできません。
 
 :::tip[Python で開発する場合]
 
-AppKit は Node.js 上の TypeScript を対象としています。Python でのアプリ開発は本サイトでは扱いません。Python フレームワーク (Gradio、Streamlit、Dash) については [Databricks Apps のドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/)を参照してください。
+AppKit は Node.js 上の TypeScript を対象としています。Python でのアプリ開発は本サイトでは扱いません。Python フレームワーク（Gradio、Streamlit、Dash）については [Databricks Apps のドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/)を参照してください。
 
 :::
 
@@ -50,7 +50,8 @@ resources:
 
 `${var.postgres_branch}` などの変数は、`databricks.yml` の `variables` セクション、またはデプロイ時に指定する CLI フラグから解決されます。
 
-プラグインのリソースバインディングを含む、AppKit 固有の `app.yaml` の完全なリファレンスについては、[AppKit の設定](/ja/docs/appkit/v0/configuration)を参照してください。
+プラグインのリソースバインディングを含む、AppKit 固有の `app.yaml` の完全なリファレンスについては、[AppKit の設定](/docs/appkit/v0/configuration)を参照してください。
+
 
 ## プラグインマニフェスト \{#plugin-manifest\}
 
@@ -62,6 +63,7 @@ npx @databricks/appkit plugin sync --write
 
 これは `npm run dev` と `npm run build` の実行時に自動生成されます。コードと一緒にコミットしてください。CLI とデプロイパイプラインは、これを使用してリソースをプロビジョニングします。
 
+
 ## リソース \{#resources\}
 
 アプリは、宣言したリソースを介して Databricks サービスにアクセスします。各リソースは `databricks.yml` で `name` を持ち、その名前を `app.yaml` の `valueFrom` の値に指定します。
@@ -70,14 +72,14 @@ AppKit テンプレートでは、プラグインが管理するリソースに�
 
 | リソース                                                                      | リソース名      | 提供内容              |
 | ----------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| [Lakebase Postgres](/ja/docs/lakebase/quickstart)                                | `postgres`         | PostgreSQL 接続         |
+| [Lakebase Postgres](/docs/lakebase/quickstart)                                | `postgres`         | PostgreSQL 接続         |
 | [SQL Warehouse](https://docs.databricks.com/aws/en/compute/sql-warehouse/)    | `sql-warehouse`    | SQL クエリの実行           |
-| [Model Serving](/ja/docs/agents/ai-gateway)                                      | `serving-endpoint` | AI モデルの推論            |
-| [Genie Agent](/ja/docs/agents/genie)                                             | `genie-space`      | 自然言語によるデータクエリ |
+| [Model Serving](/docs/agents/ai-gateway)                                      | `serving-endpoint` | AI モデルの推論            |
+| [Genie Agent](/docs/agents/genie)                                             | `genie-space`      | 自然言語によるデータクエリ |
 | [Job](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources) | `job`              | スケジュール実行またはトリガー実行のジョブ    |
 | [UC Volumes](https://docs.databricks.com/aws/en/files/)                       | `volume`           | ファイルストレージ                  |
 
-その他のリソースタイプ (Unity Catalog テーブル、接続、AI Search インデックス (旧 Vector Search) 、MLflow エクスペリメントなど) については、[公式のリソースドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources)を参照してください。
+その他のリソースタイプ（Unity Catalog テーブル、接続、AI Search インデックス（旧 Vector Search）、MLflow エクスペリメントなど）については、[公式のリソースドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/resources)を参照してください。
 
 ### シークレット \{#secrets\}
 
@@ -133,18 +135,18 @@ AppKit テンプレートでは、プラグインが管理するリソースに�
 
 各アプリには専用の サービスプリンシパル が割り当てられます。Databricks は実行時に `DATABRICKS_CLIENT_ID` と `DATABRICKS_CLIENT_SECRET` を自動的に注入し、アプリが削除されると サービスプリンシパル も削除します。
 
-**ユーザー認可** (パブリックプレビュー) では、サインイン中のユーザーのトークンを `x-forwarded-access-token` HTTP ヘッダーで転送します。スコープ (`sql`、`genie`、`files` など) は ワークスペース の UI で設定します。AppKit に組み込まれた [Genie](/ja/docs/agents/genie) プラグインと [Model Serving](/ja/docs/agents/ai-gateway) プラグインは、これを自動的に利用します。AppKit での実装については [実行コンテキスト](/ja/docs/appkit/v0/plugins/execution-context) を、プラットフォーム側の詳細については [アプリの認可](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) を参照してください。
+**ユーザー認可**（パブリックプレビュー）では、サインイン中のユーザーのトークンを `x-forwarded-access-token` HTTP ヘッダーで転送します。スコープ（`sql`、`genie`、`files` など）は ワークスペース の UI で設定します。AppKit に組み込まれた [Genie](/docs/agents/genie) プラグインと [Model Serving](/docs/agents/ai-gateway) プラグインは、これを自動的に利用します。AppKit での実装については [実行コンテキスト](/docs/appkit/v0/plugins/execution-context) を、プラットフォーム側の詳細については [アプリの認可](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/auth) を参照してください。
 
 ## コンピュート \{#compute\}
 
-コンピュートサイズは `MEDIUM` (デフォルト) 、`LARGE`、`XLARGE` の 3 種類です (利用できるサイズはワークスペースによって異なります) 。サイズは、ワークスペース UI で設定するか、`databricks apps create` および `databricks apps update` の `--compute-size` フラグで指定します。サイズごとの vCPU、RAM、DBU については、[Databricks Apps のドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/)を参照してください。
+コンピュートサイズは `MEDIUM`（デフォルト）、`LARGE`、`XLARGE` の 3 種類です（利用できるサイズはワークスペースによって異なります）。サイズは、ワークスペース UI で設定するか、`databricks apps create` および `databricks apps update` の `--compute-size` フラグで指定します。サイズごとの vCPU、RAM、DBU については、[Databricks Apps のドキュメント](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/)を参照してください。
 
 ## 制約 \{#constraints\}
 
-* 永続的なファイルシステムはありません (永続化には [Lakebase Postgres](/ja/docs/lakebase/quickstart)、DBSQL、または UC Volumes を使用してください) 
-* 10 MB を超えるファイルはデプロイに失敗します
-* SIGTERM から SIGKILL までの猶予は 15 秒です
-* ランタイム: Ubuntu 22.04、Node 22、Python 3.11
+- 永続的なファイルシステムはありません（永続化には [Lakebase Postgres](/docs/lakebase/quickstart)、DBSQL、または UC Volumes を使用してください）
+- 10 MB を超えるファイルはデプロイに失敗します
+- SIGTERM から SIGKILL までの猶予は 15 秒です
+- ランタイム: Ubuntu 22.04、Node 22、Python 3.11
 
 シャットダウン処理、シークレットの適切な管理、ネットワークに関するガイドラインは [ベストプラクティス](https://docs.databricks.com/aws/en/dev-tools/databricks-apps/best-practices) を参照してください。
 
@@ -159,4 +161,4 @@ AppKit テンプレートでは、プラグインが管理するリソースに�
 
 ## 次のステップ \{#where-to-next\}
 
-ローカル環境のセットアップ、デプロイフラグ、プラグインAPIの全体像については [Apps development](/ja/docs/apps/development) を参照してください。実装パターンの全体像を確認したい場合は [テンプレートカタログ](/ja/templates) をご覧ください。
+ローカル環境のセットアップ、デプロイフラグ、プラグインAPIの全体像については [Apps development](/docs/apps/development) を参照してください。実装パターンの全体像を確認したい場合は [テンプレートカタログ](/templates) をご覧ください。
