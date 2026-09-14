@@ -27,7 +27,7 @@ type CTAProps = {
 
 function CTATitleHighlight({ children }: { children: ReactNode }) {
   return (
-    <span className="text-db-lava relative inline-block md:whitespace-nowrap">
+    <span className="text-db-lava relative inline-block">
       <span
         className="border-grey-20 pointer-events-none absolute -inset-x-0.5 inset-y-0 hidden border md:block"
         aria-hidden="true"
@@ -93,7 +93,7 @@ function CTAButtons({
   const gt = useGT();
 
   return (
-    <div className="flex w-full flex-col gap-x-5 gap-y-3 sm:w-auto sm:flex-row sm:items-center lg:justify-end">
+    <div className="flex w-full flex-col gap-x-5 gap-y-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center lg:shrink-0 lg:justify-end">
       <Button
         className="h-10 gap-x-4.5 font-mono text-base leading-none tracking-tight text-black uppercase shadow-none lg:h-11"
         onClick={onCopy}
@@ -164,7 +164,7 @@ function CTA({ className, label, title, actions, theme = "filled" }: CTAProps) {
       <Topbar theme={theme} />
       <div className="relative mx-auto px-5 md:px-8 lg:px-16 2xl:px-24">
         <div className="mt-10 flex flex-col gap-8 md:mt-16 lg:mt-20 lg:flex-row lg:items-end">
-          <h2 className="font-heading relative text-4xl/none font-normal tracking-normal text-balance text-white md:text-5xl/none xl:text-6xl/none 2xl:text-[5rem]">
+          <h2 className="font-heading relative min-w-0 text-4xl/none font-normal tracking-normal text-balance text-white md:text-5xl/none lg:flex-1 xl:text-6xl/none 2xl:text-[5rem]">
             {title === undefined ? (
               <CTADefaultTitle />
             ) : (
