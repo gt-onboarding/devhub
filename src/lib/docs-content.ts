@@ -473,6 +473,36 @@ function readCategoryMeta(relativeDir: string): DocsJsonObject | null {
   return readJsonObject(join(docsRoot(), relativeDir, "_category_.json"));
 }
 
+/**
+ * Category label for a folder. Only the display string may come from a
+ * translated meta.json / _category_.json under src/content/<locale>/docs;
+ * pages, root, defaultOpen and the tree itself always come from English.
+ */
+function readFolderLabel(
+  relativeDir: string,
+  locale: string,
+  meta: DocsJsonObject | null,
+  category: DocsJsonObject | null,
+): string | undefined {
+  const translatedDir =
+    locale === DEFAULT_LOCALE
+      ? null
+      : join(CONTENT_ROOT, locale, "docs", relativeDir);
+  const translatedMeta = translatedDir
+    ? readJsonObject(join(translatedDir, "meta.json"))
+    : null;
+  const translatedCategory = translatedDir
+    ? readJsonObject(join(translatedDir, "_category_.json"))
+    : null;
+
+  return (
+    readStringValue(translatedMeta?.title) ??
+    readStringValue(meta?.title) ??
+    readStringValue(translatedCategory?.label) ??
+    readStringValue(category?.label)
+  );
+}
+
 function readMetaPages(meta: DocsJsonObject | null): string[] | null {
   if (!Array.isArray(meta?.pages)) {
     return null;
@@ -758,8 +788,7 @@ function buildFolderSidebarItem(
     href: index?.type === "link" ? index.href : undefined,
     items: children,
     label:
-      readStringValue(meta?.title) ??
-      readStringValue(category?.label) ??
+      readFolderLabel(folderPath, locale, meta, category) ??
       index?.label ??
       titleFromSlug(folderPath),
     type: "category",

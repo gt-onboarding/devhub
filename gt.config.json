@@ -16,10 +16,28 @@
     "mdx": {
       "include": [
         "src/content/docs/**/*.md",
-        "src/content/docs/**/*.mdx"
+        "src/content/docs/**/*.mdx",
+        "src/content/recipes/**/*.md",
+        "src/content/cookbooks/**/*.md",
+        "src/content/examples/**/*.md",
+        "src/content/solutions/**/*.md",
+        "src/content/hackathon/*.md"
       ],
       "exclude": [
-        "src/content/docs/appkit/**/api/**"
+        "src/content/docs/appkit/**/api/**",
+        "src/content/*/*/replit-prompt.md"
+      ],
+      "transform": {
+        "match": "^src/content/",
+        "replace": "src/content/{locale}/"
+      }
+    },
+    "json": {
+      "include": [
+        "src/content/docs/**/meta.json"
+      ],
+      "exclude": [
+        "src/content/docs/appkit/**"
       ],
       "transform": {
         "match": "^src/content/docs/",
@@ -28,21 +46,18 @@
     }
   },
   "options": {
-    "experimentalLocalizeStaticUrls": true,
     "experimentalHideDefaultLocale": true,
-    "docsUrlPattern": "/[locale]",
-    "excludeStaticUrls": [
-      "/img/**",
-      "/raw-docs/**",
-      "/api/**",
-      "/llms.txt",
-      "/docs/llms.txt",
-      "**/*.md"
-    ],
-    "baseDomain": "https://developers.databricks.com",
     "skipFileValidation": {
       "mdx": true
-    }
+    },
+    "jsonSchema": {
+      "src/content/docs/**/meta.json": {
+        "include": [
+          "$.title"
+        ]
+      }
+    },
+    "experimentalAddHeaderAnchorIds": "default"
   },
   "_versionId": "22b46bf93b7deaf3b674163babce8a0376d0fcbe21e0f80962834ec08166b067"
 }

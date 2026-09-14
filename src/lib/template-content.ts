@@ -7,6 +7,7 @@ import {
 import type { MDXComponents } from "mdx/types";
 
 import { showDrafts } from "@/lib/feature-flags-server";
+import { hasTranslatedContent } from "@/lib/localized-content";
 import {
   cookbooks,
   examples,
@@ -59,16 +60,22 @@ async function importTemplateSection(
   folder: "cookbooks" | "examples" | "recipes",
   slug: string,
   section: "goal" | "prerequisites",
+  locale: string,
 ): Promise<ComponentType<{ components?: MDXComponents }> | null> {
+  const translated = hasTranslatedContent(
+    `${folder}/${slug}/${section}.md`,
+    locale,
+  );
   try {
-    const module =
-      section === "goal"
-        ? ((await import(
-            `@/content/${folder}/${slug}/goal.md`
-          )) as TemplateContentModule)
-        : ((await import(
+    const module = (await (section === "goal"
+      ? translated
+        ? import(`@/content/${locale}/${folder}/${slug}/goal.md`)
+        : import(`@/content/${folder}/${slug}/goal.md`)
+      : translated
+        ? import(`@/content/${locale}/${folder}/${slug}/prerequisites.md`)
+        : import(
             `@/content/${folder}/${slug}/prerequisites.md`
-          )) as TemplateContentModule);
+          ))) as TemplateContentModule;
     return module.default;
   } catch {
     return null;
@@ -77,6 +84,7 @@ async function importTemplateSection(
 
 export async function getTemplateContent(
   item: TemplateContentItem,
+  locale: string,
   components?: MDXComponents,
 ): Promise<ReactElement | null> {
   const folder =
@@ -86,7 +94,12 @@ export async function getTemplateContent(
         ? "examples"
         : "recipes";
 
-  const Body = await importTemplateSection(folder, item.data.id, "goal");
+  const Body = await importTemplateSection(
+    folder,
+    item.data.id,
+    "goal",
+    locale,
+  );
   if (!Body) {
     return null;
   }
@@ -94,7 +107,12 @@ export async function getTemplateContent(
   const Prerequisites =
     item.kind === "cookbook"
       ? null
-      : await importTemplateSection(folder, item.data.id, "prerequisites");
+      : await importTemplateSection(
+          folder,
+          item.data.id,
+          "prerequisites",
+          locale,
+        );
 
   if (!Prerequisites) {
     return createElement(Body, { components });

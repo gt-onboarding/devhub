@@ -123,6 +123,7 @@ const faqs: HackathonFaqItem[] = [
 export default async function FreeEditionSetupPage(): Promise<ReactNode> {
   const gt = await getGT();
   const body = await renderHackathonSupportMarkdown({
+    locale: await getLocale(),
     markdownSlug: "free-edition-setup",
   });
 

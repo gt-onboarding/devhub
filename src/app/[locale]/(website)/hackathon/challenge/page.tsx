@@ -28,6 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function ChallengePage(): Promise<ReactNode> {
   const gt = await getGT();
   const body = await renderHackathonSupportMarkdown({
+    locale: await getLocale(),
     markdownSlug: "challenge",
     tablePresentation: "prose",
   });

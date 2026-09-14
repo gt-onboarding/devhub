@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Script from "next/script";
+import { T, useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -17,8 +18,22 @@ type CssVariableProperties = CSSProperties & {
   [key: `--${string}`]: string | number;
 };
 
+type DbHeroPlayerCopy = {
+  cliInstalled: string;
+  cliInstalledNext: string;
+  prompt: string;
+  buildTitle: string;
+  statusInProgress: string;
+  statusOk: string;
+  finalDone: string;
+};
+
+type DbHeroPlayerOptions = {
+  copy: DbHeroPlayerCopy;
+};
+
 type DbHeroPlayer = {
-  mount: (root: HTMLElement) => () => void;
+  mount: (root: HTMLElement, options: DbHeroPlayerOptions) => () => void;
 };
 
 type DbHeroPlayerWindow = Window & {
@@ -26,7 +41,7 @@ type DbHeroPlayerWindow = Window & {
 };
 
 const playerScriptPath = "/js/home-hero-player.js";
-const playerScriptVersion = "20260817-route-return";
+const playerScriptVersion = "20260914-translatable-copy";
 
 function cssVars(vars: CssVariableProperties) {
   return vars;
@@ -48,7 +63,7 @@ function dispatchViewportState(element: HTMLElement) {
   );
 }
 
-function DbHeroPlayerScene() {
+function DbHeroPlayerScene({ copy }: { copy: DbHeroPlayerCopy }) {
   return (
     <div id="toolWorkspace" className="tool-workspace">
       <div id="stageViewport" className="stage-viewport">
@@ -94,40 +109,48 @@ function DbHeroPlayerScene() {
                   <p className="build-title" data-build-line>
                     <span className="build-star">*</span>
                     <span className="build-title-copy">
-                      Starting build and deployment...
+                      {copy.buildTitle}...
                     </span>
                   </p>
                   <div className="status-row" data-build-line>
                     <span className="status-bullet">•</span>
                     <span className="status-label">
-                      Scaffolding app with AppKit
+                      <T>Scaffolding app with AppKit</T>
                     </span>
                     <span className="status-leader"></span>
-                    <span className="status-value">In progress</span>
+                    <span className="status-value">
+                      {copy.statusInProgress}
+                    </span>
                   </div>
                   <div className="status-row" data-build-line>
                     <span className="status-bullet">•</span>
                     <span className="status-label">
-                      Provisioning Postgres on Lakebase
+                      <T>Provisioning Postgres on Lakebase</T>
                     </span>
                     <span className="status-leader"></span>
-                    <span className="status-value">In progress</span>
+                    <span className="status-value">
+                      {copy.statusInProgress}
+                    </span>
                   </div>
                   <div className="status-row" data-build-line>
                     <span className="status-bullet">•</span>
                     <span className="status-label">
-                      Configuring AI on Agent Bricks
+                      <T>Configuring AI on Agent Bricks</T>
                     </span>
                     <span className="status-leader"></span>
-                    <span className="status-value">In progress</span>
+                    <span className="status-value">
+                      {copy.statusInProgress}
+                    </span>
                   </div>
                   <div className="status-row" data-build-line>
                     <span className="status-bullet">•</span>
                     <span className="status-label">
-                      Deploying app on Databricks Apps
+                      <T>Deploying app on Databricks Apps</T>
                     </span>
                     <span className="status-leader"></span>
-                    <span className="status-value">In progress</span>
+                    <span className="status-value">
+                      {copy.statusInProgress}
+                    </span>
                   </div>
                 </section>
                 <section className="final-status fx-layer" aria-live="polite">
@@ -149,9 +172,7 @@ function DbHeroPlayerScene() {
                         </span>
                       </span>
                     </span>
-                    <span className="final-done-copy">
-                      Done - your app is live
-                    </span>
+                    <span className="final-done-copy">{copy.finalDone}</span>
                   </p>
                   <p className="final-link">
                     https://sales-overview.databricksapps.com
@@ -203,10 +224,12 @@ function DbHeroPlayerScene() {
                   aria-label="Revenue vs Target. Monthly actuals compared to quota."
                 >
                   <div className="app-chart-head">
-                    <div>
-                      <h3>Revenue vs Target</h3>
-                      <p>Monthly actuals compared to quota</p>
-                    </div>
+                    <T>
+                      <div>
+                        <h3>Revenue vs Target</h3>
+                        <p>Monthly actuals compared to quota</p>
+                      </div>
+                    </T>
                     <span
                       className="app-chart-toggle"
                       aria-label="Selected range: 12 months"
@@ -284,12 +307,12 @@ function DbHeroPlayerScene() {
                       <b>Jun</b>
                       <span>
                         <i></i>
-                        Target:
+                        <T>Target:</T>
                         <strong>$390K</strong>
                       </span>
                       <span>
                         <i></i>
-                        Revenue:
+                        <T>Revenue:</T>
                         <strong>$520K</strong>
                       </span>
                     </div>
@@ -308,15 +331,15 @@ function DbHeroPlayerScene() {
                   </div>
                   <div className="app-chart-foot">
                     <span>
-                      Period Revenue
+                      <T>Period Revenue</T>
                       <b>$5.43M</b>
                     </span>
                     <span>
-                      Period Target
+                      <T>Period Target</T>
                       <b>$4.81M</b>
                     </span>
                     <span>
-                      Attainment
+                      <T>Attainment</T>
                       <b>113.0%</b>
                     </span>
                   </div>
@@ -343,43 +366,55 @@ function DbHeroPlayerScene() {
                     <span>✣</span>
                   </nav>
                   <div className="app-content">
-                    <header className="app-header">
-                      <h2>Sales Overview</h2>
-                      <p>Full year performance at a glance</p>
-                    </header>
+                    <T>
+                      <header className="app-header">
+                        <h2>Sales Overview</h2>
+                        <p>Full year performance at a glance</p>
+                      </header>
+                    </T>
                     <div className="metric-grid">
                       <article className="metric-card is-primary">
                         <span className="metric-icon">$</span>
                         <span className="metric-change">▲ 9.8%</span>
-                        <p>Total Revenue</p>
+                        <p>
+                          <T>Total Revenue</T>
+                        </p>
                         <strong>$4.94M</strong>
                       </article>
                       <article className="metric-card">
                         <span className="metric-icon">◈</span>
                         <span className="metric-change is-good">▲ 2.3%</span>
-                        <p>Quota Attainment</p>
+                        <p>
+                          <T>Quota Attainment</T>
+                        </p>
                         <strong>102.3%</strong>
                       </article>
                       <article className="metric-card">
                         <span className="metric-icon">▷</span>
                         <span className="metric-change is-good">▲ 3.1%</span>
-                        <p>Win Rate</p>
+                        <p>
+                          <T>Win Rate</T>
+                        </p>
                         <strong>64.2%</strong>
                       </article>
                       <article className="metric-card">
                         <span className="metric-icon">⌁</span>
                         <span className="metric-change is-bad">▼ 1.8%</span>
-                        <p>Avg Deal Size</p>
+                        <p>
+                          <T>Avg Deal Size</T>
+                        </p>
                         <strong>$42.8K</strong>
                       </article>
                     </div>
                     <div className="dashboard-grid">
                       <article className="chart-panel">
                         <div className="panel-title">
-                          <div>
-                            <h3>Revenue vs Target</h3>
-                            <p>Monthly actuals compared to quota</p>
-                          </div>
+                          <T>
+                            <div>
+                              <h3>Revenue vs Target</h3>
+                              <p>Monthly actuals compared to quota</p>
+                            </div>
+                          </T>
                           <span>
                             3M  6M
                             <b>12M</b>
@@ -480,30 +515,38 @@ function DbHeroPlayerScene() {
                           ></span>
                           <div className="chart-tooltip">
                             <b>May</b>
-                            <span>Target: $450K</span>
-                            <span>Revenue: $467K</span>
+                            <span>
+                              <T>Target:</T> $450K
+                            </span>
+                            <span>
+                              <T>Revenue:</T> $467K
+                            </span>
                           </div>
                         </div>
                         <div className="chart-footer">
                           <span>
-                            Period Revenue
+                            <T>Period Revenue</T>
                             <b>$5.43M</b>
                           </span>
                           <span>
-                            Period Target
+                            <T>Period Target</T>
                             <b>$4.81M</b>
                           </span>
                           <span>
-                            Attainment
+                            <T>Attainment</T>
                             <b>113.0%</b>
                           </span>
                         </div>
                       </article>
                       <article className="region-panel">
-                        <h3>Revenue by Region</h3>
-                        <p>YTD contribution</p>
+                        <T>
+                          <h3>Revenue by Region</h3>
+                          <p>YTD contribution</p>
+                        </T>
                         <div className="region-row">
-                          <span>North America</span>
+                          <span>
+                            <T>North America</T>
+                          </span>
                           <b>
                             <em>+12.4%</em>
                             $1.82M
@@ -512,7 +555,9 @@ function DbHeroPlayerScene() {
                           <small>38.4%</small>
                         </div>
                         <div className="region-row">
-                          <span>Europe</span>
+                          <span>
+                            <T>Europe</T>
+                          </span>
                           <b>
                             <em>+8.7%</em>
                             $1.24M
@@ -521,7 +566,9 @@ function DbHeroPlayerScene() {
                           <small>26.2%</small>
                         </div>
                         <div className="region-row">
-                          <span>North America</span>
+                          <span>
+                            <T>North America</T>
+                          </span>
                           <b>
                             <em>+21.3%</em>
                             $980K
@@ -530,7 +577,9 @@ function DbHeroPlayerScene() {
                           <small>8.9%</small>
                         </div>
                         <div className="region-row">
-                          <span>Latin America</span>
+                          <span>
+                            <T>Latin America</T>
+                          </span>
                           <b>
                             <em>+31.2%</em>
                             $270K
@@ -572,9 +621,25 @@ function DbHeroPlayerScene() {
 }
 
 export function DbHeroAnimation({ className }: DbHeroAnimationProps) {
+  const gt = useGT();
   const rootRef = useRef<HTMLDivElement>(null);
   const playerCleanupRef = useRef<(() => void) | null>(null);
   const playerScriptSrc = `${playerScriptPath}?v=${playerScriptVersion}`;
+  const copy: DbHeroPlayerCopy = {
+    cliInstalled: gt("Databricks CLI successfully installed."),
+    cliInstalledNext: gt(
+      "You can now begin building and deploying apps on Databricks.",
+    ),
+    prompt: gt(
+      "Build me an app our sales team can use to track revenue and quota across\nregions. Add AI to spot problems and suggest next steps.",
+    ),
+    buildTitle: gt("Starting build and deployment"),
+    statusInProgress: gt("In progress"),
+    statusOk: gt("OK", {
+      $context: "status value shown when a build step completes",
+    }),
+    finalDone: gt("Done - your app is live"),
+  };
 
   useEffect(() => {
     const root = rootRef.current;
@@ -586,7 +651,7 @@ export function DbHeroAnimation({ className }: DbHeroAnimationProps) {
     const player = (window as DbHeroPlayerWindow).DatabricksHeroPlayer;
 
     if (player) {
-      playerCleanupRef.current = player.mount(root);
+      playerCleanupRef.current = player.mount(root, { copy });
     }
 
     let frame = 0;
@@ -644,9 +709,9 @@ export function DbHeroAnimation({ className }: DbHeroAnimationProps) {
 
           if (!playerCleanupRef.current) {
             playerCleanupRef.current =
-              (window as DbHeroPlayerWindow).DatabricksHeroPlayer?.mount(
-                root,
-              ) ?? null;
+              (window as DbHeroPlayerWindow).DatabricksHeroPlayer?.mount(root, {
+                copy,
+              }) ?? null;
           }
 
           dispatchViewportState(root);
@@ -660,7 +725,7 @@ export function DbHeroAnimation({ className }: DbHeroAnimationProps) {
         )}
         aria-hidden="true"
       >
-        <DbHeroPlayerScene />
+        <DbHeroPlayerScene copy={copy} />
       </div>
     </>
   );

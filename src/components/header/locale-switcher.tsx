@@ -12,6 +12,18 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+/**
+ * Intl gives lowercase native names for some languages ("español",
+ * "français"); a menu of language names reads better title-cased.
+ */
+function localeDisplayName(
+  properties: { nativeNameWithRegionCode: string },
+  code: string,
+): string {
+  const name = properties.nativeNameWithRegionCode;
+  return name.charAt(0).toLocaleUpperCase(code) + name.slice(1);
+}
+
 export function LocaleSwitcher({
   align = "end",
   className,
@@ -58,7 +70,7 @@ export function LocaleSwitcher({
               lang={code}
               className="text-grey-70 cursor-pointer rounded-none py-2 font-mono text-sm leading-none tracking-tight transition-colors hover:!bg-transparent hover:!text-white focus:!bg-transparent focus:!text-white data-[highlighted]:!bg-transparent data-[highlighted]:!text-white data-[state=checked]:text-white"
             >
-              {getLocaleProperties(code).nativeNameWithRegionCode}
+              {localeDisplayName(getLocaleProperties(code), code)}
             </DropdownMenuRadioItem>
           ))}
         </DropdownMenuRadioGroup>

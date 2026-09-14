@@ -1,6 +1,19 @@
 // fallow-ignore-file unused-file
 // Source for the generated public asset at public/js/home-hero-player.js.
-function createDatabricksHeroExportPlayer(root) {
+const DEFAULT_COPY = {
+  cliInstalled: "Databricks CLI successfully installed.",
+  cliInstalledNext:
+    "You can now begin building and deploying apps on Databricks.",
+  prompt:
+    "Build me an app our sales team can use to track revenue and quota across\nregions. Add AI to spot problems and suggest next steps.",
+  buildTitle: "Starting build and deployment",
+  statusInProgress: "In progress",
+  statusOk: "OK",
+  finalDone: "Done - your app is live",
+};
+
+function createDatabricksHeroExportPlayer(root, options = {}) {
+  const copy = { ...DEFAULT_COPY, ...(options.copy ?? {}) };
   window.DATABRICKS_EXPORT_MODE = true;
   window.DATABRICKS_USED_FEATURES = {
     powerOn: true,
@@ -1051,15 +1064,14 @@ function createDatabricksHeroExportPlayer(root) {
   };
 
   const installFrames = [
-    "Databricks CLI successfully installed.",
-    "Databricks CLI successfully installed.\nYou can now begin building and deploying apps on Databricks.",
+    copy.cliInstalled,
+    `${copy.cliInstalled}\n${copy.cliInstalledNext}`,
   ];
 
-  const promptCopy =
-    "Build me an app our sales team can use to track revenue and quota across\nregions. Add AI to spot problems and suggest next steps.";
+  const promptCopy = copy.prompt;
 
   const finalState = {
-    done: "✓ Done - your app is live",
+    done: `✓ ${copy.finalDone}`,
     url: "https://sales-overview.databricksapps.com",
   };
 
@@ -1588,11 +1600,11 @@ function createDatabricksHeroExportPlayer(root) {
     const finalCharacter = tokenText.trimEnd().at(-1) || tokenText.at(-1) || "";
     const isWhitespace = /^\s+$/.test(tokenText);
     const lengthFactor = mode === "words" ? Math.max(1, tokenLength * 0.5) : 1;
-    const isWordCharacter = /[A-Za-z0-9]/.test(finalCharacter);
+    const isWordCharacter = /[\p{L}\p{N}]/u.test(finalCharacter);
     const inWordRun =
       isWordCharacter &&
-      /[A-Za-z0-9]/.test(previousCharacter) &&
-      /[A-Za-z0-9]/.test(nextCharacter);
+      /[\p{L}\p{N}]/u.test(previousCharacter) &&
+      /[\p{L}\p{N}]/u.test(nextCharacter);
     const burstPosition = tokenIndex % 7;
     let delay =
       baseDelay * lengthFactor * (0.62 + seededUnit(tokenIndex, 1) * 0.82);
@@ -4071,7 +4083,7 @@ function createDatabricksHeroExportPlayer(root) {
   }
 
   function setBuildTitleDots(count = 3) {
-    buildTitleCopy.textContent = `Starting build and deployment${".".repeat(count)}`;
+    buildTitleCopy.textContent = `${copy.buildTitle}${".".repeat(count)}`;
   }
 
   function shuffledIndexes(length) {
@@ -4196,7 +4208,7 @@ function createDatabricksHeroExportPlayer(root) {
     });
     statusValues.forEach((value, index) => {
       const isOk = final;
-      value.textContent = isOk ? "OK" : "In progress";
+      value.textContent = isOk ? copy.statusOk : copy.statusInProgress;
       value.classList.toggle("status-ok", isOk);
       value.classList.remove("is-switching", "is-terminal-tick");
       value.dataset.trail = "";
@@ -4300,7 +4312,7 @@ function createDatabricksHeroExportPlayer(root) {
 
       value.textContent =
         asciiProgress >= 1
-          ? "OK"
+          ? copy.statusOk
           : makeStatusAsciiFrame(asciiStep, steps, asciiWindow);
       value.dataset.trail = "";
       setStatusLeaderProgress(row, 1);
@@ -4320,7 +4332,7 @@ function createDatabricksHeroExportPlayer(root) {
       dot.classList.add("is-on");
       dot.style.removeProperty("background");
     });
-    value.textContent = "OK";
+    value.textContent = copy.statusOk;
     value.dataset.trail = "";
     value.classList.remove("is-switching");
     value.style.removeProperty("--status-switch-duration");
@@ -7101,9 +7113,9 @@ function createDatabricksHeroExportPlayer(root) {
 window.DatabricksHeroPlayer?.destroy?.();
 var activePlayerCleanup = null;
 window.DatabricksHeroPlayer = {
-  mount(root) {
+  mount(root, options = {}) {
     activePlayerCleanup?.();
-    const cleanup = createDatabricksHeroExportPlayer(root);
+    const cleanup = createDatabricksHeroExportPlayer(root, options);
     activePlayerCleanup = cleanup;
 
     return () => {

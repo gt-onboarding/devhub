@@ -54,7 +54,10 @@ export default async function TemplateDetailPage({
     notFound();
   }
 
-  const content = await getTemplateContent(item, { pre: CodeBlockWrapper });
+  const locale = await getLocale();
+  const content = await getTemplateContent(item, locale, {
+    pre: CodeBlockWrapper,
+  });
   if (!content) {
     notFound();
   }

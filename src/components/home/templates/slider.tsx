@@ -9,7 +9,7 @@ import {
   type SVGProps,
 } from "react";
 import Link from "next/link";
-import { useGT } from "gt-next";
+import { useGT, useMessages } from "gt-next";
 import { domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
 
@@ -130,18 +130,21 @@ function TemplateCarouselCard({
   textWidthDuration: number;
 }) {
   const gt = useGT();
+  const message = useMessages();
+  const title = message(item.title);
+  const description = message(item.description);
 
   return (
     <Link
       className="group/card focus-visible:ring-db-cyan mt-auto flex h-fit w-full min-w-0 flex-col justify-end text-white no-underline focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121317] focus-visible:outline-none"
       href={item.href}
       draggable={false}
-      aria-label={gt("{title} template", { title: item.title })}
+      aria-label={gt("{title} template", { title })}
       onDragStart={(event) => event.preventDefault()}
     >
       <h3 className="text-xl leading-tight font-medium tracking-tight text-pretty text-white">
         <span className="inline-flex items-center gap-1.5 text-white">
-          <span>{item.title}</span>
+          <span>{title}</span>
           <TitleLinkIcon
             className={cn(
               "text-db-lava-light size-6 opacity-0 transition-[opacity,transform] duration-200",
@@ -162,14 +165,14 @@ function TemplateCarouselCard({
           isVisible={!isActive}
           width={TEMPLATE_DESCRIPTION_WIDTH.inactive}
         >
-          {item.description}
+          {description}
         </TemplateDescriptionText>
         <TemplateDescriptionText
           duration={textWidthDuration}
           isVisible={isActive}
           width={TEMPLATE_DESCRIPTION_WIDTH.active}
         >
-          {item.description}
+          {description}
         </TemplateDescriptionText>
       </div>
       <div
@@ -178,7 +181,7 @@ function TemplateCarouselCard({
       >
         <TemplatePreviewImage
           lightUrl={item.lightUrl}
-          alt={gt("{title} preview", { title: item.title })}
+          alt={gt("{title} preview", { title })}
           fallback={<FallbackCardArt index={index} />}
           preload={index === 0}
         />

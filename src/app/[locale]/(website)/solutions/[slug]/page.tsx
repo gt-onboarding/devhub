@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getGT, getLocale, getMessages } from "gt-next/server";
 
 import { absoluteSiteUrl, getMetadata } from "@/lib/get-metadata";
+import { hasTranslatedContent } from "@/lib/localized-content";
 import { getSolutionAuthor } from "@/lib/solutions/authors";
 import {
   nativeSolutionItems,
@@ -34,11 +35,18 @@ export const dynamicParams = false;
 
 async function getSolutionContent(
   item: NativeSolutionItem,
+  locale: string,
 ): Promise<ReactNode | null> {
+  const translated = hasTranslatedContent(
+    `solutions/${item.id}/goal.md`,
+    locale,
+  );
   try {
-    const module = (await import(
-      `@/content/solutions/${item.id}/goal.md`
-    )) as SolutionContentModule;
+    const module = (await (translated
+      ? import(`@/content/${locale}/solutions/${item.id}/goal.md`)
+      : import(
+          `@/content/solutions/${item.id}/goal.md`
+        ))) as SolutionContentModule;
     return createElement(module.default);
   } catch {
     return null;
@@ -60,7 +68,8 @@ export default async function SolutionDetailPage({
     notFound();
   }
 
-  const content = await getSolutionContent(item);
+  const locale = await getLocale();
+  const content = await getSolutionContent(item, locale);
   if (!content) {
     notFound();
   }
