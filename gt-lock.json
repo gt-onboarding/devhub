@@ -7,22 +7,22 @@
       "versionId": "878dee46d608a6d0928593d24443f5064cd71bb3354f320dfbb8135d63f515cd",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.078Z",
+          "updatedAt": "2026-09-14T22:49:18.932Z",
           "fileName": "src/content/pt/docs/templates.md",
           "postProcessHash": "312c0032343a038d14c1d80b1c7dabf92f4d6861e239120308768b00aa2ccb9c"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.079Z",
+          "updatedAt": "2026-09-14T22:49:18.932Z",
           "fileName": "src/content/es/docs/templates.md",
           "postProcessHash": "929fa65f74a56d389fa2c3b9a20c6b5427eeeb74706b1bfc396ca270d4018fa3"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.079Z",
+          "updatedAt": "2026-09-14T22:49:18.932Z",
           "fileName": "src/content/ja/docs/templates.md",
           "postProcessHash": "f6476a0db90d354392b15e05c0794c47549251cb33ba95cad631e2d20ab7f078"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.079Z",
+          "updatedAt": "2026-09-14T22:49:18.932Z",
           "fileName": "src/content/fr/docs/templates.md",
           "postProcessHash": "3e9b005bc7719e38c1ba314d96d016e705bd689aaf910a897345dcbce1c0e0b9"
         }
@@ -34,22 +34,22 @@
       "versionId": "5612f33515e11411771d9c1fbd1372e7a34796ad36221ed2c2b4dfcce1dcdd27",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.080Z",
+          "updatedAt": "2026-09-14T22:49:18.933Z",
           "fileName": "src/content/fr/docs/agents/overview.md",
           "postProcessHash": "9ab71e867b2fc76a06205d7724dcf7a811e65dd17eb440f1b7c0e59cd5ca46e8"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.080Z",
+          "updatedAt": "2026-09-14T22:49:18.933Z",
           "fileName": "src/content/es/docs/agents/overview.md",
           "postProcessHash": "a29c4a43652163310058ad8767ed2250eb16121810d6dd65d53aa7df51e07c3d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.080Z",
+          "updatedAt": "2026-09-14T22:49:18.933Z",
           "fileName": "src/content/ja/docs/agents/overview.md",
           "postProcessHash": "0310b246b62251b80168f8781b0f5faca81cb31b70459a2e81ae05f232ac5f16"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.080Z",
+          "updatedAt": "2026-09-14T22:49:18.933Z",
           "fileName": "src/content/pt/docs/agents/overview.md",
           "postProcessHash": "b6c3635f629e20dbfde4f2f5e500dff2067a46a0cf46030369369653650dc2f5"
         }
@@ -61,22 +61,22 @@
       "versionId": "0672a0c154079bcbdab59b8084033cdb251a4e263d8812099d25a921a71a29f7",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.080Z",
+          "updatedAt": "2026-09-14T22:49:18.933Z",
           "fileName": "src/content/es/docs/apps/overview.md",
           "postProcessHash": "fb8e93ae27052bb05266e5139965f58a912c3bb94767487b759e60b1ae2591a8"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/pt/docs/apps/overview.md",
           "postProcessHash": "0363cb8603567902b570c3b127b7b028176568b7393614381dc83877ac873f4c"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/fr/docs/apps/overview.md",
           "postProcessHash": "8900a80c4de0cc174b90890c51853a7119c0379ee9522a303260f2820475c125"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/ja/docs/apps/overview.md",
           "postProcessHash": "711c0106732a173455a23f4b8b7cd24faaaa34ef9af9f15e3c2c7856b4529f1a"
         }
@@ -88,22 +88,22 @@
       "versionId": "4b512ce256c87e56d43bf6725572a504b32a62ab61b85eaac6aa01a20c82b8d3",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/ja/docs/apps/configuration.md",
           "postProcessHash": "c9450c24c3947f0e6afa73ec9d47ae2e2a4b39ff072d5e143aa6d021eb17ebd9"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/fr/docs/apps/configuration.md",
           "postProcessHash": "574703559717a0cfdc0c5dc13fc7f715cb64e6a7e25b47b92f2067d006978e22"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.081Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/pt/docs/apps/configuration.md",
           "postProcessHash": "3062c3ed2f8139075b884210b26a6b98b17c28395ceb111b8d862c5067abe38b"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.082Z",
+          "updatedAt": "2026-09-14T22:49:18.934Z",
           "fileName": "src/content/es/docs/apps/configuration.md",
           "postProcessHash": "0ccd73462ea828b9844e37acf6cd5369e68db6d5aeb76902f33d83a972b6cb5b"
         }
@@ -115,22 +115,22 @@
       "versionId": "64c1df6b12e802ba561dafc6e7a029254dbac71c50a52cf094d68b3a548c1dec",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.082Z",
+          "updatedAt": "2026-09-14T22:49:18.935Z",
           "fileName": "src/content/ja/docs/lakehouse/jobs.md",
           "postProcessHash": "9e29362624547d3c45fb85cc7dfa71bdfd4dc249373456d79bf9c9e116524ab6"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.082Z",
+          "updatedAt": "2026-09-14T22:49:18.935Z",
           "fileName": "src/content/pt/docs/lakehouse/jobs.md",
           "postProcessHash": "c71e54cda59a44cd85d74ac7e3f2a41446ba461932787c977c270c961720eb1f"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.082Z",
+          "updatedAt": "2026-09-14T22:49:18.935Z",
           "fileName": "src/content/es/docs/lakehouse/jobs.md",
           "postProcessHash": "72268bd4d626273e1fab3b43421083a9e49e720ffbaa934889b3641402bbc883"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.082Z",
+          "updatedAt": "2026-09-14T22:49:18.935Z",
           "fileName": "src/content/fr/docs/lakehouse/jobs.md",
           "postProcessHash": "6a06dc07e2d0d169d2ce107bd24eb8be37755d7a92d1e688ba71dd28a7f73644"
         }
@@ -142,22 +142,22 @@
       "versionId": "6414b7df54954b77a4c1e4fe71932b8c5f73f22dbcbaacbd9b77eba17df93a55",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/fr/docs/tools/ai-tools/docs-mcp-server.md",
           "postProcessHash": "b722169e0629a7d0a405d6cb31650d76081ef90c3af336f7c598958b2db85680"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/es/docs/tools/ai-tools/docs-mcp-server.md",
           "postProcessHash": "ae1a743dd7d37731ffa459819b2fc23bdb6dd4d49783b94cbc1f707eeef216a2"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/ja/docs/tools/ai-tools/docs-mcp-server.md",
           "postProcessHash": "4d5cb049bb4d6cef5672bc81f6ac38736b4696cb4b52ebfecc50be9d7a7fae98"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/pt/docs/tools/ai-tools/docs-mcp-server.md",
           "postProcessHash": "9308eb6a617951bda62b0da683d948c9001680711d50dc3ae0153e9d1af1c1c0"
         }
@@ -169,22 +169,22 @@
       "versionId": "356db9579771688af46102c0bde79d50cb979c01b011bb19bfe695eec6bb32de",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.937Z",
           "fileName": "src/content/ja/docs/lakehouse/analytical-reads.md",
           "postProcessHash": "cc5fb9d40ea17bfa7da1f0bcd2115e68dc72eab18930521ca0b0bd9a8b49f298"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.937Z",
           "fileName": "src/content/es/docs/lakehouse/analytical-reads.md",
           "postProcessHash": "e608ddd12591153dbe84433e0b4649a925ad7eec571d15e45a173974eed5771d"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.937Z",
           "fileName": "src/content/pt/docs/lakehouse/analytical-reads.md",
           "postProcessHash": "4efcfb3fe33a3fd6c3f274228f869728fc0d83d11594504bcf957577f37f3440"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.937Z",
           "fileName": "src/content/fr/docs/lakehouse/analytical-reads.md",
           "postProcessHash": "325a5c9489043764af5e3a39bf85c5f2935afb89093a65c98f762b23b17cf7a0"
         }
@@ -196,22 +196,22 @@
       "versionId": "3a395911750c6b7f747df982a178e5b40d5df98d858ab7ddd80330a715045a00",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/es/docs/platform-overview.mdx",
           "postProcessHash": "bf5d1fa678c88f1a2efa0122f3b4212a9f711b96c53aabed8dc973de3b465584"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/fr/docs/platform-overview.mdx",
           "postProcessHash": "0fd5ebf164fe817cdfc71c7baec973ffa92c91f2f872740abc5b31a426fe5fc3"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/pt/docs/platform-overview.mdx",
           "postProcessHash": "bed456e8f95763f1fcb4d5241fe797f764a9ca3d6051d0761976fc9b5a107a0d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/ja/docs/platform-overview.mdx",
           "postProcessHash": "33ad3413ae95ddc82a63db535bf42fd8c6ffb6afa641f86e2aa31c4e3750de64"
         }
@@ -223,22 +223,22 @@
       "versionId": "6a41659f8dc2f26ec5a3b7bd0d9de4f8787eafaa5927b4e9042cdf39f9496289",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.939Z",
           "fileName": "src/content/pt/docs/lakehouse/overview.md",
           "postProcessHash": "97d0a4ace22a228e2795a74926061ce78e32132f45770d0a158b264a3c9473ac"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.939Z",
           "fileName": "src/content/ja/docs/lakehouse/overview.md",
           "postProcessHash": "ab55e3f1d944b5082bc965159fa47b3a1d89c4999b49866e1f7670f919b9191f"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/es/docs/lakehouse/overview.md",
           "postProcessHash": "5704f1eab850afeb9c02c69fefb8c4ae0457cc1a2901c0971b5ecb2942640043"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/fr/docs/lakehouse/overview.md",
           "postProcessHash": "7012563d922139ac0910921bf05289a9cb89bddc0fec1b097128912f6f3eb60e"
         }
@@ -250,22 +250,22 @@
       "versionId": "9dd2639965bbcbc7d35e7fce12a3de2395d751985f00d20c08e75afdd3b41c1a",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/pt/docs/agents/genie.md",
           "postProcessHash": "ab962245cf26b44adaea78d4d67148ea629202ac88e1ffe91691c03c520bfe2d"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/es/docs/agents/genie.md",
           "postProcessHash": "54ba2fd956d2ff0633b21f5474bc6e1f26fe70dd78c5ece908ce81e7a6c35862"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/fr/docs/agents/genie.md",
           "postProcessHash": "0fd03357c7a4a425d8a2b4a3dadac1e04cb5034d38796c54ccea09f8b7308359"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/ja/docs/agents/genie.md",
           "postProcessHash": "33376f5ce9c386bcedfdcb6b6a1182ecf3944525a7381cd1e82dcc5820e26226"
         }
@@ -277,22 +277,22 @@
       "versionId": "b0d33a2c18c3106ef82a71906b91fe4161fd0d3a2809ec2eac491883747e5132",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.087Z",
+          "updatedAt": "2026-09-14T22:49:18.940Z",
           "fileName": "src/content/es/docs/agents/custom-agents.md",
           "postProcessHash": "dfc7dd59785d359d197ed61472960416453cfe9929fdecf844f6be8c2605cff4"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/pt/docs/agents/custom-agents.md",
           "postProcessHash": "f011a1c6b9a7e62e095866c43447fbde7049ca54a2732c87c1c64555d602e130"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/fr/docs/agents/custom-agents.md",
           "postProcessHash": "377424f61e7192ab464138a3c76fd70fd8b9fbd6188040339efbde7fbf56d1e8"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/ja/docs/agents/custom-agents.md",
           "postProcessHash": "a67988d295ba51a88b22c0602aae7078fbc28c067c1c5cb0556921ec1c5c3a88"
         }
@@ -304,22 +304,22 @@
       "versionId": "7183c0cb6145c639b80f03f5625dc06173116f21b01e52c753504b4133fc18f4",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/es/docs/lakehouse/pipelines.md",
           "postProcessHash": "45544cb5c9ed17544ac82e58f00d18831e6efdc9631da3d20c5c9020640ebd2c"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/fr/docs/lakehouse/pipelines.md",
           "postProcessHash": "fab369f11618157c2cb969dcb1f5cf826ad78c5392c140bef0ea26e358e5a4c1"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/pt/docs/lakehouse/pipelines.md",
           "postProcessHash": "d3d1e5ad8c621d06f9795ec269209c4923a25b8567d42893f144e38b18769657"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.088Z",
+          "updatedAt": "2026-09-14T22:49:18.941Z",
           "fileName": "src/content/ja/docs/lakehouse/pipelines.md",
           "postProcessHash": "ceddbc820c2e8fb44b373db70267dab34c0690c2a9f18b395beaf4c8aa0d6224"
         }
@@ -331,22 +331,22 @@
       "versionId": "b8c5c8ce3602ea21b1b933f32ada936d6345e1f1220ee369f322b7062c5eb433",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/pt/docs/lakebase/quickstart.md",
           "postProcessHash": "0b0a48f823e27acb4dc721d5e7f831c48f6f0adc57c05b916b01d49943532eff"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/es/docs/lakebase/quickstart.md",
           "postProcessHash": "715bd6e287542fa0f9e7f13deab09da19f94b562b0ec17caecd6735fbb2a4072"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/ja/docs/lakebase/quickstart.md",
           "postProcessHash": "5f498fc8cc21e0f8be405c0b905ec2c8f6bc3b53885f0c8d542d698b36177f53"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/fr/docs/lakebase/quickstart.md",
           "postProcessHash": "2c22031629b4373b1f2c5bbec92f08d5259e807f5300f17df4d4c85883d5e09f"
         }
@@ -358,22 +358,22 @@
       "versionId": "f82dc07af7eb51a9e9edfd411d7b752877b3d85ecd123c954b9c96fc68077bff",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/es/docs/apps/quickstart.md",
           "postProcessHash": "0a42224955364ea9c1ef25f73c7cf3e164ab3c2de99bcb3a999af34383107de8"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.944Z",
           "fileName": "src/content/ja/docs/apps/quickstart.md",
           "postProcessHash": "bc344e831ab78025d10b375887bfcbbe9664624adc3983e478f65c220dca6f06"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.944Z",
           "fileName": "src/content/fr/docs/apps/quickstart.md",
           "postProcessHash": "10c96fd1cde154da72d98d9133c90b5ece0a5197d6dbb6a0d10dd6814bceb4c2"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.944Z",
           "fileName": "src/content/pt/docs/apps/quickstart.md",
           "postProcessHash": "b821a05b98ffce7ea9188847a3c960da079a57515019295615b8d51016620421"
         }
@@ -382,27 +382,27 @@
     },
     {
       "fileId": "879f3a5f954ee8b75bf1e91f4ea9916b41c933e5beba7eb6362647a637c9c66d",
-      "versionId": "f6c09381f58e9a70fce05e44e22a13dc6ae0f12550a6f25d0820704d059d5ac4",
+      "versionId": "abd1106938475ff279a23b019d67b48f09777ccca11374b2ce1371dd0161218c",
       "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:49:18.990Z",
+          "fileName": "public/_gt/pt.json",
+          "postProcessHash": "c628ce280804286e5ab15a707c5b0d42eb116fadbb0ded81fe963e618c381b3a"
+        },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.149Z",
+          "updatedAt": "2026-09-14T22:49:18.991Z",
           "fileName": "public/_gt/es.json",
-          "postProcessHash": "3af167a3bcde379ae0f938cb2c30b4a59319c8cf576fa8a0228048a2f8f573ff"
+          "postProcessHash": "0806fe64feb1a08f92591ad8b4794a31008955b305b031f3fba58d2519df925a"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.151Z",
+          "updatedAt": "2026-09-14T22:49:18.992Z",
           "fileName": "public/_gt/ja.json",
-          "postProcessHash": "f1adeff14f9a072b73d8910f09bbed59721954ef986947137fb20ef191d63879"
+          "postProcessHash": "50f64d2241532a51f1cea24becbaa6d7a84c6dd59f89f74e315280f8db862df8"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.152Z",
+          "updatedAt": "2026-09-14T22:49:18.994Z",
           "fileName": "public/_gt/fr.json",
-          "postProcessHash": "c358045393fe757e0f07e432ff157efa71cee44469aee0cbd759dec45292f340"
-        },
-        "pt": {
-          "updatedAt": "2026-09-14T22:43:20.153Z",
-          "fileName": "public/_gt/pt.json",
-          "postProcessHash": "460835dea162f8c9002ab446cd15b9a0c1e64b25db1b966d8a418247593a4123"
+          "postProcessHash": "fddf90045901ae316d00647ddbe592b9f701abdb125900398b44805db50bdc8f"
         }
       },
       "fileName": "__INTERNAL_GT_TEMPLATE_NAME__"
@@ -412,22 +412,22 @@
       "versionId": "a734a0d71a6125b3a32af2f26ba4bd60c3d29c0669b81748e3d1cfaaccfb25e3",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.944Z",
           "fileName": "src/content/fr/docs/lakebase/overview.md",
           "postProcessHash": "4d0f3e7222eb1ee94ccdac08a974b880f114f4deeb7ab3db3f86d0bdbaf5eed6"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.945Z",
           "fileName": "src/content/es/docs/lakebase/overview.md",
           "postProcessHash": "c6ef5838cad1512a4f78a41a93d7b4e27b3523886b86ac13191b3d7dfb7adacc"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.945Z",
           "fileName": "src/content/pt/docs/lakebase/overview.md",
           "postProcessHash": "6cfd59914f2989f52ed1d2b53d35a105ce13cf362e4514aa732806bf64e81713"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.946Z",
           "fileName": "src/content/ja/docs/lakebase/overview.md",
           "postProcessHash": "daea2bd647e9227e79cef47e7db557f408e0d7dda930529cc34fba6430ae2680"
         }
@@ -439,22 +439,22 @@
       "versionId": "05c6b6b6f7e892fb22b3f214af32531b0123feb82e5cdeced35b3a90421593bf",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.091Z",
+          "updatedAt": "2026-09-14T22:49:18.946Z",
           "fileName": "src/content/ja/docs/start-here.md",
           "postProcessHash": "2b295d7e1889bdf9be8c9912d8933825c08114655691418139234beea279f040"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.946Z",
           "fileName": "src/content/es/docs/start-here.md",
           "postProcessHash": "97968637fbcd4b540bab3f8bf49f93b1592d34923722d95b00206d8a0408438f"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.946Z",
           "fileName": "src/content/fr/docs/start-here.md",
           "postProcessHash": "7fe4e8515c948cdccdb375920b7568a9105b5da246c73349f352e663786574e4"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.947Z",
           "fileName": "src/content/pt/docs/start-here.md",
           "postProcessHash": "c7e19831c8946b8bbb50125e2c3d1069ae3223c8910a6ab34396f3dec6da2ac9"
         }
@@ -466,22 +466,22 @@
       "versionId": "b538373de8c94c6c6a5ee7d71d1135c531f5896538afe4ef0e5460ac48327e2d",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/ja/docs/tools/databricks-cli.mdx",
           "postProcessHash": "22512cbb503e04569112674e51f609e723c8ea989ab2a2dbcf2ad7f1869ccf8c"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/fr/docs/tools/databricks-cli.mdx",
           "postProcessHash": "59324a7fdefe3ff7c823d70226acca88767019c4e30454bee70ef4503f1e989b"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/es/docs/tools/databricks-cli.mdx",
           "postProcessHash": "11a4885c447067d7b3f687a8951e960fe546f91272276889cc804cafd4c78f65"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/pt/docs/tools/databricks-cli.mdx",
           "postProcessHash": "e0b051c5449c81fefd150e422b95ec2678f211fd511c0d5c359ce09ea2961a19"
         }
@@ -493,22 +493,22 @@
       "versionId": "ad374de52ac5ad93b9a01f2efdae258c4077e22154af5424f55600d32a30bf7f",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.083Z",
+          "updatedAt": "2026-09-14T22:49:18.935Z",
           "fileName": "src/content/pt/docs/apps/development.md",
           "postProcessHash": "917ead811928c125c730faf807c1a5dc4aa9905926a09923b52d9bc6003bb77d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.083Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/ja/docs/apps/development.md",
           "postProcessHash": "13b7f15ea92e161710fa8df90d3aaabecad4fcad8ba0e9eb93e8444fa6439293"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.083Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/fr/docs/apps/development.md",
           "postProcessHash": "3ec3b5325bd2d80bf6e82cf7dfd613858db5376213816f81ca11b5d521468e2c"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.083Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/es/docs/apps/development.md",
           "postProcessHash": "a31cd693af8ff371ded2ef778e9c005610442fe3ce6fdcdbf0b313e276d003ee"
         }
@@ -520,22 +520,22 @@
       "versionId": "bf0420ed74e36f6c11cb7af2ec9075c65cf7ef68bf266986bef25355602f8cdf",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/ja/docs/tools/ai-tools/agent-skills.md",
           "postProcessHash": "6fff48220f7e95b9c3692ed6f0165df46529df10db06ba7234a0e6996e4b7992"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.958Z",
           "fileName": "src/content/fr/docs/tools/ai-tools/agent-skills.md",
           "postProcessHash": "a58d7fff7f6e68adc96d435c6210ebea5e04facf427931f947e3e6a9e536c742"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.958Z",
           "fileName": "src/content/pt/docs/tools/ai-tools/agent-skills.md",
           "postProcessHash": "dd450a7836541d0bb5ee390600d42f962c4064f28b218ed938fdade176ff048c"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.101Z",
+          "updatedAt": "2026-09-14T22:49:18.958Z",
           "fileName": "src/content/es/docs/tools/ai-tools/agent-skills.md",
           "postProcessHash": "1519e5b7cab5d7817fb1b602e029f9a3ba4884ef07f7d40e19c7be8c392cf1f7"
         }
@@ -547,22 +547,22 @@
       "versionId": "34a60feb3a2cf511cdabda25685ecc59e0315738edeab4aba586ed9251ad24f9",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.093Z",
+          "updatedAt": "2026-09-14T22:49:18.948Z",
           "fileName": "src/content/fr/docs/agents/ai-gateway.md",
           "postProcessHash": "f4ba5c5f669656c9b2f166cd5e4b298f1fdd7cec9959c7f42876e07389d70795"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.093Z",
+          "updatedAt": "2026-09-14T22:49:18.948Z",
           "fileName": "src/content/ja/docs/agents/ai-gateway.md",
           "postProcessHash": "9540340467b6d879fcad89e71f21e62475f84cb14eade36f9726776d268a76fc"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.093Z",
+          "updatedAt": "2026-09-14T22:49:18.948Z",
           "fileName": "src/content/es/docs/agents/ai-gateway.md",
           "postProcessHash": "b38d80ee99bb6381ea4a171c5ffe1db7a043af999e5b4de3e091eac359f1e1b1"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.093Z",
+          "updatedAt": "2026-09-14T22:49:18.949Z",
           "fileName": "src/content/pt/docs/agents/ai-gateway.md",
           "postProcessHash": "4ff02182029665497e0265590cb13359df1bb32a2b44ad71876996fbd7d0ed4e"
         }
@@ -574,22 +574,22 @@
       "versionId": "bf49b7e1e789d52695b523aad3ce710885faa51136afdbf7aa0301fb9ccfd84f",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.949Z",
           "fileName": "src/content/ja/docs/lakebase/development.md",
           "postProcessHash": "8ebb62a6e50971e9383abf924419e4bfa88f193ab239921cc7a7b41311c69169"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.950Z",
           "fileName": "src/content/fr/docs/lakebase/development.md",
           "postProcessHash": "3542f65a3c385b0babbd0a5a4965c84fcc139a34a53c6b69fdc17a1162cb9fd0"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.950Z",
           "fileName": "src/content/es/docs/lakebase/development.md",
           "postProcessHash": "842d3cf5b9ca4445cbb3bfef1bdf253c6aaefad1e07dec0ca126a96f4981a826"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.951Z",
           "fileName": "src/content/pt/docs/lakebase/development.md",
           "postProcessHash": "d0b16aa2e9cdb697414e29d0f6fdf716e3db7024b2ba3166f5f55678eb509573"
         }
@@ -601,22 +601,22 @@
       "versionId": "f687f9bb9beb6a9077fb8860e4e3eb21e5a36dfa747a438150ed7ba22abd6992",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.951Z",
           "fileName": "src/content/es/docs/lakebase/configuration.md",
           "postProcessHash": "e537166e120d60bf62c82739e2e47f4d683ed901daee47603fb4a8f9c5729ebb"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.951Z",
           "fileName": "src/content/ja/docs/lakebase/configuration.md",
           "postProcessHash": "644b73eeb698eb698d40624a3ef17bc1f1b62e731d0c1e580d5b59b9c1c37804"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.094Z",
+          "updatedAt": "2026-09-14T22:49:18.951Z",
           "fileName": "src/content/pt/docs/lakebase/configuration.md",
           "postProcessHash": "48782435ef1c39ff92e77dac9ca387d8e51378bd295b514b66ae6c3aad29dbcd"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.095Z",
+          "updatedAt": "2026-09-14T22:49:18.951Z",
           "fileName": "src/content/fr/docs/lakebase/configuration.md",
           "postProcessHash": "dda6496d775d055c82c18b5db0f0ff7c33a71750113c9e4dc28e1a002ff1aeef"
         }
@@ -628,22 +628,22 @@
       "versionId": "314f56d1428dd32f484ad43e8d80aec1aa0e96fcc630e43d9d5909118dd7d415",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.077Z",
+          "updatedAt": "2026-09-14T22:49:18.930Z",
           "fileName": "src/content/pt/docs/lakehouse/meta.json",
           "postProcessHash": "c0e41464444aa7678721df62dac166b80930ed34f0452da325c2f89b7c1b91bf"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.078Z",
+          "updatedAt": "2026-09-14T22:49:18.931Z",
           "fileName": "src/content/es/docs/lakehouse/meta.json",
           "postProcessHash": "c0e41464444aa7678721df62dac166b80930ed34f0452da325c2f89b7c1b91bf"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.078Z",
+          "updatedAt": "2026-09-14T22:49:18.931Z",
           "fileName": "src/content/fr/docs/lakehouse/meta.json",
           "postProcessHash": "c0e41464444aa7678721df62dac166b80930ed34f0452da325c2f89b7c1b91bf"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.078Z",
+          "updatedAt": "2026-09-14T22:49:18.932Z",
           "fileName": "src/content/ja/docs/lakehouse/meta.json",
           "postProcessHash": "7e0c05bd74b8993daee818b3a5ce2adfd6f125ab9668fd5c437828338d421c8c"
         }
@@ -655,22 +655,22 @@
       "versionId": "c7564fe6045b3906b5944c4f1818497062e24a55a19d14874e2323f4d99ce187",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.083Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/es/docs/meta.json",
           "postProcessHash": "6d37f02a80bc8ce3a12e2d2aa9fea0dc9a0595ee90948be8cc0ef0ddf3e8921b"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/fr/docs/meta.json",
           "postProcessHash": "b857f1ade8690dc85827ff1efaaf3df51c01c8f2d2891cdd5be3310d329e8855"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.936Z",
           "fileName": "src/content/pt/docs/meta.json",
           "postProcessHash": "efe061b1d7c082ea9478d6584a5db140c5bae3d3d4db1c240e3cbe58946d592b"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.084Z",
+          "updatedAt": "2026-09-14T22:49:18.937Z",
           "fileName": "src/content/ja/docs/meta.json",
           "postProcessHash": "fe15faa495b0f42f15ced59b8851cc1e9c4f1034cb13becad6d39ecc3ba8dca1"
         }
@@ -682,22 +682,22 @@
       "versionId": "644d1032b3e37d22e1702bca62b16ff612d080fb07b1b106a672ecf3f10c0c46",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/fr/docs/apps/meta.json",
           "postProcessHash": "f7f1f93d6de648154ccaceb9e73311eb76b578bd536e584c8f6f41078be49bcb"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/pt/docs/apps/meta.json",
           "postProcessHash": "f7f1f93d6de648154ccaceb9e73311eb76b578bd536e584c8f6f41078be49bcb"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/ja/docs/apps/meta.json",
           "postProcessHash": "f7f1f93d6de648154ccaceb9e73311eb76b578bd536e584c8f6f41078be49bcb"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/es/docs/apps/meta.json",
           "postProcessHash": "f7f1f93d6de648154ccaceb9e73311eb76b578bd536e584c8f6f41078be49bcb"
         }
@@ -709,22 +709,22 @@
       "versionId": "340da36937b5f324568c2f262cb902334c8b2ee8b8f6070f0e3b7d25055b1916",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.085Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/es/docs/tools/ai-tools/meta.json",
           "postProcessHash": "6fdf6aebeea752b8c93305ed8b54aaf41c13c0ad09d7be982779f5d725712733"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/ja/docs/tools/ai-tools/meta.json",
           "postProcessHash": "d0743ac9447bfc14b2cb80e5f2e4810bb022b77b70fa4b73eec0b061a814d576"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.938Z",
           "fileName": "src/content/fr/docs/tools/ai-tools/meta.json",
           "postProcessHash": "14bebe40f96822b2127faef3ca17b047e2377d73e9da36cc51455b3ba92314e4"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.086Z",
+          "updatedAt": "2026-09-14T22:49:18.939Z",
           "fileName": "src/content/pt/docs/tools/ai-tools/meta.json",
           "postProcessHash": "29513e0cad4c917f3e9f3c03247684837311d19689cb2f78fe8e1e9d7f70c92e"
         }
@@ -736,22 +736,22 @@
       "versionId": "3136cca1ad26f5dbede7db0931f6e6400ebed2998d52339fccd394f9cf1a45d8",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.942Z",
           "fileName": "src/content/fr/docs/tools/meta.json",
           "postProcessHash": "7e2ddf95eb496cae73008332e72069361f75831947ebff4807557133665c5fc5"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.942Z",
           "fileName": "src/content/ja/docs/tools/meta.json",
           "postProcessHash": "777a748d8636050a8b864de8eec6b21ee6bfb8d2ff5ea9a385754d2e42893927"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.942Z",
           "fileName": "src/content/pt/docs/tools/meta.json",
           "postProcessHash": "b06fc1f14b73409b507fc3cb0c12e8a9d0ca6efad49970ac3053f5c684dfa7f5"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.942Z",
           "fileName": "src/content/es/docs/tools/meta.json",
           "postProcessHash": "a336bb9346a91f268eb20d6cd4c636f42c79a3b72853f51181e43d4bc0d92874"
         }
@@ -763,22 +763,22 @@
       "versionId": "30ee8e96bccbc98f21f64285d88505f208763a2a0b70b899ea8f117c0f9dd4b3",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.942Z",
           "fileName": "src/content/es/docs/agents/meta.json",
           "postProcessHash": "7e06c7818b9bf5a5068e0dce2ac03e3871f5799b4bcbbb916e87c4ef6e471e5a"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/fr/docs/agents/meta.json",
           "postProcessHash": "7e06c7818b9bf5a5068e0dce2ac03e3871f5799b4bcbbb916e87c4ef6e471e5a"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.089Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/pt/docs/agents/meta.json",
           "postProcessHash": "7e06c7818b9bf5a5068e0dce2ac03e3871f5799b4bcbbb916e87c4ef6e471e5a"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.090Z",
+          "updatedAt": "2026-09-14T22:49:18.943Z",
           "fileName": "src/content/ja/docs/agents/meta.json",
           "postProcessHash": "7e06c7818b9bf5a5068e0dce2ac03e3871f5799b4bcbbb916e87c4ef6e471e5a"
         }
@@ -790,22 +790,22 @@
       "versionId": "3f9e328a945957d7106067fa8158689d9fdec88a9ca76e6549ab09ce415e73bc",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.947Z",
           "fileName": "src/content/ja/docs/lakebase/meta.json",
           "postProcessHash": "37e623c7379cd42d487b22573bd6565bc8fd1c86a8a3ff2ca24d1f34d3dac826"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.947Z",
           "fileName": "src/content/es/docs/lakebase/meta.json",
           "postProcessHash": "37e623c7379cd42d487b22573bd6565bc8fd1c86a8a3ff2ca24d1f34d3dac826"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.092Z",
+          "updatedAt": "2026-09-14T22:49:18.948Z",
           "fileName": "src/content/fr/docs/lakebase/meta.json",
           "postProcessHash": "37e623c7379cd42d487b22573bd6565bc8fd1c86a8a3ff2ca24d1f34d3dac826"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.093Z",
+          "updatedAt": "2026-09-14T22:49:18.948Z",
           "fileName": "src/content/pt/docs/lakebase/meta.json",
           "postProcessHash": "37e623c7379cd42d487b22573bd6565bc8fd1c86a8a3ff2ca24d1f34d3dac826"
         }
@@ -817,22 +817,22 @@
       "versionId": "7ba6fbbbf09b09325cb4c83574afd91917f4201ad66766a97ebd3e8c7a185767",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.095Z",
+          "updatedAt": "2026-09-14T22:49:18.952Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/ai-search.md",
           "postProcessHash": "b894091ce25fe93142624ed2f364f460f4b166576d6eeb94b4e29b2a4e86672b"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.095Z",
+          "updatedAt": "2026-09-14T22:49:18.952Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/ai-search.md",
           "postProcessHash": "673222079e3f6015c680529a715a0379b0b7ab10be7503e16a1465313ed6252a"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.095Z",
+          "updatedAt": "2026-09-14T22:49:18.952Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/ai-search.md",
           "postProcessHash": "7e3198b91677edfea30c784ded515267d682cd8442173e30cb940e1f9fc4d483"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.096Z",
+          "updatedAt": "2026-09-14T22:49:18.952Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/ai-search.md",
           "postProcessHash": "89d84811e609b49634028c5f72304eed207d357df27db7229f8d7a7863207a47"
         }
@@ -844,22 +844,22 @@
       "versionId": "8563ad77a728695d980812181aaa6e8253132af1bf3a1ea284bb049dcee836ee",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.096Z",
+          "updatedAt": "2026-09-14T22:49:18.953Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/plugin-management.md",
           "postProcessHash": "3fa2c6cb962ae43ace403bb02d0be852d797f74f8b5b0faeb35e98bf8a033f68"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.096Z",
+          "updatedAt": "2026-09-14T22:49:18.953Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/plugin-management.md",
           "postProcessHash": "244bfd3b68842cca4e2dbf520891404777e25491b06a65b4639c7880cadc970a"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.096Z",
+          "updatedAt": "2026-09-14T22:49:18.953Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/plugin-management.md",
           "postProcessHash": "71eeecb22d8e506a486c0983c09300052ad79edf80715ed70f1afaa45b11c6e0"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.097Z",
+          "updatedAt": "2026-09-14T22:49:18.953Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/plugin-management.md",
           "postProcessHash": "687e549c619c268d08f4c26d07e15a5ba00cb0a518b19e5113336df029be6b31"
         }
@@ -871,22 +871,22 @@
       "versionId": "1c1a19c9f611c99c5d56268e9976290945ac9301b48920d08d5668fe086774c6",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.097Z",
+          "updatedAt": "2026-09-14T22:49:18.953Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/agents.md",
           "postProcessHash": "92dcbe3ceee18a13ba2d54e3660d67f1792f9733ba99510765e40b4e620ef3df"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.097Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/agents.md",
           "postProcessHash": "9b7a94f1deaa971109b5fe854894fd49d4c605c65db046b8cf531d3bac1f0039"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.098Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/agents.md",
           "postProcessHash": "a4866f6851b3b35494f22f8d5c82e07e1e652e792812fc9f537e0b07accad99b"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.098Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/agents.md",
           "postProcessHash": "b85264591822710ab2f5964a483828eb550f189aacfcf79f37ab5ff9dae593e9"
         }
@@ -898,22 +898,22 @@
       "versionId": "2cb773078c97fd55ac549c0e3624681f9b982b240cbcffd0226b5f300d0d2ac7",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.098Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/analytics.md",
           "postProcessHash": "861ffc9251756e9b57404045868344cf7048abacf0902f986fd01bf81cf35ba1"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.098Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/analytics.md",
           "postProcessHash": "5f6d17e97f1d761f9bb811705e1372c351b879d28def5f0dc4ee11b9a30d9217"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.098Z",
+          "updatedAt": "2026-09-14T22:49:18.954Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/analytics.md",
           "postProcessHash": "896581161f669bc775b83433d8d2b1d3d07ec90d00f766f7a1f2bd56f9861e8a"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/analytics.md",
           "postProcessHash": "e5cf7d213a7e6cc21b805c1fca5f49eda25eb857dddfd2c9b0fdac78c7258c82"
         }
@@ -925,22 +925,22 @@
       "versionId": "f8336c02153e83bc7d8aec4f8f757fb0c781c88d896cce2cab8b8a548593085f",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/genie.md",
           "postProcessHash": "cb5c62d852b8a3126cfd146df933e1f2018bc3cd46f14445029191067eb2b0ee"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/genie.md",
           "postProcessHash": "d60637bcf26038138a1fff30454dd21363768a14f5e9fff421828638c088ad1c"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/genie.md",
           "postProcessHash": "87647c1e173a5a7eb1fbaffe60bb8955886a5946f47696b3e5e99482a0393e1e"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/genie.md",
           "postProcessHash": "dabfe032d1dfccfc2e0bfe24acc19e76b3ea2138bc5734752cb18c6365be045c"
         }
@@ -952,22 +952,22 @@
       "versionId": "323da81ad22939509d84e1c818f59410cc65211ecfa704b28ec56279da0b0b42",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.955Z",
           "fileName": "src/content/pt/docs/appkit/v0/faq.md",
           "postProcessHash": "938cc616025c11073dce278ebb2989482568d70782d90fa95bf00a88d2640fa8"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/ja/docs/appkit/v0/faq.md",
           "postProcessHash": "0e14809346b235027bb7453a0505118b97e9d96c69534a85f05cb8494401614e"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.099Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/fr/docs/appkit/v0/faq.md",
           "postProcessHash": "f1dccb9dd72706b7c7ccd7da6224b451a5a0487db0bdf713f2f2baad7e172036"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/es/docs/appkit/v0/faq.md",
           "postProcessHash": "671bf9d2c1c02d545442217eab4bc6205e6bd0a7add604d6782b5e8a94629299"
         }
@@ -979,22 +979,22 @@
       "versionId": "12c366f8f6933951e2af08c2167e62d5e96521cbf7b215a5ae8a8fc5626a698c",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/index.md",
           "postProcessHash": "5ce55b458bc0f3002ed9915b217a23686d4a97613f6224f8e4309c875b3d7c93"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/index.md",
           "postProcessHash": "b94a8b2e6656460d0e7bd7c75e0148df791211c7bd9639d4f0a3f0094d06b642"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/index.md",
           "postProcessHash": "8d80147242df6fe19e74fd31091df01197bc61834d7c557a9613917e758f02b9"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.956Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/index.md",
           "postProcessHash": "b41ad37cc04c742df4d24bd709c21a47bb0a9699aee41cde4cf4b45e069d9e29"
         }
@@ -1006,22 +1006,22 @@
       "versionId": "7418906f833a8a6d1015bed865e1238138a9f62cdd3215bd6cd041c416b3e3f3",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/ja/docs/appkit/v0/index.md",
           "postProcessHash": "bba8af4a307e110c4c2922496a38e352f5f51450053c94e6b0f839cc89832ca1"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/fr/docs/appkit/v0/index.md",
           "postProcessHash": "7379258b93d8774d4823ca500cf8e9777ca12fc6b073ea1703f4d794846caa5c"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/pt/docs/appkit/v0/index.md",
           "postProcessHash": "4206dcd3ee3ea32985ff2c997d8f9fa4b7e5595c633fed81380009e09d07afc3"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.100Z",
+          "updatedAt": "2026-09-14T22:49:18.957Z",
           "fileName": "src/content/es/docs/appkit/v0/index.md",
           "postProcessHash": "f0abfded259063e6d5b17a752498b0f2032bbf5faec493b0b45bb7b495c64c32"
         }
@@ -1033,22 +1033,22 @@
       "versionId": "0f6c5ff27d40d1572ab9b92de6e0b3d1aeead89277799f28a049c57b9d5a23e9",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.958Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/database.md",
           "postProcessHash": "a3aaf670ff38e3b4f271c3baf5e7f0222ee882cee0c9293964a5b2e2756c9819"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.958Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/database.md",
           "postProcessHash": "b5281e1124cb3d77336eede2a20d2625f20c9bbc6ebc429f7fe8a9b742e442b5"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/database.md",
           "postProcessHash": "44c89ae10e7e58965f9078c131f3dcce463b8c856ceefd9e4eedbdc70cda8f77"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/database.md",
           "postProcessHash": "58c7299b832635644dd72e2cc1d6045cfcadb6cd483f4db6c2498ebe116db434"
         }
@@ -1060,22 +1060,22 @@
       "versionId": "ef6fec5ef1ac2a077d476f2ae089a22eec380a91cb330d548b2d45ff06241ed5",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/llm-guide.md",
           "postProcessHash": "7502083fa22129d1b5f5e042e9b7332e936b62cd61e01ef4914ba098c751ce20"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/es/docs/appkit/v0/development/llm-guide.md",
           "postProcessHash": "0a086bbf23196be32744013cf07c5104ea73fba2d0000d291dc3284f9fdb9454"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.102Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/llm-guide.md",
           "postProcessHash": "061ef4a6b5c5ffdc371711248799f6bf84fa12281289254067c91be8806b1402"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/llm-guide.md",
           "postProcessHash": "62791d8e174196aed3ee5cd06060f4e4bb2ed8d6a3351fbafc213ae40cc87f9f"
         }
@@ -1087,22 +1087,22 @@
       "versionId": "03d856113503d8bcb1b7389d0b9ca91cc4a736bbeee6041b392b7073155c54d3",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/jobs.md",
           "postProcessHash": "89c2a147dbabd592ad3b0c9757ea52eb54ba520310d9dd86ec1550a8dbe4d6c0"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/jobs.md",
           "postProcessHash": "ad68e70e456e587dbede866d39bdade17b54e81a4a44427d7ebab502353fc5b0"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.959Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/jobs.md",
           "postProcessHash": "7e9470984a246eabee8050e3dcab341a6d338d4aad847909b4c3604469b0bbbb"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/jobs.md",
           "postProcessHash": "8fb93c4b3b6b1b5a0a16f9872e68ce50490c4388568114525cdfdcb87ffb2d5d"
         }
@@ -1114,22 +1114,22 @@
       "versionId": "a7d811ec4ce433d783751195864397fae289eb7d6eafbc899d2f88c7c879abed",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.103Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/execution-context.md",
           "postProcessHash": "c3df10b30ff51f690f8894d222ba831e3a206d408c3dd02931a46317e942a987"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/execution-context.md",
           "postProcessHash": "265a5dd90abfae642b570f083dffb2b97d1c58d7b3808f17293692a621e10e72"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/execution-context.md",
           "postProcessHash": "85557c38358cc32e298685f40a48c6ca9f2ba95f8b410f84f5be7f4ed31850ad"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/execution-context.md",
           "postProcessHash": "afa4845a5af5991bab49d346d1dcf509d877ff5e0f1cc28a4e2c7b4534f38593"
         }
@@ -1141,22 +1141,22 @@
       "versionId": "bc9c2afded3dcd35fe372bf96e199c79b0e08c34179d75eef5f2e0ca0d34390f",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/pt/docs/appkit/v0/architecture.md",
           "postProcessHash": "3c73ead5806b395f0067b6b700bc6b8c7b43ec8b3935aa912592079816723a92"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/es/docs/appkit/v0/architecture.md",
           "postProcessHash": "2fdd63b56d5768c5f6518270edf87fb95a3be5d40ba23c3fd28c9d9f2086411f"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/ja/docs/appkit/v0/architecture.md",
           "postProcessHash": "660c4903d0178d528ac4e60e9fc265e7d6b4eb44a0d53ddb69914392b9496c89"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.960Z",
           "fileName": "src/content/fr/docs/appkit/v0/architecture.md",
           "postProcessHash": "e76a54969fbc58bd373c9de99a7bb8243b4c9bb92c87b4c9a9219d4a9a64f73d"
         }
@@ -1168,22 +1168,22 @@
       "versionId": "611b714a1d9fcc9c1b6ee417eb6b8913c19922aed69be8ab9f60dac2c4ded69e",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.104Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/type-generation.md",
           "postProcessHash": "45940ee1f0ac5f37f31579ab80a01c9a7aa3387639936df79227e2d330c6f273"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/type-generation.md",
           "postProcessHash": "924634868a3e28b16321d35be16c623ce582a8646f3920cebd692b4fbd4ec7bb"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/es/docs/appkit/v0/development/type-generation.md",
           "postProcessHash": "9a255c8632dbd1d9e5440bc0160ecc8129da1814849f200b2b8289b0251bf01a"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/type-generation.md",
           "postProcessHash": "298fee446306d60d5bb065dc1e135494f7fe39524cd9fdd56c0068beebc386ff"
         }
@@ -1195,22 +1195,22 @@
       "versionId": "a3f57345e19a24b0eb567d52081fbc4fc101ff7d532fc68bb2af483286454f26",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/files.md",
           "postProcessHash": "95fbe8c67904bebae32ea0f3aed51f9ab845dd517685b227320d78025d4525a2"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/files.md",
           "postProcessHash": "36d6cf0bc0d88df218f3ec19c46a1a0e00a18fc6a7c817d98b73e2234c6bd42e"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.961Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/files.md",
           "postProcessHash": "ace267e7f4ef3aa31cc054c9419d23ef90b702638205dcf6de532d43c34a96d4"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/files.md",
           "postProcessHash": "1c5010018797095acc8959acbe76e9f18acca1d7d5ef5f42825fb4dda938be70"
         }
@@ -1222,22 +1222,22 @@
       "versionId": "4b6d46a590cdcc8f3c5527a176f5ee5cf99d95910ff2310361f87ee7396a5295",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.105Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/templates.md",
           "postProcessHash": "f55bbf9bf075a826cb2e5231779932dc10dae2776d22da06e07c8c35d6f0ecea"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/es/docs/appkit/v0/development/templates.md",
           "postProcessHash": "02a0fe8c288b88a39f9fe964698167bad88e98d2479b2bc7d3550f1758562fd8"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/templates.md",
           "postProcessHash": "716f11eba6faf8d7db56290888babec6fe76ea0d1ff76f95e7ffcd2ed3002922"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/templates.md",
           "postProcessHash": "f877843c35fa7f5ef1c9bec3ae8cfc85ef39fa1e23f60951b0e37485360229c4"
         }
@@ -1249,22 +1249,22 @@
       "versionId": "64dfaa2d76f5eb6692ebf47080f8a0ae39b2a4bee9dc3e7bb08fa936da38d771",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/es/docs/appkit/v0/development/project-setup.md",
           "postProcessHash": "f531594f14d5026004711155c5fd2d3dc439ad29ad8d6a3e43dad81614dc30a8"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/project-setup.md",
           "postProcessHash": "cf57dd1b3b02b95c152cc35ff4c3047f41d26f3a394b330c2ccdc17507601da7"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.962Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/project-setup.md",
           "postProcessHash": "cb41cc2aa745a5007dfed041c44903a59a9cf7b5b39b15b15ce8c09b3dd4e89d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.106Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/project-setup.md",
           "postProcessHash": "027ac1eb1cf1f7d75177fc88a07f79780c986206aa691af4644279a5b1c73ec7"
         }
@@ -1276,22 +1276,22 @@
       "versionId": "0a6194c9faa33fc20b124b637bc2d34eb6f09a0195f7578d00c011c296187825",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.107Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/ja/docs/appkit/v0/core-principles.md",
           "postProcessHash": "3e6e61ef5a35306f5d318d038b6299346eb2e4e578fbd4215536e158c7ea1216"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.107Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/fr/docs/appkit/v0/core-principles.md",
           "postProcessHash": "7a53f27836c9ae9a03458d9cb9b58cee948e000e732d7cb88a44e9bc162abd9a"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.107Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/pt/docs/appkit/v0/core-principles.md",
           "postProcessHash": "3b362e2e59e2cf0993bafdf79a447b7b01c7658b6267b4fcb5df9cb58f974d64"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.107Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/es/docs/appkit/v0/core-principles.md",
           "postProcessHash": "91c19aa7d32d43110e97a7d8d7e0672bdf12d53e748e56d4221d0074ce691dfc"
         }
@@ -1303,22 +1303,22 @@
       "versionId": "1cb8d1997f52c740abc69024a3821f1745c0f99c5caafb2922f58ae3d8fc4869",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.107Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/custom-plugins.md",
           "postProcessHash": "b702fe0fe0bdc79e87f7f0b1c08ee09ff0db3f7220c7a5bd72d4d7697c467694"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.108Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/custom-plugins.md",
           "postProcessHash": "3f08370c6b3b83ef8bc69b1f0c215149589e8511ef4c2130186ebc9d1a35bfee"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.108Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/custom-plugins.md",
           "postProcessHash": "3acf69c570f50a643b221c94a460647aa19c73d1d942ee4a80f489a9b4212b30"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.108Z",
+          "updatedAt": "2026-09-14T22:49:18.963Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/custom-plugins.md",
           "postProcessHash": "7a627ee4cc79140941665da8fbe816230fd9629def01e7f7cb67e3c7cf4f7dbc"
         }
@@ -1330,22 +1330,22 @@
       "versionId": "75c31ac3e0638a90b08d40a7332fc1665bc34b9588bc502a4dd821538826c35f",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/caching.md",
           "postProcessHash": "f4b9d9e9c49d677ca94e5c10d840bdf51098cbde6c568b92da9891a2ae20fee6"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/caching.md",
           "postProcessHash": "a4dc1f62d4d4885831e3f93329c6af802ceee262cd61790df43b81961342af80"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/caching.md",
           "postProcessHash": "085cd96b16d0e480762e3b2f20b07ac57204d7a3636aeced90e2e302dd21ddbe"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/caching.md",
           "postProcessHash": "3a33331b6c3443f418b8cc534494db3df3e58241c6b8aac6541023c07dde91a1"
         }
@@ -1357,22 +1357,22 @@
       "versionId": "4948a82afa0e2f81dff3aa3c292e01fc90b524c4cd7b75e1c300f967ee1356fb",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/lakebase.md",
           "postProcessHash": "0cc4389760846baeedf01a09a8326014fbe95fe63334ff464e648fbe52adc5ab"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.109Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/lakebase.md",
           "postProcessHash": "d076a8aa5fe5150b151d6c88d9900dd738b7b507fdac4275ba25faee38548860"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.964Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/lakebase.md",
           "postProcessHash": "6ca1823ce42d7ff43ef3bbdbbf5fe381ac074f2ef0c8f9c33bf7e15990778603"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/lakebase.md",
           "postProcessHash": "3964d4fc1dcb4330e5472038eb23c228194572fd5d481e553d8f7a12cb6a495e"
         }
@@ -1384,22 +1384,22 @@
       "versionId": "c61036e4ee147cf27e01b401c61ff4dabb5eb64adc8ea81ab6f7960ade5b1578",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/model-serving.md",
           "postProcessHash": "81a196859e1e83005ab1cb3da6ddf5552acb1fb4ddfa429498b7257872369b20"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/model-serving.md",
           "postProcessHash": "e73e29ec46ee831ce307b62a28782f628eb865dea08df0a4f70ddaeaf4265977"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/model-serving.md",
           "postProcessHash": "b72542387fed12824f7d7897c9db8ad5f74ab43103b344e5bcb75df2824a145b"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.110Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/model-serving.md",
           "postProcessHash": "5fdbf744eeb054593c6b27233a0d48feb5b23f00fb7f0f25d512031c2ea400cc"
         }
@@ -1411,22 +1411,22 @@
       "versionId": "992cd615cf0e8f33534c5d80c17d4d25e44701bb16aabb6ab8c5351675c761c5",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/manifest.md",
           "postProcessHash": "d697cbd47d058f792468040052aed961c49ba3e83200a1b9706fa2728aaa7660"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.965Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/manifest.md",
           "postProcessHash": "b3eb81ab0705369474ae5ccfddf4a28bb9b53776a8934fc04bb844eed12e03b3"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/manifest.md",
           "postProcessHash": "9f622b1b69b6de1246e024ec814ef3295d173e04e2cbb7239e50278c2d84f1fb"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/manifest.md",
           "postProcessHash": "866dbc9a50216005a03f349f2cc9f392357938c1d6a611f811f26fe6252671b2"
         }
@@ -1438,22 +1438,22 @@
       "versionId": "a33e7b5ca0c01b492819fd4f2b9daefbd269f86366dd2a8276477a013ee63eb7",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/ja/docs/appkit/v0/app-management.mdx",
           "postProcessHash": "4502ddbe47f23f286156940824415dcaf3d46a95c94cfdf8032a5011cdf56b7a"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/es/docs/appkit/v0/app-management.mdx",
           "postProcessHash": "9e4fa71b4a5ddb911b34d09bccd22713a6047ff8cfa79f26d79f8673c2fe2d5d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/fr/docs/appkit/v0/app-management.mdx",
           "postProcessHash": "5de806cd569e07f1be49323d68946958fcb10bf5075ba200d9a74cd43314c8b5"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.111Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/pt/docs/appkit/v0/app-management.mdx",
           "postProcessHash": "ad41894c08c8e47814232e87a0d244430338e9edb60f5b9c6164b862dc972f2e"
         }
@@ -1465,22 +1465,22 @@
       "versionId": "b6979b446f600922ebda393f9878a59eef89bfa29ceec17785d84fdba0f09db7",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.966Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/stability.md",
           "postProcessHash": "06543b2e80992fff71272567fba8cbc2bef922c0d4bc8e788615944c939dd2a5"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/stability.md",
           "postProcessHash": "fd1033917cbdba85397e3a793df9c513011215ee4112f78b362a71e07561efc1"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/stability.md",
           "postProcessHash": "d516f11ee1913b66d463d3a40f6caf288bc1d5515d0b7fe7b51e37c21d98097c"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/stability.md",
           "postProcessHash": "540d29b02e10da622391ee813c612c58ae22acbf599edf1fea11da5c3efbd3a2"
         }
@@ -1492,22 +1492,22 @@
       "versionId": "39defbdf92a2ad4e9af37eb845c3099bec813263b25710d1c513b88e658e11f7",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/es/recipes/foundation-models-api/goal.md",
           "postProcessHash": "4ab942112b42b6f2d37390a6d2b47d51c68948700068a5464e7079060038de76"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/pt/recipes/foundation-models-api/goal.md",
           "postProcessHash": "41510a68c1d33c942f0ae0b7398a08686520ddfcb347249df52b83b55936f2c9"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.112Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/ja/recipes/foundation-models-api/goal.md",
           "postProcessHash": "2bd856c80acc9324a79e22fa2b592a6f144a48ecc0b5f4695e3c7d5fabfd208e"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.113Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/fr/recipes/foundation-models-api/goal.md",
           "postProcessHash": "a0fdb3787be77ecf141a067a27d0fc4440103005e375b6e790c29f128925007a"
         }
@@ -1519,22 +1519,22 @@
       "versionId": "016524407aeb72d57d103a8b05a5642e84210054b0b66d21edc5de3f453cf33f",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.113Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/fr/recipes/foundation-models-api/prerequisites.md",
           "postProcessHash": "1e55158f164b85c8807959380ad2a54248e1f3a48adc8b58bdd733f9358ebf36"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.113Z",
+          "updatedAt": "2026-09-14T22:49:18.967Z",
           "fileName": "src/content/pt/recipes/foundation-models-api/prerequisites.md",
           "postProcessHash": "4804cd24b5e8083797154863f870f5b229e894901b5cb10ef68712d61ab3257c"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.113Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/ja/recipes/foundation-models-api/prerequisites.md",
           "postProcessHash": "17fd71cebde45a902e5511f81ec36ae41b17d4efe3583e5108dd54556ab93499"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.113Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/es/recipes/foundation-models-api/prerequisites.md",
           "postProcessHash": "0a9f374cff90f6ebf70f8f5cd140d85ea3d4f25d95e1fe32959c586e71e5e94b"
         }
@@ -1546,22 +1546,22 @@
       "versionId": "ccb5b16a80ea878ee6762503a6440da5412170db853f8f70559147a1a283ee5d",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/testing.md",
           "postProcessHash": "be2f3a674ced5af795d22c1f267e0e45a78218c04113d9843ab79cd4233cbd79"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/testing.md",
           "postProcessHash": "4d655fd5e00b295edc54b6fb42921011788bcd301b8761f2651973f968f89d8f"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/testing.md",
           "postProcessHash": "e310091cebf973f714424a5c21323444f869f30d3a2664a832836bf329914207"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/testing.md",
           "postProcessHash": "b9831b872826d3d3f4684a5e3832e6d25812e2203cd83649dba675735f9db8e4"
         }
@@ -1573,22 +1573,22 @@
       "versionId": "fbcc925ea180e0f7adea577f62c350074e8917948c798789a82e70351f320e32",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/fr/docs/appkit/v0/plugins/server.md",
           "postProcessHash": "07a156a088469f38ca05b52f08eb1bd6c06154b9f2ee0772e2c22a2cfa42e504"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.968Z",
           "fileName": "src/content/ja/docs/appkit/v0/plugins/server.md",
           "postProcessHash": "ef84037df8eddfbce68a0f98e62c49b1c9e8bbbea07ff0cd97b37ac33e086b56"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.114Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/es/docs/appkit/v0/plugins/server.md",
           "postProcessHash": "39b6736ddc0a5e9f3a34b1b9785f5b72b67aef217ddc34602a3b6c91b79c4e8e"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/pt/docs/appkit/v0/plugins/server.md",
           "postProcessHash": "2e239cafbd343a0f2066572b889e4141a3a333cd4de2cb9c88c18a385f1b7fa7"
         }
@@ -1600,22 +1600,22 @@
       "versionId": "bb9dbba7b5695993b1c5808be18ba2990836b7272f4626e1d4f280705393d27c",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/es/recipes/hackathon-app-with-synced-dataset/goal.md",
           "postProcessHash": "f7c66eb5f6399f02284b5231237d752194758fcbeea6a43e8337107cfd8a302b"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/pt/recipes/hackathon-app-with-synced-dataset/goal.md",
           "postProcessHash": "6f95a45e954ccf889dd02c853cf0e004771d69de6544feef36cb7034f585d619"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/ja/recipes/hackathon-app-with-synced-dataset/goal.md",
           "postProcessHash": "b45e6b9bc5feb1c7a61cb96c569f35c5c251b920fd0514a05f5f0a024d5725b3"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/fr/recipes/hackathon-app-with-synced-dataset/goal.md",
           "postProcessHash": "40f703ff85a8086905818171fcbca147934ee6ca3d04e890a0b2152e4a2de6cb"
         }
@@ -1627,22 +1627,22 @@
       "versionId": "3db5f4c0e3237a188453480debf5daf42be0919dfc3d682736433bdf621420a9",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/local-development.mdx",
           "postProcessHash": "c332090f8df816e50e04d591b5f5c5b7f4884ab65634a4799e4ba28da62b7b74"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.969Z",
           "fileName": "src/content/es/docs/appkit/v0/development/local-development.mdx",
           "postProcessHash": "8b8b1b2bac38bce62376480e78f3fba2be33322bc9f2de5c73d2eff85d56eb82"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.115Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/local-development.mdx",
           "postProcessHash": "ab7435e54c68cd06f56a6c0f9fbc9a88869b378baaefcdad62d4fc3ce53c525c"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/local-development.mdx",
           "postProcessHash": "6b04b932b1979ab099be7cb22275ca3e368cb8a3a684bc5539a7088dca89da03"
         }
@@ -1654,22 +1654,22 @@
       "versionId": "4eea08d15dfe2aa2ef166361772c89be8e8b88e221416018e9463f07b7cd0a3a",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/ja/docs/appkit/v0/_prerequisites.mdx",
           "postProcessHash": "1fdb2c0bb05eb6b679eab78f534e7c0b6f4869a8ea99b0d1235bf450448125df"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/fr/docs/appkit/v0/_prerequisites.mdx",
           "postProcessHash": "e4c34b8f20bfb21b7bbb9372eb1955984f0f3c092fc60077cfaebdddb124d204"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/pt/docs/appkit/v0/_prerequisites.mdx",
           "postProcessHash": "bcf86fbfc1e1fe0754cff6dc799afe2208984e145c076c2d77e6637126a5cc40"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/es/docs/appkit/v0/_prerequisites.mdx",
           "postProcessHash": "a424cd36199126c1bbb1fdac0444ece755a4ba100254a17b8de6458a2bf22c97"
         }
@@ -1681,22 +1681,22 @@
       "versionId": "6330e805b0ab4de28df2f3bb7e5c72a3d0f1969680f6e6d872c86f1e9b9c041a",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/remote-bridge.mdx",
           "postProcessHash": "41418b6589fa8fae8f2bd841425cc1aa2cc67c1c8d5f7930d8f519a2f4cfc7dc"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/remote-bridge.mdx",
           "postProcessHash": "b5a12ec6cef9a7845e61ec40d9240396d78d8a31ed3f7695db6c5a62cc1c6334"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/remote-bridge.mdx",
           "postProcessHash": "166873e464fa47eb7aabcaa9eeddfe83225619cddb5a85d9751f2dbfbc42d8e0"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.116Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/es/docs/appkit/v0/development/remote-bridge.mdx",
           "postProcessHash": "36085d006d18b22e5c439dca124ac99b677c8a4a09a7efab4a82f61ce59e9d83"
         }
@@ -1708,22 +1708,22 @@
       "versionId": "ecd323ac6992dc0231eec48c91b5e8b18a853fd027ae1c35a613f5bb236da5b6",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.970Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/index.mdx",
           "postProcessHash": "c9f1d48da2d4baebca4a444f51c0c3907fa66c7c5acec0d014fc191caf6391f1"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/index.mdx",
           "postProcessHash": "bfbc1d6475627fba4d5dfa2c6f432eab6412e79c7da367a7362fef479170ec65"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/es/docs/appkit/v0/development/index.mdx",
           "postProcessHash": "ac76c2a9ede9d21f4febe67ea96b28cfe764ff25576970588cc762c8f5ebde14"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/index.mdx",
           "postProcessHash": "263e469fb3cfef25f0df03e5217e6180a96adf3e0314e343277b68f7367ec96e"
         }
@@ -1735,22 +1735,22 @@
       "versionId": "37c39becf8c8fa5ff945b5824b78465ad7b04bba46dc7315829e076cbbc4e974",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.117Z",
+          "updatedAt": "2026-09-14T22:49:18.971Z",
           "fileName": "src/content/es/docs/appkit/v0/privacy.mdx",
           "postProcessHash": "418dc6344e87fa09a6e4377dd55da5689835fd4dd6e06b209686fc42ac662129"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/pt/docs/appkit/v0/privacy.mdx",
           "postProcessHash": "6a76fa541136a0a1246eb6f1dd1cfcf2457f82dcfa08e1ddae0d87c77be0c013"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/ja/docs/appkit/v0/privacy.mdx",
           "postProcessHash": "d9f39d8b006ebf599f2e4da339b375a63ad88b710616d366841ef02b4e14bac4"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/fr/docs/appkit/v0/privacy.mdx",
           "postProcessHash": "86d0049f3513d7bc285cf0c4829831afb5cafcf41220dff356d809e5505a420e"
         }
@@ -1762,22 +1762,22 @@
       "versionId": "e5b9e813034dc3a3a5adbea1133f3181643ff0b808005cb8065536b22cbefbef",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/_prerequisites_app.mdx",
           "postProcessHash": "ca8d2676c4e038f606288be279d44197276320ecc949cfda117cf469f169bba2"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/_prerequisites_app.mdx",
           "postProcessHash": "99d77e99f4c8c3ff1cce8b586f33bc0aeff01a1bbd83eb68182269cb5e05d3c2"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/_prerequisites_app.mdx",
           "postProcessHash": "157ee04bb51289165b610960caad8d460b1132b7077f9d742d9b7bc1074059fe"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/es/docs/appkit/v0/development/_prerequisites_app.mdx",
           "postProcessHash": "22da1f33c4b881406f8dffa639b6eb7c4ecaad2999e850647d7c12207fcbb9f0"
         }
@@ -1789,22 +1789,22 @@
       "versionId": "703116af5e03efea0eaaf24243c99187d6be70aafbb9130063a69c545e6c5fd4",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.118Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/pt/recipes/genie-multi-space/prerequisites.md",
           "postProcessHash": "e57096417e0775ffc43332ee1e2d70004bf13951bd30fc0e2bca94313f1be6ef"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/ja/recipes/genie-multi-space/prerequisites.md",
           "postProcessHash": "9cd989d92da2d9bec8fb5f93891572c30e480d38ff9cdaec2b06a4bec57fa558"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.972Z",
           "fileName": "src/content/es/recipes/genie-multi-space/prerequisites.md",
           "postProcessHash": "660735dfd336dca90dc8433cd94580f1e85b5991d5f9c1223ba1150364267fa4"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/fr/recipes/genie-multi-space/prerequisites.md",
           "postProcessHash": "c3670c6db9eb94a3eb664a1c382f01a7b84e6c1a33e86e9568e70fb62e888f77"
         }
@@ -1816,22 +1816,22 @@
       "versionId": "e77d96ee582cf115a7c971d9a7f80d7a0e7f130b9284af7469d5dceabc37d13f",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/fr/recipes/genie-conversational-analytics/prerequisites.md",
           "postProcessHash": "2d4584609f35a6b189ec611d68965aacf8d53ebb72b2046df9274b6322a123c1"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/es/recipes/genie-conversational-analytics/prerequisites.md",
           "postProcessHash": "c0a1cd87cc06d19ca76b5009c99cb6fc60e2649dff493bf1152401628d4374be"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/pt/recipes/genie-conversational-analytics/prerequisites.md",
           "postProcessHash": "de5d5f64a557cae32ab3a861a06c3ca0905dd1b84b89612462c85c6f4ae4f76f"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.119Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/ja/recipes/genie-conversational-analytics/prerequisites.md",
           "postProcessHash": "47ed8f4bbcec3006d0a6250b18e3746133a1ac78955f403c133de7af723479e8"
         }
@@ -1843,22 +1843,22 @@
       "versionId": "8e88cbce1c1dabef1de51ededdb6de0c100d1978bdae5f99e7e773cb87cb5ef9",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/fr/docs/appkit/v0/development/ai-assisted-development.mdx",
           "postProcessHash": "66cf9736554b4e758ffd0aece41365f014425ce87ca34b52cd1abc02a2105e59"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/ja/docs/appkit/v0/development/ai-assisted-development.mdx",
           "postProcessHash": "a03080fed0fc9b88f46af17b401a8953b14f426964fe8f92868cac6786f25454"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/es/docs/appkit/v0/development/ai-assisted-development.mdx",
           "postProcessHash": "203dbcbf16cbac9a966d28151a8934aa7053d97f4429445e7784dd523a02ee29"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/pt/docs/appkit/v0/development/ai-assisted-development.mdx",
           "postProcessHash": "828f191dcbad5e82e9d0e29730d66193220cf7fe13bf936201350df572efba52"
         }
@@ -1870,22 +1870,22 @@
       "versionId": "7de59af2caf4b3de53a6b57b7996bd1c07d77c5bab01f9d4ab23976e8f5e54ea",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/fr/docs/appkit/v0/configuration.mdx",
           "postProcessHash": "6fadc26f40db3571147e22e4c900c04b46714be8d6bfb4a0fe86575f7c4c66c1"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.973Z",
           "fileName": "src/content/es/docs/appkit/v0/configuration.mdx",
           "postProcessHash": "28a0d95ad9f5741d9e65a38018b4eb80be3d73e1fe619300773c30d11bc92d12"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.120Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/ja/docs/appkit/v0/configuration.mdx",
           "postProcessHash": "e50918b0097202547008c58bb0a48a9ee0581957a83f81fa3ea46cdb9542c922"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.121Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/pt/docs/appkit/v0/configuration.mdx",
           "postProcessHash": "63152ef20b29378fcb77dad01c95c1d7614a58d94b621250f263016b6f880e93"
         }
@@ -1897,22 +1897,22 @@
       "versionId": "2531899a154d03e08c013368adbc5c0c2ef7d4ef0d504f35adab90912a798b90",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.121Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/fr/recipes/embeddings-generation/prerequisites.md",
           "postProcessHash": "f697c0ee3b360d18ea961e685d7af5ef12a39a5abcbe86c76d50db483d327467"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.121Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/es/recipes/embeddings-generation/prerequisites.md",
           "postProcessHash": "ac73efbd34def2c78c2bfd0e0a215a554cf07e8a84d24da44a80000178205191"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.121Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/pt/recipes/embeddings-generation/prerequisites.md",
           "postProcessHash": "ce236bfd723fc6970668877a4cc3211e6945c56bdfffe06f1caaa8a96774bb6e"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.122Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/ja/recipes/embeddings-generation/prerequisites.md",
           "postProcessHash": "dc1967ee0b83278e02a85d79973b72aef7abfb0c0bfa7e2411aa03434394e61a"
         }
@@ -1924,22 +1924,22 @@
       "versionId": "4d7df9ed5bf5745aa791d10f1164d69bdb30e6d0c1fe310cfb39b610db75eb98",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.122Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/ja/recipes/genie-multi-space/goal.md",
           "postProcessHash": "556d6c8170387263f1fca186894ca2a48797930a3191caac83fd179984ed9117"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.122Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/pt/recipes/genie-multi-space/goal.md",
           "postProcessHash": "185325fb4ceed1395eb227955c6fc279930a6455da8a902d50b9250332653eca"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.122Z",
+          "updatedAt": "2026-09-14T22:49:18.974Z",
           "fileName": "src/content/fr/recipes/genie-multi-space/goal.md",
           "postProcessHash": "a5b0244200e4cd93f16d6db6ffa513599b8228e5360fb2f2e412c04800e0630c"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/es/recipes/genie-multi-space/goal.md",
           "postProcessHash": "46906a4c17659c30609d2c6f4de123657d42a100900cd6b05dd7dbc0454a4f87"
         }
@@ -1951,22 +1951,22 @@
       "versionId": "28c0f8fac0025bd60b100503bb67d9a6acf749b074443ecadef4af444bb5c850",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/fr/recipes/ai-chat-model-serving/prerequisites.md",
           "postProcessHash": "a0959b3eb992c03817e2c82c3e2e555edb051a8f8e7ca0d5c639fb84a1e7304d"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/es/recipes/ai-chat-model-serving/prerequisites.md",
           "postProcessHash": "19b544c4840252af0512f4fd06c6c5d509a763b16a963e6476330fdf18307856"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/ja/recipes/ai-chat-model-serving/prerequisites.md",
           "postProcessHash": "2860154e33c34be0a9f7a63f0d914c90368f55c00d5ed6da6d816a132bb36da4"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/pt/recipes/ai-chat-model-serving/prerequisites.md",
           "postProcessHash": "ef79e08181d16c630e63c5e384923f93a3249e6121167df5d81b01fceaa938bd"
         }
@@ -1978,22 +1978,22 @@
       "versionId": "2d286a29c3a332dd82f555795caf40de0269ff10f99692698bc683df8b3c0e54",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.123Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/fr/recipes/genie-conversational-analytics/goal.md",
           "postProcessHash": "0686b47c0b7438ab783a4989e8458808359e506ab399b98ff6782fa857e42a8d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/ja/recipes/genie-conversational-analytics/goal.md",
           "postProcessHash": "055663fa8191270b8522a1600c141e52f7f9f697c909ac3de341699a864fa3fe"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/es/recipes/genie-conversational-analytics/goal.md",
           "postProcessHash": "64b01b0ed56125fff1b99fd13898a95f68709b60a626871f7a2b1e5cec8d6552"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/pt/recipes/genie-conversational-analytics/goal.md",
           "postProcessHash": "e4de47464b8c5c61e949e17bf9fc170dbb3e6461efa228505be411deb9ac4f55"
         }
@@ -2005,22 +2005,22 @@
       "versionId": "06774af98e5e10175a598289c8e5b3a44ca08a8df960480d5011deb727a499a1",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.975Z",
           "fileName": "src/content/ja/recipes/embeddings-generation/goal.md",
           "postProcessHash": "0c1e466da37a2cb318a20dc13fb43cd3bed1c343c9575b3b1a7be903236fd886"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/pt/recipes/embeddings-generation/goal.md",
           "postProcessHash": "eb6292c10f0287e5f43f9315194a57c2bcbcc324e726b6b9fe38395bb1fbdc99"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/es/recipes/embeddings-generation/goal.md",
           "postProcessHash": "fe066d14561ff2bd89a75622856a35fcb1c6b469e56215f19eb2b54ea1b5613d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.124Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/fr/recipes/embeddings-generation/goal.md",
           "postProcessHash": "61a523026967f7752186050bf145487d63081254bef2fc3ec067d7e0bebb60b3"
         }
@@ -2032,22 +2032,22 @@
       "versionId": "bf7aace0acfee0a27a49ecc0870be511dc8260bbf33c5a58205162fa8639ba37",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/pt/recipes/ai-chat-model-serving/goal.md",
           "postProcessHash": "7a20db77d239157cfc07c36edb0687389ab2b7c43ce8f6622f7a33698fef12a5"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.976Z",
           "fileName": "src/content/fr/recipes/ai-chat-model-serving/goal.md",
           "postProcessHash": "a3c9ddf58c76958f57669002d6980d4ecba0a16c113b4e143df6063c4f3f9c29"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/es/recipes/ai-chat-model-serving/goal.md",
           "postProcessHash": "a4726f78db591ecb4a76216b8ad065010487e721ae48d050d7dc7c295d1702ba"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/ja/recipes/ai-chat-model-serving/goal.md",
           "postProcessHash": "57a6392a3b2d9a2198bc2aedc3a9a2e16b714cc8375df7ca8e25760e9472ac09"
         }
@@ -2059,22 +2059,22 @@
       "versionId": "67154f80b7d46fa46f9bb8eb469f00e39dd095e4777dcf0e6374395006d7968d",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/pt/recipes/lakebase-off-platform-env-management/goal.md",
           "postProcessHash": "4b34a2e23fbf84b10fc28d9c066571195acf9e53aef818b80b580c876c6c6041"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.125Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/ja/recipes/lakebase-off-platform-env-management/goal.md",
           "postProcessHash": "0af53b4efd1d1a828aaf37efde1641792f934e648333df5368924e1a6184378d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.126Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/fr/recipes/lakebase-off-platform-env-management/goal.md",
           "postProcessHash": "db333edb3107969ec53158d641a14e8d8ac1860b95c82b274072c69d31921cd9"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.126Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/es/recipes/lakebase-off-platform-env-management/goal.md",
           "postProcessHash": "6a78eafed19060490e6a3eb3b3496ecd5cb7fdab34b46137a53d2890092eb271"
         }
@@ -2086,22 +2086,22 @@
       "versionId": "b37ae1012fbddbfd648c935df2f980ddf2182d33c289995a9767736c64ab2b4a",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.126Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/ja/recipes/lakebase-change-data-feed-autoscaling/prerequisites.md",
           "postProcessHash": "af7c37df6f32d2efbf53176f9d3378384b9f1b7c32a68ec7f57ecf178cef4dab"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.126Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/fr/recipes/lakebase-change-data-feed-autoscaling/prerequisites.md",
           "postProcessHash": "59f91d67de2fb8a2750fd0c601ed140890479dbcc3a8cc2b9b102c36c444178f"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.126Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/es/recipes/lakebase-change-data-feed-autoscaling/prerequisites.md",
           "postProcessHash": "a8c79881992c99c3f9b00e1734a893b1629352cb6f26f53bc0dbcce1b773aa15"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.127Z",
+          "updatedAt": "2026-09-14T22:49:18.977Z",
           "fileName": "src/content/pt/recipes/lakebase-change-data-feed-autoscaling/prerequisites.md",
           "postProcessHash": "860952d786b60425fa6958680eb4078122b08339fad4fa0ec40bde3676a055a4"
         }
@@ -2113,22 +2113,22 @@
       "versionId": "9c369e98efe7d1381f2f795423cbe5a07d41e3b60aab41806ac3ea70729761dd",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.127Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/es/recipes/medallion-architecture-from-cdc/goal.md",
           "postProcessHash": "c3d94bb6a886e49b9dabc238d5c9394c08e8a2f77d1c49744759d41689087ae4"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.127Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/fr/recipes/medallion-architecture-from-cdc/goal.md",
           "postProcessHash": "c36a8a9940e29a7456d7a2961d0045cfdf9389e47afc2bbddd75cf6995d10af6"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.127Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/ja/recipes/medallion-architecture-from-cdc/goal.md",
           "postProcessHash": "abee2597c272aec426d44619382fff7c6ff4b38e6bd4c0acf0d994bf4c057d75"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.127Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/pt/recipes/medallion-architecture-from-cdc/goal.md",
           "postProcessHash": "0db6cf5896558c23b34b24a6ceeda05af42008fbd55b92806af75bb29403d13a"
         }
@@ -2140,22 +2140,22 @@
       "versionId": "7aaaf359daf6f43f044f2ec21bab4fc06b09374985911ca905beaaebb4363d84",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.128Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/pt/recipes/set-up-your-local-dev-environment/goal.md",
           "postProcessHash": "d77cca94f9dc62f976b30bb70138208ffdf9a7f0769f7463c2e0506378f937c9"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.128Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/es/recipes/set-up-your-local-dev-environment/goal.md",
           "postProcessHash": "27dc266b238498a484cd4d39994bf10a7b34a1f1f566f4635a63c4e5bbe63c7e"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.128Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/ja/recipes/set-up-your-local-dev-environment/goal.md",
           "postProcessHash": "928534e2f4517304c22ef2de9a819c4f47185ce05b92804c51d9afd5dcb4889f"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.128Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/fr/recipes/set-up-your-local-dev-environment/goal.md",
           "postProcessHash": "0aa2edf7b768ca58b2eab52ba97a5a5d2928dfa88974b946bdb9acde1215936a"
         }
@@ -2167,22 +2167,22 @@
       "versionId": "ef3ba3f0b0aa0060df76743ebed8f3a88f11fb6cd495ce8fcb6ceb863661efde",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.128Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/fr/recipes/lakebase-pgvector/prerequisites.md",
           "postProcessHash": "9ce33c4f5800ea1bc5f95001e69ba4ca0e1010f5fdd4dd7e0787c0f901131105"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.129Z",
+          "updatedAt": "2026-09-14T22:49:18.978Z",
           "fileName": "src/content/ja/recipes/lakebase-pgvector/prerequisites.md",
           "postProcessHash": "65f8087fc7344c5e27afa86ceb19d36814183eb8fa3a2c7cdb66924830d9cd9c"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.129Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/pt/recipes/lakebase-pgvector/prerequisites.md",
           "postProcessHash": "cf60859c718e99381d40fce1a17423f53b2dbb2e8793061a394be5e55509ad44"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.129Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/es/recipes/lakebase-pgvector/prerequisites.md",
           "postProcessHash": "b0d4466c9a945edfa8e6a6b0042a6e71339067955aa64318ff6f368d7aa95b9a"
         }
@@ -2194,22 +2194,22 @@
       "versionId": "2044f0d0eaf840d26df64cef2c5a11c56ff415426dbf960cfd16b01f6aa121e1",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.129Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/pt/recipes/lakebase-token-management/goal.md",
           "postProcessHash": "60fd58e59cb2947f1bdcb38a4b093b744a5436d5cd968223378d46e73407ebc0"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.129Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/es/recipes/lakebase-token-management/goal.md",
           "postProcessHash": "beb3e182aaeec74a8be7802377d126ce979dcd67b78ccfecdd326ed58835c6e3"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/ja/recipes/lakebase-token-management/goal.md",
           "postProcessHash": "64667a49f2ceade68e510c9321c0207b231a13e314662ebc06017bfd030c927e"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/fr/recipes/lakebase-token-management/goal.md",
           "postProcessHash": "c510342fbf91e82f2216adec27f3502fede09c5c82dc537b41ae9388e1d30d33"
         }
@@ -2221,22 +2221,22 @@
       "versionId": "b99c776826f58cd42afa48f112f27a243a7a89d7559ddaa3e6cda284fb22ccf9",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/fr/recipes/lakebase-create-instance/goal.md",
           "postProcessHash": "eadbca551e20398e07968f3bc547a08be5b3962ec89813d28cf16811b71df1c8"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/es/recipes/lakebase-create-instance/goal.md",
           "postProcessHash": "7d871fd78826328279a4221810c5a1288a84fb3fc569cab1b9b504ae74543027"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.979Z",
           "fileName": "src/content/ja/recipes/lakebase-create-instance/goal.md",
           "postProcessHash": "b11c23365ab10a088139949b16b1ad6b72f5f95fba3cad4bd06448eae5070340"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.130Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/pt/recipes/lakebase-create-instance/goal.md",
           "postProcessHash": "6c5443d8dd1d7c297d39fd251434e1d7989b4afb8d9357335f5dc7150cce138d"
         }
@@ -2248,22 +2248,22 @@
       "versionId": "a90fe249f937120b595fca6590d16deeedcfb87b72b870bcc46d313fea1baa4d",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/es/recipes/hackathon-app-with-synced-dataset/prerequisites.md",
           "postProcessHash": "7d34edbc9c7d5d57d5b79c15cddd753f855c2cce9d3adf37eb15e3bf4dae9aa2"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/pt/recipes/hackathon-app-with-synced-dataset/prerequisites.md",
           "postProcessHash": "50218593bc620c867dc29709aa0a9fd8aaf674910b50ff9e6b0c4aa5371e6512"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/ja/recipes/hackathon-app-with-synced-dataset/prerequisites.md",
           "postProcessHash": "bb8ab9c66d3a5fd130d0dc8059b87d0ec705e6b4ecd15711f33ce9f1549db57d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/fr/recipes/hackathon-app-with-synced-dataset/prerequisites.md",
           "postProcessHash": "29cd126a266ccc4b6650daa92461c81fb1a4916765996cfd46e156ca747a0b41"
         }
@@ -2275,22 +2275,22 @@
       "versionId": "42edebfa1fa3d5dc604cafc0410090e992919843a9f20397d019269871038e85",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/fr/recipes/medallion-architecture-from-cdc/prerequisites.md",
           "postProcessHash": "c5d38a3aa1b99cda12e1b935959a53ad3b77ee0a45ef783b6483eecfcddde896"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/ja/recipes/medallion-architecture-from-cdc/prerequisites.md",
           "postProcessHash": "1e07371f0f651aec9fc5dcb0b06e7454c680a1431095f35424d7b21ce952e0e9"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.131Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/es/recipes/medallion-architecture-from-cdc/prerequisites.md",
           "postProcessHash": "5a92d071abab8d88916c6cdd98d844c4812bab953c8d064c720096263bc96aa7"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.132Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/pt/recipes/medallion-architecture-from-cdc/prerequisites.md",
           "postProcessHash": "781edc1e1273e375ca1bffc858ab1a9dba193c30e5043e55f4727964e563dd1f"
         }
@@ -2302,22 +2302,22 @@
       "versionId": "f71819a445deee6586f82be46b8d1488cb78b9f356e4bb5940c9242fa8d23c64",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.132Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/es/recipes/lakebase-pgvector/goal.md",
           "postProcessHash": "e6b75433524bc269e7a10ec19806e85012c7282c3b504582c46ceac51231fe69"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.132Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/ja/recipes/lakebase-pgvector/goal.md",
           "postProcessHash": "749c17c47133b0e06ca6c9668a948a8e480f165506f3b60d2f3b2826de71021c"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.132Z",
+          "updatedAt": "2026-09-14T22:49:18.980Z",
           "fileName": "src/content/pt/recipes/lakebase-pgvector/goal.md",
           "postProcessHash": "4e2b40022689db3a793e0c0e3a0fb4747d6b74970971e729cc57ed0518093c2a"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.132Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/fr/recipes/lakebase-pgvector/goal.md",
           "postProcessHash": "65a99ae8868d701013e21e2ca0cc15a8d97ead1971be029a302693090add81c3"
         }
@@ -2329,22 +2329,22 @@
       "versionId": "3cd8ac0027693f8d68016dfe15f0e4e6aed203ec46e7cb758fc9f936be9d66fe",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/es/recipes/lakebase-drizzle-off-platform/prerequisites.md",
           "postProcessHash": "9dca7d39e2a7608a1147ca06e8bd5db1cc0862c8c17ebff5c38c90f39a9a4074"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/ja/recipes/lakebase-drizzle-off-platform/prerequisites.md",
           "postProcessHash": "36c4662fe4e2648355e9e3e83951ff531f21e910aa39b1c66b730c4c7fe8f337"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/pt/recipes/lakebase-drizzle-off-platform/prerequisites.md",
           "postProcessHash": "6c773bd392aa5fc56517cb8fa293af36fd7115bfcb5aac0b1e1f425107fe4cb7"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/fr/recipes/lakebase-drizzle-off-platform/prerequisites.md",
           "postProcessHash": "6e7a30b8c8614ae709e85ce1ff72948752982bc8cdcdc5da3ce0f35c9116f90e"
         }
@@ -2356,22 +2356,22 @@
       "versionId": "6c1d4b1c0b6c3b022a076f777733ab143b42dac9d851bf5be6846d5074c2f9f4",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/es/recipes/lakebase-off-platform-env-management/prerequisites.md",
           "postProcessHash": "91f364681e11abc9b174901fc4db67b4c57fb49de48e0cf59652d5dcfcc2a664"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.133Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/pt/recipes/lakebase-off-platform-env-management/prerequisites.md",
           "postProcessHash": "7f3850348cb97beeb9c6a5b448b0b0c099ed0c2849b87fdfb43c6c4d5101b507"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.134Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/fr/recipes/lakebase-off-platform-env-management/prerequisites.md",
           "postProcessHash": "f49f32e5b53c63680af5539c69c2b5e077f8850a8f5334f22018100f0498d76d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.134Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/ja/recipes/lakebase-off-platform-env-management/prerequisites.md",
           "postProcessHash": "e906ea352263eb2002822b86575416e2dc547a0630ddb9f428079702a2f70afc"
         }
@@ -2383,22 +2383,22 @@
       "versionId": "3719575dd3389efa87bd685d1bd363171e7730435ad3101fb19921668290c890",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.134Z",
+          "updatedAt": "2026-09-14T22:49:18.981Z",
           "fileName": "src/content/ja/recipes/lakebase-data-persistence/goal.md",
           "postProcessHash": "ba533f71b789dbd3e7876da69e0a86a9a5e7feab2928456982db5864eb9e53e6"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.134Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/pt/recipes/lakebase-data-persistence/goal.md",
           "postProcessHash": "1f0af1662d745735527cd0175f884ca222c3109a5c5539bd67999c1bbce09c20"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.134Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/es/recipes/lakebase-data-persistence/goal.md",
           "postProcessHash": "f1ef1e42d652d3660e5f13a99c4a85120ffc3b9b010ceb7e57463ba56aca2eeb"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.135Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/fr/recipes/lakebase-data-persistence/goal.md",
           "postProcessHash": "6e35f105d7d48db9ef60e8db4bc8c0ab90ce2eac5af524c119174960faffc05f"
         }
@@ -2410,22 +2410,22 @@
       "versionId": "272aa958318dc5d1575e7a565d20d60db7679faaa49a3afe10f5399a7c32e918",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.135Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/ja/recipes/model-serving-endpoint-creation/prerequisites.md",
           "postProcessHash": "367eeb92221d965e6ed5930ac26400ff7899db17610f956989808e83b07bedcd"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.135Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/pt/recipes/model-serving-endpoint-creation/prerequisites.md",
           "postProcessHash": "2181d81c47fba3215daa6960aacc1c8db2f0a6e3570eae95f788bb54e0656422"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.135Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/es/recipes/model-serving-endpoint-creation/prerequisites.md",
           "postProcessHash": "6b16e3a79f7577717419316842f575eeada4b665fcb148661cd1700ecad40a8c"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.135Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/fr/recipes/model-serving-endpoint-creation/prerequisites.md",
           "postProcessHash": "5bc0f7ea6cc69af090bce6068392da0d1293a66b7673923989afdcd9a411c775"
         }
@@ -2437,22 +2437,22 @@
       "versionId": "c7912f33562e8c7682af87ab6f258780f5ac9fbccdaf70466997a99bf1194496",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.136Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/es/recipes/lakebase-data-persistence/prerequisites.md",
           "postProcessHash": "0e05698c10e37998aa22c45fc3f4af7b61bd9b87e8607539edaa6ed19aba0760"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.136Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/fr/recipes/lakebase-data-persistence/prerequisites.md",
           "postProcessHash": "6780a256851be645e73196e361cbd9f87a8fdc9c1f47cf74e11fc32f93e34877"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.136Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/ja/recipes/lakebase-data-persistence/prerequisites.md",
           "postProcessHash": "5b7bdba1bdadd684e141085e7d6012363f2d4cc7451f28b9871e193a7d4200bb"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.136Z",
+          "updatedAt": "2026-09-14T22:49:18.982Z",
           "fileName": "src/content/pt/recipes/lakebase-data-persistence/prerequisites.md",
           "postProcessHash": "3504c7929e008dadbe390eaf4598c3a4eca3018b3ad56860dcf80a92cc625e69"
         }
@@ -2464,22 +2464,22 @@
       "versionId": "8d4fdcf15f3239d43be9a92e2553647e4d3b93e537ae75291812aec686f16a19",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.136Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/es/recipes/set-up-your-local-dev-environment/prerequisites.md",
           "postProcessHash": "60e2d70fc52f591ad06dfac2feb3a68ac9d0b8b433cbc054cae2967f8caf483a"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.137Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/fr/recipes/set-up-your-local-dev-environment/prerequisites.md",
           "postProcessHash": "1d8a0dc6a08d565b0eab9f21ad557ea55a3855b24133114cfe6964d261a3d372"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.137Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/pt/recipes/set-up-your-local-dev-environment/prerequisites.md",
           "postProcessHash": "f47c0bf26007a19eacf86c539d33f43a7816a0fe054decbc9c15b0e9de3f2c93"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.137Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/ja/recipes/set-up-your-local-dev-environment/prerequisites.md",
           "postProcessHash": "e2fa47d6a783e8a12dc09304df9fd0ca6a4663bb872ce20f98d2ef7e7cc0c7f4"
         }
@@ -2491,22 +2491,22 @@
       "versionId": "5f8a5f4771825f8e4e2335b420ce905fa5562a0ee08541b83405b2a10b090ca2",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.137Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/pt/recipes/lakebase-agent-memory/goal.md",
           "postProcessHash": "be7913bcccb3af3c05473b4f0c139d4d16b3926bacaa045d10691fad07382394"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.138Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/ja/recipes/lakebase-agent-memory/goal.md",
           "postProcessHash": "b3a44ba89250284d127af97669475723c5b0c87f4ea6c97633dd1530fcd68d24"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.138Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/fr/recipes/lakebase-agent-memory/goal.md",
           "postProcessHash": "01338a179713dab3e3d3d24d896317d5b68e2d92c3a271e473e47dc7905bc4bc"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.138Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/es/recipes/lakebase-agent-memory/goal.md",
           "postProcessHash": "55a8d1107e9d961ef02bf294359c6b8ee1074a73f6198f19b0f5edb6d446cb43"
         }
@@ -2518,22 +2518,22 @@
       "versionId": "fa18f2450c15eea0788fee8beb9a292e773ca6a8fc2a55596968c567d4b6fa0e",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.138Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/fr/recipes/lakebase-change-data-feed-autoscaling/goal.md",
           "postProcessHash": "b014ca02b9d1cbbc5c1d09e61dfd175286be498f8d50e039b4d90ced7c97dba7"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.138Z",
+          "updatedAt": "2026-09-14T22:49:18.983Z",
           "fileName": "src/content/es/recipes/lakebase-change-data-feed-autoscaling/goal.md",
           "postProcessHash": "3b2562b1c78451d7dc866b80127e553eb16d6b00b87831e65653ab3e433df380"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.139Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/pt/recipes/lakebase-change-data-feed-autoscaling/goal.md",
           "postProcessHash": "7be85529f9ae75f140c3bc5f0a12ed9dcb7aa3f2087b22f85dfe6641d57043b0"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.139Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/ja/recipes/lakebase-change-data-feed-autoscaling/goal.md",
           "postProcessHash": "7136ddf495a636d6159ffd8375477ef1bf816942ac6c953fb43aff04e76ce1fb"
         }
@@ -2545,22 +2545,22 @@
       "versionId": "f48d12b7cbbf9c8e80463e8813e8ce7e96fcf39a8c10307b72bc4e2fcdde054f",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.139Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/es/recipes/lakebase-create-instance/prerequisites.md",
           "postProcessHash": "fba205cab8f8e1471e58c8e1e1e1d3ab292a713efffd1c00b3f688dcf80c4f62"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.139Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/pt/recipes/lakebase-create-instance/prerequisites.md",
           "postProcessHash": "8fd22efd6379ef1e56bbca6c2de99494dba6a3da2d39c701aa0b849318dda8db"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.139Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/fr/recipes/lakebase-create-instance/prerequisites.md",
           "postProcessHash": "f4fb434ee421f003f0bb56ac0fd0813f2d5d75f7eaee9d23c76a970df46d4225"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/ja/recipes/lakebase-create-instance/prerequisites.md",
           "postProcessHash": "15ae71af0505d1607a8678ce6e36a83eaab65d9413aa3c27dc12dbf5031b23ea"
         }
@@ -2572,22 +2572,22 @@
       "versionId": "7b55d6b6f9d4fcf2f5b385f031228e04684cab2cf4f0e701d3ed0c602c7cdc89",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/es/recipes/model-serving-endpoint-creation/goal.md",
           "postProcessHash": "e52ec170ae9f5f4904535fa4b7ccbe2ff9c5c45e62264f1ba2f376bd27a11921"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/pt/recipes/model-serving-endpoint-creation/goal.md",
           "postProcessHash": "0bbbf74849b66a8978762ffa8e243a57749f87d58390f5fa15a38a6c50111d55"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/ja/recipes/model-serving-endpoint-creation/goal.md",
           "postProcessHash": "dabd127d623511ccdf2979c100d2fb0c390752b969ec739e0ba224921319bd93"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/fr/recipes/model-serving-endpoint-creation/goal.md",
           "postProcessHash": "c717fe6fd33fb1ba4f7b403122967630b6dd9cc56cf5304634908c3c48e54230"
         }
@@ -2599,22 +2599,22 @@
       "versionId": "3f75a693fd41c7feca8235f52572c540b047e96a2168b5fb5dac1322e32c1eff",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.984Z",
           "fileName": "src/content/pt/recipes/lakebase-agent-memory/prerequisites.md",
           "postProcessHash": "12aa77ead28307ebde60ad282b8d861bbb222264836302b18aeb45e0f53b172f"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.140Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/ja/recipes/lakebase-agent-memory/prerequisites.md",
           "postProcessHash": "1c6a276190b696835876d0410d64bf554ea63aecd8d628e3ce3f1c01f2882f58"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/fr/recipes/lakebase-agent-memory/prerequisites.md",
           "postProcessHash": "942217cae91e95670ede94e216b421fd4228671307cd34c2a2456d3a3768e07d"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/es/recipes/lakebase-agent-memory/prerequisites.md",
           "postProcessHash": "de951d8cefbf5e4152037e7cb733511569d05cc388762749ae822b0b51c30f3c"
         }
@@ -2626,22 +2626,22 @@
       "versionId": "f621b7ef7705bd76d99e976c9217618c557288b383e24019962831f7a78f4ea0",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/pt/recipes/lakebase-drizzle-off-platform/goal.md",
           "postProcessHash": "4bad4d959494df809b8b46115f766de352a11e651022317209ffc3761e00586a"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/es/recipes/lakebase-drizzle-off-platform/goal.md",
           "postProcessHash": "586f149ea33996de26423279b7ea78194c9bf674174aa1cad3aec2be9d3df2e2"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/fr/recipes/lakebase-drizzle-off-platform/goal.md",
           "postProcessHash": "b1db01062404b51819bbb1db8c39cb169bf91b51651e960052346e733989dfba"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.141Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/ja/recipes/lakebase-drizzle-off-platform/goal.md",
           "postProcessHash": "c3d280251257465dc2d04c47661955e5bbb655dd9875f4b9ef51677b08905396"
         }
@@ -2653,22 +2653,22 @@
       "versionId": "919ca500873b8bdace455bd303021d5af3de45ad380f52f34b6a0928fd44b1cb",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/pt/recipes/onboard-your-coding-agent/goal.md",
           "postProcessHash": "79ac86145a6baf4bc0da6edc662413425202da4373ea28a9add3de2ac807d275"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/es/recipes/onboard-your-coding-agent/goal.md",
           "postProcessHash": "22fafa7e49a302c21aa7607a25e82e59f704f698ece6b6d236d950d777faa8a8"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.985Z",
           "fileName": "src/content/ja/recipes/onboard-your-coding-agent/goal.md",
           "postProcessHash": "bb9903d96f35a00eb4dbbaa180567450544bb0a74c23376118121f84ef4c42ec"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/fr/recipes/onboard-your-coding-agent/goal.md",
           "postProcessHash": "61d5e037d0f8d0d6a977a4499a0ba83808b659a649605ff29de7aef9c759e21c"
         }
@@ -2680,22 +2680,22 @@
       "versionId": "4c6755d56ce1a09870051d63a99144d8826d87a7a8227ff9c34f6977feceac00",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/fr/recipes/onboard-your-coding-agent/prerequisites.md",
           "postProcessHash": "b88b63d3b1417d25439748844a628232ec8882b708bda6c0ca810aff88cd5a07"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.142Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/es/recipes/onboard-your-coding-agent/prerequisites.md",
           "postProcessHash": "9c34257013e1fb76026a15423fab284b1656e649eb0ab657e8a99d320672a4da"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/ja/recipes/onboard-your-coding-agent/prerequisites.md",
           "postProcessHash": "a2e3927ecd88bbe4182fddd7b9be5ecb0cff610f5f979ac512cf3061da22bef6"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/pt/recipes/onboard-your-coding-agent/prerequisites.md",
           "postProcessHash": "43a3784e611638cf81bf1d767b5f2863bae66b425be137b2df29eafb50da71fd"
         }
@@ -2707,22 +2707,22 @@
       "versionId": "3735385030a7826c23e9c022c1d6cef0e59103938ac7781746bf5de19b29e1c6",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/fr/recipes/lakebase-token-management/prerequisites.md",
           "postProcessHash": "2c330987888c5948b4723051d18ad95e4902ef99f021b92945c8774c1bc74368"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/ja/recipes/lakebase-token-management/prerequisites.md",
           "postProcessHash": "63e0668903eed9cf6866caf61d3dc2cf7c67b749a8171f6633bb6bca93f40810"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.986Z",
           "fileName": "src/content/es/recipes/lakebase-token-management/prerequisites.md",
           "postProcessHash": "972c32d0a3351ca94f0e7e7b819666f2afea3219d2e87733e4dd70ac0005a688"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.143Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/pt/recipes/lakebase-token-management/prerequisites.md",
           "postProcessHash": "1d6ddfe1d6dd954f60c85e8a7476b6c8d9312df1a51f18a38c5e0135d367c764"
         }
@@ -2734,22 +2734,22 @@
       "versionId": "971c17b80d12b676d32e643427061c59347f14585caa7bc37f1257f615e33363",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.144Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/ja/recipes/unity-catalog-setup/goal.md",
           "postProcessHash": "bbc8c8d591a36c9ec88e4ba44f9a874aa64ba8132c7ee92b0fbf973eae87133d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.144Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/fr/recipes/unity-catalog-setup/goal.md",
           "postProcessHash": "b386d38f4f803b44e83952a47fec61e3a5e47ee7c3682b80654531a1f7854d32"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.144Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/pt/recipes/unity-catalog-setup/goal.md",
           "postProcessHash": "f6d350020efcbe6ee668768e8d9bb29ceaedd2e39bf8da2346aaeab25898e676"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.144Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/es/recipes/unity-catalog-setup/goal.md",
           "postProcessHash": "3037c00a50a92d24a13dc78376b7596a5b143c436a97f1904c7ff21635d7210e"
         }
@@ -2761,22 +2761,22 @@
       "versionId": "0560a4a5a2e233741d6f398daddbc5131da4384e965ac82675863b604ff8c456",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.144Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/es/examples/vacation-rentals/goal.md",
           "postProcessHash": "6d1eb5b0f0a0616eaad24558380d93fc15a9b4b144f9b6e2eaf42417917e3703"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.145Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/fr/examples/vacation-rentals/goal.md",
           "postProcessHash": "673095b1e5f944b1ad8c696236b7ce8950e8d72f2dd11cd9e8d53bb97003f016"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.145Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/pt/examples/vacation-rentals/goal.md",
           "postProcessHash": "fcb35ec1fba1d269a76d725a29cdf2bc5bf181b39831a74d35b2c6546ecdd78c"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.145Z",
+          "updatedAt": "2026-09-14T22:49:18.987Z",
           "fileName": "src/content/ja/examples/vacation-rentals/goal.md",
           "postProcessHash": "7c92613f54cf7b609ac4f67233e67896ac1595fb8db5042ec7f76f4b2bbaf2e2"
         }
@@ -2788,22 +2788,22 @@
       "versionId": "f2564eb8c8b5bc6889d9e7bae456366531515f716f7e1b5c900e5c3860288fae",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.145Z",
+          "updatedAt": "2026-09-14T22:49:18.988Z",
           "fileName": "src/content/ja/recipes/spin-up-databricks-app/goal.md",
           "postProcessHash": "366d8a4de7f4a7144886b2d92ad6af4e3d64fc94133980f506db03a9da32e8bf"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.988Z",
           "fileName": "src/content/fr/recipes/spin-up-databricks-app/goal.md",
           "postProcessHash": "667fddde57ad1e9a7a52e54b6cf447884c731bce55463d3c5bc86b2d0f2c7436"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.988Z",
           "fileName": "src/content/es/recipes/spin-up-databricks-app/goal.md",
           "postProcessHash": "f7af811337425aeb5b93ea427b297d8cbebe7dffb8575c55d0e52e475f5b83c4"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.988Z",
           "fileName": "src/content/pt/recipes/spin-up-databricks-app/goal.md",
           "postProcessHash": "070a40e2662faab031e4d9d9fe8a096def717cb1cc3697ee954f250c9d340c93"
         }
@@ -2815,22 +2815,22 @@
       "versionId": "af0bedb636bfa244f76651046b486784bfa3ab520e6254ab9619d35fa6deed37",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.994Z",
           "fileName": "src/content/fr/examples/inventory-intelligence/goal.md",
           "postProcessHash": "7f2b33b75a12510d61ebfcef5ecdf61c0875a4796c6d2f3d9fd41ab789f41d61"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.994Z",
           "fileName": "src/content/pt/examples/inventory-intelligence/goal.md",
           "postProcessHash": "a704dc18998422679b979af29a4caa3d6074bca332854b0ea3ab55c7ed9ed4d2"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.146Z",
+          "updatedAt": "2026-09-14T22:49:18.994Z",
           "fileName": "src/content/ja/examples/inventory-intelligence/goal.md",
           "postProcessHash": "2b25c91ee95972720f9575a0bc9209e4645026bbc88e2067708969e18f24980f"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.147Z",
+          "updatedAt": "2026-09-14T22:49:18.994Z",
           "fileName": "src/content/es/examples/inventory-intelligence/goal.md",
           "postProcessHash": "a02d0372d741a68c14bbf4831176c0b07d10543b5f1a4541976bed257dd7d481"
         }
@@ -2842,22 +2842,22 @@
       "versionId": "ee83c5dca6331b83d0271a7f9b8a6cea6c9e5c77ad992f8e16f1f4c184a9fd7b",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.147Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/pt/recipes/volume-file-upload/prerequisites.md",
           "postProcessHash": "2cdcc350afa2a531f85a21021a24eb550ec9946bc314ec630e61996a47a5e6e9"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.147Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/fr/recipes/volume-file-upload/prerequisites.md",
           "postProcessHash": "7a0edf7c64b828ae24dc75e51fa48cbf50689089060f3b25bcf04b9eba852ba6"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.147Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/es/recipes/volume-file-upload/prerequisites.md",
           "postProcessHash": "4e727889f14ae385cda42514e89456ee67029f762162b0dff7fbe1c3eedd0145"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.147Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/ja/recipes/volume-file-upload/prerequisites.md",
           "postProcessHash": "143447f8ad2db81f77c2a8b64cc64975baa6aa3b237a2c1a7dbaf85ab148521e"
         }
@@ -2869,22 +2869,22 @@
       "versionId": "944683f39cf37d112a1b1699547c0ff19320f9e85b8a887d7d02f485497cead7",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.154Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/pt/examples/saas-tracker/goal.md",
           "postProcessHash": "f630bfd8aa89f7c549f7db010a78406b3e57d730bc34f9b08355922cfddc3124"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.154Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/fr/examples/saas-tracker/goal.md",
           "postProcessHash": "c237b003b1c20ea651b11e2b6b7eb1ffd29622790875b90c000e88b2ab792b39"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.154Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/ja/examples/saas-tracker/goal.md",
           "postProcessHash": "5a1dc496cb6e4208f4377deea0408ace8bb01f67d5c529adf80e0422ed9c3596"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.154Z",
+          "updatedAt": "2026-09-14T22:49:18.995Z",
           "fileName": "src/content/es/examples/saas-tracker/goal.md",
           "postProcessHash": "2d75b69bb516ce5a335e21df5bc4a00394b1a6b4f31547bc36b9606ed839dd96"
         }
@@ -2896,22 +2896,22 @@
       "versionId": "8219a106c99576cab7918ac66230296d8af41f702ef6e01807b4887088e9f326",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.154Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/es/recipes/spin-up-databricks-app/prerequisites.md",
           "postProcessHash": "46c5cd8ead31c4504d5a97871653c5aa851a5c44f10f88c673abc050475cb421"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/fr/recipes/spin-up-databricks-app/prerequisites.md",
           "postProcessHash": "6e4c5f2437b926f94d620ff931ef3e389f7de758574b7bd27db436be5a3876b7"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/pt/recipes/spin-up-databricks-app/prerequisites.md",
           "postProcessHash": "be81c531c1db5d25fda5faa43e07c285e0c5aab20eb664b9c989610488cd8aca"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/ja/recipes/spin-up-databricks-app/prerequisites.md",
           "postProcessHash": "141627afea0c6a057a158889ae09eefe08fb17221d5ef06b7806b2012665edc4"
         }
@@ -2923,22 +2923,22 @@
       "versionId": "2b16a1e2005766fc43f1a83285ba738bb7f7186c0eb2f892b5dda51f99f23be6",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/es/examples/rag-chat/goal.md",
           "postProcessHash": "5195dec0ae873cbb98392b0e3c3d09017ae45d5dac56353781a435b71c6ad8d9"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/fr/examples/rag-chat/goal.md",
           "postProcessHash": "0f3293986863932230d93edf79936785185b4f74d4bb4b638e34bf5083e688b2"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.155Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/pt/examples/rag-chat/goal.md",
           "postProcessHash": "941c9b8682756d9744dd96d216b15cffbd921b55d16830a2b7c34ffdbfe6773d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.156Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/ja/examples/rag-chat/goal.md",
           "postProcessHash": "0b0539635c98221d10e2ad9b00dd86044676af0dd1fd55f695014523b60b5ef6"
         }
@@ -2950,22 +2950,22 @@
       "versionId": "b163296eecf36fd1acf2f5c6a2f8445b7739ce751a86a1eb93893e4718d12b6a",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.156Z",
+          "updatedAt": "2026-09-14T22:49:18.996Z",
           "fileName": "src/content/fr/cookbooks/genie-analytics-app/goal.md",
           "postProcessHash": "6e3d9f7770790e9b691b6778eb2e5e9a949fe42dd0ff95270b875d3d45a24cfa"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.156Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/ja/cookbooks/genie-analytics-app/goal.md",
           "postProcessHash": "5dc3ecc89c0d87a7e401c53b670fdbbc64363fc3e810cd965c9fd4be63c4d159"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.156Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/pt/cookbooks/genie-analytics-app/goal.md",
           "postProcessHash": "a0d49c27394d62fe017fb7ecd6ca48c9ece34e3256156f8c82587b30bc3ae8b7"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.156Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/es/cookbooks/genie-analytics-app/goal.md",
           "postProcessHash": "7c0e64a6957eb6f8846ab372d18a17db718e97f067e64020f232c70da81844d7"
         }
@@ -2977,22 +2977,22 @@
       "versionId": "eddc27551de3eb92e2ec2e6c4dd8fedb1b3d1053bc77e25f74deeb855b1a7eca",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.157Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/ja/recipes/sync-tables-autoscaling/goal.md",
           "postProcessHash": "fb8a65293b28a80b4736cf2f4d7fa36723653773495a22dd8c4878d09ffb5073"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.157Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/pt/recipes/sync-tables-autoscaling/goal.md",
           "postProcessHash": "8e1825c6bebe55923aff26657b3783d7ddfb5326e99df5e230988a62d76187b0"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.157Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/fr/recipes/sync-tables-autoscaling/goal.md",
           "postProcessHash": "415d96b75cb6159fed1ee740443674608a692ebb749b705a26d3a3bf9841e9cd"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.157Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/es/recipes/sync-tables-autoscaling/goal.md",
           "postProcessHash": "86f7dc3049b4d6e5e092bcc15829788e012d9ba70e0d6e448ce9fbe7be8eb513"
         }
@@ -3004,22 +3004,22 @@
       "versionId": "395a816d647cc3f56437e63c933cd2ae33cc033258348f63189fb6f3421b9835",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.158Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/ja/examples/agentic-support-console/goal.md",
           "postProcessHash": "7f6fb5c004c790d93506883c92fac0163e7c04d882a5684587e27bb3490cd6c7"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.158Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/es/examples/agentic-support-console/goal.md",
           "postProcessHash": "143921186f6dddae38fe64d1377e626208d56143b648ca8f6c4ed09c3940982d"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.158Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/pt/examples/agentic-support-console/goal.md",
           "postProcessHash": "2595bb66e7353090306b48f4d3672354b8df16a63264e6ea57c911b84f403458"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.158Z",
+          "updatedAt": "2026-09-14T22:49:18.997Z",
           "fileName": "src/content/fr/examples/agentic-support-console/goal.md",
           "postProcessHash": "ae1ae06edcb3b551149099947f722c8a33ac067b64fa282b4a119f477a15f71d"
         }
@@ -3031,22 +3031,22 @@
       "versionId": "bedf5b5868f6e1da2167832cc163625a60dfba216fdf139d672740a2277e6965",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/es/recipes/volume-file-upload/goal.md",
           "postProcessHash": "fdad41ce4210428e2193cc8c89634f5e583a6ea0c096a6deb6da4a506cd8be90"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/pt/recipes/volume-file-upload/goal.md",
           "postProcessHash": "061959f80e42a5c699627a85fb151260df062e560acd2e14dd36bf0a45971935"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/ja/recipes/volume-file-upload/goal.md",
           "postProcessHash": "493fe4a6e3a36e3cba47772265fa55ea6ec1d80347d72068566f457c3a88910a"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/fr/recipes/volume-file-upload/goal.md",
           "postProcessHash": "576241b2379167e38c0f288f66d0028465bdb1d3fc709dee53452af0bea63c13"
         }
@@ -3058,22 +3058,22 @@
       "versionId": "31dbfdea2292316b8476521c58479a5675863a4d63f64ed689044d2fad741ce0",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/pt/examples/content-moderator/goal.md",
           "postProcessHash": "434699a6df226ee1df151e4480fa6cf3a9365ccd45892185404a90f5abb00b19"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.159Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/es/examples/content-moderator/goal.md",
           "postProcessHash": "17f5025cab89dcb67e85275cdddd0a03c14365f048e8a89e0634d1962e5bb3de"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.160Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/ja/examples/content-moderator/goal.md",
           "postProcessHash": "0a867ab9c0566d50dfd0c74dcfd6890f4620c67fd797e7911b5e25b12c90fbbe"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.160Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/fr/examples/content-moderator/goal.md",
           "postProcessHash": "7ee08e6a01d33f253467d23bf3faca998999ec7fb6314c688bf81b35ddff8eb6"
         }
@@ -3085,22 +3085,22 @@
       "versionId": "9faba77025cc03ed1d6346340b6705df55594713c13d8124ed16cabc618836cd",
       "translations": {
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.160Z",
+          "updatedAt": "2026-09-14T22:49:18.998Z",
           "fileName": "src/content/ja/cookbooks/app-with-lakebase/goal.md",
           "postProcessHash": "e6a555c46c07f921b20e7050b74ba480e37eead4d32c4910463e77efc3ce9edc"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.160Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/fr/cookbooks/app-with-lakebase/goal.md",
           "postProcessHash": "706902ed7806f42febd9239704a13f340bda207893fee5939b76b5910fae6338"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.161Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/es/cookbooks/app-with-lakebase/goal.md",
           "postProcessHash": "30efc55c5c891c4b521a3c66acd28a8425eb71389e8837bc4cdf10e9902c35c9"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.161Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/pt/cookbooks/app-with-lakebase/goal.md",
           "postProcessHash": "3459b335716326251e1ecd7bd9e81319e2909b78450141c29474b93b5a8ca6db"
         }
@@ -3112,22 +3112,22 @@
       "versionId": "f15e3bb0efe54c665002ba4094aae4f82ec1d8206de05d468b3baac897ae4675",
       "translations": {
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.161Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/es/cookbooks/lakebase-off-platform/goal.md",
           "postProcessHash": "3076be315afe742413b0e7173af7195f14ede5548818f18526fd77153f86b200"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.161Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/fr/cookbooks/lakebase-off-platform/goal.md",
           "postProcessHash": "ce6991a8f44e814d96fe0d9a219e2c1ff3f94b7240958972b2c3a5a4f682c591"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.161Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/pt/cookbooks/lakebase-off-platform/goal.md",
           "postProcessHash": "997e65ba54e02343751e1ba8b0dd00982c01515888ba4e9ebaf4b4287257b290"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/ja/cookbooks/lakebase-off-platform/goal.md",
           "postProcessHash": "101755e031f31ba8a1cc3483ebc0e070fd304f505b45a5d2aa88e10d69a1adbb"
         }
@@ -3139,22 +3139,22 @@
       "versionId": "ad06cf1cef7c3f5b5de81f18f84c0ce0684ba569afec34bd3bc2c6ac42bafbae",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/fr/hackathon/free-edition-setup.md",
           "postProcessHash": "1a9bdb0a4f15ebe2a22d48589fd9217fda2888b7447287d4d96847190406b84a"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:18.999Z",
           "fileName": "src/content/ja/hackathon/free-edition-setup.md",
           "postProcessHash": "36b1a71d321741e6c8f1fdca269dd0345a91fbfc7f41e8343480fb6237dc278a"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/pt/hackathon/free-edition-setup.md",
           "postProcessHash": "24ef401b8f76d4d8f4f2f06c05083039c56d5c5629640f9eff4506234f7fa11b"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/es/hackathon/free-edition-setup.md",
           "postProcessHash": "a28f5a61b94cfdd58b7a6384bca0eaf30d32c7a2d0191212bde04840128e8bca"
         }
@@ -3166,22 +3166,22 @@
       "versionId": "4a7f1c7385d6dd6e4c681c2f5e4def870601fa94c34a073d169b6348ba65c103",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/fr/recipes/unity-catalog-setup/prerequisites.md",
           "postProcessHash": "118c95cc8921fea80c99ba16cd5c0060113a8352a09a017cbc6a6d6e4cf2c2e9"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/pt/recipes/unity-catalog-setup/prerequisites.md",
           "postProcessHash": "894ee8028d0e62020baae8f1043b4762c547cad2b2d6ba6af8073c79d20bb0d9"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.162Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/es/recipes/unity-catalog-setup/prerequisites.md",
           "postProcessHash": "1c12fdd17e6c30b585529b5987782635b413049c5da9d03ecbd399983cfdb9eb"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/ja/recipes/unity-catalog-setup/prerequisites.md",
           "postProcessHash": "b0bebc91ae0f22ac8de8a035fc80a8fe40350a968fee2235fc6db834f4806a38"
         }
@@ -3193,22 +3193,22 @@
       "versionId": "97ae4d22256301e3900cc21263f6caa7fbf1d73da5c18846419bb6b5e848bf27",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/pt/hackathon/challenge.md",
           "postProcessHash": "03a48a2bb2d800a9d1aaa7058a6ff73e5fe533abc524c4c0808a4562d1c8924b"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.000Z",
           "fileName": "src/content/ja/hackathon/challenge.md",
           "postProcessHash": "8b433aed572ec26229a310c798fdbc2d3a0e99d300517f4785a94811a8cee7b5"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/fr/hackathon/challenge.md",
           "postProcessHash": "0db9a90c4d675c56fe6355fdb8721dff0d6fb93e9f1b143078ade4688511c2d6"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/es/hackathon/challenge.md",
           "postProcessHash": "8ca2624413ae9b5d62fec56f225d64ca69b0295fd4c712b32ae558be51b4fa64"
         }
@@ -3220,22 +3220,22 @@
       "versionId": "7f3bbaae6f945a9cc33d885c6f6d80e2f18bc103fd33d28d8f1c0568de4febf5",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/pt/cookbooks/ai-chat-app/goal.md",
           "postProcessHash": "c9f32a1584e13ff79e1eb6e816b9886873abdc8156c05ba74104779c73acc865"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/es/cookbooks/ai-chat-app/goal.md",
           "postProcessHash": "718a34c138d51ed0203babf2a1730bc8f36750a6cd085b3c9d5ad7a149aab64d"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/fr/cookbooks/ai-chat-app/goal.md",
           "postProcessHash": "d453d7e6eb35706f2447e85a3ca873e61dcd05c0191566ef8a2812186dee5677"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.163Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/ja/cookbooks/ai-chat-app/goal.md",
           "postProcessHash": "0e2b7a1751fe241313c9c71f040281b9d24b60a99a6fab2815ec907f5b346552"
         }
@@ -3247,22 +3247,22 @@
       "versionId": "b46854fee09dfc88e71fa8519a3c0a122f340ac12190f3c3a4f6c87749ba4da6",
       "translations": {
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/fr/solutions/devhub-launch/goal.md",
           "postProcessHash": "c35bd785cd9a5dc80094d2043dbacc5f92959fcc84e9067d6b4116d5519c6dbe"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/es/solutions/devhub-launch/goal.md",
           "postProcessHash": "27dc2ec4551be05838b44b62da24c6df53734a6c5882c6d31f8c30f79a220c0e"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.001Z",
           "fileName": "src/content/ja/solutions/devhub-launch/goal.md",
           "postProcessHash": "fd89b6552ea86ffda8741c55b0b4f9e20f53de056c07e9906c13361e8decadf5"
         },
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/pt/solutions/devhub-launch/goal.md",
           "postProcessHash": "bd3c8543e9d1ec1564749d13348a3a19d0d884a6fdb9f6a20c3ed1df5a57624f"
         }
@@ -3274,22 +3274,22 @@
       "versionId": "88b8fc86c22598e0f12dfdb932d926aa8cbebd502f4902d749a91e2a58e50c7c",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/pt/cookbooks/operational-data-analytics/goal.md",
           "postProcessHash": "a46836463ee1392779a5be504a75b4f14d82f5eabbc6c5174918f03c3a41a31c"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.164Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/ja/cookbooks/operational-data-analytics/goal.md",
           "postProcessHash": "5e3697f58dc15c2739423656afbadea969a26375484e1878b320432dd6ed4c90"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/es/cookbooks/operational-data-analytics/goal.md",
           "postProcessHash": "7d275b543966a251b966e839a7c2533fd10c6a833389c19c43c460bd37272997"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/fr/cookbooks/operational-data-analytics/goal.md",
           "postProcessHash": "33d0aa8a52a771f28deeb331e62f9e835b5c3818c9204f2dfa4e2013c0335a57"
         }
@@ -3301,22 +3301,22 @@
       "versionId": "f6460fa598ebada1acc656c35e43efaaee136c28459a3b20b56ea00ef7fa7f03",
       "translations": {
         "pt": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/pt/recipes/sync-tables-autoscaling/prerequisites.md",
           "postProcessHash": "c411334060dfb6ee3da3110be18449a4188ac474a3c4661380e74b31d30dab90"
         },
         "fr": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/fr/recipes/sync-tables-autoscaling/prerequisites.md",
           "postProcessHash": "9caff4832a84371e277bca48f8e666553d135fd3cc13a58bc350ff4b27fd5a5d"
         },
         "ja": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/ja/recipes/sync-tables-autoscaling/prerequisites.md",
           "postProcessHash": "b3b3a951c20b63c42f0a4492af718047e5c92f7536dfcca7fed4b650ade0ec68"
         },
         "es": {
-          "updatedAt": "2026-09-14T22:43:20.165Z",
+          "updatedAt": "2026-09-14T22:49:19.002Z",
           "fileName": "src/content/es/recipes/sync-tables-autoscaling/prerequisites.md",
           "postProcessHash": "950b35c478c6ffeaa270b7dcc5e74e5004f08834e684b19e47e09588c31736d8"
         }
