@@ -1,8 +1,15 @@
+import { msg } from "gt-next";
+
 export const HEADER_LINKS = [
-  { label: "Product", href: "/product/lakebase" },
-  { label: "Solutions", href: "/solutions" },
-  { label: "Templates", href: "/templates" },
-  { label: "Docs", href: "/docs/start-here", activePath: "/docs" },
+  { id: "product", label: msg("Product"), href: "/product/lakebase" },
+  { id: "solutions", label: msg("Solutions"), href: "/solutions" },
+  { id: "templates", label: msg("Templates"), href: "/templates" },
+  {
+    id: "docs",
+    label: msg("Docs"),
+    href: "/docs/start-here",
+    activePath: "/docs",
+  },
 ] as const;
 
 export type HeaderNavItem = (typeof HEADER_LINKS)[number];

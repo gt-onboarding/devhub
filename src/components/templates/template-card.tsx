@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useGT, useMessages } from "gt-next";
 
 import type { Cookbook, Example, Recipe } from "@/lib/recipes/recipes";
 import { FallbackCardArt } from "@/components/examples/fallback-card-art";
@@ -31,21 +32,24 @@ export function TemplateCard({
   item: TemplateItem;
   index: number;
 }) {
+  const gt = useGT();
+  const m = useMessages();
   const { name, description, href, lightUrl, darkUrl } =
     getTemplateCardFields(item);
+  const displayName = m(name);
 
   return (
     <article className="min-w-0 text-black">
       <Link
         className="group flex min-w-0 flex-col gap-6 no-underline hover:no-underline"
         href={href}
-        aria-label={`Read ${name}`}
+        aria-label={gt("Read {name}", { name: displayName })}
       >
         <div className="border-db-navy bg-db-oat-medium relative aspect-video min-w-0 overflow-hidden border">
           <TemplatePreviewImage
             lightUrl={lightUrl}
             darkUrl={darkUrl}
-            alt={`${name} preview`}
+            alt={gt("{name} preview", { name: displayName })}
             fallback={<FallbackCardArt index={index} />}
             preload={index === 0}
           />
@@ -63,7 +67,8 @@ export function TemplateCard({
 
         <div className="flex min-w-0 flex-col gap-5">
           <h2 className="m-0 line-clamp-4 text-xl/tight font-normal tracking-[-0.04em] text-balance text-black/30 md:text-2xl/tight">
-            <span className="text-black">{name}.</span> [{description}]
+            <span className="text-black">{displayName}.</span> [{m(description)}
+            ]
           </h2>
         </div>
       </Link>

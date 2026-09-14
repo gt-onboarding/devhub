@@ -1,3 +1,5 @@
+import { msg, T, useMessages } from "gt-next";
+
 import { cn } from "@/lib/utils";
 import { AnimatedArrowLink } from "@/components/ui/animated-arrow-link";
 import {
@@ -17,36 +19,42 @@ import { LakebaseInfographic } from "./lakebase-infographic";
 const FEATURES = [
   {
     eyebrow: "Databricks Apps",
-    title: "Web apps that run inside your workspace.",
-    description:
+    title: msg("Web apps that run inside your workspace."),
+    description: msg(
       "One CLI command to deploy. Fixed URL, built-in OAuth, and direct access to your workspace data, with no separate hosting service.",
+    ),
     href: "/product/databricks-apps",
     visual: "apps",
-    footerLabel: "Ship internal tools",
-    footerDescription:
+    footerLabel: msg("Ship internal tools"),
+    footerDescription: msg(
       "Turn a script or notebook into a shared dashboard your team opens in the browser, no infrastructure to stand up.",
+    ),
   },
   {
     eyebrow: "Lakebase",
-    title: "Managed Postgres, colocated with your Lakehouse.",
-    description:
+    title: msg("Managed Postgres, colocated with your Lakehouse."),
+    description: msg(
       "Provision with the CLI, query from any app. Autoscaling, instant branching, scale to zero. Fully integrated with your workspace.",
+    ),
     href: "/product/lakebase",
     visual: "lakebase",
-    footerLabel: "Postgres, batteries included",
-    footerDescription:
+    footerLabel: msg("Postgres, batteries included"),
+    footerDescription: msg(
       "Ship web apps and agents faster with a Postgres database that's integrated and secured within your Databricks workspace.",
+    ),
   },
   {
     eyebrow: "Agent Bricks",
-    title: "LLM-driven apps that call tools and return structured output.",
-    description:
+    title: msg("LLM-driven apps that call tools and return structured output."),
+    description: msg(
       "Any Python framework, Databricks-hosted models, automatic MLflow tracing, and MCP for workspace tools.",
+    ),
     href: "/product/agent-bricks",
     visual: "agents",
-    footerLabel: "Ship agents to prod",
-    footerDescription:
+    footerLabel: msg("Ship agents to prod"),
+    footerDescription: msg(
       "Go from a prototype agent to one your users can trust, with evaluation and quality checks that run as you iterate.",
+    ),
   },
 ] as const;
 
@@ -107,7 +115,7 @@ function FeatureCard({
               size="size-5 md:size-7"
               underlineClassName="pointer-events-none absolute inset-x-0 bottom-0 h-[3px] bg-current"
             >
-              Learn more
+              <T>Learn more</T>
             </AnimatedArrowLink>
           </FeatureCardAction>
         </div>
@@ -132,6 +140,8 @@ function FeatureCard({
 }
 
 export default function Features({ className }: { className?: string }) {
+  const m = useMessages();
+
   return (
     <section
       className={cn(
@@ -142,7 +152,7 @@ export default function Features({ className }: { className?: string }) {
     >
       <div className="3xl:max-w-400 mx-auto flex max-w-360 flex-col gap-16 px-5 md:gap-28 md:px-8 lg:gap-50 xl:gap-60">
         <h2 id="home-features-heading" className="sr-only">
-          Databricks developer platform features
+          <T>Databricks developer platform features</T>
         </h2>
         {FEATURES.map(
           (
@@ -161,12 +171,12 @@ export default function Features({ className }: { className?: string }) {
               key={eyebrow}
               eyebrow={eyebrow}
               index={index}
-              title={title}
-              description={description}
+              title={m(title)}
+              description={m(description)}
               href={href}
               visual={visual}
-              footerLabel={footerLabel}
-              footerDescription={footerDescription}
+              footerLabel={m(footerLabel)}
+              footerDescription={m(footerDescription)}
               reversed={index % 2 === 1}
             />
           ),

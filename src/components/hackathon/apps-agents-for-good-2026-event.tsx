@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { msg, T } from "gt-next";
 
 import type { HackathonEvent } from "@/components/hackathon/hackathon-event-page";
 
@@ -7,40 +8,58 @@ import type { HackathonEvent } from "@/components/hackathon/hackathon-event-page
  *
  * Served at `/hackathon/apps-agents-for-good-2026`. Content is hardcoded here
  * so it can be edited without touching other events or shared schema.
+ *
+ * Plain string fields are marked with `msg()` and resolved with `m()` where
+ * they render; rich fields are wrapped in `<T>` so gt-next can translate them
+ * in place. Dates and URLs are left as-is.
  */
 
 const hackathonDatasetUrl =
   "https://login.databricks.com/signin?intent=SIGN_IN&auto_login=true&destination_url=%2Fmarketplace%2Fconsumer%2Flistings%2F19326b3d-db63-4627-abc0-cf4e8131a305&utm_source=open-in-databricks&utm_medium=marketplace&utm_campaign=dais-devrel-hackathon";
 
+const inlineLink =
+  "text-db-lava hover:text-db-lava-dark font-medium underline underline-offset-2";
+
 export const appsAgentsForGood2026Event: HackathonEvent = {
-  name: "Apps & Agents for Good Hackathon",
-  description:
-    "The Databricks Apps & Agents for Good Hackathon 2026 is a multi-day competition hosted in partnership with OpenAI, bringing developers together to drive meaningful change.",
-  metaTitle:
+  name: msg("Apps & Agents for Good Hackathon"),
+  description: (
+    <T>
+      The Databricks Apps & Agents for Good Hackathon 2026 is a multi-day
+      competition hosted in partnership with OpenAI, bringing developers
+      together to drive meaningful change.
+    </T>
+  ),
+  metaTitle: msg(
     "Apps & Agents for Good Hackathon — Databricks Data + AI Summit 2026",
-  metaDescription:
+  ),
+  metaDescription: msg(
     "Databricks Apps & Agents for Good Hackathon at Data + AI Summit 2026 — schedule, resources, and how to apply.",
+  ),
   applyUrl:
     "https://events.mlh.com/events/13878-databricks-apps-agents-hackathon-for-good",
   registrationClosed: true,
-  applyNote:
-    "Registration is now closed. The hackathon is open only to Data + AI Summit 2026 attendees.",
+  applyNote: (
+    <T>
+      Registration is now closed. The hackathon is open only to Data + AI Summit
+      2026 attendees.
+    </T>
+  ),
   facts: [
     {
-      title: "Data + AI Summit",
-      detail: "Partnering with OpenAI",
+      title: msg("Data + AI Summit"),
+      detail: <T>Partnering with OpenAI</T>,
     },
     {
-      title: "When",
+      title: msg("When"),
       detail: "June 15 – June 16, 2026",
     },
     {
-      title: "Where",
-      detail: "Marriott Marquis, San Francisco",
+      title: msg("Where"),
+      detail: <T>Marriott Marquis, San Francisco</T>,
     },
   ],
   about: (
-    <>
+    <T>
       <p className="m-0">
         This year's hackathon challenges teams to build powerful agentic data
         apps for social impact using Lakebase, Agent Bricks, and Databricks
@@ -52,162 +71,223 @@ export const appsAgentsForGood2026Event: HackathonEvent = {
         hackathon is part of Data + AI Summit 2026 — you and every teammate must
         be registered for the summit to participate.
       </p>
-    </>
+    </T>
   ),
   resources: [
     {
-      label: "Checklist",
-      title: "Quick start checklist",
+      label: msg("Checklist"),
+      title: msg("Quick start checklist"),
       href: "/hackathon/quick-start-checklist",
-      description:
-        "Follow the step-by-step checklist to get set up and start coding.",
+      description: (
+        <T>Follow the step-by-step checklist to get set up and start coding.</T>
+      ),
       wide: true,
     },
     {
-      label: "Challenge",
-      title: "The challenge",
+      label: msg("Challenge"),
+      title: msg("The challenge"),
       href: "/hackathon/challenge",
-      description:
-        "Read the full challenge prompt, dataset overview, and the four tracks you can pick from.",
+      description: (
+        <T>
+          Read the full challenge prompt, dataset overview, and the four tracks
+          you can pick from.
+        </T>
+      ),
     },
     {
-      label: "Setup guide",
-      title: "Set up Free Edition",
+      label: msg("Setup guide"),
+      title: msg("Set up Free Edition"),
       href: "/hackathon/free-edition-setup",
-      description:
-        "Create a Databricks Free Edition workspace and get your whole team ready to build and demo.",
+      description: (
+        <T>
+          Create a Databricks Free Edition workspace and get your whole team
+          ready to build and demo.
+        </T>
+      ),
     },
     {
-      label: "Dataset",
-      title: "Hackathon dataset",
+      label: msg("Dataset"),
+      title: msg("Hackathon dataset"),
       href: hackathonDatasetUrl,
       external: true,
-      description:
-        "Add the hackathon dataset to your Databricks workspace to start building with it.",
+      description: (
+        <T>
+          Add the hackathon dataset to your Databricks workspace to start
+          building with it.
+        </T>
+      ),
     },
     {
-      label: "Template",
-      title: "Hackathon starter template",
+      label: msg("Template"),
+      title: msg("Hackathon starter template"),
       href: "/templates/hackathon-app-with-synced-dataset",
-      description:
-        "Scaffold a Databricks App backed by Lakebase with the hackathon dataset automatically synced in.",
+      description: (
+        <T>
+          Scaffold a Databricks App backed by Lakebase with the hackathon
+          dataset automatically synced in.
+        </T>
+      ),
     },
     {
-      label: "Discord community",
-      title: "Ask questions",
+      label: msg("Discord community"),
+      title: msg("Ask questions"),
       href: "https://discord.com/invite/bedRGCjFq",
       external: true,
-      description:
-        "Stuck on something during the build? Join our hackathon Discord server to ask questions anytime.",
+      description: (
+        <T>
+          Stuck on something during the build? Join our hackathon Discord server
+          to ask questions anytime.
+        </T>
+      ),
     },
     {
-      label: "PDF",
-      title: "Official rules",
+      label: msg("PDF"),
+      title: msg("Official rules"),
       href: "https://bit.ly/4d0Gj7w",
       external: true,
-      description:
-        "Read the eligibility, team requirements, IP terms, and judging rules before you start building anything.",
+      description: (
+        <T>
+          Read the eligibility, team requirements, IP terms, and judging rules
+          before you start building anything.
+        </T>
+      ),
     },
     {
-      label: "Docs",
-      title: "Read the Docs",
+      label: msg("Docs"),
+      title: msg("Read the Docs"),
       wide: true,
       description: (
-        <>
+        <T>
           <p className="m-0">
             Read the docs to learn how to set up your coding environment and
             start building your app. We highly suggest reading the following
             pages before you start hacking:
           </p>
-        </>
+        </T>
       ),
       links: [
-        { label: "Start here", href: "/docs/start-here" },
-        { label: "Platform overview", href: "/docs/platform-overview" },
-        { label: "Databricks CLI", href: "/docs/tools/databricks-cli" },
-        { label: "Agent skills", href: "/docs/tools/ai-tools/agent-skills" },
-        { label: "What are templates?", href: "/docs/templates" },
+        { label: msg("Start here"), href: "/docs/start-here" },
+        { label: msg("Platform overview"), href: "/docs/platform-overview" },
+        { label: msg("Databricks CLI"), href: "/docs/tools/databricks-cli" },
+        {
+          label: msg("Agent skills"),
+          href: "/docs/tools/ai-tools/agent-skills",
+        },
+        { label: msg("What are templates?"), href: "/docs/templates" },
       ],
     },
   ],
   timeline: [
     {
       date: "May 31, 2026 · 11:59pm PT",
-      label: "Applications close",
-      detail: "Apply on MLH in teams of 2–4.",
+      label: msg("Applications close"),
+      detail: msg("Apply on MLH in teams of 2–4."),
     },
     {
       date: "June 15, 2026 · 8:00am–4:00pm PT",
-      label: "Opening + hacking begins",
-      detail:
+      label: msg("Opening + hacking begins"),
+      detail: msg(
         "A full day of hacking, kicking off with the opening ceremony at Marriott Marquis, San Francisco.",
+      ),
     },
     {
       date: "June 16, 2026 · 11:00am–5:00pm PT",
-      label: "Hacker's Corner (optional)",
-      detail: "Open collaboration space with mentors on hand to help.",
+      label: msg("Hacker's Corner (optional)"),
+      detail: msg("Open collaboration space with mentors on hand to help."),
     },
     {
       date: "June 16, 2026 · 6:00pm–9:00pm PT",
-      label: "Judging + awards",
-      detail: "Live judging, followed by the awards ceremony.",
+      label: msg("Judging + awards"),
+      detail: msg("Live judging, followed by the awards ceremony."),
     },
   ],
-  submission:
-    "Submit a Git repo and project description. Be ready to give a three-minute demo.",
+  submission: (
+    <T>
+      Submit a Git repo and project description. Be ready to give a three-minute
+      demo.
+    </T>
+  ),
   submissionUrl: "https://dais-for-good-2026.devpost.com/",
-  judgingIntro: "Submissions will be judged on four dimensions:",
+  judgingIntro: <T>Submissions will be judged on four dimensions:</T>,
   judgingCriteria: [
     {
-      title: "Product judgment",
-      detail: "Is the user clear? Are the workflow and tradeoffs thoughtful?",
+      title: msg("Product judgment"),
+      detail: msg(
+        "Is the user clear? Are the workflow and tradeoffs thoughtful?",
+      ),
     },
     {
-      title: "Evidence and uncertainty",
-      detail:
+      title: msg("Evidence and uncertainty"),
+      detail: msg(
         "Are outputs grounded in citations? Is uncertainty handled honestly?",
+      ),
     },
     {
-      title: "Technical execution",
-      detail:
+      title: msg("Technical execution"),
+      detail: msg(
         "Does the app work reliably in a live demo? Are Databricks capabilities used well?",
+      ),
     },
     {
-      title: "Ambition",
-      detail:
+      title: msg("Ambition"),
+      detail: msg(
         "Did the team go beyond the minimum workflow in a meaningful way?",
+      ),
     },
   ],
   faq: [
     {
-      question: "Do I need to be registered for Data + AI Summit 2026?",
-      answer:
-        "Yes. The hackathon is part of Data + AI Summit 2026, and every participant — including all teammates — must be registered for the summit to take part.",
-    },
-    {
-      question: "When do applications close?",
-      answer:
-        "Sunday, May 31, 2026 at 11:59pm PT. Apply through the MLH event page; if you've applied, hold off on booking Monday activities in the DAIS attendee portal until you hear back.",
-    },
-    {
-      question: "Where is the hackathon?",
-      answer:
-        "In-person only at the Marriott Marquis in San Francisco, alongside Data + AI Summit 2026.",
-    },
-    {
-      question: "How big can my team be?",
-      answer:
-        "Teams of 2 to 4 people. Every teammate must also be registered for Data + AI Summit 2026.",
-    },
-    {
-      question: "What if I'm new to Databricks?",
-      answer:
-        'Start with the "Start here" docs and copy one of the templates as a prompt for your coding agent — it will scaffold a working app and walk you through the rest.',
-    },
-    {
-      question: "What if I can't run a coding agent on my laptop?",
+      question: msg("Do I need to be registered for Data + AI Summit 2026?"),
       answer: (
-        <>
+        <T>
+          Yes. The hackathon is part of Data + AI Summit 2026, and every
+          participant — including all teammates — must be registered for the
+          summit to take part.
+        </T>
+      ),
+    },
+    {
+      question: msg("When do applications close?"),
+      answer: (
+        <T>
+          Sunday, May 31, 2026 at 11:59pm PT. Apply through the MLH event page;
+          if you've applied, hold off on booking Monday activities in the DAIS
+          attendee portal until you hear back.
+        </T>
+      ),
+    },
+    {
+      question: msg("Where is the hackathon?"),
+      answer: (
+        <T>
+          In-person only at the Marriott Marquis in San Francisco, alongside
+          Data + AI Summit 2026.
+        </T>
+      ),
+    },
+    {
+      question: msg("How big can my team be?"),
+      answer: (
+        <T>
+          Teams of 2 to 4 people. Every teammate must also be registered for
+          Data + AI Summit 2026.
+        </T>
+      ),
+    },
+    {
+      question: msg("What if I'm new to Databricks?"),
+      answer: (
+        <T>
+          Start with the "Start here" docs and copy one of the templates as a
+          prompt for your coding agent — it will scaffold a working app and walk
+          you through the rest.
+        </T>
+      ),
+    },
+    {
+      question: msg("What if I can't run a coding agent on my laptop?"),
+      answer: (
+        <T>
           <p>
             Some participants may be using corporate laptops where local
             installs, IDE extensions, or coding agents are restricted.
@@ -216,7 +296,7 @@ export const appsAgentsForGood2026Event: HackathonEvent = {
             with the CLI:{" "}
             <Link
               href="/docs/appkit/v0#manual-quick-start"
-              className="text-db-lava hover:text-db-lava-dark font-medium underline underline-offset-2"
+              className={inlineLink}
             >
               Getting started with AppKit
             </Link>
@@ -254,24 +334,23 @@ export const appsAgentsForGood2026Event: HackathonEvent = {
             as much data exploration and prototyping as possible. Ask hackathon
             mentors for help and ideas.
           </p>
-        </>
+        </T>
       ),
     },
     {
-      question: "Which Databricks account should I use?",
+      question: msg("Which Databricks account should I use?"),
       answer: (
-        <p>
-          Use a personal Databricks Free Edition account, not your work or
-          enterprise account. Building and demoing on Free Edition keeps every
-          team on the same playing field — see the{" "}
-          <Link
-            href="/hackathon/free-edition-setup"
-            className="text-db-lava hover:text-db-lava-dark font-medium underline underline-offset-2"
-          >
-            Free Edition setup guide
-          </Link>{" "}
-          to get set up.
-        </p>
+        <T>
+          <p>
+            Use a personal Databricks Free Edition account, not your work or
+            enterprise account. Building and demoing on Free Edition keeps every
+            team on the same playing field — see the{" "}
+            <Link href="/hackathon/free-edition-setup" className={inlineLink}>
+              Free Edition setup guide
+            </Link>{" "}
+            to get set up.
+          </p>
+        </T>
       ),
     },
   ],

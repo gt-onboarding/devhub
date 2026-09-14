@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Command as CommandPrimitive } from "cmdk";
+import { useGT } from "gt-next";
 import { SearchIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -30,8 +31,8 @@ function Command({
 }
 
 function CommandDialog({
-  title = "Command Palette",
-  description = "Search for a command to run...",
+  title,
+  description,
   children,
   className,
   showCloseButton = true,
@@ -42,11 +43,15 @@ function CommandDialog({
   className?: string;
   showCloseButton?: boolean;
 }) {
+  const gt = useGT();
+  const dialogTitle = title ?? gt("Command Palette");
+  const dialogDescription = description ?? gt("Search for a command to run...");
+
   return (
     <Dialog {...props}>
       <DialogHeader className="sr-only">
-        <DialogTitle>{title}</DialogTitle>
-        <DialogDescription>{description}</DialogDescription>
+        <DialogTitle>{dialogTitle}</DialogTitle>
+        <DialogDescription>{dialogDescription}</DialogDescription>
       </DialogHeader>
       <DialogContent
         className={cn("overflow-hidden p-0", className)}

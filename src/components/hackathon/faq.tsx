@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useMessages } from "gt-next";
 import { Accordion as AccordionPrimitive } from "radix-ui";
 
 import { cn } from "@/lib/utils";
@@ -82,6 +83,7 @@ export function Faq({
   theme = "light",
   className,
 }: FaqProps): ReactNode {
+  const m = useMessages();
   const classes = themeClasses[theme];
 
   return (
@@ -121,7 +123,7 @@ export function Faq({
                   )}
                 >
                   <span className="text-lg leading-tight font-medium tracking-tight text-pretty md:text-xl md:leading-tight">
-                    {question}
+                    {m(question)}
                   </span>
                   <FaqIcon className={classes.icon} />
                 </AccordionPrimitive.Trigger>

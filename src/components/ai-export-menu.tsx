@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { T, useGT } from "gt-next";
 import {
   ChevronDownIcon,
   ClipboardCopyIcon,
@@ -45,7 +46,7 @@ export function AIExportMenu({
   appearance = "default",
   align,
   disabled = false,
-  disabledTooltip = "select a template to copy",
+  disabledTooltip,
   contentClassName,
   itemClassName,
   label,
@@ -54,6 +55,7 @@ export function AIExportMenu({
   triggerClassName,
   ...input
 }: AIExportMenuProps) {
+  const gt = useGT();
   const { mcpUrl, markdownUrl, buildAIMarkdown, ensureFetched } =
     useAgentMarkdown(input);
   const [copyState, setCopyState] = useState<
@@ -61,16 +63,17 @@ export function AIExportMenu({
   >("idle");
   const resetTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const isArticle = appearance === "article";
-  const triggerLabel = label ?? (isArticle ? "Copy Article" : "Copy as");
+  const triggerLabel =
+    label ?? (isArticle ? gt("Copy Article") : gt("Copy as"));
   const articleIconClassName = isArticle ? "size-3.5 text-grey-70" : undefined;
   const triggerIcon = <ChevronDownIcon aria-hidden="true" />;
   const triggerStatus =
     copyState === "copying"
-      ? "Copying"
+      ? gt("Copying", { $context: "button status while copying to clipboard" })
       : copyState === "copied"
-        ? "Copied"
+        ? gt("Copied", { $context: "button status after copying to clipboard" })
         : copyState === "error"
-          ? "Copy failed"
+          ? gt("Copy failed")
           : null;
   const triggerContent = triggerStatus ? (
     <span aria-live="polite">{triggerStatus}</span>
@@ -153,7 +156,9 @@ export function AIExportMenu({
               </Button>
             </span>
           </TooltipTrigger>
-          <TooltipContent>{disabledTooltip}</TooltipContent>
+          <TooltipContent>
+            {disabledTooltip ?? gt("select a template to copy")}
+          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     );
@@ -194,7 +199,7 @@ export function AIExportMenu({
               className={articleIconClassName}
               aria-hidden="true"
             />
-            Copy Markdown
+            <T>Copy Markdown</T>
           </DropdownMenuItem>
           <DropdownMenuItem
             className={cn(
@@ -204,7 +209,7 @@ export function AIExportMenu({
             onSelect={handleViewRawMarkdown}
           >
             <CodeIcon className={articleIconClassName} aria-hidden="true" />
-            View Raw Markdown
+            <T>View Raw Markdown</T>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuItem
@@ -215,7 +220,7 @@ export function AIExportMenu({
           onSelect={handleCopyMCP}
         >
           <ServerIcon className={articleIconClassName} aria-hidden="true" />
-          Connect to MCP Server
+          <T>Connect to MCP Server</T>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -1,6 +1,8 @@
 import { useMemo, type ReactNode, type SVGProps } from "react";
+import { useGT, useMessages } from "gt-next";
 
 import { useHistory } from "@/lib/client-router";
+import { getSolutionCategoryLabel } from "@/lib/solutions/solution-category-labels";
 import {
   filterSolutionItems,
   getSolutionItemHref,
@@ -237,19 +239,24 @@ function getSolutionSearchCategoryIcon(category: string): SearchDialogIcon {
   );
 }
 
-function buildSolutionSearchItems(items: SolutionItem[]): SearchDialogItem[] {
+function buildSolutionSearchItems(
+  items: SolutionItem[],
+  m: ReturnType<typeof useMessages>,
+): SearchDialogItem[] {
   return items.map((item) => {
     const category = item.tags.at(0) ?? "Solution";
+    const title = m(item.title);
+    const description = m(item.description);
 
     return {
       id: item.id,
-      title: item.title,
-      description: item.description,
+      title,
+      description,
       href: getSolutionItemHref(item),
       external: isLinkedSolutionItem(item),
-      group: category,
+      group: m(getSolutionCategoryLabel(category)),
       icon: getSolutionSearchCategoryIcon(category),
-      keywords: [item.title, item.description, item.source, category],
+      keywords: [title, description, item.source, category],
     };
   });
 }
@@ -280,11 +287,13 @@ function SolutionSearchDialog({
   onOpenChange: (open: boolean) => void;
   items: SolutionItem[];
 }): ReactNode {
+  const gt = useGT();
+  const m = useMessages();
   const history = useHistory();
   const resultGroups = useMemo(() => {
     const resultItems = getSolutionSearchResultItems(items, query);
-    return groupSearchDialogItems(buildSolutionSearchItems(resultItems));
-  }, [items, query]);
+    return groupSearchDialogItems(buildSolutionSearchItems(resultItems, m));
+  }, [items, m, query]);
   const hasQuery = query.trim().length > 0;
 
   function handleSelect(item: SearchDialogItem): void {
@@ -305,23 +314,24 @@ function SolutionSearchDialog({
       onSelect={handleSelect}
       query={query}
       resultGroups={resultGroups}
-      resultsHeading="Search results"
+      resultsHeading={gt("Search results")}
       showDescription={hasQuery}
-      suggestedHeading="Suggested solutions"
-      title="Search solutions"
+      suggestedHeading={gt("Suggested solutions")}
+      title={gt("Search solutions")}
     />
   );
 }
 
 export function SolutionSearch({ items }: SolutionSearchProps): ReactNode {
+  const gt = useGT();
   const { open, query, setQuery, handleOpenChange } = useSearchDialogState();
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <DialogTrigger asChild>
         <SearchDialogTriggerButton
-          ariaLabel="Search solutions"
-          placeholder="Search posts..."
+          ariaLabel={gt("Search solutions")}
+          placeholder={gt("Search posts...")}
           className="border-grey-60 hover:text-grey-70 focus-visible:ring-db-cyan dark:border-grey-60! h-8 w-full justify-start rounded-none border bg-transparent pr-2.5 pl-2.5 text-[0.8125rem] leading-none font-normal tracking-normal text-[#71717A] shadow-none hover:bg-transparent lg:w-69 lg:has-[>kbd]:!pr-1.5 dark:bg-transparent! dark:hover:bg-transparent!"
           kbdClassName="hidden h-5.5 w-8.75 min-w-0 rounded-none border border-grey-40 bg-transparent px-1.5 py-1 shadow-none text-sm leading-none font-normal tracking-normal text-grey-60 lg:inline-flex"
           variant="outline"

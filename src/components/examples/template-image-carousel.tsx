@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useGT, useMessages } from "gt-next";
 
 import type { GalleryImage } from "@/lib/recipes/recipes";
 import {
@@ -27,6 +28,8 @@ export function TemplateImageCarousel({
   images: GalleryImage[];
   exampleName: string;
 }) {
+  const gt = useGT();
+  const m = useMessages();
   const multiple = images.length > 1;
 
   if (images.length === 0) return null;
@@ -39,7 +42,11 @@ export function TemplateImageCarousel({
             <CarouselItem key={`${image.lightUrl}-${image.darkUrl}`}>
               <Slide
                 image={image}
-                alt={`${exampleName} screenshot ${i + 1} of ${images.length}`}
+                alt={gt("{name} screenshot {index} of {total}", {
+                  name: m(exampleName),
+                  index: i + 1,
+                  total: images.length,
+                })}
                 loading="eager"
               />
             </CarouselItem>

@@ -1,11 +1,22 @@
 import * as React from "react";
+import { T, useGT } from "gt-next";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { Slot } from "radix-ui";
 
 import { cn } from "@/lib/utils";
 
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
-  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />;
+  const gt = useGT();
+
+  return (
+    <nav
+      aria-label={gt("breadcrumb", {
+        $context: "aria-label for the breadcrumb navigation landmark",
+      })}
+      data-slot="breadcrumb"
+      {...props}
+    />
+  );
 }
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
@@ -93,7 +104,9 @@ function BreadcrumbEllipsis({
       {...props}
     >
       <MoreHorizontal className="size-4" />
-      <span className="sr-only">More</span>
+      <T>
+        <span className="sr-only">More</span>
+      </T>
     </span>
   );
 }

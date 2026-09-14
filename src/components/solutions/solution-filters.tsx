@@ -7,7 +7,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useGT, useMessages } from "gt-next";
 
+import { getSolutionCategoryLabel } from "@/lib/solutions/solution-category-labels";
 import { cn } from "@/lib/utils";
 
 type SolutionFiltersProps = {
@@ -70,9 +72,18 @@ export function SolutionFilters({
     initialScrollEdgeState,
   );
 
+  const gt = useGT();
+  const m = useMessages();
+
   const items: Array<{ label: string; value: string | null }> = [
-    { label: "All", value: null },
-    ...categories.map((category) => ({ label: category, value: category })),
+    {
+      label: gt("All", { $context: "Filter showing every solution category" }),
+      value: null,
+    },
+    ...categories.map((category) => ({
+      label: m(getSolutionCategoryLabel(category)),
+      value: category,
+    })),
   ];
 
   const updateScrollEdgeState = useCallback((): void => {
@@ -146,7 +157,7 @@ export function SolutionFilters({
   return (
     <nav
       className="relative -mx-5 md:-mx-8 lg:mx-0"
-      aria-label="Solution categories"
+      aria-label={gt("Solution categories")}
     >
       <div
         className="scroll-px-5 [scrollbar-width:none] overflow-x-auto overscroll-x-contain px-5 [-ms-overflow-style:none] md:scroll-px-8 md:px-8 lg:scroll-px-0 lg:px-0 [&::-webkit-scrollbar]:hidden"
@@ -157,7 +168,7 @@ export function SolutionFilters({
           {items.map((item) => {
             const selected = item.value === selectedCategory;
             return (
-              <li className="m-0 shrink-0 p-0" key={item.label}>
+              <li className="m-0 shrink-0 p-0" key={item.value ?? "all"}>
                 <button
                   className={cn(
                     "focus-visible:outline-db-cyan shrink-0 border px-3.5 py-2.25 font-mono text-sm leading-none font-medium whitespace-nowrap transition-colors duration-150 focus-visible:outline-2 focus-visible:outline-offset-2",

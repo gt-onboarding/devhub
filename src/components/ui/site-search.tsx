@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import type { SVGProps } from "react";
+import { msg, useGT, useMessages } from "gt-next";
 import { FileText, Rocket } from "lucide-react";
 
 import { cookbooks, examples, recipesInOrder } from "@/lib/recipes/recipes";
@@ -48,44 +49,55 @@ const SEARCH_ICONS: Record<SiteSearchItem["icon"], SearchDialogItem["icon"]> = {
   templates: Rocket,
 };
 
+const DOCS_GROUP = msg("Docs");
+const TEMPLATES_GROUP = msg("Templates");
+const SOLUTIONS_GROUP = msg("Solutions");
+
 const DOC_ITEMS: SiteSearchItem[] = [
   {
     id: "docs-start-here",
-    title: "Start here",
-    description: "Orientation for building enterprise apps on Databricks.",
+    title: msg("Start here"),
+    description: msg("Orientation for building enterprise apps on Databricks."),
     href: "/docs/start-here",
-    group: "Docs",
+    group: DOCS_GROUP,
     icon: "docs",
     keywords: ["docs", "start", "getting started", "devhub"],
   },
   {
     id: "docs-templates",
-    title: "Templates",
-    description: "How DevHub templates help scaffold Databricks apps.",
+    title: msg("Templates"),
+    description: msg("How DevHub templates help scaffold Databricks apps."),
     href: "/docs/templates",
-    group: "Docs",
+    group: DOCS_GROUP,
     icon: "docs",
     keywords: ["docs", "templates", "recipes", "examples"],
   },
   {
     id: "docs-cli",
-    title: "Databricks CLI",
-    description: "Install, authenticate, and use the Databricks CLI.",
+    title: msg("Databricks CLI"),
+    description: msg("Install, authenticate, and use the Databricks CLI."),
     href: "/docs/tools/databricks-cli",
-    group: "Docs",
+    group: DOCS_GROUP,
     icon: "docs",
     keywords: ["cli", "auth", "setup"],
   },
 ];
 
-function buildSearchItems(): SiteSearchItem[] {
+function buildSearchItems(m: ReturnType<typeof useMessages>): SiteSearchItem[] {
+  const docItems = DOC_ITEMS.map((item) => ({
+    ...item,
+    title: m(item.title),
+    description: m(item.description),
+    group: m(item.group),
+  }));
+
   const templateItems = [...cookbooks, ...recipesInOrder, ...examples].map(
     (item) => ({
       id: `template-${item.id}`,
       title: item.name,
       description: item.description,
       href: `/templates/${item.id}`,
-      group: "Templates",
+      group: m(TEMPLATES_GROUP),
       icon: "templates" as const,
       keywords: [...item.tags, ...item.services],
     }),
@@ -97,12 +109,12 @@ function buildSearchItems(): SiteSearchItem[] {
     description: item.description,
     href: item.type === "linked" ? item.href : `/solutions/${item.id}`,
     external: item.type === "linked",
-    group: "Solutions",
+    group: m(SOLUTIONS_GROUP),
     icon: "solutions" as const,
     keywords: [...item.tags, item.source],
   }));
 
-  return [...DOC_ITEMS, ...solutionItems, ...templateItems];
+  return [...docItems, ...solutionItems, ...templateItems];
 }
 
 function toSearchDialogItem(item: SiteSearchItem): SearchDialogItem {
@@ -128,8 +140,8 @@ export function SiteSearch({
   triggerKbdClassName,
   items,
   previewLimit = 30,
-  suggestedHeading = "Suggested",
-  title = "Search DevHub",
+  suggestedHeading,
+  title,
 }: {
   className?: string;
   iconClassName?: string;
@@ -140,10 +152,12 @@ export function SiteSearch({
   triggerClassName?: string;
   triggerKbdClassName?: string;
 }) {
+  const gt = useGT();
+  const m = useMessages();
   const { open, query, setQuery, handleOpenChange } = useSearchDialogState();
   const allItems = useMemo(
-    () => (items ?? buildSearchItems()).map(toSearchDialogItem),
-    [items],
+    () => (items ?? buildSearchItems(m)).map(toSearchDialogItem),
+    [items, m],
   );
   const hasQuery = query.trim().length > 0;
   const resultGroups = useMemo(
@@ -159,7 +173,7 @@ export function SiteSearch({
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
       <SearchDialogTriggerButton
-        ariaLabel="Search documentation"
+        ariaLabel={gt("Search documentation")}
         aria-expanded={open}
         aria-haspopup="dialog"
         className={cn(
@@ -173,10 +187,10 @@ export function SiteSearch({
           triggerKbdClassName,
         )}
         onClick={() => handleOpenChange(true)}
-        placeholder="Search..."
+        placeholder={gt("Search...")}
       />
       <SearchDialogContent
-        emptyText="No results found."
+        emptyText={gt("No results found.")}
         onOpenChange={handleOpenChange}
         onQueryChange={setQuery}
         onSelect={(item) => {
@@ -189,10 +203,10 @@ export function SiteSearch({
         }}
         query={query}
         resultGroups={resultGroups}
-        resultsHeading="Search results"
+        resultsHeading={gt("Search results")}
         showDescription={hasQuery}
-        suggestedHeading={suggestedHeading}
-        title={title}
+        suggestedHeading={suggestedHeading ?? gt("Suggested")}
+        title={title ?? gt("Search DevHub")}
       />
     </Dialog>
   );

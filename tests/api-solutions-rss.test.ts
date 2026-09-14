@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 import { describe, expect, test } from "vitest";
 
-import { GET, HEAD } from "../src/app/(website)/solutions/rss.xml/route";
+import { GET, HEAD } from "../src/app/solutions/rss.xml/route";
 
 type RawResponse = {
   statusCode: number;

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { T, useGT, useMessages } from "gt-next";
 
 import { composeTemplateAgentPrompt } from "@/lib/agent-content-markdown";
 import { goalOnly, type ContentSections } from "@/lib/content-sections";
@@ -39,20 +40,23 @@ export type TemplateDetailView = {
 };
 
 function TemplatePreviewFrame({
-  alt,
   darkUrl,
   lightUrl,
+  name,
 }: {
-  alt: string;
   darkUrl?: string;
   lightUrl?: string;
+  name: string;
 }): ReactNode {
+  const gt = useGT();
+  const m = useMessages();
+
   return (
     <div className="relative aspect-video w-full overflow-hidden border border-black/12 bg-black/4">
       <TemplatePreviewImage
         lightUrl={lightUrl ?? darkUrl}
         darkUrl={darkUrl ?? lightUrl}
-        alt={alt}
+        alt={gt("{name} preview", { name: m(name) })}
         fallback={<FallbackCardArt index={0} />}
         loading="eager"
       />
@@ -103,7 +107,7 @@ function getCookbookDetailView({
       <TemplatePreviewFrame
         lightUrl={cookbook.previewImageLightUrl}
         darkUrl={cookbook.previewImageDarkUrl}
-        alt={`${cookbook.name} preview`}
+        name={cookbook.name}
       />
     ),
     presentation: "default",
@@ -159,7 +163,7 @@ function getRecipeDetailView({
       <TemplatePreviewFrame
         lightUrl={recipe.previewImageLightUrl}
         darkUrl={recipe.previewImageDarkUrl}
-        alt={`${recipe.name} preview`}
+        name={recipe.name}
       />
     ),
     presentation: isHackathonTemplate ? "hackathon" : "default",
@@ -221,16 +225,18 @@ function getExampleDetailView({
     belowContent:
       relatedItems.length > 0 ? (
         <div className="mt-12 flex flex-col gap-6">
-          <div className="flex flex-col gap-6">
-            <h2 className="m-0 text-2xl leading-normal font-medium tracking-tight text-white">
-              Built on these templates
-            </h2>
-            <p className="text-grey-90 m-0 text-lg leading-normal tracking-tight">
-              This example's codebase and the agent prompt above both build on
-              top of the templates below. Open one to dive into a specific
-              technique on its own or apply it to a different project.
-            </p>
-          </div>
+          <T>
+            <div className="flex flex-col gap-6">
+              <h2 className="m-0 text-2xl leading-normal font-medium tracking-tight text-white">
+                Built on these templates
+              </h2>
+              <p className="text-grey-90 m-0 text-lg leading-normal tracking-tight">
+                This example's codebase and the agent prompt above both build on
+                top of the templates below. Open one to dive into a specific
+                technique on its own or apply it to a different project.
+              </p>
+            </div>
+          </T>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
             {relatedItems.map(({ data }) => (
               <TemplateIncludedCard
@@ -255,7 +261,7 @@ function getExampleDetailView({
         <TemplatePreviewFrame
           lightUrl={example.previewImageLightUrl}
           darkUrl={example.previewImageDarkUrl}
-          alt={`${example.name} preview`}
+          name={example.name}
         />
       ),
     presentation: "default",

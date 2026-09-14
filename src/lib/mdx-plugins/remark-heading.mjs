@@ -4,7 +4,10 @@ import { visit } from "unist-util-visit";
 import { flattenNode } from "./utils.mjs";
 
 const slugger = new Slugger();
-const customIdRegex = /\s*\[#([^]+?)]\s*$/;
+// Explicit heading ids: `## Title [#id]` (DevHub) or `## Title \{#id\}` (the
+// escaped form the gt CLI appends to translated headings so anchors keep
+// matching the English slugs).
+const customIdRegex = /\s*(?:\[#([^]+?)]|\{#([^}]+?)\})\s*$/;
 const tocExcludeRegex = /\s*\[!toc]\s*$/;
 const stepTagRegex = /\s*\[step]\s*$/i;
 
@@ -43,8 +46,9 @@ export default function remarkHeading(opts = {}) {
 
       if (!id && lastNode?.type === "text" && customId) {
         const match = customIdRegex.exec(lastNode.value);
-        if (match?.[1]) {
-          id = match[1];
+        const explicitId = match?.[1] ?? match?.[2];
+        if (explicitId) {
+          id = explicitId;
           lastNode.value = lastNode.value.slice(0, match.index);
         }
       }

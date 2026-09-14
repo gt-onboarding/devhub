@@ -35,14 +35,19 @@ function listFiles(root: string): string[] {
   });
 }
 
+// Pages are prerendered once per locale under the `[locale]` segment. Links
+// in every locale point at unprefixed (default-locale) URLs, which the proxy
+// resolves to the visitor's locale, so the English render is the one to crawl.
+const DEFAULT_LOCALE_DIR = "en";
+
 function listPageHtmlFiles(): string[] {
   return listFiles(NEXT_APP_DIR).filter((filePath) => {
-    const relativePath = relative(NEXT_APP_DIR, filePath);
+    const relativePath = relative(NEXT_APP_DIR, filePath).split(sep).join("/");
     return (
       relativePath.endsWith(".html") &&
       !relativePath.includes(".segments") &&
-      !relativePath.startsWith("_not-found") &&
-      !relativePath.startsWith("_global-error")
+      (relativePath === `${DEFAULT_LOCALE_DIR}.html` ||
+        relativePath.startsWith(`${DEFAULT_LOCALE_DIR}/`))
     );
   });
 }
@@ -52,7 +57,9 @@ function htmlFileToRoute(filePath: string): string {
     .split(sep)
     .join("/")
     .replace(/\.html$/, "");
-  return relativePath === "index" ? "/" : `/${relativePath}`;
+  return relativePath === DEFAULT_LOCALE_DIR
+    ? "/"
+    : `/${relativePath.slice(DEFAULT_LOCALE_DIR.length + 1)}`;
 }
 
 function stripScripts(html: string): string {

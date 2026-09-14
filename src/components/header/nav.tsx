@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useGT, useMessages } from "gt-next";
 import { ArrowUpRight } from "lucide-react";
 
 import {
@@ -195,6 +196,7 @@ function ProductDropdown({
   onHighlightChange: (href: string) => void;
   onHighlightReset: () => void;
 }) {
+  const gt = useGT();
   const highlightedProductIndex = Math.max(
     0,
     PRODUCT_LINKS.findIndex(({ href }) => href === highlightedProductHref),
@@ -260,7 +262,7 @@ function ProductDropdown({
                       "ml-1 size-3.5 shrink-0",
                       isProductHighlighted ? "text-grey-12" : "text-white",
                     )}
-                    aria-label="(opens in a new tab)"
+                    aria-label={gt("(opens in a new tab)")}
                   />
                 )}
               </Link>
@@ -274,6 +276,8 @@ function ProductDropdown({
 }
 
 export function HeaderNav({ className, items }: HeaderNavProps) {
+  const gt = useGT();
+  const m = useMessages();
   const pathname = usePathname() ?? "/";
   const activeProductHref = getActiveProductHref(pathname);
   const [highlightedProductHref, setHighlightedProductHref] = useState<
@@ -287,13 +291,13 @@ export function HeaderNav({ className, items }: HeaderNavProps) {
       viewport={false}
       delayDuration={0}
       className={cn("flex max-w-none flex-none justify-start", className)}
-      aria-label="Main"
+      aria-label={gt("Main")}
     >
       <NavigationMenuList className="flex justify-start gap-0.5">
         {items.map((item) => {
           const { href, label } = item;
 
-          if (label === "Product") {
+          if (item.id === "product") {
             const isActive = Boolean(activeProductHref);
 
             return (
@@ -302,7 +306,7 @@ export function HeaderNav({ className, items }: HeaderNavProps) {
                 onPointerLeave={() => setHighlightedProductHref(null)}
               >
                 <NavigationMenuTrigger className="group/product-trigger focus-visible:outline-db-cyan h-auto rounded-none bg-transparent! p-0 font-mono text-white shadow-none !transition-none hover:bg-transparent! hover:text-white! focus:bg-transparent! focus:text-white! focus-visible:outline-offset-2 data-[active=true]:!bg-transparent data-[state=open]:bg-transparent! data-[state=open]:text-white! [&>svg]:hidden">
-                  <NavItemChrome active={isActive}>{label}</NavItemChrome>
+                  <NavItemChrome active={isActive}>{m(label)}</NavItemChrome>
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="bg-grey-12! z-60 mt-0! h-[135px]! w-[185px]! overflow-visible! rounded-none! border-0! p-0! shadow-none! !transition-none !duration-0 group-data-[viewport=false]/navigation-menu:!duration-0 data-[motion^=from-]:!animate-none data-[motion^=to-]:!animate-none data-[state=closed]:!animate-none group-data-[viewport=false]/navigation-menu:data-[state=closed]:!animate-none data-[state=open]:!animate-none group-data-[viewport=false]/navigation-menu:data-[state=open]:!animate-none">
                   <ProductDropdown
@@ -326,7 +330,7 @@ export function HeaderNav({ className, items }: HeaderNavProps) {
                 className="block rounded-none bg-transparent p-0 text-white no-underline hover:bg-transparent hover:text-white hover:no-underline focus:bg-transparent focus:text-white data-active:bg-transparent data-active:hover:cursor-default"
               >
                 <Link href={href}>
-                  <NavItemChrome active={isActive}>{label}</NavItemChrome>
+                  <NavItemChrome active={isActive}>{m(label)}</NavItemChrome>
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>

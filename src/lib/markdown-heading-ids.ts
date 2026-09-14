@@ -9,7 +9,41 @@ function slugifyMarkdownHeading(text: string): string {
     .replace(/\s+/g, "-");
 }
 
-export function getUniqueMarkdownHeadingId(
+/**
+ * Trailing explicit heading ids: `Title [#id]` (DevHub), or the `{#id}` /
+ * MDX-escaped `\{#id\}` form the gt CLI appends to translated headings so
+ * anchors keep pointing at the English slugs.
+ */
+const EXPLICIT_HEADING_ID =
+  /\s*(?:\\\{#([^}\\]+)\\\}|\{#([^}]+)\}|\[#([^\]]+)\])\s*$/;
+
+export function splitExplicitHeadingId(text: string): {
+  id: string | null;
+  text: string;
+} {
+  const match = EXPLICIT_HEADING_ID.exec(text);
+  if (!match) {
+    return { id: null, text };
+  }
+  return {
+    id: match[1] ?? match[2] ?? match[3] ?? null,
+    text: text.slice(0, match.index).trimEnd(),
+  };
+}
+
+export function getMarkdownHeadingId(
+  text: string,
+  usedIds: Map<string, number>,
+): { id: string; text: string } {
+  const explicit = splitExplicitHeadingId(text);
+  if (explicit.id) {
+    usedIds.set(explicit.id, (usedIds.get(explicit.id) ?? 0) + 1);
+    return { id: explicit.id, text: explicit.text };
+  }
+  return { id: getUniqueMarkdownHeadingId(text, usedIds), text };
+}
+
+function getUniqueMarkdownHeadingId(
   text: string,
   usedIds: Map<string, number>,
 ): string {

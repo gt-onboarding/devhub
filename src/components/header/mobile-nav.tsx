@@ -3,6 +3,7 @@
 import { useEffect, useId, type ComponentProps } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useGT, useMessages } from "gt-next";
 import { ArrowUpRight } from "lucide-react";
 
 import {
@@ -14,6 +15,7 @@ import {
 } from "@/lib/header-navigation";
 import { cn } from "@/lib/utils";
 import { SiteSearch, type SiteSearchItem } from "@/components/ui/site-search";
+import { LocaleSwitcher } from "@/components/header/locale-switcher";
 
 type MobileNavProps = {
   items: readonly HeaderNavItem[];
@@ -103,6 +105,7 @@ function MobileTreeText({
   className?: string;
   href: string;
 } & Omit<ComponentProps<typeof Link>, "children" | "className" | "href">) {
+  const gt = useGT();
   const isExternal = isExternalHref(href);
 
   return (
@@ -133,7 +136,7 @@ function MobileTreeText({
               "ml-1 size-4 shrink-0",
               active ? "text-grey-12" : "text-grey-80",
             )}
-            aria-label="(opens in a new tab)"
+            aria-label={gt("(opens in a new tab)")}
           />
         )}
       </span>
@@ -147,12 +150,14 @@ export function MobileNav({
   onOpenChange,
   searchItems,
 }: MobileNavProps) {
+  const gt = useGT();
+  const m = useMessages();
   const menuId = useId();
   const pathname = usePathname() ?? "/";
   const activeProductHref = getActiveProductHref(pathname);
   const isHomeActive = pathname === "/";
-  const productItem = items.find(({ label }) => label === "Product");
-  const sectionItems = items.filter(({ label }) => label !== "Product");
+  const productItem = items.find(({ id }) => id === "product");
+  const sectionItems = items.filter(({ id }) => id !== "product");
 
   useEffect(() => {
     onOpenChange(false);
@@ -254,7 +259,7 @@ export function MobileNav({
     <>
       <MobileMenuButton
         className="ml-auto xl:hidden"
-        label={open ? "Close menu" : "Open menu"}
+        label={open ? gt("Close menu") : gt("Open menu")}
         open={open}
         aria-controls={menuId}
         aria-expanded={open}
@@ -266,12 +271,12 @@ export function MobileNav({
           className="bg-grey-12 text-grey-80 fixed inset-x-0 top-[var(--devhub-mobile-menu-top)] bottom-0 z-40 overflow-y-auto xl:hidden"
           role="dialog"
           aria-modal="true"
-          aria-label="Main navigation"
+          aria-label={gt("Main navigation")}
           data-state="open"
         >
           <nav
             className="relative flex h-full w-full justify-between font-mono text-xl leading-none font-normal tracking-[-0.025rem]"
-            aria-label="Main navigation"
+            aria-label={gt("Main navigation")}
           >
             <MobileTreeLine className="top-[38px] left-[23px] h-[260px] w-px" />
             <MobileTreeLine className="top-[58px] left-6 h-px w-[37px]" />
@@ -299,7 +304,7 @@ export function MobileNav({
               className="text-grey-80 absolute top-[46px] left-[61px] flex h-6 items-center opacity-60"
               data-mobile-menu-product-label="true"
             >
-              {productItem.label.toLowerCase()}
+              {m(productItem.label).toLowerCase()}
             </span>
 
             {PRODUCT_LINKS.map((product, index) => {
@@ -344,17 +349,22 @@ export function MobileNav({
                   href={item.href}
                   key={item.href}
                 >
-                  {item.label.toLowerCase()}
+                  {m(item.label).toLowerCase()}
                 </MobileTreeText>
               );
             })}
-            <div className="mt-auto w-full px-5 pb-5.5 md:px-6 md:pb-6">
+            <div className="mt-auto flex w-full flex-col gap-3 px-5 pb-5.5 md:px-6 md:pb-6">
+              <LocaleSwitcher
+                align="start"
+                className="border-grey-80 text-grey-80 hover:text-grey-80 focus-visible:border-db-cyan h-10 w-full justify-start border bg-transparent px-3 text-lg/tight normal-case hover:bg-white/5 hover:opacity-100"
+                contentClassName="border-grey-80 bg-grey-12 w-(--radix-dropdown-menu-trigger-width)"
+              />
               <SiteSearch
                 iconClassName="size-4.5"
                 items={searchItems}
                 previewLimit={8}
-                suggestedHeading="Suggested docs"
-                title="Search documentation"
+                suggestedHeading={gt("Suggested docs")}
+                title={gt("Search documentation")}
                 triggerClassName="h-10 w-full justify-start rounded-none border border-grey-80 bg-transparent px-3 font-mono text-lg/tight font-normal tracking-tight text-grey-80 shadow-none hover:bg-white/5 hover:text-grey-80 focus-visible:border-db-cyan focus-visible:ring-0 lg:has-[>kbd]:!pr-1.5"
                 triggerKbdClassName="hidden"
               />

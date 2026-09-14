@@ -1,0 +1,34 @@
+---
+title: Visão geral da plataforma
+description: Como Databricks Apps, AppKit, Lakebase e Agent Bricks se conectam. Referência de arquitetura para a stack de desenvolvimento do Databricks.
+sourceOfTruth:
+  skills:
+    - databricks-core
+    - databricks-apps
+  docs:
+    - /docs/appkit/v0
+    - https://docs.databricks.com/aws/en/getting-started/architecture
+---
+
+# Visão geral da plataforma \{#platform-overview\}
+
+Databricks Apps, Lakebase Postgres, Agent Bricks e o Data Lakehouse são os quatro serviços centrais do workspace que compõem uma aplicação Databricks full-stack. O diagrama abaixo mostra como eles se relacionam.
+
+![Diagrama de arquitetura do workspace Databricks: Databricks Apps contém o AppKit, cujos plugins Lakebase, Model Serving e Analytics plugin se conectam ao Lakebase, ao Agent Bricks e ao Data Lakehouse como serviços irmãos dentro do workspace; uma quarta coluna lista plugins adicionais do AppKit (Server, Genie, Files, Jobs, Vector Search e Custom Plugins)](/img/docs/platform-overview.svg)
+
+* **[Databricks Apps](/pt/docs/apps/overview)**: hospedagem gerenciada para aplicações criadas com o [AppKit](/pt/docs/appkit/v0), o SDK TypeScript para aplicações Databricks prontas para produção.
+* **[Lakebase Postgres](/pt/docs/lakebase/overview)**: banco de dados Postgres gerenciado para armazenamento OLTP, co-localizado com os dados do seu workspace. Use-o para sessões, estado da aplicação, histórico de conversas ou qualquer dado que sua aplicação leia e grave com baixa latência.
+* **[Agent Bricks](/pt/docs/agents/overview)**: a plataforma corporativa de agentes da Databricks, que unifica acesso a modelos, execução, governança e contexto. Use-a para os recursos de IA da sua aplicação: conversar com a documentação da sua empresa (Knowledge Assistants), consultar seus dados em linguagem natural (Genie), chamadas a modelos fundacionais ou agentes Python personalizados.
+* **[Data Lakehouse](/pt/docs/lakehouse/overview)**: dados analíticos governados no Unity Catalog. Use-o para ler dados corporativos, acionar Lakeflow Jobs e exibir a atualidade dos dados na sua interface.
+
+## Como uma requisição flui \{#how-a-request-flows\}
+
+1. O usuário abre o app pela URL do workspace. O Databricks Apps o autentica via SSO do workspace.
+2. Em seguida, cada plugin do AppKit trata as requisições do respectivo serviço: o Lakebase Plugin consulta o Lakebase, o Model Serving Plugin chama o Agent Bricks e o Analytics plugin lê o Data Lakehouse.
+3. Cada chamada de plugin é executada com a identidade do service principal do app (por padrão) ou com o token encaminhado do usuário (quando as permissões por usuário são relevantes). As permissões e a governança do workspace são aplicadas automaticamente.
+
+## Próximos passos \{#where-to-next\}
+
+* [Configure seu ambiente](/pt/docs/tools/databricks-cli) para começar a criar apps.
+* Saiba o que são os [templates](/pt/docs/templates) e como eles ajudam a fazer o scaffold de um app rapidamente.
+* Aprofunde-se em cada serviço: [Databricks Apps](/pt/docs/apps/overview), [Lakebase Postgres](/pt/docs/lakebase/overview), [Agent Bricks](/pt/docs/agents/overview) e o [Data Lakehouse](/pt/docs/lakehouse/overview).

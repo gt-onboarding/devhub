@@ -4,11 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { T, useGT } from "gt-next";
 
 import { HEADER_LINKS } from "@/lib/header-navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { SiteSearch, type SiteSearchItem } from "@/components/ui/site-search";
+import { LocaleSwitcher } from "@/components/header/locale-switcher";
 import { MobileNav } from "@/components/header/mobile-nav";
 import { HeaderNav } from "@/components/header/nav";
 import { Icons } from "@/components/icons";
@@ -20,6 +22,7 @@ export function Header({
   className?: string;
   searchItems: readonly SiteSearchItem[];
 }) {
+  const gt = useGT();
   const pathname = usePathname() ?? "/";
   const [hasScrolled, setHasScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -57,7 +60,7 @@ export function Header({
           <Link
             href="/"
             className="flex shrink-0 items-center no-underline hover:no-underline"
-            aria-label="Databricks Developer home"
+            aria-label={gt("Databricks Developer home")}
           >
             <Image
               src="/img/databricks-logo.svg"
@@ -80,30 +83,31 @@ export function Header({
               <Link
                 href="https://www.reddit.com/r/databricks/"
                 className="inline-flex size-4.5 items-center justify-center text-[#E4E5E7] no-underline hover:no-underline hover:opacity-85"
-                aria-label="Databricks subreddit"
+                aria-label={gt("Databricks subreddit")}
               >
                 <Icons.reddit className="size-4.5" aria-hidden="true" />
               </Link>
               <Link
                 href="https://www.youtube.com/@Databricks"
                 className="inline-flex size-4.5 items-center justify-center text-[#E4E5E7] no-underline hover:no-underline hover:opacity-85"
-                aria-label="Databricks YouTube channel"
+                aria-label={gt("Databricks YouTube channel")}
               >
                 <Icons.youtube className="size-4.5" aria-hidden="true" />
               </Link>
               <Link
                 href="https://github.com/databricks/devhub"
                 className="inline-flex size-4.5 items-center justify-center text-[#E4E5E7] no-underline hover:no-underline hover:opacity-85"
-                aria-label="DevHub GitHub repository"
+                aria-label={gt("DevHub GitHub repository")}
               >
                 <Icons.github className="size-4.5" aria-hidden="true" />
               </Link>
             </div>
+            <LocaleSwitcher className="ml-3" />
             <SiteSearch
               items={searchItems}
               previewLimit={8}
-              suggestedHeading="Suggested docs"
-              title="Search documentation"
+              suggestedHeading={gt("Suggested docs")}
+              title={gt("Search documentation")}
               triggerClassName="ml-3"
             />
             <Button
@@ -115,7 +119,7 @@ export function Header({
                 href="https://www.databricks.com/try-databricks"
                 target="_blank"
               >
-                Try Databricks
+                <T>Try Databricks</T>
               </Link>
             </Button>
           </div>

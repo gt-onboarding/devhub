@@ -2,6 +2,7 @@
 
 import { useRef, type SVGProps } from "react";
 import Link from "next/link";
+import { T } from "gt-next";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -59,15 +60,17 @@ function Templates({ className }: TemplatesProps) {
           <div className="flex items-center gap-1.5">
             <span className="size-1.5 bg-[#FF6038]" aria-hidden="true" />
             <p className="font-mono text-sm/none font-medium tracking-normal text-[#5e616e] uppercase">
-              [Templates]
+              <T>[Templates]</T>
             </p>
           </div>
           <h2
             className="max-w-184 text-3xl leading-[1.125] font-normal tracking-[-0.04em] text-balance text-white md:text-4xl md:leading-[1.125] lg:text-5xl lg:leading-[1.125] xl:text-[3.5rem]"
             id="home-templates-title"
           >
-            Jumpstart your next project{" "}
-            <span className="text-grey-70">with a template.</span>
+            <T>
+              Jumpstart your next project{" "}
+              <span className="text-grey-70">with a template.</span>
+            </T>
           </h2>
         </header>
       </div>
@@ -86,7 +89,9 @@ function Templates({ className }: TemplatesProps) {
           className="h-10 gap-3 tracking-tight no-underline lg:h-14 lg:gap-5 xl:gap-8"
         >
           <LinkArrowIcon className="size-5 lg:size-8" />
-          <span>See all templates</span>
+          <T>
+            <span>See all templates</span>
+          </T>
           <LinkArrowIcon className="size-5 rotate-180 lg:size-8" />
         </Link>
       </Button>

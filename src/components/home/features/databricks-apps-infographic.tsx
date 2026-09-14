@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { msg, useGT, useMessages } from "gt-next";
 import { domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
 
@@ -14,9 +15,7 @@ const browserGraphOneSrc = "/img/home/features/db-apps-graph.svg";
 const browserGraphTwoSrc = "/img/home/features/db-apps-graph-2.svg";
 const sparklesIconSrc = "/img/home/features/sparkles-icon.svg";
 const STEP_MOVE_DURATION = 0.68;
-const DEPLOYING_LABEL = "Deploying...";
 const DEPLOYING_WORD = "Deploying";
-const DEPLOYED_LABEL = "Deployed";
 const DEPLOYING_TYPE_DELAY = 0.08;
 const DEPLOYING_TYPE_DURATION = 0.25;
 const DEPLOYING_STEP_INDEX = 1;
@@ -71,17 +70,17 @@ const TERMINAL_LINES = [
   {
     id: "connecting",
     className: "mt-4 text-black/45",
-    content: "Connecting to workspace...",
+    content: msg("Connecting to workspace..."),
   },
   {
     id: "uploading",
     className: "mt-1 text-black/45",
-    content: "Uploading app...",
+    content: msg("Uploading app..."),
   },
   {
     id: "linking",
     className: "mt-1 text-black/45",
-    content: "Linking data sources...",
+    content: msg("Linking data sources..."),
   },
 ] as const;
 
@@ -421,8 +420,13 @@ function DeployingText({
   isVisible: boolean;
   reduceMotion: boolean;
 }) {
+  const gt = useGT();
+  const deployingWord = gt("Deploying");
+  const deployingLabel = gt("Deploying...");
+  const deployedLabel = gt("Deployed");
+
   if (reduceMotion) {
-    return <span>{DEPLOYED_LABEL}</span>;
+    return <span>{deployedLabel}</span>;
   }
 
   return (
@@ -432,7 +436,7 @@ function DeployingText({
     >
       <m.span
         animate={isVisible ? { opacity: [1, 1, 0], y: [0, 0, -6] } : undefined}
-        aria-label={DEPLOYING_LABEL}
+        aria-label={deployingLabel}
         className="absolute top-0 left-1/2 -translate-x-1/2"
         initial={{ opacity: 1, y: 0 }}
         transition={{
@@ -442,7 +446,7 @@ function DeployingText({
           times: [0, 0.12, 1],
         }}
       >
-        {Array.from(DEPLOYING_WORD).map((character, index) => (
+        {Array.from(deployingWord).map((character, index) => (
           <m.span
             animate={isVisible ? { opacity: 1 } : undefined}
             initial={{ opacity: 0 }}
@@ -454,7 +458,7 @@ function DeployingText({
         ))}
         <LoadingDots isVisible={isVisible} reduceMotion={reduceMotion} />
       </m.span>
-      <span className="invisible ml-5 block">{DEPLOYING_LABEL}</span>
+      <span className="invisible ml-5 block">{deployingLabel}</span>
       <m.span
         animate={isVisible ? { opacity: 1, x: 0, y: 0 } : undefined}
         className="absolute top-0 left-1/2 -translate-x-1/2"
@@ -465,7 +469,7 @@ function DeployingText({
           ease: DEPLOY_TEXT_EASE,
         }}
       >
-        <span className="relative -left-0.5">{DEPLOYED_LABEL}</span>
+        <span className="relative -left-0.5">{deployedLabel}</span>
       </m.span>
     </span>
   );
@@ -617,6 +621,7 @@ function BrowserLoadedAsset({
 }
 
 export function DatabricksAppsInfographic() {
+  const messages = useMessages();
   const { infographicRef, isVisible, reduceMotion } =
     useFeatureInfographicVisibility();
 
@@ -641,7 +646,7 @@ export function DatabricksAppsInfographic() {
                 reduceMotion={reduceMotion}
                 stepIndex={0}
               >
-                {content}
+                {id === "command" ? content : messages(content)}
                 {id === "linking" ? (
                   <>
                     {" "}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { T } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -130,18 +131,20 @@ function LovedByDevelopers({ className }: { className?: string }) {
       <div className="3xl:max-w-400 3xl:py-46 relative z-10 mx-auto flex max-w-272 flex-col px-5 pt-18 pb-14 md:px-8 md:py-24 lg:py-32 xl:max-w-304 xl:py-46 2xl:max-w-360 2xl:py-35">
         <header className="relative z-10 flex flex-col">
           <h2 className="font-heading 3xl:text-[13.125rem] max-w-sm text-5xl leading-none font-normal tracking-normal sm:max-w-none md:text-7xl/none lg:text-9xl/none xl:text-[10rem] 2xl:text-[12rem]">
-            <span className="block max-w-342 text-balance">
-              Built for enterprise.
-            </span>
-            <span className="block">
-              {" "}
-              <span className="text-db-lava-light 3xl:ml-122 lg:ml-60 lg:block 2xl:ml-96">
-                Loved by
-              </span>{" "}
-              <span className="3xl:ml-64 lg:ml-24 lg:block xl:translate-x-8 2xl:ml-52">
-                developers.
+            <T>
+              <span className="block max-w-342 text-balance">
+                Built for enterprise.
               </span>
-            </span>
+              <span className="block">
+                {" "}
+                <span className="text-db-lava-light 3xl:ml-122 lg:ml-60 lg:block 2xl:ml-96">
+                  Loved by
+                </span>{" "}
+                <span className="3xl:ml-64 lg:ml-24 lg:block xl:translate-x-8 2xl:ml-52">
+                  developers.
+                </span>
+              </span>
+            </T>
           </h2>
         </header>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -17,6 +18,8 @@ declare global {
  * a no-op in local dev where they are off.
  */
 export function YourPrivacyChoicesLink({ className }: { className?: string }) {
+  const gt = useGT();
+
   return (
     <a
       href="#yourprivacychoices"
@@ -26,7 +29,9 @@ export function YourPrivacyChoicesLink({ className }: { className?: string }) {
         window.OneTrust?.ToggleInfoDisplay();
       }}
     >
-      Your Privacy Choices
+      {gt("Your Privacy Choices", {
+        $context: "legally required privacy link label (CCPA)",
+      })}
       <Image
         src="/img/gpc-icon.png"
         alt=""

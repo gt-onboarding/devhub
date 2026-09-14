@@ -9,6 +9,7 @@ import {
 } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { T, useGT } from "gt-next";
 import { ChevronDown, ChevronRight, CornerDownRight } from "lucide-react";
 
 import type { DocsSidebarItem } from "@/lib/docs-content";
@@ -165,6 +166,7 @@ function RecursiveSidebarItem({
   mode,
   onItemClick,
 }: RecursiveSidebarItemProps): ReactNode {
+  const gt = useGT();
   const href = getItemHref(item);
   const pathActive = isSameHref(href, activePath);
   const fallbackActive =
@@ -263,7 +265,9 @@ function RecursiveSidebarItem({
             {hasChildren ? (
               <CollapsibleTrigger
                 aria-label={
-                  isOpen ? `Collapse ${item.label}` : `Expand ${item.label}`
+                  isOpen
+                    ? gt("Collapse {label}", { label: item.label })
+                    : gt("Expand {label}", { label: item.label })
                 }
                 aria-controls={collapsibleContentId}
                 className="ml-auto inline-flex size-6 shrink-0 items-center justify-end rounded-none border-0 bg-transparent p-0 text-inherit"
@@ -361,13 +365,14 @@ export function DocsDesktopSidebar({
 }: {
   items: readonly DocsSidebarItem[];
 }): ReactNode {
+  const gt = useGT();
   const pathname = usePathname();
   const anyActive = items.some((item) => hasActiveDescendant(item, pathname));
   const fallbackActiveHref = anyActive ? undefined : findFirstHref(items);
 
   return (
     <nav
-      aria-label="Docs sidebar"
+      aria-label={gt("Docs sidebar")}
       className="thin-scrollbar sticky top-16 max-h-[calc(100svh-4rem)] grow [scrollbar-gutter:stable] overflow-y-auto border-r-0 bg-black px-1 pt-7 pb-10"
     >
       <div className="flex flex-col gap-y-0 pb-10">
@@ -383,11 +388,12 @@ export function DocsDesktopSidebar({
 
 export function DocsMobileSidebar({
   items,
-  title = "Documentation",
+  title,
 }: {
   items: readonly DocsSidebarItem[];
   title?: string;
 }): ReactNode {
+  const gt = useGT();
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -414,7 +420,7 @@ export function DocsMobileSidebar({
         data-slot="documentation-menu-trigger"
       >
         <CornerDownRight aria-hidden="true" className="mr-2.5 size-3.5" />
-        <span>{title}</span>
+        <span>{title ?? gt("Documentation")}</span>
         <ChevronDown
           aria-hidden="true"
           className={cn(
@@ -425,7 +431,9 @@ export function DocsMobileSidebar({
       </DrawerTrigger>
 
       <DrawerContent className="border-prose-border flex h-[75dvh] flex-col rounded-t-xl bg-black p-0 text-white lg:hidden">
-        <DrawerTitle className="sr-only">Documentation menu</DrawerTitle>
+        <DrawerTitle className="sr-only">
+          <T>Documentation menu</T>
+        </DrawerTitle>
         <div className="flex-1 overflow-y-auto px-5 pt-6 pb-12">
           <DocsSidebar
             activePath={pathname}

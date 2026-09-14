@@ -1,0 +1,1463 @@
+{
+  "001539945a7328f0": {
+    "c": [
+      {
+        "c": "Baseado nestes modelos",
+        "i": 2,
+        "t": "h2"
+      },
+      {
+        "c": "O código deste exemplo e o prompt do agente acima são baseados nos modelos abaixo. Abra um deles para explorar uma técnica específica isoladamente ou aplicá-la a outro projeto.",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "007bb06786794d24": "Passe do protótipo à produção com a mesma configuração, sem precisar reconstruir à medida que escala.",
+  "008477b7cab7d265": "Habilite a pesquisa por similaridade vetorial no Lakebase usando a extensão pgvector. Abrange a configuração da extensão, o design de tabelas vetoriais, auxiliares de inserção e recuperação por similaridade de cosseno, além de opções de índice IVFFlat/HNSW.",
+  "0087474074673dd1": "Automação interna",
+  "00d6c216c2e8a925": {
+    "c": "Ramificação instantânea",
+    "i": 1,
+    "t": "h4"
+  },
+  "0122cb151bfcefd9": "Os resultados são fundamentados em citações? A incerteza é tratada com honestidade?",
+  "018fbe06c0a50121": "Automatize fluxos de trabalho conectando sistemas e executando tarefas além da simples geração de texto.",
+  "01d5479aa342f610": "[Modelos]",
+  "01fb94281d9f9c06": "{count, plural, =1 {1 FILTRO selecionado} other {# FILTROS selecionados}}",
+  "02bbf5a38aa67d5e": "Uma cópia completa, independentemente do tamanho, totalmente isolada da branch de origem.",
+  "02f0ca73d0ccc83b": "Logotipo da {company}",
+  "03125e3ae9616ee7": "Perspectivas",
+  "031b5bee1f08ebb0": "O Lakebase permite que uma equipe de agentes acesse rapidamente, de forma autônoma, os dados de que seus modelos precisam, sejam sinistros históricos ou transações em tempo real, e isso é muito poderoso.",
+  "041ac8ef8227a23e": "Conectando ao workspace...",
+  "057f4075155ea512": "Análise Conversacional do Genie",
+  "058330eee13eebfc": "Qual pode ser o tamanho da minha equipe?",
+  "062ce1a8a458960f": "Crie sistemas que analisam entradas e executam a melhor ação seguinte em tempo real.",
+  "0642fa3097fdd9f8": "Central de controle de interfaces de agentes",
+  "0643cdc63615a496": "Crie e implante apps de dados e agentes de IA na Databricks.",
+  "0681e09bc94fea9a": "Privacidade na Califórnia",
+  "07a2e54902a0c205": "E se eu esgotar meus créditos ou minha cota do Free Edition?",
+  "07a4baea181415c7": "Lançamento de apps full-stack",
+  "07bb54f406950ab4": "Declare as dependências uma única vez — sem chaves de API para gerenciar nem serviços para integrar entre ambientes.",
+  "09aa4ea56684d015": "Use os dados governados, modelos e permissões que já estão na sua plataforma para ter acesso contínuo.",
+  "09ad0cf0f3c57d12": "Defina e valide variáveis de ambiente multiplataforma para aplicações baseadas no Lakebase implantadas fora da plataforma de aplicativos Databricks.",
+  "0ab6dcb23f107e87": "Aplicações de baixa latência baseadas em dados operacionais e sistemas continuamente atualizados.",
+  "0acefb53e6d12824": "Databricks CLI",
+  "0addbd715f3277ea": "Próximo depoimento",
+  "0b1e44e792caf126": "Voltar ao hackathon",
+  "0b4055456bbf8d08": "Diretor de IA",
+  "0b7c5dc2a13ddfd2": "Aplicação de Chat de IA",
+  "0bc7cd6f52ec843b": "Como usar o Lakebase como camada de dados transacionais para Databricks Apps",
+  "0ce63efdb1cee572": "Domingo, 31 de maio de 2026, às 23h59 (PT). Inscreva-se pela página do evento da MLH; se você já se inscreveu, aguarde uma resposta antes de reservar atividades de segunda-feira no portal de participantes da DAIS.",
+  "0cf0be5f9640aeb9": "Exibe a barra lateral em dispositivos móveis.",
+  "0cfbf4677a02b4fe": "Apps",
+  "0d1b3c3d85523933": "Como o Lakebase viabiliza\nos apps que você lança no dia a dia",
+  "0d40c54a47256dd3": "Hackathon Apps & Agents for Good",
+  "0d96f284803a13d4": "Um comando de CLI para implantar. URL fixa, OAuth integrado e acesso direto aos dados do seu workspace, sem necessidade de um serviço de hospedagem separado.",
+  "0de769bddbf003ab": "TLS integrado e URLs HTTPS automáticas para apps",
+  "0e26904be57c20aa": "Visão geral da plataforma",
+  "0ecd50a6dfe6361f": "Instale o Databricks CLI, autentique um perfil e verifique a conexão. Este é o pré-requisito obrigatório para todas as outras receitas e modelos do DevHub.",
+  "0f3d5fdf4beb2220": "Crie com IA",
+  "0f4d336a6753514e": "Provisione um projeto gerenciado do Lakebase Postgres no Databricks e obtenha os valores de conexão necessários para os modelos subsequentes.",
+  "0f6856104d83e8f9": "Atenda solicitações com agentes que recuperam contexto, geram respostas e melhoram ao longo do tempo.",
+  "0f88dc1f2aba88ca": "Modelos para impulsionar seu próximo app do Databricks.",
+  "0fad0b3fc68d3376": "Ir para a página anterior",
+  "0faff7b4d64277bc": "Imagem de capa de Apresentando o DevHub com uma grade, tags de lançamento e o rótulo de hub para desenvolvedores",
+  "0fc77b50df7e0f18": "Adicione um banco de dados Postgres gerenciado ao seu Databricks App usando o plugin do Lakebase. Abrange a configuração de esquema, a criação de tabelas e rotas completas de API REST para CRUD.",
+  "0fd95e399aa26dfd": "Não conhece os modelos? Saiba mais",
+  "107e82db33329eb2": "Avaliação do produto",
+  "10b81579587d2fae": "Gere a estrutura inicial de um aplicativo Databricks com Lakebase",
+  "11c6be04e2e06cb6": "Crie um Databricks App",
+  "11c83e2475cda680": "[MODELOS]",
+  "12a3274c6888239d": "Modelos do Databricks",
+  "13575a49f604e210": "Crie um Databricks App mínimo com análises conversacionais do AI/BI Genie. Abrange a configuração do Genie Agent, a conexão de plugins e a implantação.",
+  "1386c46f32f117ab": "Ver Markdown bruto",
+  "139961ffeb53cbe6": "Crie apps com o Lakebase",
+  "153a330b781f999f": "Execute ambientes de banco de dados separados por tenant para escalonamento independente.",
+  "1561bf00337a8eeb": "Crie apps com Agent Bricks",
+  "162ac5ea47538ce2": "Pesquisar no DevHub",
+  "19173aca84fa3703": "Arquitetura de branches de banco de dados copy-on-write e as práticas que ela viabiliza no Databricks Lakebase",
+  "19aa17a80ac7d9cd": "Aplique controles de acesso e governança por padrão",
+  "1a48f38ba79fc396": "Gerenciamento de Ambiente do Lakebase para Aplicações Fora da Plataforma",
+  "1a4a9eebf69a9418": "Aviso de privacidade",
+  "1a63cd48f0f84c90": "Um novo hub para desenvolvedores criarem na Databricks: modelos opinativos, prontos para copiar e colar, e documentação pronta para agentes, voltados a engenheiros de software.",
+  "1a784f4f60e42338": "O que você está procurando?",
+  "1a87f65cb6c594b1": "Perguntas frequentes",
+  "1a9cb7cf11e50932": "Moderador de conteúdo",
+  "1b55b55a7293541d": "Passe de um agente protótipo para um agente em que seus usuários possam confiar, com avaliações e verificações de qualidade executadas durante as iterações.",
+  "1b64c8155bceffec": "Modelo anterior",
+  "1c74ab629e97a113": "Lakebase Fora da Plataforma",
+  "1c85a3dc6f5c3fe9": "Andre é developer advocate sênior na Databricks, com foco na Experiência do desenvolvedor para criar apps de dados e IA na plataforma Databricks.",
+  "1c92b8166de81644": "Remover filtro Replit",
+  "1d374c291ba8af4d": "Subreddit do Databricks",
+  "1dc03374dd9b8dd4": "Postgres de verdade",
+  "1dc0a719383c6694": "Como as equipes usam o Lakebase em produção.",
+  "1e2de4ea18dc5d10": "E se eu não conseguir executar um agente de programação no meu laptop?",
+  "1ea87e1963dc516b": "Adicione o conjunto de dados do hackathon ao seu workspace do Databricks para começar a desenvolver com ele.",
+  "1ecafe552e7aebad": "Explorar modelos",
+  "1f2ee3ab6d51ccd7": "Conheça uma funcionalidade e uma alteração de esquema: os branches copy-on-write oferecem a cada desenvolvedor, pull request e execução de CI um banco de dados Postgres isolado e semelhante ao de produção, para que as alterações no banco de dados deixem de ser um gargalo.",
+  "1f394749e30b12a8": "Conectar ao servidor MCP",
+  "1f4fa8c56562c80e": "Tarefas em segundo plano",
+  "1fb75f61c7a1acb8": "Apresentando o DevHub",
+  "2048172a8e75c122": "Ler {title}",
+  "2091ea537fce9791": "Alterar idioma",
+  "20b8a18639ddf1f4": "Suporte ao cliente",
+  "2101c3f8f937baac": "Onde será o hackathon?",
+  "2137402a0501694c": "Sistemas RAG",
+  "21c96cb25849e188": [
+    "Sugerir edições ",
+    {
+      "c": "no GitHub",
+      "i": 1,
+      "t": "span"
+    }
+  ],
+  "220bcd295bf8f3ee": [
+    {
+      "c": [
+        {
+          "c": "Erro",
+          "i": 2,
+          "t": "span"
+        },
+        "404",
+        {
+          "c": ": Página não encontrada",
+          "i": 3,
+          "t": "span"
+        }
+      ],
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Sabemos que você não queria chegar aqui, mas esperamos que se divirta um pouco enquanto estiver por aqui.",
+      "i": 4,
+      "t": "p"
+    }
+  ],
+  "2239d4e427687cdb": "Um ambiente para criar, testar e executar agentes — sem precisar integrar sistemas separados.",
+  "22b99825e8a1eb24": "Saiba mais",
+  "22bae59d7184b4df": {
+    "c": "Anterior",
+    "i": 1,
+    "t": "span"
+  },
+  "2320ec0b9b87f40c": "Envio",
+  "2387ceebf7779ea6": "Repositório GitHub do DevHub",
+  "239ba422e4534dcc": "Envie solicitações por uma única API e encaminhe-as a modelos com base em custo, desempenho ou disponibilidade — sem criar sua própria camada de orquestração.",
+  "23d203e0d9248031": [
+    {
+      "c": "O hackathon deste ano desafia as equipes a criar poderosos aplicativos de dados baseados em agentes para gerar impacto social usando Lakebase, Agent Bricks e Databricks Apps.",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "O evento termina com uma avaliação ao vivo, uma apresentação dos projetos de destaque e prêmios em dinheiro para as soluções mais impactantes e criativas. O hackathon faz parte do Data + AI Summit 2026 — você e todos os integrantes da sua equipe devem estar inscritos no evento para participar.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "23eadbb933905712": "Compare resultados entre prompts, modelos e iterações",
+  "23f049981df24dec": "Termos de uso",
+  "2462bb86c4906cc0": "Criado com seus dados",
+  "2519b747a5cd730e": {
+    "c": "Slide anterior",
+    "i": 1,
+    "t": "span"
+  },
+  "251a7c4739fd875b": "Permissões aplicadas a dados, modelos e recursos",
+  "255a31013292a7eb": "Ferramentas CRUD internas para gerenciar dados, usuários e operações de negócio.",
+  "258d16c1554b734c": "Copiar link",
+  "25e7d4f1020c975a": "As branches usam cópia na gravação — compartilham armazenamento com a branch de origem e consomem espaço adicional apenas para os bytes que você altera.",
+  "261f5a18be3fec85": "Assine o feed RSS do Databricks Developer Solutions",
+  "26cdfa7256962a1e": "Recolher {label}",
+  "2750e94ae5abec4e": "Formas comuns de as equipes usarem o Agent Bricks para criar e lançar aplicações com IA.",
+  "2793e482ffdee674": "Categorias de soluções",
+  "280742b38e1b3331": "produção",
+  "2824e6cb5fe8f124": [
+    {
+      "c": "Crie ",
+      "i": 1,
+      "t": "span"
+    },
+    {
+      "c": "aplicações baseadas em agentes",
+      "i": 2,
+      "t": "HeroTitleHighlight"
+    },
+    {
+      "i": 3,
+      "t": "br"
+    },
+    {
+      "c": "em minutos, não em meses.",
+      "i": 4,
+      "t": "span"
+    }
+  ],
+  "28822290c487cf51": "pgvector do Lakebase",
+  "289137b2f8d3ba70": "Execute seu app no Databricks.",
+  "28aadb8b0fa9ff77": "Produto",
+  "28c2ca78ec75e6a0": "Databricks Apps me ajudou a transformar minha prova de conceito de RAG em uma aplicação sofisticada e com identidade visual. Criamos um sistema RAG para responder às perguntas dos usuários usando a ampla base de conhecimento da nossa empresa.",
+  "28e96a47007947aa": "Ferramentas que acionam jobs, gerenciam aprovações e automatizam processos de negócio.",
+  "29451923ca4cf407": "Instale um agente de programação",
+  "2a01c09a0a78158c": "Encerramento das inscrições",
+  "2a351a084addae5c": "A identidade permeia seu app — sem sistema de autenticação separado para criar nem camada de permissões para gerenciar dados, modelos e serviços.",
+  "2a3f3b2c26791812": "Apps orientados por LLM que chamam ferramentas e retornam saída estruturada.",
+  "2b19536bd6f0cee8": "Postgres gerenciado com branching, autoscaling e sincronização com o Lakehouse para cargas de trabalho agênticas modernas.",
+  "2bb73995d3786da2": "Imagem de capa para entregar agentes de IA corporativos de qualidade com Agent Bricks e Databricks Apps",
+  "2bb7fc56dd43c9c6": "Implemente fluxos de tokens de credenciais em cache do workspace e do Lakebase para acesso seguro ao Postgres em implantações fora da plataforma.",
+  "2bd48672e30ef1d0": "Espaço aberto de colaboração com mentores disponíveis para ajudar.",
+  "2be580c83c61b423": "Use com seu agente de programação",
+  "2c2cabe49d84a375": "Lakebase Change Data Feed: sincronize o Lakebase com o Unity Catalog (Autoscaling)",
+  "2c31a45e0777e31e": "Interface do Agent Bricks mostrando roteamento multimodelo, avaliações e acesso seguro a dados.",
+  "2d5e84485d3dafcc": {
+    "c": "Selecionando o LLM mais adequado",
+    "i": 1,
+    "t": "span"
+  },
+  "2d647fab9cdaae78": "Sem pilhas de aplicações ou ambientes separados para gerenciar — concentre-se em criar e lançar imediatamente.",
+  "2db6d69aac7a4a94": "Qualquer framework Python, modelos hospedados no Databricks, rastreamento automático do MLflow e MCP para ferramentas do workspace.",
+  "2e6a3b20b4f214f7": {
+    "c": [
+      {
+        "c": [
+          "Depois de clicar no botão ",
+          {
+            "c": "Abrir no Databricks",
+            "i": 3,
+            "t": "strong"
+          },
+          ", você será solicitado a fazer login."
+        ],
+        "i": 2,
+        "t": "li"
+      },
+      {
+        "c": "Use a mesma conta pessoal que usou para se cadastrar na Free Edition.",
+        "i": 4,
+        "t": "li"
+      },
+      {
+        "c": "Depois de fazer login, você será redirecionado para a página do conjunto de dados.",
+        "i": 5,
+        "t": "li"
+      },
+      {
+        "c": [
+          "Clique no botão ",
+          {
+            "c": "Obter acesso instantâneo",
+            "i": 7,
+            "t": "strong"
+          },
+          ", no canto superior direito, e aceite os termos e condições."
+        ],
+        "i": 6,
+        "t": "li"
+      },
+      {
+        "c": [
+          "Após aceitar os termos e condições, o botão ",
+          {
+            "c": "Abrir",
+            "i": 9,
+            "t": "strong"
+          },
+          " será exibido. Clique nele para adicionar o conjunto de dados ao seu workspace do Databricks."
+        ],
+        "i": 8,
+        "t": "li"
+      }
+    ],
+    "i": 1,
+    "t": "ul"
+  },
+  "2e7a6dca2e27d9f5": "PDF",
+  "2f985092c4e7a798": "Escolher filtros",
+  "2facdabc6ce34694": "Anterior",
+  "30110a947fc3a0ba": "Criar com",
+  "30a6ab83b7c2ee2a": "Seguro",
+  "3108f9f47a76fa83": "Soluções sugeridas",
+  "31d24b6a72b5101c": "Todas as perspectivas",
+  "31d65cd0128ae6ab": "O banco de dados sem servidor com branching, autoscaling e seus dados do Lakehouse.",
+  "32352fbd3c762424": "Pesquise um comando para executar...",
+  "324d0f3d5f38e71c": "Conjunto de apps de fluxo de trabalho",
+  "3267ca8ce765609e": "Envie um repositório Git e uma descrição do projeto. Prepare-se para fazer uma demonstração de três minutos.",
+  "341a91c8fbfb9617": "Modelo",
+  "3521b17270656876": "O prompt completo do desafio do hackathon: crie um Databricks App que transforme dados desorganizados de unidades de saúde em decisões confiáveis, com uma visão geral do conjunto de dados e quatro trilhas para escolher.",
+  "3559b73d7a8f2710": "Transforme um script ou notebook em um painel compartilhado que sua equipe abre no navegador, sem infraestrutura para provisionar.",
+  "35814add6e78423b": "Análise de dados operacionais",
+  "3599ef83447c3f7c": "Inscreva-se no MLH em equipes de 2 a 4 pessoas.",
+  "35e6a3f0a96bd8eb": "Copiar Markdown",
+  "3658e7da7ef0d7f3": "Comece aqui",
+  "366b6867b7bedfe4": "COMUNIDADE",
+  "37795f21f33b3689": "O desafio",
+  "388581c5721db6d8": "Crie instantaneamente uma branch do seu banco de dados.",
+  "38f5ac2d666baf87": "Abrir prompt em",
+  "397910ae0dbad34d": "Crie um Databricks App que transforme dados desorganizados de unidades de saúde em decisões confiáveis para planejadores sem conhecimentos técnicos. Leia o prompt completo, a visão geral do conjunto de dados e as quatro trilhas abaixo.",
+  "3a01edd710b0d236": "Memória de Agente do Lakebase",
+  "3a6df8380eed44aa": "Ir para a página inicial",
+  "3a70e5b58c56d3ad": "Crie e valide um endpoint do Databricks Model Serving para inferência de chat de IA em Databricks Apps.",
+  "3ac8d182cbe6d33b": "Chat de IA com Streaming usando Model Serving",
+  "3b2f2d75bc3e75fa": "Vinculando fontes de dados...",
+  "3b5637a4ba92818b": "Sistemas de tomada de decisão",
+  "3ba76af8c7680eb7": "Configure seu Ambiente de Desenvolvimento Local",
+  "3c21948c11730f22": "Modelo inicial do hackathon",
+  "3ccaea378118f9e5": "Capture gravações do app para análises sem precisar de pipelines personalizados.",
+  "3cf5488da17389dc": "Possibilitando o desenvolvimento evolutivo de bancos de dados: branches de banco de dados com Lakebase, conclusão",
+  "3d94278ca56d7f65": "Hospedagem sem servidor para apps",
+  "3dc0618ca606e37f": [
+    {
+      "c": "Postgres gerenciado",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": "Co-localizado com seu Lakehouse",
+      "i": 2,
+      "t": "span"
+    }
+  ],
+  "3e53f0fc10d5d848": "Execute seu agente em cenários reais, avalie respostas e melhore com base em feedback claro — tudo em um só lugar.",
+  "3e77f3b1e351882e": "Sandboxes para migração de esquema",
+  "3eb1998fef5060e2": "Use o que você já tem. Não é necessário criar um novo, a menos que seu workspace esteja bloqueado, sem recursos ou ocupado com outro trabalho.",
+  "3fe9728594a7340c": "Limpar filtros",
+  "404b260a592063ce": "Fallback e controles de uso integrados",
+  "4089e677a14ae168": "Copiado",
+  "410f6127751520d3": "Crie a estrutura de um Databricks App baseado no Lakebase e sincronize continuamente o conjunto de dados do hackathon do Unity Catalog com o Lakebase para leituras de baixa latência.",
+  "429f4cd8a7ba416c": "Instale habilidades de agente",
+  "42f821233bcd8411": "Sincronize Tabelas: Unity Catalog para Lakebase (Autoscaling)",
+  "42ff90c9f4dffe7d": "Configuração completa para analisar dados de bancos de dados operacionais no Lakehouse: Unity Catalog com armazenamento externo, provisionamento do Lakebase, replicação com o Lakebase Change Data Feed (CDF) e um pipeline de arquitetura medalhão com camadas silver e gold.",
+  "4302811044133808": "Hackathon Databricks Apps & Agents for Good na Data + AI Summit 2026 — programação, recursos e como se inscrever.",
+  "434b10bc1eac20cf": "Adicione upload, navegação, download, exclusão, validação de tipo de arquivo e pré-visualização de linhas CSV ao seu Databricks App usando Unity Catalog Volumes.",
+  "43576e2a1febe704": "E se eu não conseguir acessar minha conta do Free Edition?",
+  "43e78b1ef0c4f224": "Leia a descrição completa do desafio, a visão geral do conjunto de dados e as quatro trilhas disponíveis.",
+  "442b35b7c01df593": "Consulte Endpoints de Modelos Fundamentais",
+  "447f3c4afacdbc34": "Ler {name}",
+  "449987b3759e9413": "Use seus dados com as permissões adequadas.",
+  "45c063246b34dde6": "Nenhum resultado encontrado.",
+  "45e783dde0a0d139": "Uma plataforma de implantação de apps, com autenticação, hospedagem e integrações integradas.",
+  "4661881982e4e50f": "Inscreva-se",
+  "477a176670b421b9": "Implantado",
+  "478f3e3a3328fa8f": "Aplicações que combinam análises, modelos e interação do usuário em um só lugar.",
+  "47c0be618bd54d75": "Crie uma conta separada da Free Edition para o hackathon usando outro endereço de e-mail ou alias.",
+  "480646ceb98c7163": "Fechar",
+  "483692789d5b927c": "Roteamento multimodelo",
+  "48c9589191a6dfab": "Líder da Plataforma de Dados",
+  "4961525706b9774d": "Consulte dados com permissões no nível do usuário",
+  "49623ba0a2971530": "Copilotos de IA com seus dados",
+  "49fc4543a4c3aec5": "Aplicação de Análises do Genie",
+  "4ab35823ef825e47": "O que são modelos?",
+  "4ab6491a82a95fae": "Implantando",
+  "4b04a310b6284042": "A equipe foi além do fluxo de trabalho mínimo de forma significativa?",
+  "4c3a33b5feb9769c": "Leia os critérios de elegibilidade, os requisitos da equipe, os termos de propriedade intelectual e as regras de avaliação antes de começar a desenvolver.",
+  "4c61471030fd4860": "Integrações nativas",
+  "4d0b79fc618699ab": "Acesse dados reais com segurança — sem copiá-los nem contornar controles.",
+  "4d202394fcb85389": "Interface do Databricks Apps mostrando um painel de app e um terminal de implantação.",
+  "4d79684d8cd449c0": {
+    "c": [
+      {
+        "c": "Nenhuma publicação corresponde ao filtro selecionado.",
+        "i": 2,
+        "t": "p"
+      },
+      {
+        "c": "Tente outro filtro.",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "4de43011424bf18e": "Na Tibber, capacitar os clientes a controlar seu consumo de energia exige uma infraestrutura de dados flexível. A integração do Lakebase ao Databricks facilita a disponibilização de dados analíticos e transacionais, ajudando-nos a oferecer insights em tempo real aos nossos clientes.",
+  "4ded17e4d1651f93": "Blog da Databricks",
+  "4e9bb669d40e3e7b": "Com o Databricks Apps, evitamos muitas idas e vindas com as equipes de segurança e infraestrutura e conseguimos compartilhar imediatamente nosso app em produção com as partes interessadas.",
+  "4f051164d1569cef": "Sem duplicação de dados ou ETL reverso",
+  "4fb0de2804c7d7b3": "Copiar como",
+  "5048aacce824ae4e": "Avaliação ao vivo, seguida pela cerimônia de premiação.",
+  "50a382ba7e98f4f5": "Sincronização bidirecional entre Postgres e Lakehouse. Dados selecionados para leituras de apps no Lakebase.",
+  "5190f774febe7c79": "Autenticação e permissões",
+  "51ecf7d1303383ac": "Como configurar o Databricks Free Edition para o hackathon: crie sua conta, trabalhe localmente e prepare sua equipe para criar e fazer a demonstração.",
+  "53b5f7c376481390": "Copiar código para a área de transferência",
+  "5431cc737095d243": "Lista de verificação passo a passo para se preparar para o hackathon: instale um agente de programação, crie uma conta do Free Edition, obtenha o conjunto de dados, configure a CLI e gere a estrutura inicial do seu app.",
+  "54c5af50c95d2163": "Solução",
+  "55c00a3c11026e84": {
+    "c": "Fechar caixa de diálogo de pesquisa",
+    "i": 1,
+    "t": "span"
+  },
+  "56718c96776ca178": "Visualizações de exemplo de {name}",
+  "56b2c88390e6ea75": "Os apps são executados no seu workspace — sem infraestrutura para gerenciar nem hospedagem separada para manter.",
+  "578e5cecbe5d42dd": "Como criar e lançar com o Databricks Apps",
+  "57a048e9560e07c7": "Os apps se integram diretamente aos seus dados, modelos e serviços como recursos de primeira classe.",
+  "586cd8cfd6e78a4e": "Segredos e serviços externos gerenciados em um só lugar",
+  "58d0f6a08b20f951": "Conexões integradas a modelos e busca vetorial",
+  "59134183547771cf": "Captura de tela {index} de {total} de {name}",
+  "5990f1818d1b16ea": "Quais limites devo esperar?",
+  "5ac13d0f80641f19": "Recuperação e depuração",
+  "5bc5d243f59ee68b": "Funções do Postgres vinculadas a identidades do Databricks, com tokens seguros de curta duração nos apps.",
+  "5c2a9ce037920058": "Lista de verificação de início rápido",
+  "5c45d0d95828d89f": "Compatível com o protocolo padrão do Postgres. Os mesmos drivers, extensões e ORMs que você já usa.",
+  "5ca7474664701340": "Replique tabelas do Lakebase Autoscaling Postgres no Unity Catalog como tabelas Delta gerenciadas usando o Lakebase Change Data Feed (CDF), com histórico completo SCD Tipo 2.",
+  "5d427278ef65aa84": "Sim. O hackathon faz parte do Data + AI Summit 2026, e todos os participantes — incluindo todos os membros da equipe — devem estar inscritos no evento para participar.",
+  "5dbd01ccf3339177": "Developer Advocate sênior, Databricks",
+  "5dfa98bbdff22485": "O playbook de branches em escala de equipe: topologia de camadas como branches de longa duração, o modelo de permissões de branches, a redefinição do DBA como engenheiro de plataforma e agentes que criam branches junto com humanos.",
+  "5dfb31e0bcd4e949": "Ambientes de preview por PR",
+  "5f02e52a299a42f9": "Barra lateral",
+  "5f54133753956425": "Em parceria com a OpenAI",
+  "5f78b01b2772c0b6": "Aplicações de dados",
+  "5fdf4020114c7b2b": "Arquiteto-Chefe",
+  "5ffcb6aebb979766": "Diretor de Dados e IA, TI Comercial",
+  "60a86210e9c29813": "Ler",
+  "61808336b912280c": "Crie uma branch a partir de qualquer momento no tempo",
+  "618e0762866e8eaf": "Postgres gerenciado, no mesmo local que seu Lakehouse.",
+  "61f32846387ad008": "Aplicações de chat com IA",
+  "6378c24ff0010eb0": "Consulte endpoints de modelos fundamentais do Databricks para acessar modelos hospedados e prontos para produção, com governança integrada do AI Gateway.",
+  "63808bc3d9c65764": "Acesse modelos de vários provedores em um só lugar",
+  "63c4174550503719": "Perspectivas voltadas para desenvolvedores sobre como criar no Databricks.",
+  "643ff3527999c647": "Apps full-stack que viabilizam ferramentas internas, interfaces de IA, sistemas em tempo real e muito mais.",
+  "64653c98a45b7f61": "Configuração no nível do esquema para replicação de saída",
+  "65648b505420772b": "Alterne entre modelos líderes, como GPT, Claude, Llama e outros.",
+  "65b4e9116911c4f4": "Como criar apps de dados e IA prontos para produção com Databricks Apps e Lakebase",
+  "6643671d462eb454": "Comece a criar",
+  "6662bfef4fbe8763": "Abrir menu",
+  "66c76e097498831f": "Próxima",
+  "67a853c6e4442e73": "Desenvolvedor Databricks",
+  "67bc555202746b41": "Julgamento",
+  "68191fa446a65671": "Autoscaling",
+  "68ecbaa4e2cf5dc8": {
+    "c": [
+      "O guia da CLI aborda esse processo durante a instalação. Apenas verifique se você está autenticado no seu workspace pessoal da Free Edition — o mesmo ao qual adicionou o conjunto de dados —, e não em um workspace corporativo ou empresarial. Consulte ",
+      {
+        "c": "Autenticar",
+        "i": 2,
+        "t": "Link"
+      },
+      " no guia da CLI."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "695a01d27990b801": "Consultas federadas entre os dois lados",
+  "69a38e8afebf5dd4": "Fechar menu",
+  "6a12fd1fa22fca08": "Escalonamento de apps com muitas leituras",
+  "6a70d1428e46eba7": "Casos de uso",
+  "6b2b2c7dc12c55e4": "Databricks Apps viabiliza aplicações reais.",
+  "6b5e32fbfca3487f": "Cronograma",
+  "6bab309debf0f55f": {
+    "c": "Ver todos os modelos",
+    "i": 1,
+    "t": "span"
+  },
+  "6bcf7b95c3ba2726": "Entregue ferramentas internas",
+  "6cd79285093ae5c8": "Possibilitando o desenvolvimento evolutivo de bancos de dados: branches de banco de dados com Lakebase, continuação",
+  "6cf3681d86bf8786": "Posso usar minha conta corporativa ou empresarial do Databricks?",
+  "6d49999f19231b80": "Redefinir",
+  "6d6ef90621105734": "Crie e faça uma demonstração do seu projeto de hackathon na Databricks Free Edition. Veja como configurar sua conta e equipe.",
+  "6deaae5b352d31f4": "Drizzle + Lakebase em uma Aplicação Fora da Plataforma",
+  "6df57eba4a4d5cfd": "Plataforma de apps de dados e IA",
+  "6e85374f0d6b4f6c": [
+    {
+      "c": [
+        "Alguns participantes podem estar usando laptops corporativos com restrições a instalações locais, extensões de IDE ou agentes de programação. Não tem problema — você ainda pode participar. Siga o guia de início rápido manual do AppKit para criar a estrutura inicial e implantar um Databricks App com a CLI: ",
+        {
+          "c": "Primeiros passos com o AppKit",
+          "i": 2,
+          "t": "Link"
+        },
+        "."
+      ],
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "Se possível, tente formar uma equipe com pelo menos uma pessoa que tenha um agente de programação configurado localmente e possa iterar no app. Nem todos da equipe precisam trabalhar no código do app ao mesmo tempo — os demais integrantes podem se concentrar na exploração de dados, direcionamento de produto, avaliação, narrativa, demonstração final e outras áreas em que um agente de programação local é menos útil.",
+      "i": 3,
+      "t": "p"
+    },
+    {
+      "c": "Você também pode usar ferramentas baseadas em agentes que não exigem configuração local:",
+      "i": 4,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": [
+            {
+              "c": "Databricks Genie Code",
+              "i": 7,
+              "t": "strong"
+            },
+            " — use o Genie Code no Databricks para obter ajuda para entender o conjunto de dados, escrever SQL, explorar tabelas, estruturar o trabalho com dados que sustenta seu app e criar e gerenciar o app."
+          ],
+          "i": 6,
+          "t": "li"
+        },
+        {
+          "c": [
+            {
+              "c": "Ferramentas de desenvolvimento baseadas em navegador",
+              "i": 9,
+              "t": "strong"
+            },
+            " — ferramentas como o Replit podem ser úteis quando não for possível instalar um ambiente de programação local no laptop. Verifique as políticas da sua empresa antes de conectar contas, repositórios ou dados."
+          ],
+          "i": 8,
+          "t": "li"
+        }
+      ],
+      "i": 5,
+      "t": "ul"
+    },
+    {
+      "c": "Se a equipe estiver impedida por restrições no laptop, não passe todo o hackathon tentando contornar as limitações da máquina. Transfira as tarefas para o integrante ou ambiente que consegue executar o app e use o próprio Databricks para explorar dados e criar protótipos tanto quanto possível. Peça ajuda e ideias aos mentores do hackathon.",
+      "i": 10,
+      "t": "p"
+    }
+  ],
+  "6ef84568080cfdeb": "Travou em algo durante o desenvolvimento? Entre no servidor do Discord do hackathon para fazer perguntas a qualquer momento.",
+  "6fe63424fbf03733": "paginação",
+  "701964090d7b3438": "Limpar pesquisa",
+  "708ef635564205e7": "Imagem de capa para usar o Lakebase como camada de dados transacionais para Databricks Apps",
+  "70906edd7f7182f2": "Engenheiro de dados e MLOps",
+  "70db1d70ae962f16": "E se minha conta existente do Free Edition tiver recursos em execução que eu não queira remover?",
+  "7128196dc33f73fe": "Desafio",
+  "712a7a0e502bb1d9": "[Em destaque]",
+  "71e4d3449aa23478": "Aplicar filtros ({count})",
+  "721b6b24f5bce982": "Crie uma nova conta da Free Edition usando outro endereço de e-mail ou alias de e-mail.",
+  "736fcc96b491425d": [
+    {
+      "c": "Checklist de início rápido do hackathon",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Siga estas etapas para configurar tudo e começar a desenvolver.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "73ff69fa752d79f6": {
+    "c": [
+      {
+        "c": "Inclui um app inicial funcional",
+        "i": 2,
+        "t": "p"
+      },
+      {
+        "c": "O código funcional e executável está no GitHub. Ao copiar o prompt acima, seu agente de programação o clona como ponto de partida e o adapta aos seus dados e caso de uso.",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "74b1e2c17ea2e0f3": "Navegação principal",
+  "74ed446a6a8a0294": [
+    {
+      "c": "Pronto para lançar seu próximo ",
+      "i": 1,
+      "t": "span"
+    },
+    {
+      "c": "aplicativo baseado em agentes",
+      "i": 2,
+      "t": "CTATitleHighlight"
+    },
+    {
+      "c": " em minutos?",
+      "i": 3,
+      "t": "span"
+    }
+  ],
+  "74fa441164f068ad": "selecione um modelo para copiar",
+  "7574ff3cba640c49": "Disponibilização de dados de produto",
+  "75ef5882044743a0": "Orientado pela demanda, reduzido a zero quando ocioso e ativado em milissegundos.",
+  "766d524d6a8afd5a": "Benefícios",
+  "767442fb22006428": "Introdução à criação de apps empresariais no Databricks.",
+  "7686e88ff8ed3ba7": "Agentes de IA com estado",
+  "77759a250b257a9a": "Regras oficiais",
+  "7792341380020905": "Crie com Databricks Apps",
+  "77b5f98f1f9a4ca7": "Próximo",
+  "781cdec34c8f625b": "Índice",
+  "7898afa1a66c087b": "Gerenciador de Arquivos de Volumes",
+  "78b2ca4fd2e45ca3": "Menu de documentação",
+  "78f2abfa54f86101": "Ferramentas e dashboards personalizados criados diretamente com base em dados e métricas do warehouse.",
+  "78f47b85830f8ed2": "Canal do Databricks no YouTube",
+  "7912f1e46e658f99": "(abre em uma nova guia)",
+  "79d60be5f9cea103": "Crie apps full-stack com seus dados.",
+  "79ed0ba32cadd6bb": "Cientista de dados sênior",
+  "7a11fd4f4a433cd3": "O Lakebase monitora a carga em tempo real e ajusta a capacidade dentro do intervalo definido por você, sem custo de compute quando ocioso.",
+  "7a12d97d8a71094a": "O Agent Bricks capacita agentes reais em produção.",
+  "7a2c2551db7b9da8": "Use o Lakebase como banco de dados do seu app para usuários, sessões e lógica, sem necessidade de um Postgres externo.",
+  "7a634e38d3a0663f": [
+    {
+      "c": "Prompts para copiar e colar que criam seu app.",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Escolha um modelo que corresponda ao que você quer criar.",
+          "i": 3,
+          "t": "li"
+        },
+        {
+          "c": [
+            "Clique em ",
+            {
+              "c": "Copiar prompt",
+              "i": 5,
+              "t": "code"
+            },
+            " e cole-o no seu agente."
+          ],
+          "i": 4,
+          "t": "li"
+        },
+        {
+          "c": "Responda às perguntas e deixe-o criar o app.",
+          "i": 6,
+          "t": "li"
+        }
+      ],
+      "i": 2,
+      "t": "ol"
+    }
+  ],
+  "7a8203c2ce9adee2": "Habilidades de agente",
+  "7a98677c84135c1a": "Preciso estar inscrito na Data + AI Summit 2026?",
+  "7ab8db26fa581bbc": "Gere e valide conteúdo em escala com avaliações integradas para garantir qualidade consistente das saídas.",
+  "7aea567a09c91495": "Hub de ferramentas de inferência",
+  "7b29b1276852153d": "Lista de verificação do hackathon",
+  "7b32a52352c34ab6": "Crie apps de dados full-stack no Databricks Apps com tabelas sincronizadas do Lakebase que replicam dados do Unity Catalog em segundos e entregue tudo como código com Databricks Asset Bundles.",
+  "7b8a9990b219107f": {
+    "c": [
+      "Tamanho: ",
+      {
+        "i": 2,
+        "k": "_gt_value_2",
+        "v": "v"
+      }
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "7bbd433c36bf1e5d": "trilha de navegação",
+  "7bc32d1f05388c05": "Respostas a perguntas comuns sobre a criação de apps de dados e agentes de IA no Databricks.",
+  "7c7c2e72a62e8349": "Postgres gerenciado, criado para cargas de trabalho agênticas modernas.",
+  "7c974b005ba41d35": "Crie um catálogo do Unity Catalog baseado em um bucket S3 externo, com credenciais de armazenamento, localização externa e um esquema pronto para tabelas do Lakehouse.",
+  "7d070d7ab54f1cd6": [
+    {
+      "c": "Registro de alterações do banco de dados",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": [
+        {
+          "c": "Hora",
+          "i": 3,
+          "t": "span"
+        },
+        {
+          "c": "Operação",
+          "i": 4,
+          "t": "span"
+        },
+        {
+          "c": "Entidade",
+          "i": 5,
+          "t": "span"
+        },
+        {
+          "c": "Alteração",
+          "i": 6,
+          "t": "span"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "7d64c7c294e6a875": "Comunidade no Discord",
+  "7dbe0e1e4cbce461": "Remover filtro {service}",
+  "7dd7c70f341cb23f": "Próximo slide",
+  "7e6fca5c143fe0ee": "Nesta página",
+  "7f37e458884d7552": "O usuário está bem definido? O fluxo de trabalho e as vantagens e desvantagens foram bem pensados?",
+  "7f3bbd1b427c4776": "Seções da solução",
+  "7f485d3cbfd284c9": "Limpar tudo",
+  "7f5b8b4d96dd64b9": "Evidências e incerteza",
+  "7fa0bf8247ed38cf": "Acesso nativo a SQL, Lakebase e armazenamento",
+  "7fa2a0d4cfaa7576": "CTO",
+  "8090ea0dda86abf5": "Copiado!",
+  "80e4836eca44afd8": [
+    {
+      "c": "Feito para empresas.",
+      "i": 1,
+      "t": "span"
+    },
+    {
+      "c": [
+        " ",
+        {
+          "c": "Adorado por",
+          "i": 3,
+          "t": "span"
+        },
+        " ",
+        {
+          "c": "desenvolvedores.",
+          "i": 4,
+          "t": "span"
+        }
+      ],
+      "i": 2,
+      "t": "span"
+    }
+  ],
+  "80e5ca232c405212": "Faça perguntas",
+  "811527ff5e5ed442": "Leia a documentação",
+  "81c1821a798da1fe": "Modelos",
+  "82055bd5bf1b6691": "De entrada e saída, totalmente gerenciada e governada pelo Unity Catalog.",
+  "824937e57a85a160": "Desafio do hackathon",
+  "8253dd76f7c709a2": {
+    "c": [
+      "Sim, é possível adicionar colegas de equipe ao seu workspace para colaborar. Este ",
+      {
+        "c": "vídeo passo a passo",
+        "i": 2,
+        "t": "a"
+      },
+      " mostra como fazer isso."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "826db7eb5e1a41ec": "Concentre-se na lógica do agente em vez de integrar serviços, integrações ou manter sistemas de apoio.",
+  "8275fd4b3ece0377": "Armazene conversas, resultados de ferramentas e estado para que os agentes persistam entre sessões.",
+  "82acb64e916ebf8f": "Sincronização com o Lakehouse",
+  "836c1b41f93e585e": "Rastreador de assinaturas SaaS",
+  "83a70caafd69c067": "Quando as inscrições se encerram?",
+  "83b15292acebb880": "A maioria das pilhas de apps exige integrar autenticação, dados e serviços. O Databricks Apps executa tudo em um só lugar.",
+  "83b30f15f3c1be6c": "Crie a estrutura de um novo Databricks App com AppKit usando `databricks apps init`, execute-o localmente e implante-o no seu workspace.",
+  "84f84dcd316a3604": "Console de suporte completo com IA que combina Lakebase, Change Data Feed, um pipeline medalhão, um job de agente LLM, sincronização reversa e um Databricks App com análises do Genie.",
+  "86104d2dc9ac6973": "Todos os modelos",
+  "867d2e16296e01b5": "Crie um workspace do Databricks Free Edition e prepare toda a sua equipe para desenvolver e fazer demonstrações.",
+  "86cf3b29dd99d55a": "Comece com modelos da Databricks, conecte seus dados e implante com as ferramentas que sua equipe já usa.",
+  "8707db01a02607b5": "Compilações e implantações automáticas a partir do código-fonte",
+  "876515fed5951907": "Onde",
+  "885ce652575514a1": "Instale o Databricks CLI",
+  "88dc14f47681034a": "Branches de banco de dados Lakebase em escala de equipe com camadas de ambiente, permissões de branches e agentes",
+  "891dc8fb1db38595": "Databricks Developer Hub",
+  "89d377b1c677a0b9": "Console de operações de aluguéis por temporada",
+  "8a0c8f2a3e54ca8c": "Desenvolvimento de bancos de dados",
+  "8a3ebfe5eefa1f3a": "Serviços",
+  "8a4572ab968fe5f1": "Como as equipes desenvolvem com Databricks Apps.",
+  "8ab5b76df28b934a": "Console de suporte baseado em agentes",
+  "8afc2ce5a6f1aff4": "Use branches copy-on-write do Lakebase para oferecer a cada desenvolvedor, pull request e execução de CI um ambiente Postgres isolado, além de habilitar recuperação instantânea em um ponto no tempo e bancos de dados efêmeros para agentes de IA.",
+  "8ba8ea288be55ffc": "Suas opções de privacidade",
+  "8bf575608c653058": {
+    "c": "Analise os dados de vendas e faça previsões com base em tendências, histórico e indicadores de mercado.",
+    "i": 1,
+    "t": "p"
+  },
+  "8c304b1199fc6668": "Todas as soluções",
+  "8c893845430bd924": "Compare prompts e modelos para otimizar a qualidade das saídas, o custo e o desempenho.",
+  "8c96bb18b22410c0": "Execute agentes de forma assíncrona para processar tarefas, analisar dados e agir sem interação do usuário.",
+  "8cb901b9607a8cd7": "Integração com Model Serving, chat com streaming do AI SDK e histórico de chat persistido no Lakebase.",
+  "8d2bb75190fbd6aa": [
+    {
+      "c": [
+        {
+          "c": "Modelos",
+          "i": 2,
+          "t": "span"
+        },
+        " ",
+        {
+          "c": "para começar",
+          "i": 3,
+          "t": "span"
+        }
+      ],
+      "i": 1,
+      "t": "span"
+    },
+    " ",
+    {
+      "c": "seu próximo app da Databricks.",
+      "i": 4,
+      "t": "span"
+    }
+  ],
+  "8dda4314f29e3109": "Encaminhe solicitações por custo, desempenho ou disponibilidade",
+  "8e00f2147512da5f": "Leve dados do Lakehouse ao Postgres para leituras de baixa latência em APIs, ORMs e apps.",
+  "8e13052933ae9b0b": {
+    "c": "Próximo",
+    "i": 1,
+    "t": "span"
+  },
+  "8e9c8c164caa3779": {
+    "c": [
+      "Use uma conta pessoal na Databricks Free Edition, não sua conta corporativa ou de trabalho. Desenvolver e apresentar na Free Edition mantém todas as equipes em igualdade de condições — consulte o ",
+      {
+        "c": "guia de configuração da Free Edition",
+        "i": 2,
+        "t": "Link"
+      },
+      " para configurar sua conta."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "8ed0703f263e10ca": "Provisione com a CLI e consulte em qualquer app. Escalonamento automático, ramificações instantâneas e escalonamento para zero. Totalmente integrado ao seu workspace.",
+  "8fa84629090c021a": "Incorpore uma interface de chat do Databricks AI/BI Genie para que os usuários possam explorar dados em linguagem natural. Configure um Genie Agent, conecte plugins de servidor e cliente, declare recursos da aplicação e implante.",
+  "8fdd29154a3e542d": "Soluções",
+  "905b927b1153d5f1": "Conectado por padrão",
+  "905e7d9d6a53b308": "Modelo {title}",
+  "90e364bbf86f400f": "Obtenha o conjunto de dados do hackathon",
+  "90ee1ae5d2bd3240": "Arquitetura de Medalhão a partir de Tabelas de Histórico de CDC",
+  "91ddddd3dedb6409": {
+    "c": [
+      "Embora os limites de crédito padrão sejam generosos, podemos adicionar créditos se necessário. Se você atingir um limite durante o hackathon, basta publicar o ID da sua conta no canal #get-databricks-credits do ",
+      {
+        "c": "Discord",
+        "i": 2,
+        "t": "a"
+      },
+      "."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "92b7d9dbda10bf26": "Autenticação e permissões nativas, totalmente integradas aos seus dados e recursos.",
+  "92d9a6dd442e658d": "Veja como as equipes o utilizam para levar dados diretamente às experiências dos usuários.",
+  "93c8bed9802c7eaf": {
+    "c": [
+      "Não conhece os modelos? ",
+      {
+        "c": "Saiba mais aqui",
+        "i": 2,
+        "t": "Link"
+      }
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "944124461b860c72": "Gere a estrutura de um Databricks App com Lakebase como back-end e o conjunto de dados do hackathon sincronizado automaticamente.",
+  "94719ceda9a554d2": "Meça o desempenho do seu agente e faça melhorias direcionadas.",
+  "947b0173a3989335": "Expandir {label}",
+  "94b73b4cebd1c74e": "Avalie as saídas quanto à qualidade, relevância e correção",
+  "9528a097943bed20": "Página não encontrada",
+  "95376acec7b330c9": "Ver recursos",
+  "9553c0ca551dad21": "Posso adicionar colegas de equipe ao meu workspace do Free Edition?",
+  "95ea5df7c799b732": {
+    "c": [
+      "Tabelas: ",
+      {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      }
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "964b55b174ee870d": "Gere embeddings de texto a partir de um endpoint de modelo fundamental do Databricks usando o SDK do Databricks.",
+  "96e144003acb2072": "Conheça um app de solicitação de férias que usa o Lakebase como camada operacional de Postgres por trás do Databricks Apps, da configuração do banco de dados a um frontend totalmente conectado.",
+  "970120049f38350c": "Fluxo de trabalho do desenvolvedor usando branches de banco de dados do Lakebase para uma funcionalidade isolada e uma alteração de esquema",
+  "975cd88e1c735b31": "Da ideia ao agente",
+  "975eee695c5df05b": "Conecte seu app ao Lakehouse.",
+  "97a93d0241052869": "Verifique se o CLI está autenticado",
+  "97e819cbaa76d158": "Declaração sobre escravidão moderna",
+  "98c68292e456081d": "Depoimento anterior",
+  "99403eca32e4960a": "As duas direções são gerenciadas pela Databricks, sem pipelines externos, jobs para operar ou código de integração para manter.",
+  "99c7933f7fa6db9f": {
+    "c": [
+      "Perspectivas ",
+      {
+        "c": "centradas no desenvolvedor ",
+        "i": 2,
+        "t": "span"
+      },
+      "sobre como desenvolver na Databricks."
+    ],
+    "i": 1,
+    "t": "h1"
+  },
+  "9a65aae2e3ee8ce3": "Autenticação simplificada",
+  "9aa7051e963b3897": "Experimentação",
+  "9b4c477f077eadc8": "Tempo limite de ociosidade configurável por branch",
+  "9c0268d057f948fa": "Copiar artigo",
+  "9c78973979866d72": "Falha ao copiar",
+  "9c9d75b66222218c": "Pipelines de conteúdo",
+  "9d3ec598b9f2e241": "Feito para lançar, não para provisionar.",
+  "9db16884c1c9d324": "Voltar",
+  "9e5162d04f83ff2c": "A plataforma de agentes com roteamento multimodelo, avaliações integradas e acesso seguro a dados.",
+  "9e9d8fab89c57ba3": "Runtime em contêineres com compute gerenciado",
+  "9ecbd9988d649083": "Como os modelos do DevHub ajudam a estruturar apps do Databricks.",
+  "9ef0ec1d65eeb078": "Fechando o ciclo dos dados",
+  "a23bbdecce1a11a5": "Um dia inteiro de hackathon, começando com a cerimônia de abertura no Marriott Marquis, em San Francisco.",
+  "a31c8e916da4a3ef": "Documentação",
+  "a341adca67b1de2e": "Anúncio do site",
+  "a37beeead02714c0": "Interfaces para monitorar, depurar e gerenciar fluxos de trabalho e ações de agentes de IA.",
+  "a44c3edff6916f13": "Copiado",
+  "a45cc500ca5a3ee3": "Postgres, com tudo incluído",
+  "a4e75b978deb84f3": {
+    "c": "Copie o prompt para o Cursor, Claude Code, Codex ou qualquer agente de programação — ele orientará você passo a passo na criação de um aplicativo completo.",
+    "i": 1,
+    "t": "p"
+  },
+  "a5097e5b92296a8b": "Hackathon",
+  "a531c1462a6810a4": "Abas de conteúdo",
+  "a549b76492c43d18": "Barra lateral da documentação",
+  "a71f9979d2c9125f": "Fechar filtros",
+  "a87f3d31e59298e5": "Somente presencialmente, no Marriott Marquis em São Francisco, durante o Data + AI Summit 2026.",
+  "a929bf765f0e14e2": "A arquitetura por trás dos branches copy-on-write e o playbook atualizado de onze práticas que eles viabilizam, de migrações idempotentes e testes destrutivos à prototipagem de esquemas A/B em branches paralelos.",
+  "a92b1bcd7d5a1356": "Imagem de capa para branches de banco de dados no Postgres com Databricks Lakebase",
+  "aa39c8d4b0caedfb": "Anterior",
+  "aabc632aa2d84985": "Pesquisar na documentação",
+  "aae19a003f518f05": "Gerenciamento de Tokens do Lakebase",
+  "ab17961f8b93fced": "Pesquisar modelos...",
+  "abc9ba8a4c515837": "Use o Lakebase em apps hospedados fora da plataforma Databricks Apps (por exemplo, na AWS, Vercel ou Netlify) com padrões portáteis para variáveis de ambiente, tokens e Drizzle.",
+  "ac08114696847bc2": "Autenticação, acesso a dados e serviços funcionam juntos prontos para uso — eliminando código de integração.",
+  "ad1a7440f54521e3": [
+    {
+      "c": "Este site contém conteúdo gerado por IA, que pode apresentar erros, omissões ou imprecisões. Verifique as informações antes de confiar nelas. Use por sua própria conta e risco.",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "O conteúdo gerado por IA pode conter materiais pertencentes a terceiros. Exceto quando permitido para assistência em fluxos de trabalho agênticos, não o copie, modifique, distribua, exiba, licencie nem venda sem o consentimento do proprietário.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "ad5e93738ee10d43": "Ler a documentação",
+  "ad6d9952dae36cd6": "Voltar ao topo",
+  "adabf273371b0002": "Hospedagem sem servidor para apps full-stack, com compute, TLS e implantação gerenciados.",
+  "adad9d34e1a21562": "Explore mais modelos",
+  "ae600de519df9c54": "Aplicação de Hackathon com Conjunto de Dados Sincronizado",
+  "afd4744915c2e8ba": "Equipes de 2 a 4 pessoas. Todos os integrantes também devem estar inscritos no Data + AI Summit 2026.",
+  "b04e616c85bf49b7": "Teste de alterações no banco de dados",
+  "b04f54e87b9c39d3": "Valide alterações de esquema e novos recursos em ambientes isolados antes que cheguem à produção.",
+  "b11dd2ed45b1e1a4": "Crie uma conta Free Edition",
+  "b1724261441a366a": "Copiar",
+  "b334084b5da61a48": "Principal",
+  "b4a2b2d653dd965d": "Ferramenta interna para acompanhar assinaturas SaaS da equipe, responsáveis, custos e renovações, com persistência no Lakebase e análises de gastos no Genie.",
+  "b5a602ee596b46b4": "O aplicativo funciona de forma confiável em uma demonstração ao vivo? Os recursos do Databricks são bem utilizados?",
+  "b60eb1a5a9502314": "Vice-Presidente de Engenharia",
+  "b751cb3a23cd9259": "Pesquisar posts...",
+  "b78671f628c18663": {
+    "c": "Executando ferramentas",
+    "i": 1,
+    "t": "span"
+  },
+  "b7d59ab04a3d5788": "Nativo do Lakehouse",
+  "b8a0aa9bf1e44e81": "Escalonamento sem interrupções dentro do intervalo",
+  "b8bba7c03d601309": "Crie um endpoint do Databricks Model Serving",
+  "b90e87f4b7125237": "Detalhes",
+  "b9cb0d0a8384c1f0": "Conecte o Drizzle ORM ao Lakebase com callbacks de senha do pg e credenciais temporárias DATABASE_URL durante a migração.",
+  "ba13f490ef374e9e": {
+    "c": "Gerando saída",
+    "i": 1,
+    "t": "span"
+  },
+  "ba972b3102186827": "Paleta de comandos",
+  "ba9b78af685b9036": "Configure o Unity Catalog com Armazenamento Externo",
+  "bb30663f09d2d31b": "Avaliações integradas",
+  "bb888329fcfb50cc": "A integração perfeita do Databricks Apps aos nossos processos de DevOps nos permite demonstrar e testar rapidamente novos recursos com os usuários, além de fornecer uma interface segura e pronta para produção para a aplicação interna — tudo isso sem precisar de infraestrutura adicional.",
+  "bbb54f60e25e0666": "Conjunto de dados do hackathon",
+  "bc3c5114348e671d": "Com o Agent Bricks, nossas equipes conseguiram analisar mais de 400.000 documentos de ensaios clínicos e extrair dados estruturados — sem escrever uma única linha de código. Em menos de 60 minutos, tínhamos um agente funcional capaz de transformar dados complexos e não estruturados em dados utilizáveis para Analytics.",
+  "bca968ba5d282e2a": "Ferramenta interna de moderação de conteúdo com diretrizes por canal, pontuação de conformidade com IA via Model Serving e fluxo de revisão por moderadores baseado no Lakebase e em análises do Genie.",
+  "bd5ac44fa4668222": "Veja como as equipes lançam aplicações de IA com dados governados.",
+  "bd75b71d59fc5cb2": "Ir para o conteúdo principal",
+  "bde071612135c481": "Quando",
+  "bde2969d42628302": "App de chat RAG",
+  "be14921f5e8f2b10": "Engenheiro sênior de machine learning",
+  "be1da3273ffdb5bd": "Tente novamente",
+  "bf7795b295923bb9": "Controle e melhore a qualidade da saída.",
+  "c0e024dccd684c0a": "Saiba mais sobre {title}",
+  "c0ec251b1f1970ca": {
+    "c": "Mais",
+    "i": 1,
+    "t": "span"
+  },
+  "c17300526c862b98": [
+    "Dê início ao seu próximo projeto ",
+    {
+      "c": "com um modelo.",
+      "i": 1,
+      "t": "span"
+    }
+  ],
+  "c18f0680e8a93585": "Hacker's Corner (opcional)",
+  "c1c4767c64316b43": "Seletor Multiagente do Genie",
+  "c262c726f3dab719": "As submissões serão avaliadas em quatro dimensões:",
+  "c30a031d51705b48": "Qual conta do Databricks devo usar?",
+  "c3b483da3d1794db": "Ver no GitHub",
+  "c40a574f8e608fff": "Página inicial do Databricks Developer",
+  "c4e0194c8f0a1086": "Baseie as respostas nos seus dados enquanto aplica controles de acesso e permissões.",
+  "c530ae4154212e31": "Marriott Marquis, San Francisco",
+  "c550b6e2e854667c": "Documentação sugerida",
+  "c557090df5722838": "Alternar barra lateral",
+  "c57b4fbc1955e233": {
+    "c": [
+      {
+        "c": "Copie o prompt abaixo",
+        "i": 2,
+        "t": "li"
+      },
+      {
+        "c": "Cole-o no Cursor, Claude Code, Codex ou em qualquer agente de programação",
+        "i": 3,
+        "t": "li"
+      },
+      {
+        "c": "Seu agente cria o app, fazendo perguntas ao longo do processo para que o resultado seja exatamente como você deseja",
+        "i": 4,
+        "t": "li"
+      }
+    ],
+    "i": 1,
+    "t": "ol"
+  },
+  "c80bfd502a0cc57b": "Entregue agentes de IA corporativos de qualidade aos usuários de negócios com Agent Bricks e Databricks Apps",
+  "c8421a54c9369bff": "A Free Edition é exclusivamente serverless e tem cotas limitadas. Planeje criar de forma eficiente, interrompa cargas de trabalho não utilizadas e evite jobs de longa duração sempre que possível.",
+  "c85644c8d8640aec": "Limpar filtro",
+  "c8618229d05f3b79": "© Databricks {year}. Todos os direitos reservados. Apache, Apache Spark, Spark e o logotipo do Spark são marcas registradas da Apache Software Foundation.",
+  "c8c00d795d87d473": "Restaure estados anteriores dos dados para investigar problemas e entender como seu sistema evoluiu ao longo do tempo.",
+  "c96cb44e1e0b8b58": {
+    "c": "Leia a documentação para saber como configurar seu ambiente de desenvolvimento e começar a criar seu app. Recomendamos que você leia as páginas a seguir antes de começar a desenvolver:",
+    "i": 1,
+    "t": "p"
+  },
+  "c9e4b8f185b2758f": "Abrir filtros",
+  "ca52d68ee5c207d4": "Navegue pelas categorias acima ou tente outro termo de pesquisa.",
+  "cad8f9d6d4f1c37f": "Crie um Projeto do Lakebase",
+  "cb920a9246480622": "Guia de configuração",
+  "cbe7f5ae748e6ff2": [
+    {
+      "c": [
+        "Cadastre-se na ",
+        {
+          "c": "Databricks Free Edition",
+          "i": 2,
+          "t": "a"
+        },
+        ". É novo na Free Edition? O ",
+        {
+          "c": "guia de configuração da Free Edition",
+          "i": 3,
+          "t": "Link"
+        },
+        " orienta você durante o processo. Quando sua conta estiver pronta, prossiga para a próxima etapa."
+      ],
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        "Use uma conta pessoal da Free Edition, ",
+        {
+          "c": "não",
+          "i": 5,
+          "t": "strong"
+        },
+        " sua conta corporativa ou empresarial do Databricks. Desenvolver e fazer demonstrações na Free Edition garante condições iguais para todas as equipes."
+      ],
+      "i": 4,
+      "t": "p"
+    }
+  ],
+  "cbe86d0e835ac172": "branch",
+  "cc3c8fdbb03ea32c": "Gerenciamento de inventário de varejo com previsão de demanda baseada em IA, recomendações de reposição e análises opcionais do Genie. Criado com base em um pipeline medalhão em tempo real sincronizado com o Lakebase.",
+  "cc5973167bcdf1c7": "Envie seu projeto",
+  "cca9275f932ffd57": "Copiando",
+  "ccb134d4e44589fd": "Sincronização por snapshot, acionada ou contínua",
+  "ccd2ff15ae04a574": "Soluções",
+  "ce14933892589d30": "Feito para agentes do mundo real.",
+  "ce419b8d68e75f7a": "Produtos",
+  "ce7cd1d308feaf24": "Resultados da pesquisa",
+  "ce910d32a4131d4c": "Copiando…",
+  "cf241b7a32610458": "Onde seu app e seus dados se encontram.",
+  "cf28ef18b74e42db": "Ir para o conteúdo principal",
+  "cf7ccfacc840defe": "Modelos para impulsionar seu próximo app do Databricks",
+  "cf9ee495c979c138": "O Hackathon Databricks Apps & Agents for Good 2026 é uma competição de vários dias realizada em parceria com a OpenAI, que reúne desenvolvedores para promover mudanças significativas.",
+  "cfd874b32f0c1855": "Leia mais",
+  "d03c1ea09afec81c": "Painel de operações de aluguéis por temporada com análises de receita de um SQL warehouse, fila de reservas com sinalizadores e notas de agentes armazenados no Lakebase e painel de chat do Genie integrado.",
+  "d0d683c10d587c9b": "Lakebase potencializa aplicações.",
+  "d0d708a53d12fa34": "Ambição",
+  "d14c962a6655a0fc": "Links jurídicos",
+  "d1c9a85e03b9ae2d": "E se eu for iniciante no Databricks?",
+  "d1d5a7c06a7b072d": "Paginação de soluções",
+  "d1e7a6cfa4a8f780": "Configure um Databricks App com o Lakebase para armazenamento persistente de dados. Inclui configuração de esquema e rotas completas de API para CRUD.",
+  "d208a18523fccc01": "Imagem de capa para criar apps de dados e IA prontos para produção com Databricks Apps e Lakebase",
+  "d214e3e583855de6": "Uma pilha unificada",
+  "d25527485b66b69e": "Hackathons para desenvolvedores do Databricks.",
+  "d294e15a04c8fb50": "Console de ferramentas administrativas",
+  "d29a1a22da18b8fb": "Recursos da plataforma para desenvolvedores da Databricks",
+  "d2a9563bc48f8466": "Apps web executados no seu workspace.",
+  "d2d9717a973cd66b": "Copiar link para a seção",
+  "d38d308a0a9d56b2": "Depoimentos",
+  "d4f21326b28c5973": "Painel do Lakebase mostrando monitoramento, branches e configurações do projeto.",
+  "d51a82a00ebe7721": "Perspectivas",
+  "d53156b9bd1ef459": "Filtros",
+  "d5517a2e8c5ef638": "Possibilitando o desenvolvimento evolutivo de bancos de dados: branches de banco de dados com Lakebase",
+  "d60caf1d3caf12c3": "Nenhum modelo corresponde aos filtros selecionados.",
+  "d63813fc02f1b776": "Prepare seu Agente de Programação",
+  "d65b19d905e9158c": "Conecte-se nativamente a dados e serviços.",
+  "d702709644ea02e0": "Próximo modelo",
+  "d70ebacce1e92845": "Veja como as equipes lançam apps de dados e IA na plataforma.",
+  "d743352ddb10c5bb": "Sem infraestrutura para configurar, sem ETL reverso para integrar, sem credenciais para rotacionar. Apenas o banco de dados e seu app.",
+  "d7d3b2efb630b337": [
+    {
+      "c": [
+        "Para começar rapidamente, use o modelo ",
+        {
+          "c": "App com Lakebase",
+          "i": 2,
+          "t": "Link"
+        },
+        " para gerar a estrutura de um Databricks App com Lakebase como backend."
+      ],
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Observação:",
+          "i": 4,
+          "t": "strong"
+        },
+        " quando seus dados estiverem limpos e prontos, use o modelo ",
+        {
+          "c": "Sincronizar tabelas: Unity Catalog para Lakebase (autoscaling)",
+          "i": 5,
+          "t": "Link"
+        },
+        " para transferi-los para o Lakebase."
+      ],
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "d80654342770fea8": "Respostas a perguntas comuns sobre a criação de apps de dados e agentes de IA no Databricks.",
+  "d894f6cb29f7a3ea": "Voltar",
+  "d97d637ecc56ef93": "Conjunto de dados",
+  "d9eb5844c482ac1e": "Configure o Databricks Free Edition",
+  "da12d50cfe58eb1f": "Sincronize tabelas do Unity Catalog com o Lakebase Autoscaling Postgres como tabelas sincronizadas para consultas de aplicações de baixa latência, nos modos de snapshot, acionado ou contínuo.",
+  "da4b00754ec33399": "Interfaces de chat para documentos, dados estruturados ou uma combinação dos dois.",
+  "da931484146fd549": "Configure a Free Edition",
+  "daf080584b6c4e5f": {
+    "c": "Fechar",
+    "i": 1,
+    "t": "span"
+  },
+  "db046871e24073f1": "Hoje",
+  "db597b47e09164a3": "Use o modelo certo para cada tarefa.",
+  "dcba4a41c7028d73": "Siga a lista de verificação passo a passo para configurar o ambiente e começar a programar.",
+  "dce15326991cf6b7": "Implantando...",
+  "ddd205405737a77e": "Branching",
+  "de02623ec1147541": "Modelos",
+  "df7aae04256a79c0": "Adicione um seletor para que os usuários possam alternar entre vários AI/BI Genie Agents em uma única página. Abrange a configuração de servidor com vários aliases, recursos de bundle por agente e a limpeza automática de conversas ao trocar de agente e reimplantar.",
+  "dfcce8b35ce4fb90": "Carregando",
+  "dfe6d0a6c91d0aa7": "Hackathon Apps & Agents for Good — Databricks Data + AI Summit 2026",
+  "e0784b38d5e9a0f2": "Transforme tabelas de histórico do Lakebase Change Data Feed em uma arquitetura de medalhão com camadas silver (estado atual) e gold (agregações) usando Lakeflow Spark Declarative Pipelines.",
+  "e12ec65c64afe332": "Proteja seu app com identidade integrada.",
+  "e19e9f8915d28244": "Agentes de IA prontos para produção, com seus dados.",
+  "e1a353c384c700f1": "Pesquisar...",
+  "e23b820edc6c9707": "Abertura + início do hackathon",
+  "e24f9926b3cfbdcf": {
+    "c": [
+      "Siga o guia do ",
+      {
+        "c": "Databricks CLI",
+        "i": 2,
+        "t": "Link"
+      },
+      " para instalá-la em sua máquina."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "e28d8bb72b57d2dd": "Menos sobrecarga",
+  "e2b42aa05ba7a002": "Crie uma experiência de chat de IA com streaming usando o AI SDK e endpoints do Databricks Model Serving.",
+  "e31a8a2a8b453cba": "Comece pela documentação \"Comece aqui\" e copie um dos modelos como prompt para seu agente de programação — ele criará a estrutura inicial de um app funcional e orientará você no restante.",
+  "e325bd74c87a84eb": "Experimente o Databricks",
+  "e33da04f1a6fa903": "Ler a documentação",
+  "e3a6a6610a633be1": "Comece com um prompt ou modelo e faça iterações imediatamente, sem precisar configurar a infraestrutura antes.",
+  "e3b8bf08eccdcbdf": "Copiar prompt",
+  "e3ffbb156b9e1e20": "Recursos",
+  "e48e93f44d89ea86": "Atualizações",
+  "e4911e502264cb64": "Nesta página",
+  "e4b79baeda6307dd": "Persista as sessões e mensagens de chat do seu agente de IA no Lakebase para que os usuários possam retomar conversas e seu agente possa raciocinar sobre interações anteriores entre implantações.",
+  "e4d256048d63db05": "Inteligência de inventário",
+  "e537b604dc2e51c2": "Dimensione seu compute automaticamente.",
+  "e5715b109f0e7d44": {
+    "c": "Carregando dados",
+    "i": 1,
+    "t": "span"
+  },
+  "e620eccc6174ca39": "O que você recebe com o Agent Bricks, pronto para uso",
+  "e642d74dcd57d7dc": "Abrir no Databricks",
+  "e71b75fecc5ae2f8": "Checklist de início rápido",
+  "e7588632064e0364": "Copiado",
+  "e770294d95d50aab": "Branches de banco de dados no Postgres: fluxos de trabalho no estilo Git com Databricks Lakebase",
+  "e84130f1b03ee74e": "Gere conjuntos de dados de avaliação a partir de casos de uso reais",
+  "e85752c981994a55": "Pesquisar soluções",
+  "e87e8e89656df235": "Aplicação com Lakebase",
+  "e91a2bca5fe254cb": "Leve agentes para produção",
+  "e99a0af4ddf7e34c": "Instale as habilidades de agente do Databricks (no escopo do projeto), configure o Docs MCP Server do DevHub e inicialize um AGENTS.md para que seu assistente de programação conheça os padrões de workspace deste repositório.",
+  "e9f8ed09c2f24589": "Enviando app...",
+  "ea39f0cad95a8fb2": "Lide com altos volumes de consulta distribuindo leituras sem alterar a arquitetura do seu app.",
+  "eae4468df3e37e0a": "Prévia de {title}",
+  "eb70b879e8ec2ab3": "Ver {name}",
+  "ebfa32b546cb80c8": "Páginas de perspectivas",
+  "ec35cb24cbc8523f": "Seções de conteúdo",
+  "ec8377d40f653084": "Lançamento",
+  "ed73055c7b49b343": "Ir para a próxima página",
+  "ed92e3677f14af1a": "Avaliação + prêmios",
+  "edc53d0e7c8c5797": "App de chat de geração aumentada por recuperação com streaming, recuperação via pgvector no Lakebase, corpus inicial da Wikipedia, geração com Model Serving e histórico de chat armazenado no Lakebase. Disponível via `databricks apps init`.",
+  "ee04a72b2d632d6c": "COPIAR",
+  "ee511ef053425e82": {
+    "c": "Alternar barra lateral",
+    "i": 1,
+    "t": "span"
+  },
+  "ee80ca8b00e8f1a9": "Slide anterior",
+  "eec49a41f4b73c3a": "Caminho de navegação",
+  "ef08a154b74b85a3": "Alternar quebra de linha",
+  "efc8068ff3dd3b27": "Por favor, não faça isso. Use a Free Edition para que todas as equipes trabalhem sob as mesmas restrições de plataforma.",
+  "eff1ca75a5345e81": "O Lakebase viabiliza a camada de dados entre apps, agentes e seu Lakehouse.",
+  "f015330a9bfc3962": "Todos os modelos",
+  "f05b9507789fddc8": "Mecanismo de apps em tempo real",
+  "f09476ee3a8bacad": {
+    "c": "Mais páginas",
+    "i": 1,
+    "t": "span"
+  },
+  "f0c49edf1daa295d": "Explorar modelos",
+  "f0f4295780ebe22c": "Isolamento de clientes por tenant",
+  "f166aa3687a34b94": "Acesso on-behalf-of-user com controles granulares",
+  "f1a1d5bbe0c78854": "Código",
+  "f1ac2e8fe27eb538": "Desenvolva aplicações inteligentes de dados e IA em minutos, não em meses",
+  "f1fb215aaa0e344f": {
+    "c": "Próximo slide",
+    "i": 1,
+    "t": "span"
+  },
+  "f205a955dd9b490e": "O Databricks Developer Hackathon está no ar.",
+  "f22955c319f64a92": "Copiar prompt do agente",
+  "f25f0c6017467019": "Perguntas frequentes",
+  "f2931d7d912c0ed2": "Desenvolvimento orientado por agentes",
+  "f2e393e1419f8c99": "Documentação",
+  "f315a39a5e437d66": "Pronto para produção",
+  "f3f714564613a90a": "Todos",
+  "f3fb89f2ee060b5e": "Instale, autentique-se e use a Databricks CLI.",
+  "f41ea186c275b56e": "Sobre",
+  "f4519fe752a18dd1": "Acesso seguro a dados",
+  "f47e73fa823831c4": "Service principals criados e gerenciados por app",
+  "f6733fcc683635da": "Autoscaling independente por réplica",
+  "f761e0300a1facc6": "As inscrições estão encerradas. O hackathon é aberto apenas aos participantes do Data + AI Summit 2026.",
+  "f76923b5c6c945f9": "O Agent Bricks nos permitiu dobrar nossa precisão médica em relação aos LLMs comerciais padrão, atendendo aos altos padrões internos da Flo Health de precisão clínica, segurança, privacidade e proteção.",
+  "f76f10942c4a91ed": "Lista de verificação",
+  "f7b4754552d22c9f": "E se eu já tiver uma conta do Free Edition?",
+  "f7e134d0e7bd1cb4": "Leia a documentação",
+  "f819c21ce9d1e811": "Gere Embeddings com Modelos Fundamentais",
+  "f882b4dcbe8925c9": "Crie o agente, não a infraestrutura de agentes.",
+  "f8bd9275cd9854a6": "Ajude usuários consultando dados reais, gerando respostas e realizando ações com as permissões adequadas.",
+  "f99002c4175473dc": "Execução técnica",
+  "f998f5ef2e8d82bc": [
+    {
+      "c": [
+        "Sugerimos o ",
+        {
+          "c": "Cursor",
+          "i": 2,
+          "t": "a"
+        },
+        ", o ",
+        {
+          "c": "Claude Code",
+          "i": 3,
+          "t": "a"
+        },
+        " ou o ",
+        {
+          "c": "Codex",
+          "i": 4,
+          "t": "a"
+        },
+        "."
+      ],
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": [
+            "Não consegue executar um agente de programação no seu laptop?",
+            {
+              "i": 7,
+              "t": "CalloutChevronIcon"
+            }
+          ],
+          "i": 6,
+          "t": "summary"
+        },
+        {
+          "c": [
+            {
+              "c": [
+                "Alguns participantes podem estar usando laptops corporativos com restrições a instalações locais, extensões de IDE ou agentes de programação. Não tem problema — você ainda pode participar. Siga o guia de início rápido manual do AppKit para criar a estrutura inicial e implantar um Databricks App com a CLI: ",
+                {
+                  "c": "Primeiros passos com o AppKit",
+                  "i": 10,
+                  "t": "Link"
+                },
+                "."
+              ],
+              "i": 9,
+              "t": "p"
+            },
+            {
+              "c": "Se possível, tente formar uma equipe com pelo menos uma pessoa que tenha um agente de programação configurado localmente e possa iterar no app. Nem todos da equipe precisam trabalhar no código do app ao mesmo tempo — os demais integrantes podem se concentrar na exploração de dados, direcionamento de produto, avaliação, narrativa, demonstração final e outras áreas em que um agente de programação local é menos útil.",
+              "i": 11,
+              "t": "p"
+            },
+            {
+              "c": "Você também pode usar ferramentas baseadas em agentes que não exigem configuração local:",
+              "i": 12,
+              "t": "p"
+            },
+            {
+              "c": [
+                {
+                  "c": [
+                    {
+                      "c": "Databricks Genie Code",
+                      "i": 15,
+                      "t": "strong"
+                    },
+                    " — use o Genie Code no Databricks para obter ajuda para entender o conjunto de dados, escrever SQL, explorar tabelas, estruturar o trabalho com dados que sustenta seu app e criar e gerenciar o app."
+                  ],
+                  "i": 14,
+                  "t": "li"
+                },
+                {
+                  "c": [
+                    {
+                      "c": "Ferramentas de desenvolvimento baseadas em navegador",
+                      "i": 17,
+                      "t": "strong"
+                    },
+                    " — ferramentas como o Replit podem ser úteis quando não for possível instalar um ambiente de programação local no laptop. Verifique as políticas da sua empresa antes de conectar contas, repositórios ou dados."
+                  ],
+                  "i": 16,
+                  "t": "li"
+                }
+              ],
+              "i": 13,
+              "t": "ul"
+            },
+            {
+              "c": "Se a equipe estiver impedida por restrições no laptop, não passe todo o hackathon tentando contornar as limitações da máquina. Transfira as tarefas para o integrante ou ambiente que consegue executar o app e use o próprio Databricks para explorar dados e criar protótipos tanto quanto possível. Peça ajuda e ideias aos mentores do hackathon.",
+              "i": 18,
+              "t": "p"
+            }
+          ],
+          "i": 8,
+          "t": "div"
+        }
+      ],
+      "i": 5,
+      "t": "details"
+    }
+  ],
+  "f9c0e19ea68db7fe": "Anúncio do hackathon",
+  "fa02a22577dbe632": "Recursos",
+  "fa7abddc6635a0c7": "Visualizar",
+  "fa9e9638a8ae7dcc": "Lance apps web e agentes mais rapidamente com um banco de dados Postgres integrado e protegido no seu workspace do Databricks.",
+  "fac2054b80b80484": "Conecte seu agente a dados governados e execute consultas com controles de acesso adequados, para que ele veja apenas o que tem permissão para ver.",
+  "fafa9c9c6184458c": "O Lakebase nos oferece um armazenamento durável e de baixa latência para o estado da aplicação, permitindo que nossos apps de dados carreguem rapidamente, sejam atualizados sem interrupções e até ofereçam suporte a links de páginas compartilhadas entre usuários.",
+  "fb0fd7ccfe0c1592": "Experiência do desenvolvedor",
+  "fb3cb0d46dc6ec20": {
+    "c": [
+      {
+        "c": "Nenhum hackathon em andamento",
+        "i": 2,
+        "t": "h1"
+      },
+      {
+        "c": "Não há hackathons em andamento no momento. Enquanto isso, explore os modelos para dar início ao seu próximo app do Databricks.",
+        "i": 3,
+        "t": "p"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "fb65ba0ca68a29b6": "Persistência de Dados do Lakebase",
+  "fc9afc2c26a46780": "Crie agentes de IA específicos do domínio com Agent Bricks, implante-os em uma interface de chat no Databricks Apps e distribua-os aos usuários de negócios pelo Databricks One.",
+  "fcb467869e6ceac7": "Código copiado",
+  "fce849ed41f65aed": "Com o Agent Bricks, podemos rapidamente colocar em produção agentes de IA específicos do domínio para tarefas como extrair insights de chamadas de suporte ao cliente — algo que antes levava semanas de revisão manual.",
+  "fd65e980ec859328": [
+    {
+      "c": "Compute com escalonamento automático",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": [
+        "Carga atual: ",
+        {
+          "c": "65%",
+          "i": 3,
+          "t": "span"
+        }
+      ],
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "fdff8dd77fe6b6aa": "Data + AI Summit",
+  "fe005f2f5a869186": {
+    "c": "Copiar o prompt do agente",
+    "d": {
+      "b": {
+        "copied": "Copiado"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
+  "fe66b4a2e906befc": "Aplicações simples para executar modelos com entradas reais e exibir saídas.",
+  "fe7838ba72f26580": {
+    "c": [
+      "Instale as ",
+      {
+        "c": "habilidades de agente",
+        "i": 2,
+        "t": "Link"
+      },
+      " para que seu agente de programação saiba como desenvolver no Databricks."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "fe8a2b90c775ad88": "Sugerido",
+  "fea75614e0e30b6a": "Prévia de {name}"
+}

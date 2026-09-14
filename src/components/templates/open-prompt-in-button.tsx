@@ -1,6 +1,7 @@
 "use client";
 
 import { track } from "@vercel/analytics";
+import { T } from "gt-next";
 import { ChevronDown } from "lucide-react";
 
 import { getPromptTargets } from "@/lib/prompt-targets";
@@ -47,7 +48,7 @@ export function OpenPromptInButton({
           size="sm"
           className={cn("h-10 px-5", className)}
         >
-          Open prompt in
+          <T>Open prompt in</T>
           <ChevronDown />
         </Button>
       </DropdownMenuTrigger>

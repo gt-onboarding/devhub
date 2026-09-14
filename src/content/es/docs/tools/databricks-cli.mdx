@@ -1,0 +1,96 @@
+---
+title: Databricks CLI
+sourceOfTruth:
+  skills:
+    - databricks-core
+  docs:
+    - https://docs.databricks.com/aws/en/dev-tools/cli/
+---
+
+# Databricks CLI \{#databricks-cli\}
+
+La Databricks CLI (interfaz de línea de comandos) te permite interactuar con la plataforma de Databricks desde tu terminal local o mediante un agente de programación. Para desarrollar apps en Databricks y ejecutar las [plantillas](/es/templates) de este sitio, es necesario instalar la CLI y autenticarte con ella.
+
+Esta página abarca la instalación y la autenticación. Para ver la referencia completa de comandos, consulta la [documentación oficial de la CLI](https://docs.databricks.com/aws/en/dev-tools/cli/).
+
+## Instalar o actualizar \{#install-or-upgrade\}
+
+Desde tu terminal, ejecuta los siguientes comandos para instalar o actualizar la CLI:
+
+<Tabs groupId="os">
+  <TabItem value="mac-linux" label="macOS / Linux">
+    ```bash
+    brew tap databricks/tap
+    brew install databricks
+
+    brew update && brew upgrade databricks
+    ```
+  </TabItem>
+
+  <TabItem value="windows" label="Windows">
+    ```bash
+    winget install Databricks.DatabricksCLI
+
+    winget upgrade Databricks.DatabricksCLI
+    ```
+  </TabItem>
+
+  <TabItem value="curl" label="curl (todas las plataformas)">
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+    ```
+
+    En Windows, usa WSL. Si `/usr/local/bin` no tiene permisos de escritura, vuelve a ejecutar el comando con `sudo`. Al volver a ejecutar el script también se actualiza una instalación existente.
+  </TabItem>
+</Tabs>
+
+:::note
+Todas las plantillas de DevHub dan por hecho que la Databricks CLI es de versión `1.0.0+`.
+:::
+
+## Autenticarse \{#authenticate\}
+
+Para desarrollar apps en Databricks, debes autenticarte con la CLI. Esto le permite a la CLI interactuar con tu workspace de Databricks y realizar acciones en tu nombre.
+
+Para autenticarte, ejecuta el siguiente comando:
+
+```bash
+databricks auth login
+```
+
+Esto te pide un nombre de perfil (por defecto, `DEFAULT`) y luego abre un navegador donde inicias sesión y eliges un workspace.
+
+Una vez autenticado, las credenciales se guardan en `~/.databrickscfg`.
+
+Para autenticarte en un workspace específico o asignar un nombre al perfil, usa las flags `--host` y `--profile`:
+
+```bash
+databricks auth login --host <workspace-url> --profile <PROFILE>
+```
+
+Si tienes varios perfiles autenticados, puedes añadir `--profile <PROFILE>` en los comandos posteriores para dirigirlos a un perfil específico.
+
+Para ver la lista de todos los perfiles guardados, ejecuta el siguiente comando:
+
+```bash
+databricks auth profiles
+```
+
+Ejemplo de salida:
+
+```text
+Name              Host                                             Valid
+DEFAULT           https://adb-1234567890.12.azuredatabricks.net    YES
+my-prod-workspace https://mycompany.cloud.databricks.com           YES
+```
+
+* **Name** es la etiqueta del perfil.
+* **Host** es la URL del workspace.
+* **Valid** es el resultado de una verificación de autenticación en tiempo real con el workspace. `NO` significa que la verificación falló; vuelve a ejecutar `databricks auth login --profile <NAME>` para volver a autenticarte.
+
+Para CI/CD, usa credenciales de cliente de OAuth o autenticación basada en tokens (sin paso por el navegador). Consulta [Autenticación de la CLI](https://docs.databricks.com/aws/en/dev-tools/cli/authentication).
+
+## Qué sigue \{#where-to-next\}
+
+* [Instala agent skills](/es/docs/tools/ai-tools/agent-skills) para que los asistentes de programación con IA conozcan la plataforma Databricks.
+* Configura el [Docs MCP Server de DevHub](/es/docs/tools/ai-tools/docs-mcp-server) para dar a los asistentes de programación con IA acceso a la documentación de DevHub.

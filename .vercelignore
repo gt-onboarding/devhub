@@ -28,6 +28,7 @@ public/solutions
 public/templates.md
 public/solutions.md
 src/content/docs/appkit/
+src/content/*/docs/appkit/
 src/components/doc-examples/
 public/appkit-preview/
 public/js/home-hero-player.js

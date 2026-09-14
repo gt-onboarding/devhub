@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { track } from "@vercel/analytics";
+import { T, useGT } from "gt-next";
 import { Check, LoaderCircle } from "lucide-react";
 
 import {
@@ -27,11 +28,13 @@ export type CopyPromptButtonProps = AgentMarkdownInput & {
 
 export function CopyPromptButton({
   disabled = false,
-  disabledTooltip = "select a template to copy",
+  disabledTooltip,
   className,
-  label = "Copy prompt",
+  label,
   ...input
 }: CopyPromptButtonProps) {
+  const gt = useGT();
+  const buttonLabel = label ?? gt("Copy prompt");
   const { buildAIMarkdown, ensureFetched } = useAgentMarkdown(input);
   const [copyState, setCopyState] = useState<
     "idle" | "copying" | "copied" | "error"
@@ -69,11 +72,13 @@ export function CopyPromptButton({
             <span className="inline-flex">
               <Button size="sm" className={className} disabled>
                 <Icons.copy className="h-4 w-4" />
-                {label}
+                {buttonLabel}
               </Button>
             </span>
           </TooltipTrigger>
-          <TooltipContent>{disabledTooltip}</TooltipContent>
+          <TooltipContent>
+            {disabledTooltip ?? gt("select a template to copy")}
+          </TooltipContent>
         </Tooltip>
       </TooltipProvider>
     );
@@ -89,19 +94,19 @@ export function CopyPromptButton({
       {copyState === "copying" ? (
         <>
           <LoaderCircle className="h-4 w-4 animate-spin" />
-          Copying…
+          <T>Copying…</T>
         </>
       ) : copyState === "copied" ? (
         <>
           <Check className="h-4 w-4" />
-          Copied!
+          <T>Copied!</T>
         </>
       ) : copyState === "error" ? (
-        "Try again"
+        <T>Try again</T>
       ) : (
         <>
           <Icons.copy className="h-4 w-4" />
-          {label}
+          {buttonLabel}
         </>
       )}
     </Button>

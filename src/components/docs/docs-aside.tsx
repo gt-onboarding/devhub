@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { T, useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
@@ -43,6 +44,7 @@ export function DocsAside({
   sticky = false,
   toc,
 }: DocsAsideProps): ReactNode {
+  const gt = useGT();
   const tableOfContents = getTableOfContentsItems(toc).filter(
     (item) =>
       item.depth === 2 &&
@@ -61,7 +63,7 @@ export function DocsAside({
     >
       {tableOfContents.length > 0 ? (
         <>
-          <TableOfContents title="On this page" items={tableOfContents} />
+          <TableOfContents title={gt("On this page")} items={tableOfContents} />
           <Separator className="bg-prose-border my-3.5" />
         </>
       ) : null}
@@ -74,7 +76,9 @@ export function DocsAside({
           rel="noopener noreferrer"
         >
           <Icons.github className="size-4" aria-hidden="true" />
-          Suggest edits <span className="sr-only">on GitHub</span>
+          <T>
+            Suggest edits <span className="sr-only">on GitHub</span>
+          </T>
         </Link>
       ) : null}
 

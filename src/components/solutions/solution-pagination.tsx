@@ -1,5 +1,6 @@
 import type { MouseEvent, ReactNode } from "react";
 import Link from "next/link";
+import { T, useGT } from "gt-next";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import {
@@ -42,6 +43,8 @@ export function SolutionPagination({
   currentPage,
   pageCount,
 }: SolutionPaginationProps): ReactNode {
+  const gt = useGT();
+
   if (pageCount <= 1) return null;
 
   const pages = getVisiblePages(pageCount);
@@ -51,7 +54,7 @@ export function SolutionPagination({
   return (
     <nav
       className="mx-auto mt-16 flex w-full max-w-104 items-center justify-between"
-      aria-label="Solution pagination"
+      aria-label={gt("Solution pagination")}
     >
       <Link
         className={cn(
@@ -64,7 +67,7 @@ export function SolutionPagination({
         onClick={handlePaginationClick}
       >
         <ArrowLeft className="size-3.5 shrink-0" aria-hidden="true" />
-        Previous
+        <T context="Pagination link to the previous page">Previous</T>
       </Link>
 
       <div className="flex items-center gap-1">
@@ -103,7 +106,7 @@ export function SolutionPagination({
         tabIndex={nextDisabled ? -1 : undefined}
         onClick={handlePaginationClick}
       >
-        Next
+        <T context="Pagination link to the next page">Next</T>
         <ArrowRight className="size-3.5 shrink-0" aria-hidden="true" />
       </Link>
     </nav>

@@ -1,3 +1,5 @@
+import { msg } from "gt-next";
+
 export type SolutionAuthor = {
   id: string;
   name: string;
@@ -11,8 +13,10 @@ const solutionAuthors: SolutionAuthor[] = [
   {
     id: "andre-landgraf",
     name: "Andre Landgraf",
-    role: "Staff Developer Advocate, Databricks",
-    bio: "Andre is a staff developer advocate at Databricks, focused on the developer experience for building data and AI apps on the Databricks platform.",
+    role: msg("Staff Developer Advocate, Databricks"),
+    bio: msg(
+      "Andre is a staff developer advocate at Databricks, focused on the developer experience for building data and AI apps on the Databricks platform.",
+    ),
     photo: "/img/authors/andre-landgraf.jpg",
     links: [
       {

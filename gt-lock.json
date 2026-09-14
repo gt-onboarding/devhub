@@ -1,0 +1,627 @@
+{
+  "version": 2,
+  "branchId": "brc_kcmpe6ncvc71kotd4ifhaije",
+  "entries": [
+    {
+      "fileId": "c530832c7b74da515882f3fd751b91c862e5a31505fa7d5989b5856578d1ff25",
+      "versionId": "878dee46d608a6d0928593d24443f5064cd71bb3354f320dfbb8135d63f515cd",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.002Z",
+          "fileName": "src/content/pt/docs/templates.md",
+          "postProcessHash": "6831f568eb37af7115157ca02065191605c3e258ae03601e2f1fb41ff3760c00"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.003Z",
+          "fileName": "src/content/es/docs/templates.md",
+          "postProcessHash": "a8bbaa2e883931d2967efaa2c7b25b4c3836ba471fc8eb50339d1c92c89f5e98"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.004Z",
+          "fileName": "src/content/ja/docs/templates.md",
+          "postProcessHash": "d397b25b83bfc46f6d5ba00e7b0b026583e6c47390b185b3778fa21bfa139366"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.004Z",
+          "fileName": "src/content/fr/docs/templates.md",
+          "postProcessHash": "8aae53c3a7806450f6e60617a29280af29bcbfbf15b2fa72e9c1cedc2c884706"
+        }
+      },
+      "fileName": "src/content/docs/templates.md"
+    },
+    {
+      "fileId": "118b99b617de541a7ef6f0c179671250976647e4986fd2d195b58bfbfbbac474",
+      "versionId": "5612f33515e11411771d9c1fbd1372e7a34796ad36221ed2c2b4dfcce1dcdd27",
+      "translations": {
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.004Z",
+          "fileName": "src/content/fr/docs/agents/overview.md",
+          "postProcessHash": "f6ee716ff39a4e43c81e472b9fb0b2eeb6a097244859171ca7782b58acc615d0"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.004Z",
+          "fileName": "src/content/es/docs/agents/overview.md",
+          "postProcessHash": "8de258166b7862f1b4252a6c0e5b6576ce8982f51e4d482aa21f9abf90cbbd3e"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.005Z",
+          "fileName": "src/content/ja/docs/agents/overview.md",
+          "postProcessHash": "0fec9fdca3f2bdd46d04a683196e6c1d0b7aaf286abad361a4dd946c3e6a7445"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.005Z",
+          "fileName": "src/content/pt/docs/agents/overview.md",
+          "postProcessHash": "c07cffdea641712644471944b7775a8b766c50af718ccb042024d3d5ac044862"
+        }
+      },
+      "fileName": "src/content/docs/agents/overview.md"
+    },
+    {
+      "fileId": "bbf383c7200d97d4b662f7a83099faafe319ffbdc0231f4cd2bc806276ec03d2",
+      "versionId": "0672a0c154079bcbdab59b8084033cdb251a4e263d8812099d25a921a71a29f7",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.006Z",
+          "fileName": "src/content/es/docs/apps/overview.md",
+          "postProcessHash": "c4fd16cd145f8c9c99b8003a8053884c66cb67533a9f0b98f0b0caec6f8484c1"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.006Z",
+          "fileName": "src/content/pt/docs/apps/overview.md",
+          "postProcessHash": "c5f059af4e7bd3e789b686d64c56b7969362b71a38ec3f85a8a8769e999f6f2b"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.006Z",
+          "fileName": "src/content/fr/docs/apps/overview.md",
+          "postProcessHash": "4e22b0064e808144a2ac3cc42d9d59ec571b43c71427fac31c3f0dd5f364c3f6"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.006Z",
+          "fileName": "src/content/ja/docs/apps/overview.md",
+          "postProcessHash": "b673cc46ef8646cda44217e96a700941d049e59a71e219e78d106c17b4090bcb"
+        }
+      },
+      "fileName": "src/content/docs/apps/overview.md"
+    },
+    {
+      "fileId": "28758b48ed815b387285da02bfa22692a13ba535a0096b2ad8e01a359cfc0881",
+      "versionId": "4b512ce256c87e56d43bf6725572a504b32a62ab61b85eaac6aa01a20c82b8d3",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.007Z",
+          "fileName": "src/content/ja/docs/apps/configuration.md",
+          "postProcessHash": "48c8a359afbe1d6f5f784e459afba4fb3c338c1e508d8f320b9afceb93fb2461"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.007Z",
+          "fileName": "src/content/fr/docs/apps/configuration.md",
+          "postProcessHash": "5102ddbc942f4c65491e46d2c6b670601fa51de1f74faf69866a77c68b79c137"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.008Z",
+          "fileName": "src/content/pt/docs/apps/configuration.md",
+          "postProcessHash": "e5c5075b7059903bd0d689f461a88e46488126a7f5f31da216244db08e471216"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.009Z",
+          "fileName": "src/content/es/docs/apps/configuration.md",
+          "postProcessHash": "083c58e74b1c093ffddabc94481452e503f071295f8cbc84426ce5a0a98c6099"
+        }
+      },
+      "fileName": "src/content/docs/apps/configuration.md"
+    },
+    {
+      "fileId": "37b2aa888775bd04a06590581100e83b4fbf5bff6d576d9897a9595a8d9a9d16",
+      "versionId": "64c1df6b12e802ba561dafc6e7a029254dbac71c50a52cf094d68b3a548c1dec",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.009Z",
+          "fileName": "src/content/ja/docs/lakehouse/jobs.md",
+          "postProcessHash": "ed2da120a9c8d83938251daf1cb1c1c7e8a9d3a445d5293d7b50c0592d87598a"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.010Z",
+          "fileName": "src/content/pt/docs/lakehouse/jobs.md",
+          "postProcessHash": "b2ff883214005365f493c40c583c972155a940d86e77a7d4048c62610c67a70d"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.010Z",
+          "fileName": "src/content/es/docs/lakehouse/jobs.md",
+          "postProcessHash": "eec3224254cd5f55cd2b9187f11ad784270f64b4cebbcf3af91ef6c1e8c45a84"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.010Z",
+          "fileName": "src/content/fr/docs/lakehouse/jobs.md",
+          "postProcessHash": "5ae3410e4c4cd6ee4d346a009b49033fe0e3ace69dd9d8dd9accb3f9d4c36f5c"
+        }
+      },
+      "fileName": "src/content/docs/lakehouse/jobs.md"
+    },
+    {
+      "fileId": "ab7af6c5ef83e2f1cf834280f7e6d7d4876f5616dbaf12d52d023ba1456c7f79",
+      "versionId": "6414b7df54954b77a4c1e4fe71932b8c5f73f22dbcbaacbd9b77eba17df93a55",
+      "translations": {
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.012Z",
+          "fileName": "src/content/fr/docs/tools/ai-tools/docs-mcp-server.md",
+          "postProcessHash": "45cd3a74298978738087b3bb922169903e618f9c5ef366dd2cce1429d4817c8a"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.013Z",
+          "fileName": "src/content/es/docs/tools/ai-tools/docs-mcp-server.md",
+          "postProcessHash": "7d0294b9edc939b6a307e5de50be71e9e030fc09c2785bf4056cec10f296a66b"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.013Z",
+          "fileName": "src/content/ja/docs/tools/ai-tools/docs-mcp-server.md",
+          "postProcessHash": "3e6454232dc84f99225a69acca4a1004f6bbbd97c4926c7a3a930ed4f310a283"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.014Z",
+          "fileName": "src/content/pt/docs/tools/ai-tools/docs-mcp-server.md",
+          "postProcessHash": "00c4894c5dd4c0b0e039c6cf09922f0fae94e173f9d91ea4e80e6ce01ccacd94"
+        }
+      },
+      "fileName": "src/content/docs/tools/ai-tools/docs-mcp-server.md"
+    },
+    {
+      "fileId": "b382d54f4b73bfca18bab1df39a3471caadc34b8d69400eff738aa1dbf3ff294",
+      "versionId": "356db9579771688af46102c0bde79d50cb979c01b011bb19bfe695eec6bb32de",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.016Z",
+          "fileName": "src/content/ja/docs/lakehouse/analytical-reads.md",
+          "postProcessHash": "6966e8e842ecd07b2ec26a25b20583dc684c7e445c229468ee85f425f198e9ab"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.017Z",
+          "fileName": "src/content/es/docs/lakehouse/analytical-reads.md",
+          "postProcessHash": "5afd320e6a721633dd8463f0041ab4ac6ad8f5c72502fc74c78538f735bedeaf"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.017Z",
+          "fileName": "src/content/pt/docs/lakehouse/analytical-reads.md",
+          "postProcessHash": "9ba673747c9d5bef1eccb758e3b4d32821436b84604e16d823d0c38b09f1bdfb"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.018Z",
+          "fileName": "src/content/fr/docs/lakehouse/analytical-reads.md",
+          "postProcessHash": "12c93c3d0c22f7fdef1763983f577bd4a71bde5c7bda94ae3f85aaca931413bf"
+        }
+      },
+      "fileName": "src/content/docs/lakehouse/analytical-reads.md"
+    },
+    {
+      "fileId": "9e2834c1634a951622056ee6a8458d09d3918fea986df95dbc85e5c73c00c56e",
+      "versionId": "3a395911750c6b7f747df982a178e5b40d5df98d858ab7ddd80330a715045a00",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.019Z",
+          "fileName": "src/content/es/docs/platform-overview.mdx",
+          "postProcessHash": "ca9d8a7521cd741cd8bca70744dece3a41932aa8e3b22abaa85aa09dca0e48f6"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.019Z",
+          "fileName": "src/content/fr/docs/platform-overview.mdx",
+          "postProcessHash": "98da004c8dcb13698395138988d3d0f5cd372c8a2036fcd68d194c0b19aac2b8"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.021Z",
+          "fileName": "src/content/pt/docs/platform-overview.mdx",
+          "postProcessHash": "c36e55ee99a9751a12cbee6f8c2c74a71b6c74db5b63cccc0e7b09c3b81c801a"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.022Z",
+          "fileName": "src/content/ja/docs/platform-overview.mdx",
+          "postProcessHash": "5d796f84ea30e3c6654dc6592246503a776c1eea4b6b4e9c8df77c1321e4b801"
+        }
+      },
+      "fileName": "src/content/docs/platform-overview.mdx"
+    },
+    {
+      "fileId": "fe295c8ad3a301d2fa5154a1c07ce8bdb523057fb63606f530f24f3c8931152f",
+      "versionId": "6a41659f8dc2f26ec5a3b7bd0d9de4f8787eafaa5927b4e9042cdf39f9496289",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.022Z",
+          "fileName": "src/content/pt/docs/lakehouse/overview.md",
+          "postProcessHash": "ca9296abe561cf38f1e978f1c7bf682a6bf1a9d2694a4fd5610a5ff6f53fdedd"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.022Z",
+          "fileName": "src/content/ja/docs/lakehouse/overview.md",
+          "postProcessHash": "2e95bfcd37854fbde067f73558808a103deed37cd0ba15296562ee1d96a5ec60"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.023Z",
+          "fileName": "src/content/es/docs/lakehouse/overview.md",
+          "postProcessHash": "a8aeffd6c9c90c0687a7804f530911f5faca58627d640e60c63f81a40c39eefc"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.023Z",
+          "fileName": "src/content/fr/docs/lakehouse/overview.md",
+          "postProcessHash": "9a3109f83b0831dd40b1ba82ba917bf5fdd7a469f5ad0edf245418be2da7b6d4"
+        }
+      },
+      "fileName": "src/content/docs/lakehouse/overview.md"
+    },
+    {
+      "fileId": "d1f1f4fc5cb9c2bc743d031ae58699d0798a6410a3c1cbfebc8f05c639ba9817",
+      "versionId": "9dd2639965bbcbc7d35e7fce12a3de2395d751985f00d20c08e75afdd3b41c1a",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.024Z",
+          "fileName": "src/content/pt/docs/agents/genie.md",
+          "postProcessHash": "589c8339e174e163e11e398911964101f1f833eb3b89e28d4cc6918c0014a154"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.024Z",
+          "fileName": "src/content/es/docs/agents/genie.md",
+          "postProcessHash": "0c4845d4ead84cd9b52432b24252087114f7a7084f9c828901dc348e739abc1a"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.024Z",
+          "fileName": "src/content/fr/docs/agents/genie.md",
+          "postProcessHash": "ef42615200cf14c6d5412b5bb3e2c070fa82c2c0d0ad8a7e0b86aa90ac382bd8"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.025Z",
+          "fileName": "src/content/ja/docs/agents/genie.md",
+          "postProcessHash": "d7be47728da2395f60a76f1e23aa32063845fd489ca9b1261ace358eac70cb45"
+        }
+      },
+      "fileName": "src/content/docs/agents/genie.md"
+    },
+    {
+      "fileId": "acc55c210f6153cc48b69e3de023fa67c0b6abafba19a8fd7395989e9ba75c1a",
+      "versionId": "b0d33a2c18c3106ef82a71906b91fe4161fd0d3a2809ec2eac491883747e5132",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.025Z",
+          "fileName": "src/content/es/docs/agents/custom-agents.md",
+          "postProcessHash": "a5b19edbaa4dd792685056e70d11b96ca8c8a613631b4fe3a64104570859f373"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.026Z",
+          "fileName": "src/content/pt/docs/agents/custom-agents.md",
+          "postProcessHash": "70d9072554d0bf19e75a6fd5430f53fbef09a01d2c447afd4afb489494efcd17"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.026Z",
+          "fileName": "src/content/fr/docs/agents/custom-agents.md",
+          "postProcessHash": "b7f9dacde81c087662ce3646d271f0c0201238145074da719b515fb9f3e88f47"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.027Z",
+          "fileName": "src/content/ja/docs/agents/custom-agents.md",
+          "postProcessHash": "d1d39dddbc1627603dd2a12609ba4893860189efd95800e70490ad5eac8f311e"
+        }
+      },
+      "fileName": "src/content/docs/agents/custom-agents.md"
+    },
+    {
+      "fileId": "b8bd4b65fd9d67eb3be4c9dfa0778dc9b119f29ef1ee5eb730ed25aa95176a0d",
+      "versionId": "7183c0cb6145c639b80f03f5625dc06173116f21b01e52c753504b4133fc18f4",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.027Z",
+          "fileName": "src/content/es/docs/lakehouse/pipelines.md",
+          "postProcessHash": "4174f841a5c26ba944d27d57321a0dbf55628bdfc0cafb10d6ae611d2b3bfc5d"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.027Z",
+          "fileName": "src/content/fr/docs/lakehouse/pipelines.md",
+          "postProcessHash": "a8bfaca70ab0af1cdc4ed08f3a1a7f8e386c88fc7ce3e9a025501091fb5ba894"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.027Z",
+          "fileName": "src/content/pt/docs/lakehouse/pipelines.md",
+          "postProcessHash": "8fc459c062f9d669ae3eff2577529bd5444898c7fe0115f3990c1754386c7b9e"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.028Z",
+          "fileName": "src/content/ja/docs/lakehouse/pipelines.md",
+          "postProcessHash": "e785a3c4782e0c5c789d9a13d67773d8ff7c70367cf52044e837b662446ede57"
+        }
+      },
+      "fileName": "src/content/docs/lakehouse/pipelines.md"
+    },
+    {
+      "fileId": "812ecbdab63abcd5726330e5a62760781b1c25dffaea8f45ad492904da48a300",
+      "versionId": "b8c5c8ce3602ea21b1b933f32ada936d6345e1f1220ee369f322b7062c5eb433",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.028Z",
+          "fileName": "src/content/pt/docs/lakebase/quickstart.md",
+          "postProcessHash": "38f67f9ba393d71864cbd9d04ddf99f154ae86e7c9ec594dd2adbc7ac22b3e38"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.029Z",
+          "fileName": "src/content/es/docs/lakebase/quickstart.md",
+          "postProcessHash": "19531e2c9a8a4dabb0bda998ae9aa48558c07400d6c3935a431290b1000e3467"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.029Z",
+          "fileName": "src/content/ja/docs/lakebase/quickstart.md",
+          "postProcessHash": "abae8b07adc6f4f34cf5fc01dda6aeebb78ad77e3ad83e461b23743cf9f9212d"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.030Z",
+          "fileName": "src/content/fr/docs/lakebase/quickstart.md",
+          "postProcessHash": "f1232116d1aaa007e63e791b5dad0e8a2bdc5731be96a549e6f7ec1075934481"
+        }
+      },
+      "fileName": "src/content/docs/lakebase/quickstart.md"
+    },
+    {
+      "fileId": "4d5ecc1224431f833f06aed88eb71d671a02607026953d2db2d66c2671567900",
+      "versionId": "f82dc07af7eb51a9e9edfd411d7b752877b3d85ecd123c954b9c96fc68077bff",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.030Z",
+          "fileName": "src/content/es/docs/apps/quickstart.md",
+          "postProcessHash": "82192ef6a874f635faf42e31134887851c0b13647066ad0f3b244dcec54b91f1"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.030Z",
+          "fileName": "src/content/ja/docs/apps/quickstart.md",
+          "postProcessHash": "a51e4d7e945a4baf7d3051bfad7d6c4eae6d2c0cf9ee550bf586cd9027d50630"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.031Z",
+          "fileName": "src/content/fr/docs/apps/quickstart.md",
+          "postProcessHash": "3cf8e435b41fa8e522fc4c93c7b3babd72e79547520dcc3e7851bcf8dc48a00f"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.031Z",
+          "fileName": "src/content/pt/docs/apps/quickstart.md",
+          "postProcessHash": "f894da76ad53810c9bea74da0d415ccbdfe7e25eb0513883c58fa8fe41bb00e7"
+        }
+      },
+      "fileName": "src/content/docs/apps/quickstart.md"
+    },
+    {
+      "fileId": "879f3a5f954ee8b75bf1e91f4ea9916b41c933e5beba7eb6362647a637c9c66d",
+      "versionId": "22b46bf93b7deaf3b674163babce8a0376d0fcbe21e0f80962834ec08166b067",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.033Z",
+          "fileName": "public/_gt/pt.json",
+          "postProcessHash": "23f11707f1059b4f25ff2e28895000b4424a993e9f58d4faab334fe673a7043c"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.036Z",
+          "fileName": "public/_gt/fr.json",
+          "postProcessHash": "57eccc90442fae4f56e5d6960b0bb8cdcb1d0ee748b626a2509f0cf5f22ec926"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.037Z",
+          "fileName": "public/_gt/ja.json",
+          "postProcessHash": "01ff4e1c0db150f5aad55c2656764da3d3b81f6b6caa2c77d43f525ecdbb60d1"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.039Z",
+          "fileName": "public/_gt/es.json",
+          "postProcessHash": "50ab70e22dd43cdf10b8402db2c8ff04dbef1638187e3e87cf068aa3040b819d"
+        }
+      },
+      "fileName": "__INTERNAL_GT_TEMPLATE_NAME__"
+    },
+    {
+      "fileId": "7263c4d5dd6f6f0adecf1892b4c3e4bdf0d914aa70c1a9d817340e2d1d3bea17",
+      "versionId": "a734a0d71a6125b3a32af2f26ba4bd60c3d29c0669b81748e3d1cfaaccfb25e3",
+      "translations": {
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.039Z",
+          "fileName": "src/content/fr/docs/lakebase/overview.md",
+          "postProcessHash": "d1747114cf7d4411e1f4d445b89c14a352dbc582df7c123e66577a6bd7f1f45f"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.040Z",
+          "fileName": "src/content/es/docs/lakebase/overview.md",
+          "postProcessHash": "67c8148b3fbdc0b41527a05ab86271d1f2b0cfc6dd677bdd128dec74acec9ee5"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.040Z",
+          "fileName": "src/content/pt/docs/lakebase/overview.md",
+          "postProcessHash": "79344ae9a701e128b227a426cf317486e82525a918ad065dc95065e8909ffcf4"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.040Z",
+          "fileName": "src/content/ja/docs/lakebase/overview.md",
+          "postProcessHash": "02209a15143c569de185636295e13739aacc4638911cc35eb870c9f0eb5ab14a"
+        }
+      },
+      "fileName": "src/content/docs/lakebase/overview.md"
+    },
+    {
+      "fileId": "efb01ef7185c71911362f4eb5a9e00173302331593a1f7e7bf93701bda9fbd37",
+      "versionId": "05c6b6b6f7e892fb22b3f214af32531b0123feb82e5cdeced35b3a90421593bf",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.041Z",
+          "fileName": "src/content/ja/docs/start-here.md",
+          "postProcessHash": "e3f5002b5045b69f1553549e1f0eec0881458e1b3f6dfe96fe046c801b64ac63"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.041Z",
+          "fileName": "src/content/es/docs/start-here.md",
+          "postProcessHash": "5b2d8be792b5e9e2377bf447818984d25b07b727695002fe47d1cbfe7ae98cb5"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.042Z",
+          "fileName": "src/content/fr/docs/start-here.md",
+          "postProcessHash": "e68094ce2a04ef510a64ba9d7601062aa7f3090aba4d9fef749b9a390e37f108"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.042Z",
+          "fileName": "src/content/pt/docs/start-here.md",
+          "postProcessHash": "9956f74102054cbe454fa9181b701e8b898eec8a97e4109e4c66ddf0b4fb72ce"
+        }
+      },
+      "fileName": "src/content/docs/start-here.md"
+    },
+    {
+      "fileId": "d924cdf0ac984c561d4d2dc25004f6bfad393f9678da304a3daa01ee30846768",
+      "versionId": "b538373de8c94c6c6a5ee7d71d1135c531f5896538afe4ef0e5460ac48327e2d",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.050Z",
+          "fileName": "src/content/ja/docs/tools/databricks-cli.mdx",
+          "postProcessHash": "0e17440092dfb27016608e2d186a525b08d5566225699e370db7f8ec604e5993"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.050Z",
+          "fileName": "src/content/fr/docs/tools/databricks-cli.mdx",
+          "postProcessHash": "f3d2f57c6515a67eed5292ec7f12aa373076d37fba9b187aeb9c9dee6183c0b1"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.050Z",
+          "fileName": "src/content/es/docs/tools/databricks-cli.mdx",
+          "postProcessHash": "45d77be1be2ac66866f3266759b6383b226b5375fdb3a9fca82475d4e3be8005"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.050Z",
+          "fileName": "src/content/pt/docs/tools/databricks-cli.mdx",
+          "postProcessHash": "8cfdd55ae5cbd4461760033aa21734ed14b99835fed9e2a96089a97e44d31e5b"
+        }
+      },
+      "fileName": "src/content/docs/tools/databricks-cli.mdx"
+    },
+    {
+      "fileId": "e509f44a69169f4be04d42e772ede8d01c19a362798d84d33fc72ac177f5298f",
+      "versionId": "ad374de52ac5ad93b9a01f2efdae258c4077e22154af5424f55600d32a30bf7f",
+      "translations": {
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.011Z",
+          "fileName": "src/content/pt/docs/apps/development.md",
+          "postProcessHash": "917ead811928c125c730faf807c1a5dc4aa9905926a09923b52d9bc6003bb77d"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.011Z",
+          "fileName": "src/content/ja/docs/apps/development.md",
+          "postProcessHash": "13b7f15ea92e161710fa8df90d3aaabecad4fcad8ba0e9eb93e8444fa6439293"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.012Z",
+          "fileName": "src/content/fr/docs/apps/development.md",
+          "postProcessHash": "3ec3b5325bd2d80bf6e82cf7dfd613858db5376213816f81ca11b5d521468e2c"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.012Z",
+          "fileName": "src/content/es/docs/apps/development.md",
+          "postProcessHash": "a31cd693af8ff371ded2ef778e9c005610442fe3ce6fdcdbf0b313e276d003ee"
+        }
+      },
+      "fileName": "src/content/docs/apps/development.md"
+    },
+    {
+      "fileId": "0e1c8d840bd509eaacd94e22a4cf5d6034220f117d58cdfa2dec981cfb08589c",
+      "versionId": "bf0420ed74e36f6c11cb7af2ec9075c65cf7ef68bf266986bef25355602f8cdf",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.014Z",
+          "fileName": "src/content/ja/docs/tools/ai-tools/agent-skills.md",
+          "postProcessHash": "6fff48220f7e95b9c3692ed6f0165df46529df10db06ba7234a0e6996e4b7992"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.014Z",
+          "fileName": "src/content/fr/docs/tools/ai-tools/agent-skills.md",
+          "postProcessHash": "a58d7fff7f6e68adc96d435c6210ebea5e04facf427931f947e3e6a9e536c742"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.015Z",
+          "fileName": "src/content/pt/docs/tools/ai-tools/agent-skills.md",
+          "postProcessHash": "dd450a7836541d0bb5ee390600d42f962c4064f28b218ed938fdade176ff048c"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.016Z",
+          "fileName": "src/content/es/docs/tools/ai-tools/agent-skills.md",
+          "postProcessHash": "1519e5b7cab5d7817fb1b602e029f9a3ba4884ef07f7d40e19c7be8c392cf1f7"
+        }
+      },
+      "fileName": "src/content/docs/tools/ai-tools/agent-skills.md"
+    },
+    {
+      "fileId": "f599e895155ac3729fb5968dae019413895818b4aa08bed2fd52abfce7cc0b46",
+      "versionId": "34a60feb3a2cf511cdabda25685ecc59e0315738edeab4aba586ed9251ad24f9",
+      "translations": {
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.043Z",
+          "fileName": "src/content/fr/docs/agents/ai-gateway.md",
+          "postProcessHash": "f4ba5c5f669656c9b2f166cd5e4b298f1fdd7cec9959c7f42876e07389d70795"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.044Z",
+          "fileName": "src/content/ja/docs/agents/ai-gateway.md",
+          "postProcessHash": "9540340467b6d879fcad89e71f21e62475f84cb14eade36f9726776d268a76fc"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.045Z",
+          "fileName": "src/content/es/docs/agents/ai-gateway.md",
+          "postProcessHash": "b38d80ee99bb6381ea4a171c5ffe1db7a043af999e5b4de3e091eac359f1e1b1"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.045Z",
+          "fileName": "src/content/pt/docs/agents/ai-gateway.md",
+          "postProcessHash": "4ff02182029665497e0265590cb13359df1bb32a2b44ad71876996fbd7d0ed4e"
+        }
+      },
+      "fileName": "src/content/docs/agents/ai-gateway.md"
+    },
+    {
+      "fileId": "576cb46a7b55eee4c701585dc9a4cfcec00ff811880835c0880353046d364a1d",
+      "versionId": "bf49b7e1e789d52695b523aad3ce710885faa51136afdbf7aa0301fb9ccfd84f",
+      "translations": {
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.046Z",
+          "fileName": "src/content/ja/docs/lakebase/development.md",
+          "postProcessHash": "8ebb62a6e50971e9383abf924419e4bfa88f193ab239921cc7a7b41311c69169"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.047Z",
+          "fileName": "src/content/fr/docs/lakebase/development.md",
+          "postProcessHash": "3542f65a3c385b0babbd0a5a4965c84fcc139a34a53c6b69fdc17a1162cb9fd0"
+        },
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.048Z",
+          "fileName": "src/content/es/docs/lakebase/development.md",
+          "postProcessHash": "842d3cf5b9ca4445cbb3bfef1bdf253c6aaefad1e07dec0ca126a96f4981a826"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.048Z",
+          "fileName": "src/content/pt/docs/lakebase/development.md",
+          "postProcessHash": "d0b16aa2e9cdb697414e29d0f6fdf716e3db7024b2ba3166f5f55678eb509573"
+        }
+      },
+      "fileName": "src/content/docs/lakebase/development.md"
+    },
+    {
+      "fileId": "600d1572c7b757f5a5c1c215150fa03547489397d4a0e83942b18bcea769f08d",
+      "versionId": "f687f9bb9beb6a9077fb8860e4e3eb21e5a36dfa747a438150ed7ba22abd6992",
+      "translations": {
+        "es": {
+          "updatedAt": "2026-09-14T22:14:32.048Z",
+          "fileName": "src/content/es/docs/lakebase/configuration.md",
+          "postProcessHash": "e537166e120d60bf62c82739e2e47f4d683ed901daee47603fb4a8f9c5729ebb"
+        },
+        "ja": {
+          "updatedAt": "2026-09-14T22:14:32.049Z",
+          "fileName": "src/content/ja/docs/lakebase/configuration.md",
+          "postProcessHash": "644b73eeb698eb698d40624a3ef17bc1f1b62e731d0c1e580d5b59b9c1c37804"
+        },
+        "pt": {
+          "updatedAt": "2026-09-14T22:14:32.049Z",
+          "fileName": "src/content/pt/docs/lakebase/configuration.md",
+          "postProcessHash": "48782435ef1c39ff92e77dac9ca387d8e51378bd295b514b66ae6c3aad29dbcd"
+        },
+        "fr": {
+          "updatedAt": "2026-09-14T22:14:32.049Z",
+          "fileName": "src/content/fr/docs/lakebase/configuration.md",
+          "postProcessHash": "dda6496d775d055c82c18b5db0f0ff7c33a71750113c9e4dc28e1a002ff1aeef"
+        }
+      },
+      "fileName": "src/content/docs/lakebase/configuration.md"
+    }
+  ]
+}

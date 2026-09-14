@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
+import { useMessages } from "gt-next";
 
 import type { SolutionAuthor } from "@/lib/solutions/authors";
 import { cn } from "@/lib/utils";
@@ -43,6 +44,7 @@ export function SolutionByline({
   publishedAt: string;
   compact?: boolean;
 }): ReactNode {
+  const m = useMessages();
   const names = authors.map((author) => author.name).join(", ");
   const sharedRole =
     authors.length > 0 &&
@@ -78,7 +80,7 @@ export function SolutionByline({
           {names}
         </span>
         {!compact && sharedRole ? (
-          <span className="text-grey-70 truncate">{sharedRole}</span>
+          <span className="text-grey-70 truncate">{m(sharedRole)}</span>
         ) : null}
         <time className="sr-only" dateTime={publishedAt}>
           {publishedAt}

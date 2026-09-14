@@ -4,6 +4,7 @@ import path from "node:path";
 import { Fragment } from "react";
 import type { CSSProperties, ReactNode } from "react";
 import Image from "next/image";
+import { T } from "gt-next";
 import { imageSize } from "image-size";
 import type {
   Code,
@@ -34,7 +35,10 @@ import remarkFrontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkMdx from "remark-mdx";
 
-import { getUniqueMarkdownHeadingId } from "@/lib/markdown-heading-ids";
+import {
+  getMarkdownHeadingId,
+  splitExplicitHeadingId,
+} from "@/lib/markdown-heading-ids";
 import { resolveSiteUrl } from "@/lib/site-url";
 import { Admonition } from "@/components/content/admonition";
 import { Details } from "@/components/content/details";
@@ -711,8 +715,10 @@ async function renderHeading(
     Math.max(node.depth + options.headingDepthOffset, 1),
     6,
   );
-  const text = extractInlineText(node.children);
-  const id = getUniqueMarkdownHeadingId(text, options.headingIds);
+  const { id } = getMarkdownHeadingId(
+    extractInlineText(node.children),
+    options.headingIds,
+  );
 
   return (
     <Heading
@@ -721,9 +727,29 @@ async function renderHeading(
       isProse={variant === "prose"}
       showAnchor={options.showHeadingAnchors}
     >
-      {renderInlineNodes(node.children, variant, options)}
+      {renderInlineNodes(
+        withoutExplicitHeadingId(node.children),
+        variant,
+        options,
+      )}
     </Heading>
   );
+}
+
+/** Drops a trailing `{#id}` marker from the heading's last text node. */
+function withoutExplicitHeadingId(
+  children: MdastHeading["children"],
+): MdastHeading["children"] {
+  const last = children.at(-1);
+  if (!last || last.type !== "text") {
+    return children;
+  }
+  const { id, text } = splitExplicitHeadingId(last.value);
+  if (!id) {
+    return children;
+  }
+  const kept = children.slice(0, -1);
+  return text ? [...kept, { ...last, value: text }] : kept;
 }
 
 async function renderListItem(
@@ -857,7 +883,7 @@ function firstDetailsSummary(children: readonly MarkdownNode[]): {
   if (!first || !isNodeType(first, "paragraph")) {
     return {
       content: [...children],
-      summary: "Details",
+      summary: <T>Details</T>,
     };
   }
 
@@ -865,14 +891,14 @@ function firstDetailsSummary(children: readonly MarkdownNode[]): {
   if (!summary || !isInlineNodeType(summary, "mdxJsxTextElement")) {
     return {
       content: [...children],
-      summary: "Details",
+      summary: <T>Details</T>,
     };
   }
 
   if (summary.name !== "summary") {
     return {
       content: [...children],
-      summary: "Details",
+      summary: <T>Details</T>,
     };
   }
 

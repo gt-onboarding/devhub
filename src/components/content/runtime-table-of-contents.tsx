@@ -8,6 +8,7 @@ import {
   type MouseEvent,
   type ReactNode,
 } from "react";
+import { useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -31,11 +32,12 @@ function headingIdFromText(text: string): string {
 }
 
 export function RuntimeTableOfContents({
-  ariaLabel = "Content sections",
+  ariaLabel,
   className,
   contentId,
   contentRef,
 }: RuntimeTableOfContentsProps): ReactNode {
+  const gt = useGT();
   const [items, setItems] = useState<RuntimeTableOfContentsItem[]>([]);
   const [activeId, setActiveId] = useState("");
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -121,7 +123,10 @@ export function RuntimeTableOfContents({
   if (items.length === 0) return null;
 
   return (
-    <nav className={cn(className)} aria-label={ariaLabel}>
+    <nav
+      className={cn(className)}
+      aria-label={ariaLabel ?? gt("Content sections")}
+    >
       <ul className="flex list-none flex-col gap-y-2.5">
         {items.map((item) => (
           <li key={item.id} className="m-0 p-0">

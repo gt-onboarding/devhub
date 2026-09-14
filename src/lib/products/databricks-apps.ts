@@ -1,184 +1,215 @@
+import { msg } from "gt-next";
+
 import type { ProductPageContent } from "@/lib/products/product-page";
 
 export const databricksAppsProduct: ProductPageContent = {
   slug: "databricks-apps",
   title: "Databricks Apps",
-  description:
+  description: msg(
     "A deploy platform for apps, with built-in auth, hosting, and integrations.",
+  ),
   canonicalPath: "/product/databricks-apps",
   hero: {
     eyebrow: "Databricks Apps",
-    title: "Build full-stack apps on your data.",
+    title: msg("Build full-stack apps on your data."),
     highlightedTitle: "Databricks Apps.",
-    description:
+    description: msg(
       "A deploy platform for apps, with built-in auth, hosting, and integrations.",
+    ),
     image: {
       src: "/img/products/hero/databricks-apps.png",
-      alt: "Databricks Apps interface showing an app dashboard and deployment terminal.",
+      alt: msg(
+        "Databricks Apps interface showing an app dashboard and deployment terminal.",
+      ),
       width: 1216,
       height: 434,
     },
     actions: [
       {
-        label: "Build with Databricks Apps",
+        label: msg("Build with Databricks Apps"),
         href: "/templates/spin-up-databricks-app",
         variant: "primary",
       },
       {
-        label: "Read the docs",
+        label: msg("Read the docs"),
         href: "/docs/apps/overview",
         variant: "secondary",
       },
     ],
   },
   benefitsIntro: {
-    eyebrow: "Benefits",
-    title: "Where your app and data come together.",
-    description:
+    eyebrow: msg("Benefits"),
+    title: msg("Where your app and data come together."),
+    description: msg(
       "Most app stacks require wiring auth, data, and services together. Databricks Apps runs it all in one place.",
+    ),
   },
   benefits: [
     {
-      title: "Connected by default",
-      description:
+      title: msg("Connected by default"),
+      description: msg(
         "Authentication, data access, and services work together out of the box — eliminating glue code.",
+      ),
       icon: "plus",
     },
     {
-      title: "One unified stack",
-      description:
+      title: msg("One unified stack"),
+      description: msg(
         "No separate application stack or environments to manage — focus on building and shipping instantly.",
+      ),
       icon: "layers",
     },
     {
-      title: "Built on your data",
-      description:
+      title: msg("Built on your data"),
+      description: msg(
         "Use governed data, models, and permissions your platform already runs on for seamless access.",
+      ),
       icon: "data",
     },
   ],
   featuresIntro: {
-    eyebrow: "Features",
-    title: "How you build and ship with Databricks Apps",
+    eyebrow: msg("Features"),
+    title: msg("How you build and ship with Databricks Apps"),
   },
   features: [
     {
-      eyebrow: "Serverless app hosting",
+      eyebrow: msg("Serverless app hosting"),
       index: "01",
-      title: "Run your app inside Databricks.",
-      description:
+      title: msg("Run your app inside Databricks."),
+      description: msg(
         "Serverless hosting for full-stack apps, with compute, TLS, and deployment handled.",
-      body: "Apps run inside your workspace — no infrastructure to manage and no separate hosting to maintain.",
+      ),
+      body: msg(
+        "Apps run inside your workspace — no infrastructure to manage and no separate hosting to maintain.",
+      ),
       details: [
-        "Containerized runtime with managed compute",
-        "Built-in TLS and automatic HTTPS app URLs",
-        "Automatic builds and deploys from source",
+        msg("Containerized runtime with managed compute"),
+        msg("Built-in TLS and automatic HTTPS app URLs"),
+        msg("Automatic builds and deploys from source"),
       ],
       visual: "serverless",
     },
     {
-      eyebrow: "Auth & Permissions",
+      eyebrow: msg("Auth & Permissions"),
       index: "02",
-      title: "Secure your app with built-in identity.",
-      description:
+      title: msg("Secure your app with built-in identity."),
+      description: msg(
         "Native authentication and permissions, fully integrated with your data and resources.",
-      body: "Identity flows through your app — no separate auth system to build or permissions layer to manage across data, models, and services.",
+      ),
+      body: msg(
+        "Identity flows through your app — no separate auth system to build or permissions layer to manage across data, models, and services.",
+      ),
       details: [
-        "Service principals created and managed per app",
-        "On-behalf-of-user access with fine-grained controls",
-        "Permissions enforced across data, models, and resources",
+        msg("Service principals created and managed per app"),
+        msg("On-behalf-of-user access with fine-grained controls"),
+        msg("Permissions enforced across data, models, and resources"),
       ],
       visual: "auth",
     },
     {
-      eyebrow: "Native integrations",
+      eyebrow: msg("Native integrations"),
       index: "03",
-      title: "Connect to data and services, natively.",
-      description:
+      title: msg("Connect to data and services, natively."),
+      description: msg(
         "Apps integrate directly with your data, models, and services as first-class resources.",
-      body: "Declare dependencies once — no API keys to manage or services to wire together across environments.",
+      ),
+      body: msg(
+        "Declare dependencies once — no API keys to manage or services to wire together across environments.",
+      ),
       details: [
-        "Native access to SQL, Lakebase, and storage",
-        "Built-in connections to models and vector search",
-        "Secrets and external services managed in one place",
+        msg("Native access to SQL, Lakebase, and storage"),
+        msg("Built-in connections to models and vector search"),
+        msg("Secrets and external services managed in one place"),
       ],
       visual: "integrations",
     },
   ],
   useCasesIntro: {
-    eyebrow: "Use cases",
-    title: "How teams build with Databricks Apps.",
-    description:
+    eyebrow: msg("Use cases"),
+    title: msg("How teams build with Databricks Apps."),
+    description: msg(
       "Full-stack apps powering internal tools, AI interfaces, real-time systems, and more.",
+    ),
   },
   useCases: [
     {
-      title: "Data Applications",
-      description:
+      title: msg("Data Applications"),
+      description: msg(
         "Custom tools and dashboards built directly on warehouse data and metrics.",
+      ),
     },
     {
-      title: "AI Chat Applications",
-      description:
+      title: msg("AI Chat Applications"),
+      description: msg(
         "Chat interfaces over documents, structured data, or a combination of both.",
+      ),
     },
     {
-      title: "Agent UIs Control Center",
-      description:
+      title: msg("Agent UIs Control Center"),
+      description: msg(
         "Interfaces to monitor, debug, and manage AI agent workflows and actions.",
+      ),
     },
     {
-      title: "Inference Tools Hub",
-      description:
+      title: msg("Inference Tools Hub"),
+      description: msg(
         "Simple applications for running models with real inputs and displaying outputs.",
+      ),
     },
     {
-      title: "Real-Time Apps Engine",
-      description:
+      title: msg("Real-Time Apps Engine"),
+      description: msg(
         "Low-latency applications powered by operational data and continuously updated systems.",
+      ),
     },
     {
-      title: "Admin Tools Console",
-      description:
+      title: msg("Admin Tools Console"),
+      description: msg(
         "Internal CRUD tools for managing data, users, and business operations.",
+      ),
     },
     {
-      title: "Data and AI Apps Platform",
-      description:
+      title: msg("Data and AI Apps Platform"),
+      description: msg(
         "Applications that combine analytics, models, and user interaction in one place.",
+      ),
     },
     {
-      title: "Workflow Apps Suite",
-      description:
+      title: msg("Workflow Apps Suite"),
+      description: msg(
         "Tools that trigger jobs, manage approvals, and automate business processes.",
+      ),
     },
   ],
   testimonialsIntro: {
-    eyebrow: "Testimonials",
-    titleLead: "Databricks Apps powers real applications.",
-    titleMuted: "See how teams ship data and AI apps on the platform.",
+    eyebrow: msg("Testimonials"),
+    titleLead: msg("Databricks Apps powers real applications."),
+    titleMuted: msg("See how teams ship data and AI apps on the platform."),
   },
   testimonials: [
     {
       company: "SAE International",
-      quote:
+      quote: msg(
         "Databricks Apps helped me turn my RAG proof of concept into a polished and branded application. We built a RAG system to answer user questions by utilizing our company's extensive knowledge base.",
+      ),
       attributionName: "Heather Gomer",
-      attributionTitle: "Senior Data Scientist",
+      attributionTitle: msg("Senior Data Scientist"),
     },
     {
       company: "E.ON Digital Technology",
-      quote:
+      quote: msg(
         "The seamless integration of Databricks Apps into our DevOps processes enables us to quickly demonstrate and test new features with users while also providing a secure, production-ready front end for the internal application — all without needing additional infrastructure.",
+      ),
       attributionName: "Lukas Heidegger",
-      attributionTitle: "Data and MLOps Engineer",
+      attributionTitle: msg("Data and MLOps Engineer"),
     },
     {
       company: "Addi",
-      quote:
+      quote: msg(
         "By using Databricks Apps, we saved many rounds with the security and infrastructure team and were able to instantly share our app with stakeholders in production.",
+      ),
       attributionName: "Cesar Augusto Charalla Olazo",
-      attributionTitle: "Senior Machine Learning Engineer",
+      attributionTitle: msg("Senior Machine Learning Engineer"),
     },
   ],
 };

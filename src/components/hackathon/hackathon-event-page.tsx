@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { T, useGT, useMessages } from "gt-next";
 
 import { cn } from "@/lib/utils";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -56,8 +57,8 @@ export type HackathonEvent = {
   judgingIntro: ReactNode;
   judgingCriteria: HackathonJudgingCriterion[];
   faq: HackathonFaqItem[];
-  metaTitle?: string;
-  metaDescription?: string;
+  metaTitle: string;
+  metaDescription: string;
 };
 
 function ArrowCornerIcon({ className }: { className?: string }): ReactNode {
@@ -150,6 +151,7 @@ function ResourceCard({
 }: {
   resource: HackathonResource;
 }): ReactNode {
+  const m = useMessages();
   const cardClassName = cn(
     "group relative flex min-h-56 flex-col justify-between gap-14 border border-grey-30 bg-grey-5 p-5 text-white md:p-6",
     resource.href && "no-underline hover:no-underline",
@@ -160,11 +162,11 @@ function ResourceCard({
     <>
       <p className="m-0 flex items-center gap-1.5 font-mono text-sm leading-none font-medium tracking-normal text-[#5e616e] uppercase">
         <span className="bg-orange size-1.5" aria-hidden="true" />[
-        {resource.label}]
+        {m(resource.label)}]
       </p>
       <div>
         <h3 className="m-0 text-xl leading-snug font-medium tracking-[-0.03125rem] text-white">
-          {resource.title}
+          {m(resource.title)}
         </h3>
         <div className="mt-2 max-w-lg text-base leading-normal tracking-[-0.025rem] text-[#9194a1]">
           {resource.description}
@@ -180,7 +182,7 @@ function ResourceCard({
                   rel="noopener noreferrer"
                   className="text-orange hover:text-db-lava text-base font-medium tracking-tight no-underline hover:no-underline"
                 >
-                  {link.label}
+                  {m(link.label)}
                 </a>
               ) : (
                 <Link
@@ -188,7 +190,7 @@ function ResourceCard({
                   href={link.href}
                   className="text-orange hover:text-db-lava text-base font-medium tracking-tight no-underline hover:no-underline"
                 >
-                  {link.label}
+                  {m(link.label)}
                 </Link>
               ),
             )}
@@ -253,13 +255,19 @@ export function HackathonEventSidebar({
   event: HackathonEvent;
   className?: string;
 }): ReactNode {
-  const applyLabel = event.applyLabel ?? "Register";
+  const gt = useGT();
+  const m = useMessages();
+  const applyLabel = event.applyLabel ? m(event.applyLabel) : gt("Register");
 
   return (
     <aside className={cn("mx-auto w-full max-w-3xl lg:pt-3", className)}>
       <div className="sticky top-24">
         {event.facts.map((fact) => (
-          <EventFact key={fact.title} {...fact} />
+          <EventFact
+            key={fact.title}
+            title={m(fact.title)}
+            detail={fact.detail}
+          />
         ))}
         {!event.registrationClosed ? (
           <EventAction href={event.applyUrl}>{applyLabel}</EventAction>
@@ -313,6 +321,7 @@ export function HackathonTimeline({
 }: {
   items: HackathonTimelineItem[];
 }): ReactNode {
+  const m = useMessages();
   return (
     <figure className="not-prose -mx-5 mt-5 md:mx-0">
       <ScrollArea className="w-full">
@@ -326,10 +335,10 @@ export function HackathonTimeline({
                   </span>
                 </td>
                 <td className="border-prose-border text-grey-90 min-w-36 border-b pt-3 pb-3 pl-10 text-left align-top text-base/snug tracking-tight last:pr-0 [&_code:first-child]:ml-0">
-                  {item.label}
+                  {m(item.label)}
                 </td>
                 <td className="border-prose-border text-grey-90 min-w-36 border-b pt-3 pb-3 pl-10 text-left align-top text-base/snug tracking-tight last:pr-0 [&_code:first-child]:ml-0">
-                  {item.detail}
+                  {m(item.detail)}
                 </td>
               </tr>
             ))}
@@ -351,7 +360,7 @@ export function HackathonSubmission({
       <div className="flex flex-col gap-x-10 gap-y-5 md:flex-row md:items-center md:justify-between">
         <div>
           <h2 className="m-0 text-2xl/snug font-medium tracking-tight text-white">
-            Submission
+            <T>Submission</T>
           </h2>
           <p className="text-grey-90 mt-1.5 max-w-lg text-lg/normal tracking-tight text-pretty md:max-w-sm">
             {event.submission}
@@ -364,7 +373,9 @@ export function HackathonSubmission({
             rel="noopener noreferrer"
             className="bg-orange hover:bg-db-lava-light focus-visible:ring-orange/70 flex h-9.5 w-fit min-w-37 shrink-0 items-center justify-center font-mono text-sm/none font-medium tracking-tight whitespace-nowrap text-black uppercase no-underline transition-colors hover:text-black hover:no-underline focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
-            <span className="px-4.5">Submit your project</span>
+            <span className="px-4.5">
+              <T>Submit your project</T>
+            </span>
             <span className="flex aspect-square h-full shrink-0 items-center justify-center border-l-2">
               <ArrowCornerIcon className="size-5" />
             </span>
@@ -380,6 +391,7 @@ export function HackathonJudging({
 }: {
   event: HackathonEvent;
 }): ReactNode {
+  const m = useMessages();
   return (
     <>
       <div className="text-grey-90 mt-4 text-base/normal tracking-tight md:text-lg/normal">
@@ -391,8 +403,8 @@ export function HackathonJudging({
             key={criterion.title}
             className="text-grey-90 pl-1 text-base/normal tracking-tight md:text-lg/normal"
           >
-            <span className="font-medium text-white">{criterion.title}</span>{" "}
-            &mdash; {criterion.detail}
+            <span className="font-medium text-white">{m(criterion.title)}</span>{" "}
+            &mdash; {m(criterion.detail)}
           </li>
         ))}
       </ol>
@@ -408,7 +420,7 @@ export function HackathonFaqSection({
   return (
     <>
       <h2 className="mt-10 mb-3 text-2xl/snug font-medium tracking-tight text-white md:mt-14 md:text-3xl/snug">
-        Frequently asked questions
+        <T>Frequently asked questions</T>
       </h2>
       <Faq
         className="px-0 py-0 md:py-0 lg:py-0 [&>div]:max-w-none [&>div]:px-0 md:[&>div]:px-0"
@@ -422,12 +434,7 @@ export function HackathonFaqSection({
 export function HackathonEventFooter(): ReactNode {
   return (
     <div className="border-grey-20 mx-auto mt-28 max-w-432 border-x bg-black md:mt-36 lg:mt-44 xl:mt-60">
-      <CTA
-        className="pt-0 pb-16 lg:pb-22"
-        theme="outline"
-        label="Start building"
-        title="Ready to ship your next agentic app in minutes?"
-      />
+      <CTA className="pt-0 pb-16 lg:pb-22" theme="outline" />
       <Footer className="border-t border-white/10 bg-black lg:px-8" />
     </div>
   );

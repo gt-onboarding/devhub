@@ -9,6 +9,7 @@ import {
   type RefObject,
 } from "react";
 import { PortalContainerProvider } from "@databricks/appkit-ui/react";
+import { T, useGT } from "gt-next";
 import { createPortal } from "react-dom";
 import { Toaster } from "sonner";
 
@@ -53,6 +54,7 @@ function isValidExampleName(name: string): name is DocExampleKey {
 }
 
 export function DocExample({ name }: DocExampleProps): ReactNode {
+  const gt = useGT();
   const [tab, setTab] = useState<ExampleTab>("preview");
 
   if (!isValidExampleName(name)) {
@@ -95,7 +97,7 @@ export function DocExample({ name }: DocExampleProps): ReactNode {
       <header className="bg-muted/40 flex items-center justify-between border-b border-black/5 px-4 py-2 dark:border-white/5">
         <div
           role="tablist"
-          aria-label={`${name} example views`}
+          aria-label={gt("{name} example views", { name })}
           className="bg-background/60 inline-flex items-center gap-1 rounded-md p-0.5 ring-1 ring-black/5 dark:ring-white/10"
         >
           <TabButton
@@ -103,14 +105,14 @@ export function DocExample({ name }: DocExampleProps): ReactNode {
             onClick={() => setTab("preview")}
             onKeyDown={(event) => handleTabKeyDown(event, "preview")}
           >
-            Preview
+            <T>Preview</T>
           </TabButton>
           <TabButton
             active={tab === "code"}
             onClick={() => setTab("code")}
             onKeyDown={(event) => handleTabKeyDown(event, "code")}
           >
-            Code
+            <T>Code</T>
           </TabButton>
         </div>
         <span className="text-muted-foreground text-[0.6875rem] font-medium tracking-wider uppercase">
@@ -181,6 +183,7 @@ function IframePreview({
   Component,
   customHeight,
 }: IframePreviewProps) {
+  const gt = useGT();
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [mountNode, setMountNode] = useState<HTMLElement | null>(null);
   // The compiled stylesheet path is keyed by the @databricks/appkit-ui major
@@ -220,7 +223,7 @@ function IframePreview({
   return (
     <iframe
       ref={iframeRef}
-      title={`${exampleKey} preview`}
+      title={gt("{name} preview", { name: exampleKey })}
       style={{
         width: "100%",
         height: `${height}px`,

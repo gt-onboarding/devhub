@@ -1,6 +1,9 @@
+import { useGT } from "gt-next";
+
 import { getSiteBannerConfig } from "@/lib/site-banner-server";
 
 export function SiteBanner() {
+  const gt = useGT();
   const banner = getSiteBannerConfig();
 
   if (!banner) {
@@ -9,7 +12,7 @@ export function SiteBanner() {
 
   return (
     <div
-      aria-label="Site announcement"
+      aria-label={gt("Site announcement")}
       className="devhub-site-banner"
       data-banner-id={banner.id}
       style={{

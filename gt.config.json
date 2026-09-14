@@ -1,0 +1,48 @@
+{
+  "$schema": "https://assets.gtx.dev/config-schema.json",
+  "framework": "next-app",
+  "defaultLocale": "en",
+  "locales": [
+    "fr",
+    "ja",
+    "pt",
+    "es"
+  ],
+  "description": "Databricks Developer Hub (developers.databricks.com): guides, tools, and best practices for building data apps and AI agents on Databricks. Keep product names (Databricks, AppKit, Lakebase, Unity Catalog, Genie, Mosaic AI, Databricks Apps) and code identifiers untranslated.",
+  "files": {
+    "gt": {
+      "output": "public/_gt/[locale].json"
+    },
+    "mdx": {
+      "include": [
+        "src/content/docs/**/*.md",
+        "src/content/docs/**/*.mdx"
+      ],
+      "exclude": [
+        "src/content/docs/appkit/**/api/**"
+      ],
+      "transform": {
+        "match": "^src/content/docs/",
+        "replace": "src/content/{locale}/docs/"
+      }
+    }
+  },
+  "options": {
+    "experimentalLocalizeStaticUrls": true,
+    "experimentalHideDefaultLocale": true,
+    "docsUrlPattern": "/[locale]",
+    "excludeStaticUrls": [
+      "/img/**",
+      "/raw-docs/**",
+      "/api/**",
+      "/llms.txt",
+      "/docs/llms.txt",
+      "**/*.md"
+    ],
+    "baseDomain": "https://developers.databricks.com",
+    "skipFileValidation": {
+      "mdx": true
+    }
+  },
+  "_versionId": "22b46bf93b7deaf3b674163babce8a0376d0fcbe21e0f80962834ec08166b067"
+}

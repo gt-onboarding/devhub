@@ -9,6 +9,7 @@ import {
   type SVGProps,
 } from "react";
 import Link from "next/link";
+import { useGT } from "gt-next";
 import { domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
 
@@ -128,12 +129,14 @@ function TemplateCarouselCard({
   imageDuration: number;
   textWidthDuration: number;
 }) {
+  const gt = useGT();
+
   return (
     <Link
       className="group/card focus-visible:ring-db-cyan mt-auto flex h-fit w-full min-w-0 flex-col justify-end text-white no-underline focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#121317] focus-visible:outline-none"
       href={item.href}
       draggable={false}
-      aria-label={`${item.title} template`}
+      aria-label={gt("{title} template", { title: item.title })}
       onDragStart={(event) => event.preventDefault()}
     >
       <h3 className="text-xl leading-tight font-medium tracking-tight text-pretty text-white">
@@ -175,7 +178,7 @@ function TemplateCarouselCard({
       >
         <TemplatePreviewImage
           lightUrl={item.lightUrl}
-          alt={`${item.title} preview`}
+          alt={gt("{title} preview", { title: item.title })}
           fallback={<FallbackCardArt index={index} />}
           preload={index === 0}
         />
@@ -191,6 +194,7 @@ export function TemplateSlider({
   sectionRef: RefObject<HTMLElement | null>;
   settings?: TemplateSliderSettings;
 }) {
+  const gt = useGT();
   const { showDrafts: includeDrafts } = useFeatureFlags();
   const templateItems = useMemo(
     () => buildHomeTemplateCardItems(includeDrafts),
@@ -328,7 +332,7 @@ export function TemplateSlider({
       <div className="mx-auto flex w-full max-w-400 flex-col px-5 md:px-8">
         <div className="mt-9 flex items-center gap-5">
           <Button
-            aria-label="Previous slide"
+            aria-label={gt("Previous slide")}
             aria-disabled={slider.isPreviousSlideDisabled}
             onClick={slider.handlePreviousSlide}
             onKeyDown={handleArrowButtonKeyDown}
@@ -346,7 +350,7 @@ export function TemplateSlider({
             <SliderArrowIcon className="size-6 rotate-180" />
           </Button>
           <Button
-            aria-label="Next slide"
+            aria-label={gt("Next slide")}
             aria-disabled={slider.isNextSlideDisabled}
             onClick={slider.handleNextSlide}
             onKeyDown={handleArrowButtonKeyDown}

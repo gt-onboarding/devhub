@@ -8,7 +8,7 @@ import matter from "gray-matter";
 import { renderMarkdownContent } from "@/lib/content-markdown-renderer";
 import { substituteAboutDevhubLlmsUrl } from "@/lib/copy-preamble";
 import { expandLocalMdxImports } from "@/lib/expand-mdx";
-import { getUniqueMarkdownHeadingId } from "@/lib/markdown-heading-ids";
+import { getMarkdownHeadingId } from "@/lib/markdown-heading-ids";
 import { buildSeoDescription } from "@/lib/seo-description";
 import { resolveSiteUrl } from "@/lib/site-url";
 import { getSuggestEditsUrl } from "@/lib/suggest-edits-url";
@@ -20,6 +20,12 @@ type DocMeta = {
   title: string;
   description: string;
   sourcePath: string;
+};
+
+type ResolvedDocFile = {
+  absolutePath: string;
+  relativePath: string;
+  slug: string;
 };
 
 type DocPage = DocMeta & {
@@ -83,6 +89,8 @@ type PositionedContentName = {
 const MARKDOWN_EXTENSIONS = [".md", ".mdx"] as const;
 const MODULE_DIR = dirname(fileURLToPath(import.meta.url));
 const DOCS_ROOT = join(MODULE_DIR, "..", "content", "docs");
+const CONTENT_ROOT = join(MODULE_DIR, "..", "content");
+const DEFAULT_LOCALE = "en";
 const DOCS_INDEX_FILE_PATTERN = /^index\.(md|mdx)$/i;
 const SIDEBAR_LINK_PATTERN = /^(?:\[([^\]]+)])?\[([^\]]+)]\(([^)]+)\)$/;
 const SIDEBAR_SEPARATOR_PATTERN = /^---(?:\[([^\]]+)])?(.+?)---$/;
@@ -150,9 +158,7 @@ function collectMarkdownFiles(directory: string): string[] {
     .sort();
 }
 
-function resolveDocFile(
-  slug: string,
-): { absolutePath: string; relativePath: string; slug: string } | null {
+function resolveDocFile(slug: string): ResolvedDocFile | null {
   const normalized = slug.replace(/^\/+|\/+$/g, "");
   const root = docsRoot();
   const candidates = MARKDOWN_EXTENSIONS.flatMap((extension) => [
@@ -182,9 +188,31 @@ function readFirstMarkdownHeading(content: string): string | null {
   return match ? match[1].trim() : null;
 }
 
-function readDocSource(absolutePath: string): string {
+/**
+ * Translated docs live at src/content/<locale>/docs/<relative path>,
+ * mirroring src/content/docs. Falls back to the English source when the
+ * locale is the default or the translation does not exist yet.
+ */
+function resolveLocalizedDocPath(relativePath: string, locale: string): string {
+  if (locale === DEFAULT_LOCALE) {
+    return join(docsRoot(), relativePath);
+  }
+
+  const translatedPath = join(CONTENT_ROOT, locale, "docs", relativePath);
+  return existsSync(translatedPath)
+    ? translatedPath
+    : join(docsRoot(), relativePath);
+}
+
+function readDocSource(resolved: ResolvedDocFile, locale: string): string {
+  const contentPath = resolveLocalizedDocPath(resolved.relativePath, locale);
+  // Local MDX partial imports always resolve against the English source file
+  // so translated copies in src/content/<locale> share the same partials.
   return substituteAboutDevhubLlmsUrl(
-    expandLocalMdxImports(readFileSync(absolutePath, "utf-8"), absolutePath),
+    expandLocalMdxImports(
+      readFileSync(contentPath, "utf-8"),
+      resolved.absolutePath,
+    ),
     resolveSiteUrl(),
   );
 }
@@ -213,10 +241,10 @@ function resolveDocSidebarLabel({
   return title;
 }
 
-function readDocMetaFromFile(absolutePath: string, slug: string): DocMeta {
-  const source = readDocSource(absolutePath);
+function readDocMeta(resolved: ResolvedDocFile, locale: string): DocMeta {
+  const { slug, relativePath: relativeDocsPath } = resolved;
+  const source = readDocSource(resolved, locale);
   const { data, content } = matter(source);
-  const relativeDocsPath = toPosix(relative(docsRoot(), absolutePath));
   const title =
     typeof data.title === "string" && data.title.trim() !== ""
       ? data.title
@@ -350,12 +378,14 @@ function toDocSearchTitle(slug: string): string {
     .replaceAll(/\b\w/g, (letter) => letter.toLocaleUpperCase());
 }
 
-function getDocTitle(slug: string): string {
-  return getDocPostMetaBySlug(slug)?.title ?? titleFromSlug(slug);
+function getDocTitle(slug: string, locale: string): string {
+  return getDocPostMetaBySlug(slug, locale)?.title ?? titleFromSlug(slug);
 }
 
-function getDocSidebarLabel(slug: string): string {
-  return getDocPostMetaBySlug(slug)?.sidebarLabel ?? titleFromSlug(slug);
+function getDocSidebarLabel(slug: string, locale: string): string {
+  return (
+    getDocPostMetaBySlug(slug, locale)?.sidebarLabel ?? titleFromSlug(slug)
+  );
 }
 
 function toLabel(value: string): string {
@@ -501,6 +531,7 @@ function sortContentNames(
 
 function buildMarkdownFileSidebarItem(
   relativeFile: string,
+  locale: string,
 ): DocsSidebarLink | null {
   const normalizedFile = normalizeDocRelativePath(relativeFile);
   const absoluteFile = join(docsRoot(), normalizedFile);
@@ -515,20 +546,24 @@ function buildMarkdownFileSidebarItem(
 
   return {
     href: toDocHref(slug),
-    label: getDocSidebarLabel(slug),
+    label: getDocSidebarLabel(slug, locale),
     type: "link",
   };
 }
 
 function buildMarkdownFileSidebarItemFromBase(
   relativeBase: string,
+  locale: string,
 ): DocsSidebarLink | null {
   if (isMarkdownFile(relativeBase)) {
-    return buildMarkdownFileSidebarItem(relativeBase);
+    return buildMarkdownFileSidebarItem(relativeBase, locale);
   }
 
   for (const extension of MARKDOWN_EXTENSIONS) {
-    const item = buildMarkdownFileSidebarItem(`${relativeBase}${extension}`);
+    const item = buildMarkdownFileSidebarItem(
+      `${relativeBase}${extension}`,
+      locale,
+    );
     if (item) {
       return item;
     }
@@ -537,10 +572,14 @@ function buildMarkdownFileSidebarItemFromBase(
   return null;
 }
 
-function buildIndexSidebarItem(relativeDir: string): DocsSidebarLink | null {
+function buildIndexSidebarItem(
+  relativeDir: string,
+  locale: string,
+): DocsSidebarLink | null {
   for (const extension of MARKDOWN_EXTENSIONS) {
     const item = buildMarkdownFileSidebarItem(
       posix.join(relativeDir, `index${extension}`),
+      locale,
     );
     if (item) {
       return item;
@@ -553,6 +592,7 @@ function buildIndexSidebarItem(relativeDir: string): DocsSidebarLink | null {
 function buildAllSidebarItems(
   names: string[],
   baseDir: string,
+  locale: string,
   filter?: (name: string) => boolean,
   reversed = false,
 ): DocsSidebarItem[] {
@@ -565,7 +605,10 @@ function buildAllSidebarItems(
 
   for (const name of contentNames) {
     if (isMarkdownFile(name)) {
-      const item = buildMarkdownFileSidebarItem(posix.join(baseDir, name));
+      const item = buildMarkdownFileSidebarItem(
+        posix.join(baseDir, name),
+        locale,
+      );
       if (item) {
         output.push(item);
       }
@@ -576,6 +619,7 @@ function buildAllSidebarItems(
       const item = buildFolderSidebarItem(
         posix.join(baseDir, name.slice(0, -1)),
         false,
+        locale,
       );
       if (item) {
         output.push(item);
@@ -610,6 +654,7 @@ function resolveFolderItem(
   folderPath: string,
   item: string,
   restNames: Set<string>,
+  locale: string,
 ):
   | DocsSidebarItem[]
   | typeof REST_SIDEBAR_ITEMS
@@ -663,19 +708,20 @@ function resolveFolderItem(
   const fullBase = rawName.startsWith("/")
     ? normalizedName
     : normalizeDocRelativePath(posix.join(folderPath, normalizedName));
-  const folder = buildFolderSidebarItem(fullBase, false);
+  const folder = buildFolderSidebarItem(fullBase, false, locale);
 
   if (folder) {
     return isExtracted ? folder.items : [folder];
   }
 
-  const file = buildMarkdownFileSidebarItemFromBase(fullBase);
+  const file = buildMarkdownFileSidebarItemFromBase(fullBase, locale);
   return file ? [file] : [];
 }
 
 function buildFolderSidebarItem(
   relativeDir: string,
   isGlobalRoot: boolean,
+  locale: string,
 ): DocsSidebarCategory | null {
   const folderPath = normalizeDocRelativePath(relativeDir);
   const names = readDocsDirectoryNames(folderPath);
@@ -688,13 +734,20 @@ function buildFolderSidebarItem(
   const metaPages = readMetaPages(meta);
   const isRoot = typeof meta?.root === "boolean" ? meta.root : isGlobalRoot;
   const children = metaPages
-    ? buildSidebarItemsFromMetaPages(folderPath, names, metaPages, isRoot)
+    ? buildSidebarItemsFromMetaPages(
+        folderPath,
+        names,
+        metaPages,
+        isRoot,
+        locale,
+      )
     : buildAllSidebarItems(
         names,
         folderPath,
+        locale,
         (name) => isRoot || !isIndexDocName(name),
       );
-  const index = buildIndexSidebarItem(folderPath);
+  const index = buildIndexSidebarItem(folderPath, locale);
 
   if (!index && children.length === 0) {
     return null;
@@ -718,12 +771,13 @@ function buildSidebarItemsFromMetaPages(
   names: string[],
   pages: string[],
   isRoot: boolean,
+  locale: string,
 ): DocsSidebarItem[] {
   const restNames = new Set(names);
   const processed: ResolvedSidebarItem[] = [];
 
   for (const page of pages) {
-    const item = resolveFolderItem(folderPath, page, restNames);
+    const item = resolveFolderItem(folderPath, page, restNames, locale);
     processed.push(...(typeof item === "string" ? [item] : item));
   }
 
@@ -737,6 +791,7 @@ function buildSidebarItemsFromMetaPages(
     const restItems = buildAllSidebarItems(
       Array.from(restNames),
       folderPath,
+      locale,
       (name) => isRoot || !isIndexDocName(name),
       restItem === REST_SIDEBAR_ITEMS_REVERSED,
     );
@@ -748,12 +803,13 @@ function buildSidebarItemsFromMetaPages(
   );
 }
 
-function buildDocsSidebarItems(): DocsSidebarItem[] {
-  return buildFolderSidebarItem("", true)?.items ?? [];
+function buildDocsSidebarItems(locale: string): DocsSidebarItem[] {
+  return buildFolderSidebarItem("", true, locale)?.items ?? [];
 }
 
 function flattenSidebarLinks(
   items: readonly DocsSidebarItem[],
+  locale: string,
 ): DocPaginationLink[] {
   return items.flatMap((item) => {
     if (item.type === "link") {
@@ -768,11 +824,11 @@ function flattenSidebarLinks(
       ? [
           {
             permalink: item.href,
-            title: getDocTitle(docSlugFromHref(item.href)),
+            title: getDocTitle(docSlugFromHref(item.href), locale),
           },
         ]
       : [];
-    return [...ownLink, ...flattenSidebarLinks(item.items)];
+    return [...ownLink, ...flattenSidebarLinks(item.items, locale)];
   });
 }
 
@@ -793,8 +849,8 @@ function extractTableOfContents(markdown: string): DocPage["tableOfContents"] {
       continue;
     }
 
-    const value = tocHeadingHtml(heading[2]);
-    const id = getUniqueMarkdownHeadingId(value, usedIds);
+    const { id, text } = getMarkdownHeadingId(heading[2], usedIds);
+    const value = tocHeadingHtml(text);
 
     if (heading[1].length >= 2) {
       items.push({
@@ -836,11 +892,11 @@ export const getAllDocPostSlugs = cache(
   },
 );
 
-export const getDocsSidebarItems = cache(
-  function getDocsSidebarItems(): DocsSidebarItem[] {
-    return buildDocsSidebarItems();
-  },
-);
+export const getDocsSidebarItems = cache(function getDocsSidebarItems(
+  locale: string = DEFAULT_LOCALE,
+): DocsSidebarItem[] {
+  return buildDocsSidebarItems(locale);
+});
 
 export const getDocsSearchItems = cache(
   function getDocsSearchItems(): DocsSearchItem[] {
@@ -864,11 +920,14 @@ export const getDocsSearchItems = cache(
   },
 );
 
-export const getDocPagination = cache(function getDocPagination(slug: string): {
+export const getDocPagination = cache(function getDocPagination(
+  slug: string,
+  locale: string = DEFAULT_LOCALE,
+): {
   next: DocPaginationLink | null;
   previous: DocPaginationLink | null;
 } {
-  const links = flattenSidebarLinks(getDocsSidebarItems());
+  const links = flattenSidebarLinks(getDocsSidebarItems(locale), locale);
   const currentIndex = links.findIndex(
     (link) => link.permalink === toDocHref(slug),
   );
@@ -885,25 +944,27 @@ export const getDocPagination = cache(function getDocPagination(slug: string): {
 
 export const getDocPostMetaBySlug = cache(function getDocPostMetaBySlug(
   slug: string,
+  locale: string = DEFAULT_LOCALE,
 ): DocMeta | null {
   const resolved = resolveDocFile(slug);
   if (!resolved) {
     return null;
   }
 
-  return readDocMetaFromFile(resolved.absolutePath, resolved.slug);
+  return readDocMeta(resolved, locale);
 });
 
 export const getDocPostBySlug = cache(async function getDocPostBySlug(
   slug: string,
+  locale: string = DEFAULT_LOCALE,
 ): Promise<DocPage | null> {
   const resolved = resolveDocFile(slug);
   if (!resolved) {
     return null;
   }
 
-  const source = readDocSource(resolved.absolutePath);
-  const meta = readDocMetaFromFile(resolved.absolutePath, resolved.slug);
+  const source = readDocSource(resolved, locale);
+  const meta = readDocMeta(resolved, locale);
 
   return {
     ...meta,

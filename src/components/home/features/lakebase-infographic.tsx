@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { Num, T, Var } from "gt-next";
 import { Database } from "lucide-react";
 import { domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
@@ -232,15 +233,23 @@ function BranchCard({
               : "hidden bg-black/11 text-black @sm/infographic:flex",
           )}
         >
-          {isProductionBranch ? "production" : "branch"}
+          {isProductionBranch ? <T>production</T> : <T>branch</T>}
         </Badge>
       </div>
       <div className="mt-2 flex items-center gap-1 text-[8px] leading-tight tracking-tight whitespace-nowrap text-black/60 @md/infographic:mt-3.5 @md/infographic:gap-2 @md/infographic:text-[10px]">
-        <span>Size: {size}</span>
+        <T>
+          <span>
+            Size: <Var>{size}</Var>
+          </span>
+        </T>
         {tables && tables > 0 ? (
           <>
             <span>/</span>
-            <span>Tables: {tables}</span>
+            <T>
+              <span>
+                Tables: <Num>{tables}</Num>
+              </span>
+            </T>
           </>
         ) : null}
       </div>
@@ -276,12 +285,14 @@ export function LakebaseInfographic() {
               />
             </div>
             <div className="flex min-w-0 flex-col gap-y-1">
-              <h3 className="text-[11px] leading-tight font-medium tracking-[-0.02em] whitespace-nowrap @md/infographic:text-sm/tight">
-                Managed Postgres
-              </h3>
-              <span className="text-[9px] leading-tight tracking-[-0.02em] whitespace-nowrap text-black/70 @md/infographic:text-[11px]">
-                Colocated with your Lakehouse
-              </span>
+              <T>
+                <h3 className="text-[11px] leading-tight font-medium tracking-[-0.02em] whitespace-nowrap @md/infographic:text-sm/tight">
+                  Managed Postgres
+                </h3>
+                <span className="text-[9px] leading-tight tracking-[-0.02em] whitespace-nowrap text-black/70 @md/infographic:text-[11px]">
+                  Colocated with your Lakehouse
+                </span>
+              </T>
             </div>
           </FeatureInfographicCard>
         </AnimatedInfographicCard>
@@ -296,9 +307,11 @@ export function LakebaseInfographic() {
             reduceMotion={reduceMotion}
           >
             <FeatureInfographicCard className="w-full p-1.5 @md/infographic:p-2.5 @xl/infographic:p-4">
-              <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
-                Instant branching
-              </h4>
+              <T>
+                <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
+                  Instant branching
+                </h4>
+              </T>
               <div className="relative z-20 mx-auto mt-3 w-full max-w-37">
                 <BranchCard
                   name="main"
@@ -341,13 +354,15 @@ export function LakebaseInfographic() {
           >
             <FeatureInfographicCard className="flex h-full flex-col p-2 @xl/infographic:p-4">
               <div className="flex flex-col gap-0.5 @md/infographic:flex-row @md/infographic:items-center @md/infographic:justify-between @md/infographic:gap-2">
-                <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
-                  Auto-scale compute
-                </h4>
-                <p className="text-[8px] leading-tight tracking-tight text-black/70 @xl/infographic:text-[11px]">
-                  Current load:{" "}
-                  <span className="font-medium text-black">65%</span>
-                </p>
+                <T>
+                  <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
+                    Auto-scale compute
+                  </h4>
+                  <p className="text-[8px] leading-tight tracking-tight text-black/70 @xl/infographic:text-[11px]">
+                    Current load:{" "}
+                    <span className="font-medium text-black">65%</span>
+                  </p>
+                </T>
               </div>
               <m.img
                 animate={
@@ -384,15 +399,17 @@ export function LakebaseInfographic() {
             reduceMotion={reduceMotion}
           >
             <FeatureInfographicCard className="flex h-full flex-col overflow-hidden p-2 @xl/infographic:p-4 @xl/infographic:pb-2">
-              <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
-                Database changelog
-              </h4>
-              <div className="mt-2 grid grid-cols-[0.9fr_1.15fr_1.35fr_1fr] bg-[#F8F6F3] px-1 py-1 text-[6px] leading-none text-black/50 uppercase @md/infographic:text-[7px] @xl/infographic:mt-5 @xl/infographic:px-2.5 @xl/infographic:py-2 @xl/infographic:text-[9px]">
-                <span>Time</span>
-                <span>Operation</span>
-                <span>Entity</span>
-                <span>Change</span>
-              </div>
+              <T>
+                <h4 className="text-xs leading-tight font-medium tracking-tight @xl/infographic:text-[13px]">
+                  Database changelog
+                </h4>
+                <div className="mt-2 grid grid-cols-[0.9fr_1.15fr_1.35fr_1fr] bg-[#F8F6F3] px-1 py-1 text-[6px] leading-none text-black/50 uppercase @md/infographic:text-[7px] @xl/infographic:mt-5 @xl/infographic:px-2.5 @xl/infographic:py-2 @xl/infographic:text-[9px]">
+                  <span>Time</span>
+                  <span>Operation</span>
+                  <span>Entity</span>
+                  <span>Change</span>
+                </div>
+              </T>
               <div className="mt-1 flex-1">
                 {CHANGELOG_ROWS.map(
                   ([time, operation, entity, change], index) => (

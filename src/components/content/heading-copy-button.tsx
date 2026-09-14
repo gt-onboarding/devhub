@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { T, useGT } from "gt-next";
 import { Check, Link as LinkIcon } from "lucide-react";
 
 function copyTextWithTextarea(value: string): boolean {
@@ -22,6 +23,7 @@ function copyTextWithTextarea(value: string): boolean {
 }
 
 export function HeadingCopyButton({ id }: { id: string }) {
+  const gt = useGT();
   const [copied, setCopied] = useState(false);
 
   async function copyHeadingLink() {
@@ -49,21 +51,21 @@ export function HeadingCopyButton({ id }: { id: string }) {
 
   return (
     <button
-      aria-label="Copy link to section"
+      aria-label={gt("Copy link to section")}
       className={`text-grey-70 ml-2 inline-flex translate-x-0 items-center gap-x-1 align-middle opacity-0 transition duration-300 group-hover/content-heading:translate-x-1 group-hover/content-heading:opacity-100 focus-visible:translate-x-1 focus-visible:opacity-100 ${
         copied ? "translate-x-1 opacity-100" : ""
       }`}
       onClick={() => {
         void copyHeadingLink();
       }}
-      title="Copy link"
+      title={gt("Copy link")}
       type="button"
     >
       {copied ? (
         <>
           <Check className="size-4" />
           <span className="hidden text-xs leading-none font-medium lg:inline">
-            Copied
+            <T>Copied</T>
           </span>
         </>
       ) : (

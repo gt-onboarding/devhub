@@ -3,6 +3,7 @@
 import { useCallback, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { track } from "@vercel/analytics";
+import { Branch, T, useGT } from "gt-next";
 import { Check, Copy, LoaderCircle } from "lucide-react";
 
 import { getBootstrapPromptApiPath } from "@/lib/bootstrap-prompt";
@@ -12,46 +13,19 @@ import { TitleCross } from "@/components/home/title-cross";
 
 const TOPBAR_DOTS = ["bg-db-lava", "bg-yellow-400", "bg-green-500"] as const;
 
-const TITLE_HIGHLIGHT = "agentic app";
-
 type CopyState = "idle" | "copying" | "copied";
 type CTATheme = "filled" | "outline";
 
 type CTAProps = {
   label?: string;
-  title?: string;
+  title?: ReactNode;
   description?: string;
   actions?: ReactNode;
   className?: string;
   theme?: CTATheme;
 };
 
-function titleSegments(title: string): {
-  before: string;
-  highlight: string;
-  after: string;
-} {
-  const highlightStart = title.indexOf(TITLE_HIGHLIGHT);
-
-  if (highlightStart === -1) {
-    return {
-      before: title,
-      highlight: "",
-      after: "",
-    };
-  }
-
-  return {
-    before: title.slice(0, highlightStart),
-    highlight: title.slice(
-      highlightStart,
-      highlightStart + TITLE_HIGHLIGHT.length,
-    ),
-    after: title.slice(highlightStart + TITLE_HIGHLIGHT.length),
-  };
-}
-
-function CTATitleHighlight({ children }: { children: string }) {
+function CTATitleHighlight({ children }: { children: ReactNode }) {
   return (
     <span className="text-db-lava relative inline-block md:whitespace-nowrap">
       <span
@@ -64,6 +38,16 @@ function CTATitleHighlight({ children }: { children: string }) {
       <TitleCross className="-right-2.25 -bottom-2" />
       <span className="relative">{children}</span>
     </span>
+  );
+}
+
+function CTADefaultTitle() {
+  return (
+    <T>
+      <span className="relative z-10">Ready to ship your next </span>
+      <CTATitleHighlight>agentic app</CTATitleHighlight>
+      <span className="relative z-10"> in minutes?</span>
+    </T>
   );
 }
 
@@ -93,7 +77,7 @@ function Topbar({ theme }: { theme: CTATheme }) {
         ))}
       </div>
       <p className="truncate font-mono text-sm leading-[1.15] font-normal tracking-[-0.04em] text-white/40 uppercase md:text-lg">
-        Databricks Developer Hub
+        <T>Databricks Developer Hub</T>
       </p>
     </header>
   );
@@ -106,18 +90,24 @@ function CTAButtons({
   copyState: CopyState;
   onCopy: () => void;
 }) {
+  const gt = useGT();
+
   return (
     <div className="flex w-full flex-col gap-x-5 gap-y-3 sm:w-auto sm:flex-row sm:items-center lg:justify-end">
       <Button
         className="h-10 gap-x-4.5 font-mono text-base leading-none tracking-tight text-black uppercase shadow-none lg:h-11"
         onClick={onCopy}
         disabled={copyState === "copying"}
-        title="Copy agent prompt"
+        title={gt("Copy agent prompt")}
         size="xl"
         type="button"
         variant="orange"
       >
-        {copyState === "copied" ? "Copied" : "Copy agent prompt"}
+        <T>
+          <Branch branch={copyState} copied="Copied">
+            Copy agent prompt
+          </Branch>
+        </T>
         {copyState === "copying" ? (
           <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />
         ) : copyState === "copied" ? (
@@ -134,23 +124,17 @@ function CTAButtons({
           className="no-underline hover:no-underline"
           href="/docs/start-here"
         >
-          Read docs
+          <T>Read docs</T>
         </Link>
       </Button>
     </div>
   );
 }
 
-function CTA({
-  className,
-  label = "Start building",
-  title = "Ready to ship your next agentic app in minutes?",
-  actions,
-  theme = "filled",
-}: CTAProps) {
+function CTA({ className, label, title, actions, theme = "filled" }: CTAProps) {
+  const gt = useGT();
   const bootstrapPromptApiPath = getBootstrapPromptApiPath();
   const [copyState, setCopyState] = useState<CopyState>("idle");
-  const { before, highlight, after } = titleSegments(title);
 
   const handleCopy = useCallback(async () => {
     if (typeof navigator === "undefined" || !navigator.clipboard?.writeText) {
@@ -174,18 +158,18 @@ function CTA({
 
   return (
     <section
-      aria-label={label}
+      aria-label={label ?? gt("Start building")}
       className={cn("cta bg-black pt-1.5 text-white", className)}
     >
       <Topbar theme={theme} />
       <div className="relative mx-auto px-5 md:px-8 lg:px-16 2xl:px-24">
         <div className="mt-10 flex flex-col gap-8 md:mt-16 lg:mt-20 lg:flex-row lg:items-end">
           <h2 className="font-heading relative text-4xl/none font-normal tracking-normal text-balance text-white md:text-5xl/none xl:text-6xl/none 2xl:text-[5rem]">
-            <span className="relative z-10">{before}</span>
-            {highlight ? (
-              <CTATitleHighlight>{highlight}</CTATitleHighlight>
-            ) : null}
-            <span className="relative z-10">{after}</span>
+            {title === undefined ? (
+              <CTADefaultTitle />
+            ) : (
+              <span className="relative z-10">{title}</span>
+            )}
           </h2>
 
           {actions ?? <CTAButtons copyState={copyState} onCopy={handleCopy} />}

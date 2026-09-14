@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useMessages } from "gt-next";
 import { ArrowUpRight, FileText } from "lucide-react";
 
 import type { ProductPageContent } from "@/lib/products/product-page";
@@ -35,6 +36,8 @@ function HighlightedProductTitle({
 }
 
 function HeroActionLink({ action }: { action: HeroAction }) {
+  const m = useMessages();
+
   if (action.variant === "primary") {
     return (
       <Button
@@ -46,7 +49,7 @@ function HeroActionLink({ action }: { action: HeroAction }) {
           href={action.href}
         >
           <span className="flex min-h-10 min-w-0 flex-1 items-center justify-center bg-white px-4 py-2 text-center leading-tight tracking-normal whitespace-normal group-hover:bg-white/90 sm:flex-none sm:justify-start sm:text-left sm:whitespace-nowrap lg:min-h-11 lg:px-5 lg:py-3">
-            {action.label}
+            {m(action.label)}
           </span>
           <span className="grid min-h-10 w-10 shrink-0 place-items-center bg-white lg:min-h-11 lg:w-11">
             <ArrowUpRight className="size-5" aria-hidden="true" />
@@ -65,7 +68,7 @@ function HeroActionLink({ action }: { action: HeroAction }) {
         className="flex w-full items-center justify-between gap-4.5 tracking-normal no-underline hover:no-underline sm:inline-flex sm:w-auto sm:justify-start"
         href={action.href}
       >
-        {action.label}
+        {m(action.label)}
         <span className="grid size-4 place-items-center">
           <FileText className="size-4" aria-hidden="true" />
         </span>
@@ -75,6 +78,7 @@ function HeroActionLink({ action }: { action: HeroAction }) {
 }
 
 export function Hero({ content }: HeroProps) {
+  const m = useMessages();
   const image = content.hero.image;
 
   return (
@@ -82,7 +86,7 @@ export function Hero({ content }: HeroProps) {
       <div className="relative mx-auto flex w-full max-w-304 flex-col px-5 pt-9 pb-24 md:px-8 md:pb-32 lg:pb-40 xl:px-0 xl:pb-60">
         <div className="relative w-full">
           <Image
-            alt={image.alt ?? ""}
+            alt={m(image.alt)}
             className="block h-auto w-full"
             decoding="async"
             fetchPriority="high"
@@ -101,7 +105,7 @@ export function Hero({ content }: HeroProps) {
           <h1 className="font-heading max-w-241.5 text-[2rem] leading-[0.95] font-normal tracking-normal text-white md:text-[2.5rem] lg:text-5xl xl:text-[3.5rem]">
             <HighlightedProductTitle
               highlight={content.hero.highlightedTitle}
-              title={`${content.hero.highlightedTitle} ${content.hero.title}`}
+              title={`${content.hero.highlightedTitle} ${m(content.hero.title)}`}
             />
           </h1>
           <div className="mt-5 flex flex-col gap-7 border-t border-white/16 pt-5 lg:flex-row lg:items-start lg:justify-between lg:gap-10">
@@ -111,7 +115,7 @@ export function Hero({ content }: HeroProps) {
               ))}
             </div>
             <p className="text-grey-70 max-w-85 text-base/tight lg:mt-1 lg:justify-self-end lg:text-right">
-              {content.hero.description}
+              {m(content.hero.description)}
             </p>
           </div>
         </header>
@@ -122,15 +126,15 @@ export function Hero({ content }: HeroProps) {
         >
           <div className="max-w-304">
             <SectionKicker className="text-grey-40 mb-6">
-              {content.benefitsIntro.eyebrow}
+              {m(content.benefitsIntro.eyebrow)}
             </SectionKicker>
             <h2
               className="font-sans text-[1.75rem]/tight font-normal tracking-normal text-white md:text-[2rem] lg:text-[2.5rem] 2xl:text-[2.75rem]"
               id="product-benefits"
             >
-              {content.benefitsIntro.title}{" "}
+              {m(content.benefitsIntro.title)}{" "}
               <span className="text-grey-70">
-                {content.benefitsIntro.description}
+                {m(content.benefitsIntro.description)}
               </span>
             </h2>
           </div>
@@ -147,10 +151,10 @@ export function Hero({ content }: HeroProps) {
                 <div className="relative">
                   <BenefitIcon icon={icon} />
                   <h3 className="mt-12 text-lg/tight font-medium tracking-normal text-white md:mt-15 md:text-xl/tight lg:mt-18 lg:text-2xl/tight xl:text-[1.75rem]/tight 2xl:mt-29">
-                    {title}
+                    {m(title)}
                   </h3>
                   <p className="text-grey-70 mt-1.5 max-w-80 text-base tracking-normal text-pretty md:mt-2 md:max-w-100 md:text-lg/normal lg:mt-2.5 xl:mt-3 xl:text-xl/normal">
-                    {description}
+                    {m(description)}
                   </p>
                 </div>
               </article>

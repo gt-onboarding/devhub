@@ -10,6 +10,7 @@ import {
   type ReactNode,
   type SVGProps,
 } from "react";
+import { T, useGT } from "gt-next";
 import { Search as SearchIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -118,7 +119,7 @@ export function SearchDialogTriggerButton({
   className,
   iconClassName,
   kbdClassName,
-  placeholder = "Search...",
+  placeholder,
   ...props
 }: {
   ariaLabel: string;
@@ -127,6 +128,8 @@ export function SearchDialogTriggerButton({
   kbdClassName: string;
   placeholder?: string;
 } & ComponentProps<typeof Button>): ReactNode {
+  const gt = useGT();
+
   return (
     <Button
       className={className}
@@ -140,7 +143,9 @@ export function SearchDialogTriggerButton({
         aria-hidden="true"
         data-icon="inline-start"
       />
-      <span className="mr-auto min-w-0 truncate">{placeholder}</span>
+      <span className="mr-auto min-w-0 truncate">
+        {placeholder ?? gt("Search...")}
+      </span>
       <Kbd className={kbdClassName}>⌘K</Kbd>
     </Button>
   );
@@ -228,7 +233,7 @@ function SearchResultGroup({
 }
 
 export function SearchDialogContent({
-  emptyText = "No results found.",
+  emptyText,
   onOpenChange,
   onQueryChange,
   onSelect,
@@ -250,6 +255,8 @@ export function SearchDialogContent({
   suggestedHeading: string;
   title: string;
 }): ReactNode {
+  const gt = useGT();
+
   return (
     <DialogContent
       className="search-dialog border-grey-20 data-[state=closed]:slide-out-to-bottom-1/2 data-[state=closed]:zoom-out-100 data-[state=open]:slide-in-from-bottom-1/2 data-[state=open]:zoom-in-100 sm:data-[state=closed]:slide-out-to-bottom-1 sm:data-[state=closed]:zoom-out-95 sm:data-[state=open]:slide-in-from-bottom-1 sm:data-[state=open]:zoom-in-95 top-auto bottom-0 h-[75dvh] w-full max-w-[calc(100%-2rem)] translate-y-0 overflow-hidden rounded-none bg-black p-0 text-white shadow-none outline-none sm:top-[19dvh] sm:bottom-auto sm:h-auto sm:max-w-(--search-dialog-width)"
@@ -272,7 +279,7 @@ export function SearchDialogContent({
           <CommandInput
             value={query}
             onValueChange={onQueryChange}
-            placeholder="What are you searching for?"
+            placeholder={gt("What are you searching for?")}
           />
           <DialogClose asChild>
             <Button
@@ -280,7 +287,9 @@ export function SearchDialogContent({
               variant="outline"
               size="xs"
             >
-              <span className="sr-only">Close search dialog</span>
+              <T>
+                <span className="sr-only">Close search dialog</span>
+              </T>
               <span className="text-xs leading-none font-normal tracking-normal">
                 Esc
               </span>
@@ -294,7 +303,7 @@ export function SearchDialogContent({
           </h2>
           <CommandList className="max-h-[calc(75dvh-4rem)] overflow-y-auto px-5 py-6 sm:max-h-(--search-list-max-height)">
             <CommandEmpty className="text-grey-60 py-3 text-center text-base leading-tight font-normal tracking-normal">
-              {emptyText}
+              {emptyText ?? gt("No results found.")}
             </CommandEmpty>
             <div className="flex flex-col gap-y-6">
               {resultGroups.map((group, groupIndex) => (

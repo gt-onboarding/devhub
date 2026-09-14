@@ -9,6 +9,7 @@ import {
   type ReactNode,
 } from "react";
 import Link from "next/link";
+import { useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -106,8 +107,10 @@ function useActiveAnchor(
 export function TableOfContents({
   className,
   items,
-  title = "Table of contents",
+  title,
 }: TableOfContentsProps): ReactNode {
+  const gt = useGT();
+  const resolvedTitle = title ?? gt("Table of contents");
   const { activeAnchor, hasAnyHeadings, hasResolvedHeadings } =
     useActiveAnchor(items);
   const currentAnchor =
@@ -128,9 +131,12 @@ export function TableOfContents({
   }
 
   return (
-    <nav className={cn("table-of-contents", className)} aria-label={title}>
+    <nav
+      className={cn("table-of-contents", className)}
+      aria-label={resolvedTitle}
+    >
       <h2 className="text-grey-50 mb-6 font-mono text-xs/none font-medium tracking-normal uppercase">
-        {title}
+        {resolvedTitle}
       </h2>
 
       <ol className="mt-3.5 flex list-none flex-col gap-y-3.5 p-0">

@@ -1,6 +1,7 @@
 "use client";
 
 import type { ComponentProps } from "react";
+import { T } from "gt-next";
 import { Check } from "lucide-react";
 import { domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
@@ -29,13 +30,19 @@ const CONTENT_LINE_EASE = [0.16, 1, 0.3, 1] as const;
 const AGENT_BRICKS_PROGRESS_LINES = [
   {
     id: "selecting-llm",
-    content: <span>Selecting best-fit LLM</span>,
+    content: (
+      <T>
+        <span>Selecting best-fit LLM</span>
+      </T>
+    ),
   },
   {
     id: "loading-data",
     content: (
       <div className="flex flex-col gap-1 @md/infographic:gap-1.5">
-        <span>Loading data</span>
+        <T>
+          <span>Loading data</span>
+        </T>
         <span className="mt-1 flex flex-row gap-x-1.5 pl-7.5 text-black">
           <span className="relative top-1 inline-block size-1.25 bg-[#2272B4]" />
           Lakehouse <span className="text-black/80">(sales_fact_table)</span>
@@ -51,7 +58,9 @@ const AGENT_BRICKS_PROGRESS_LINES = [
     id: "running-tools",
     content: (
       <div className="flex flex-col gap-1 @md/infographic:gap-1.5">
-        <span>Running tools</span>
+        <T>
+          <span>Running tools</span>
+        </T>
         <span className="mt-1 flex flex-row gap-x-1.5 pl-7.5 text-black">
           <span className="relative top-1 inline-block size-1.25 bg-[#2272B4]" />
           Python analytics{" "}
@@ -62,7 +71,11 @@ const AGENT_BRICKS_PROGRESS_LINES = [
   },
   {
     id: "generating-output",
-    content: <span>Generating output</span>,
+    content: (
+      <T>
+        <span>Generating output</span>
+      </T>
+    ),
   },
 ] as const;
 
@@ -292,14 +305,16 @@ export function AgentBricksInfographic() {
                 </div>
               </div>
               <div className="flex items-center gap-x-1.25 pt-0.5 pr-1 text-[9px] tracking-[-0.02em] whitespace-nowrap text-black/70 @md/infographic:text-[11px]">
-                Today <span className="flex size-0.5 shrink-0 bg-black/40" />{" "}
-                11:56 AM
+                <T>Today</T>{" "}
+                <span className="flex size-0.5 shrink-0 bg-black/40" /> 11:56 AM
               </div>
             </div>
-            <p className="mt-1.5 max-w-sm text-[11px] leading-normal tracking-[-0.02em] text-black opacity-90 @md/infographic:mt-2.5 @md/infographic:max-w-sm @md/infographic:text-[13px]">
-              Analyze sales data and forecast based on trends, history, and
-              market indicators.
-            </p>
+            <T>
+              <p className="mt-1.5 max-w-sm text-[11px] leading-normal tracking-[-0.02em] text-black opacity-90 @md/infographic:mt-2.5 @md/infographic:max-w-sm @md/infographic:text-[13px]">
+                Analyze sales data and forecast based on trends, history, and
+                market indicators.
+              </p>
+            </T>
           </>
         </AgentBricksInfographicCard>
 
@@ -339,7 +354,7 @@ export function AgentBricksInfographic() {
                   loading="lazy"
                   decoding="async"
                 />
-                Secure
+                <T>Secure</T>
               </Badge>
             </div>
             <ul className="mt-2 flex flex-col gap-1 text-[11px] leading-tight tracking-[-0.02em] text-black/80 opacity-90 @md/infographic:mt-3.5 @md/infographic:gap-2.5 @md/infographic:text-[13px]">

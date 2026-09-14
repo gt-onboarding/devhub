@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { T, useGT } from "gt-next";
 import { Rss } from "lucide-react";
 
 import { useHistory, useLocation } from "@/lib/client-router";
@@ -32,6 +33,7 @@ export function SolutionItemsSection({
   rssHref,
   searchItems,
 }: SolutionItemsSectionProps): ReactNode {
+  const gt = useGT();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const { push, replace } = useHistory();
   const { pathname } = useLocation();
@@ -88,7 +90,7 @@ export function SolutionItemsSection({
       <div className="mb-10 flex flex-col gap-4 lg:h-8 lg:flex-row lg:items-center lg:justify-between">
         <div className="order-2 min-w-0 lg:order-0 lg:flex-1">
           <h2 className="sr-only" id="solution-items-heading">
-            Solutions
+            <T>Solutions</T>
           </h2>
           <SolutionFilters
             categories={categories}
@@ -102,7 +104,9 @@ export function SolutionItemsSection({
             className="focus-visible:outline-db-cyan hidden items-center gap-1.25 rounded-sm pr-2 text-sm leading-none font-medium tracking-normal text-white no-underline transition-colors hover:text-white/80 hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-4 lg:inline-flex"
             href={rssHref}
             type="application/rss+xml"
-            aria-label="Subscribe to the Databricks Developer Solutions RSS feed"
+            aria-label={gt(
+              "Subscribe to the Databricks Developer Solutions RSS feed",
+            )}
           >
             <Rss className="size-5" aria-hidden="true" />
             RSS

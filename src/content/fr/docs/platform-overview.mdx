@@ -1,0 +1,34 @@
+---
+title: Vue d'ensemble de la plateforme
+description: Comment Databricks Apps, AppKit, Lakebase et Agent Bricks s'articulent entre eux. Référence d'architecture de la pile de développement Databricks.
+sourceOfTruth:
+  skills:
+    - databricks-core
+    - databricks-apps
+  docs:
+    - /docs/appkit/v0
+    - https://docs.databricks.com/aws/en/getting-started/architecture
+---
+
+# Vue d&#39;ensemble de la plateforme \{#platform-overview\}
+
+Databricks Apps, Lakebase Postgres, Agent Bricks et le Data Lakehouse sont les quatre services de workspace essentiels qui composent une application Databricks full-stack. Le schéma ci-dessous montre comment ils s&#39;articulent.
+
+![Schéma d'architecture du workspace Databricks : Databricks Apps contient AppKit, dont les plugins Lakebase, Model Serving et Analytics se connectent à Lakebase, Agent Bricks et au Data Lakehouse, services voisins au sein du workspace ; une quatrième colonne liste des plugins AppKit supplémentaires (Server, Genie, Files, Jobs, Vector Search et plugins personnalisés)](/img/docs/platform-overview.svg)
+
+* **[Databricks Apps](/fr/docs/apps/overview)** : hébergement managé pour les applications que vous développez avec [AppKit](/fr/docs/appkit/v0), le SDK TypeScript dédié aux applications Databricks prêtes pour la production.
+* **[Lakebase Postgres](/fr/docs/lakebase/overview)** : base de données Postgres managée pour le stockage OLTP, colocalisée avec les données de votre workspace. Utilisez-la pour les sessions, l&#39;état de l&#39;application, l&#39;historique des conversations ou toute donnée que votre application lit et écrit avec une faible latence.
+* **[Agent Bricks](/fr/docs/agents/overview)** : la plateforme d&#39;agents d&#39;entreprise de Databricks, qui unifie l&#39;accès aux modèles, l&#39;exécution, la gouvernance et le contexte. Utilisez-la pour les fonctionnalités d&#39;IA de votre application : dialoguer avec la documentation de votre entreprise (Knowledge Assistants), interroger vos données en langage naturel (Genie), appeler des modèles de fondation ou exécuter des agents Python personnalisés.
+* **[Data Lakehouse](/fr/docs/lakehouse/overview)** : données analytiques gouvernées dans Unity Catalog. Utilisez-le pour lire les données de l&#39;entreprise, déclencher des Lakeflow Jobs et afficher la fraîcheur des données dans votre interface.
+
+## Parcours d&#39;une requête \{#how-a-request-flows\}
+
+1. Un utilisateur ouvre l&#39;application via son URL de workspace. Databricks Apps l&#39;authentifie grâce au SSO du workspace.
+2. Chaque plugin AppKit traite ensuite les requêtes destinées à son service : le plugin Lakebase interroge Lakebase, le plugin Model Serving appelle Agent Bricks, l&#39;Analytics Plugin lit le Data Lakehouse.
+3. Chaque appel de plugin s&#39;exécute sous l&#39;identité du service principal de l&#39;application (par défaut) ou avec le jeton transmis de l&#39;utilisateur (lorsque les permissions propres à chaque utilisateur importent). Les permissions et la gouvernance du workspace s&#39;appliquent automatiquement.
+
+## Et ensuite ? \{#where-to-next\}
+
+* [Configurez votre environnement](/fr/docs/tools/databricks-cli) pour commencer à développer des applications.
+* Découvrez ce que sont les [modèles](/fr/docs/templates) et comment ils permettent de générer rapidement la structure d&#39;une application.
+* Approfondissez chaque service : [Databricks Apps](/fr/docs/apps/overview), [Lakebase Postgres](/fr/docs/lakebase/overview), [Agent Bricks](/fr/docs/agents/overview) et le [Data Lakehouse](/fr/docs/lakehouse/overview).

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useGT, useMessages } from "gt-next";
 
 import type { ProductPageContent } from "@/lib/products/product-page";
 import { cn } from "@/lib/utils";
@@ -82,6 +83,8 @@ function TestimonialCard({
   staticDesktopLayout: boolean;
   testimonial: ProductTestimonial;
 }) {
+  const gt = useGT();
+  const m = useMessages();
   const logo = getTestimonialLogoAsset(testimonial.company);
 
   return (
@@ -94,7 +97,7 @@ function TestimonialCard({
       )}
     >
       <Image
-        alt={`${testimonial.company} logo`}
+        alt={gt("{company} logo", { company: testimonial.company })}
         className={cn(
           "h-7 max-w-full self-start object-contain object-left brightness-0 invert md:h-8 lg:h-9 xl:h-12",
           staticDesktopLayout && "xl:h-10",
@@ -111,7 +114,7 @@ function TestimonialCard({
             staticDesktopLayout && "xl:mt-12 xl:text-lg",
           )}
         >
-          "{testimonial.quote}"
+          "{m(testimonial.quote)}"
         </blockquote>
         <p
           className={cn(
@@ -121,7 +124,7 @@ function TestimonialCard({
         >
           <span className="text-white">{testimonial.attributionName}</span>
           {testimonial.attributionTitle
-            ? `, ${testimonial.attributionTitle}`
+            ? `, ${m(testimonial.attributionTitle)}`
             : ""}
         </p>
       </div>
@@ -130,6 +133,8 @@ function TestimonialCard({
 }
 
 export function TestimonialsSlider({ content }: TestimonialsSliderProps) {
+  const gt = useGT();
+  const m = useMessages();
   const slider = useScrollSlider({ itemCount: content.testimonials.length });
   const { activeIndex, currentIndex, lastIndex } = slider;
   const staticDesktopLayout = content.testimonials.length <= 3;
@@ -142,12 +147,12 @@ export function TestimonialsSlider({ content }: TestimonialsSliderProps) {
     <section className="bg-db-navy overflow-hidden pb-18 text-white md:pb-20">
       <div className="mx-auto w-full max-w-304 px-5 md:px-8 xl:px-0">
         <SectionKicker className="text-grey-70">
-          {content.testimonialsIntro.eyebrow}
+          {m(content.testimonialsIntro.eyebrow)}
         </SectionKicker>
         <h2 className="mt-6 max-w-304 font-sans text-4xl leading-tight font-normal tracking-normal text-balance md:text-[2.5rem] lg:text-[2.75rem]">
-          {content.testimonialsIntro.titleLead}{" "}
+          {m(content.testimonialsIntro.titleLead)}{" "}
           <span className="text-white/60">
-            {content.testimonialsIntro.titleMuted}
+            {m(content.testimonialsIntro.titleMuted)}
           </span>
         </h2>
 
@@ -181,7 +186,7 @@ export function TestimonialsSlider({ content }: TestimonialsSliderProps) {
               type="button"
               onClick={() => slider.scrollToIndex(currentIndex - 1)}
               disabled={currentIndex === 0}
-              aria-label="Previous testimonial"
+              aria-label={gt("Previous testimonial")}
             >
               <SliderArrowIcon className="size-6 rotate-180" />
             </Button>
@@ -197,7 +202,7 @@ export function TestimonialsSlider({ content }: TestimonialsSliderProps) {
               type="button"
               onClick={() => slider.scrollToIndex(currentIndex + 1)}
               disabled={currentIndex === lastIndex}
-              aria-label="Next testimonial"
+              aria-label={gt("Next testimonial")}
             >
               <SliderArrowIcon className="size-6" />
             </Button>

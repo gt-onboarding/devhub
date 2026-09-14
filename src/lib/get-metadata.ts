@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getDefaultLocale, getLocales } from "gt-next";
 
 import { resolveSiteUrl } from "@/lib/site-url";
 
@@ -10,6 +11,8 @@ type OpenGraphKind = "article" | "website";
 type MetadataOptions = {
   description: string;
   imagePath?: string;
+  /** Current request locale. Non-default locales prefix canonical/OG URLs with `/{locale}`. */
+  locale?: string;
   markdownPath?: string;
   noIndex?: boolean;
   pathname: string;
@@ -29,9 +32,41 @@ export function absoluteSiteUrl(pathOrUrl: string): string {
   return `${siteUrl}${path === "/" ? "" : path}`;
 }
 
+/** Matches the proxy's `prefixDefaultLocale: false` routing: only non-default locales get a URL prefix. */
+function localizedPathname(
+  pathname: string,
+  locale: string,
+  defaultLocale: string,
+): string {
+  if (locale === defaultLocale) {
+    return pathname;
+  }
+  return `/${locale}${pathname === "/" ? "" : pathname}`;
+}
+
+function buildLanguageAlternates(
+  pathname: string,
+  defaultLocale: string,
+): Record<string, string> {
+  const otherLocales = getLocales().filter(
+    (locale) => locale !== defaultLocale,
+  );
+  return {
+    [defaultLocale]: absoluteSiteUrl(pathname),
+    ...Object.fromEntries(
+      otherLocales.map((locale) => [
+        locale,
+        absoluteSiteUrl(localizedPathname(pathname, locale, defaultLocale)),
+      ]),
+    ),
+    "x-default": absoluteSiteUrl(pathname),
+  };
+}
+
 export function getMetadata({
   description,
   imagePath = DEFAULT_SOCIAL_IMAGE,
+  locale = "en",
   markdownPath,
   noIndex = false,
   pathname,
@@ -40,7 +75,10 @@ export function getMetadata({
   titleMode = "template",
   type = "website",
 }: MetadataOptions): Metadata {
-  const canonicalUrl = absoluteSiteUrl(pathname);
+  const defaultLocale = getDefaultLocale();
+  const canonicalUrl = absoluteSiteUrl(
+    localizedPathname(pathname, locale, defaultLocale),
+  );
   const imageUrl = absoluteSiteUrl(imagePath);
 
   // Next's title `template` only applies to the document <title>, not to
@@ -81,6 +119,7 @@ export function getMetadata({
     description,
     alternates: {
       canonical: canonicalUrl,
+      languages: buildLanguageAlternates(pathname, defaultLocale),
       types:
         Object.keys(alternateTypes).length > 0 ? alternateTypes : undefined,
     },

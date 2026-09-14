@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { T, useGT } from "gt-next";
 
 import { matchesTemplateFilter, type Service } from "@/lib/recipes/recipes";
 import { cn } from "@/lib/utils";
@@ -27,6 +28,7 @@ export function TemplateItemsSection({
   items,
   replitTemplateIds,
 }: TemplateItemsSectionProps): ReactNode {
+  const gt = useGT();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedServices, setSelectedServices] = useState<Set<Service>>(
     new Set(),
@@ -143,7 +145,9 @@ export function TemplateItemsSection({
         id="templates-list"
         ref={templatesListRef}
       >
-        <h2 className="sr-only">Templates</h2>
+        <h2 className="sr-only">
+          <T>Templates</T>
+        </h2>
         <div className="mx-auto grid w-full max-w-400 gap-12 px-5 md:px-8 lg:grid-cols-[16rem_minmax(0,1fr)] xl:gap-x-20 2xl:gap-32">
           <aside className="hidden lg:block">
             <div className="sticky top-24 flex flex-col gap-y-8">
@@ -175,7 +179,7 @@ export function TemplateItemsSection({
                   <Button
                     className="hover:bg-grey-90 size-10 rounded-none border border-[#C7C9D1] bg-transparent p-0 text-[#000]"
                     onClick={() => setMobileFiltersOpen(true)}
-                    aria-label="Open filters"
+                    aria-label={gt("Open filters")}
                   >
                     <svg
                       width="12"
@@ -224,7 +228,7 @@ export function TemplateItemsSection({
                         variant="ghost"
                         onClick={handleClearSelectedFilters}
                       >
-                        Clear all
+                        <T>Clear all</T>
                         <svg
                           width="12"
                           height="12"
@@ -263,7 +267,9 @@ export function TemplateItemsSection({
                             {service}
                             <button
                               onClick={() => handleToggleService(service)}
-                              aria-label={`Remove ${service} filter`}
+                              aria-label={gt("Remove {service} filter", {
+                                service,
+                              })}
                               className="flex items-center"
                             >
                               <svg
@@ -290,7 +296,7 @@ export function TemplateItemsSection({
                             Replit
                             <button
                               onClick={handleToggleReplitOnly}
-                              aria-label="Remove Replit filter"
+                              aria-label={gt("Remove Replit filter")}
                               className="flex items-center"
                             >
                               <svg
@@ -354,12 +360,12 @@ export function TemplateItemsSection({
         >
           <div className="flex shrink-0 items-center justify-between px-6 pt-6 pb-8">
             <SheetTitle className="text-foreground text-lg font-medium md:text-xl">
-              Choose Filters
+              <T>Choose Filters</T>
             </SheetTitle>
             <button
               onClick={() => setMobileFiltersOpen(false)}
               className="flex items-center justify-center text-black opacity-70 hover:opacity-100 focus:outline-none"
-              aria-label="Close filters"
+              aria-label={gt("Close filters")}
             >
               <svg
                 width="16"
@@ -406,13 +412,13 @@ export function TemplateItemsSection({
                 className="h-10 flex-1 rounded-none border-black bg-transparent font-mono text-sm font-medium text-black uppercase hover:bg-black/5 hover:text-black"
                 onClick={handleClearSelectedFilters}
               >
-                Clear all
+                <T>Clear all</T>
               </Button>
               <Button
                 className="h-10 flex-1 rounded-none bg-[#FF5F46] font-mono text-sm font-medium text-black uppercase hover:bg-[#FF5F46]/90"
                 onClick={() => setMobileFiltersOpen(false)}
               >
-                Apply filters ({selectedFilterCount})
+                {gt("Apply filters ({count})", { count: selectedFilterCount })}
               </Button>
             </div>
           )}
@@ -430,10 +436,10 @@ function TemplateEmptyState({
   return (
     <div className="mx-auto flex h-full w-full max-w-77.5 flex-col items-center justify-center text-center">
       <h3 className="text-xl/normal font-normal tracking-[-0.04em] text-black">
-        No templates match your filters.
+        <T>No templates match your filters.</T>
       </h3>
       <p className="mt-2 text-base tracking-[-0.04em] text-black/30">
-        Browse by category above, or try a different search term.
+        <T>Browse by category above, or try a different search term.</T>
       </p>
       <Button
         className="mt-8 rounded-none font-mono text-base font-medium tracking-tight uppercase"
@@ -441,7 +447,7 @@ function TemplateEmptyState({
         size="xl"
         onClick={onClearAll}
       >
-        Clear filters
+        <T>Clear filters</T>
       </Button>
     </div>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useGT } from "gt-next";
 
 function CodeCopyIcon() {
   return (
@@ -46,11 +47,12 @@ function CodeWordWrapIcon() {
 }
 
 function CodeCopyButton({ text }: { text: string }) {
+  const gt = useGT();
   const [copied, setCopied] = useState(false);
 
   return (
     <button
-      aria-label={copied ? "Copied code" : "Copy code to clipboard"}
+      aria-label={copied ? gt("Copied code") : gt("Copy code to clipboard")}
       className="clean-btn"
       onClick={() => {
         void navigator.clipboard.writeText(text).then(() => {
@@ -58,7 +60,11 @@ function CodeCopyButton({ text }: { text: string }) {
           window.setTimeout(() => setCopied(false), 1200);
         });
       }}
-      title={copied ? "Copied" : "Copy"}
+      title={
+        copied
+          ? gt("Copied", { $context: "code was copied to the clipboard" })
+          : gt("Copy", { $context: "button that copies code" })
+      }
       type="button"
     >
       <span className="copyButtonIcons">
@@ -69,11 +75,12 @@ function CodeCopyButton({ text }: { text: string }) {
 }
 
 function CodeWordWrapButton() {
+  const gt = useGT();
   const [wrapped, setWrapped] = useState(false);
 
   return (
     <button
-      aria-label="Toggle word wrap"
+      aria-label={gt("Toggle word wrap")}
       aria-pressed={wrapped}
       className="clean-btn"
       onClick={(event) => {
@@ -83,7 +90,7 @@ function CodeWordWrapButton() {
           ?.classList.toggle("code-block--word-wrap", nextWrapped);
         setWrapped(nextWrapped);
       }}
-      title="Toggle word wrap"
+      title={gt("Toggle word wrap")}
       type="button"
     >
       <CodeWordWrapIcon />

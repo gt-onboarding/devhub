@@ -1,3 +1,5 @@
+import { T, useGT } from "gt-next";
+
 import { SERVICES, type Service } from "@/lib/recipes/recipes";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -64,13 +66,14 @@ export function TemplateFilters({
   onClearFilters: () => void;
   hideFilterMeta?: boolean;
 }) {
-  const selectedFilterLabel =
-    selectedFilterCount === 1
-      ? "1 FILTER selected"
-      : `${selectedFilterCount} FILTERS selected`;
+  const gt = useGT();
+  const selectedFilterLabel = gt(
+    "{count, plural, =1 {1 FILTER selected} other {# FILTERS selected}}",
+    { count: selectedFilterCount },
+  );
 
   return (
-    <nav className="flex flex-col" aria-label="Filters">
+    <nav className="flex flex-col" aria-label={gt("Filters")}>
       {!hideFilterMeta && selectedFilterCount > 0 ? (
         <div className="mb-5 flex flex-col gap-5">
           <div className="flex items-start justify-between gap-4">
@@ -83,7 +86,7 @@ export function TemplateFilters({
               variant="ghost"
               onClick={onClearFilters}
             >
-              Clear all
+              <T>Clear all</T>
               <svg
                 width="12"
                 height="12"
@@ -105,7 +108,7 @@ export function TemplateFilters({
           <div className="bg-grey-80 h-px w-full" aria-hidden="true" />
         </div>
       ) : null}
-      <TemplateFiltersTitle title="Services" />
+      <TemplateFiltersTitle title={gt("Services")} />
       {SERVICES.map((service) => (
         <label
           className="mb-1 flex min-h-9 cursor-pointer items-center gap-2.5 text-base/snug text-black transition-colors hover:text-black"
@@ -121,7 +124,7 @@ export function TemplateFilters({
           <span>{service}</span>
         </label>
       ))}
-      <TemplateFiltersTitle className="mt-7" title="Build with" />
+      <TemplateFiltersTitle className="mt-7" title={gt("Build with")} />
       <label className="flex min-h-9 cursor-pointer items-center gap-2.5 text-base/snug text-black transition-colors hover:text-black">
         <Checkbox
           className={templateFilterCheckboxClassName}

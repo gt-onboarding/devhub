@@ -1,0 +1,34 @@
+---
+title: プラットフォーム概要
+description: Databricks Apps、AppKit、Lakebase、Agent Bricks はどのように連携するのか。Databricks 開発者スタックのアーキテクチャリファレンス。
+sourceOfTruth:
+  skills:
+    - databricks-core
+    - databricks-apps
+  docs:
+    - /docs/appkit/v0
+    - https://docs.databricks.com/aws/en/getting-started/architecture
+---
+
+# プラットフォーム概要 \{#platform-overview\}
+
+Databricks Apps、Lakebase Postgres、Agent Bricks、Data Lakehouse は、フルスタックの Databricks アプリケーションを構成する 4 つの中核ワークスペースサービスです。以下の図は、これらがどのように組み合わさるかを示しています。
+
+![Databricks ワークスペースのアーキテクチャ図: Databricks Apps に AppKit が含まれ、その Lakebase、Model Serving、Analytics プラグインが、ワークスペース内の同階層のサービスである Lakebase、Agent Bricks、Data Lakehouse に接続する。4 列目には追加の AppKit プラグイン (Server、Genie、Files、Jobs、Vector Search、カスタムプラグイン) が並ぶ](/img/docs/platform-overview.svg)
+
+* **[Databricks Apps](/ja/docs/apps/overview)**: 本番運用に耐える Databricks アプリケーションのための TypeScript SDK である [AppKit](/ja/docs/appkit/v0) で構築したアプリを、マネージドでホスティングします。
+* **[Lakebase Postgres](/ja/docs/lakebase/overview)**: ワークスペースのデータと同じ場所に配置される、OLTP ストレージ向けのマネージド Postgres データベースです。セッション、アプリの状態、会話履歴など、アプリが低レイテンシーで読み書きするあらゆるデータに利用できます。
+* **[Agent Bricks](/ja/docs/agents/overview)**: モデルへのアクセス、実行、ガバナンス、コンテキストを統合した Databricks のエンタープライズエージェントプラットフォームです。社内ドキュメントとの対話 (Knowledge Assistant)、自然言語でのデータ照会 (Genie)、基盤モデルの呼び出し、カスタム Python エージェントなど、アプリの AI 機能に利用します。
+* **[Data Lakehouse](/ja/docs/lakehouse/overview)**: Unity Catalog で統制された分析データです。社内データの読み取り、Lakeflow Jobs の起動、UI でのデータ鮮度の表示に利用します。
+
+## リクエストの流れ \{#how-a-request-flows\}
+
+1. ユーザーがワークスペース URL でアプリを開きます。Databricks Apps がワークスペース SSO でユーザーを認証します。
+2. 続いて、各 AppKit プラグインが担当サービスへのリクエストを処理します。Lakebase Plugin は Lakebase にクエリを実行し、Model Serving Plugin は Agent Bricks を呼び出し、Analytics プラグインは Data Lakehouse を読み取ります。
+3. 各プラグインの呼び出しは、アプリのサービスプリンシパル (既定) 、またはユーザーの転送トークン (ユーザーごとの権限が必要な場合) として実行されます。ワークスペースの権限とガバナンスは自動的に適用されます。
+
+## 次のステップ \{#where-to-next\}
+
+* アプリ開発を始めるには、[環境をセットアップ](/ja/docs/tools/databricks-cli)しましょう。
+* [テンプレート](/ja/docs/templates)とは何か、アプリのスキャフォールドを素早く行う上でどう役立つのかを学びましょう。
+* 各サービスをさらに詳しく見る: [Databricks Apps](/ja/docs/apps/overview)、[Lakebase Postgres](/ja/docs/lakebase/overview)、[Agent Bricks](/ja/docs/agents/overview)、[Data Lakehouse](/ja/docs/lakehouse/overview)。

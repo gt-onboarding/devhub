@@ -1,6 +1,7 @@
 import type { CSSProperties, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useMessages } from "gt-next";
 
 import {
   getSolutionItemHref,
@@ -40,8 +41,8 @@ export function SolutionArrowIcon({
   );
 }
 
-export function formatSolutionDate(date: string): string {
-  return new Date(`${date}T00:00:00Z`).toLocaleDateString("en-US", {
+export function formatSolutionDate(date: string, locale = "en"): string {
+  return new Date(`${date}T00:00:00Z`).toLocaleDateString(locale, {
     year: "numeric",
     month: "short",
     day: "numeric",
@@ -98,6 +99,7 @@ export function SolutionItemVisual({
   preload?: boolean;
   loading?: "eager" | "lazy";
 }): ReactNode {
+  const m = useMessages();
   const shouldPreload = preload || variant === "featured";
 
   if (item.previewImage) {
@@ -109,7 +111,7 @@ export function SolutionItemVisual({
             "transition-transform duration-300 group-hover:scale-102",
         )}
         src={item.previewImage}
-        alt={item.previewImageAlt ?? ""}
+        alt={item.previewImageAlt ? m(item.previewImageAlt) : ""}
         fill
         sizes={width ? `${width}px` : "100vw"}
         loading={shouldPreload ? "eager" : loading}

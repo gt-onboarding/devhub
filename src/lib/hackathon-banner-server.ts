@@ -18,7 +18,7 @@
  * the app environment at build time.
  */
 
-type HackathonBannerEnv = {
+export type HackathonBannerEnv = {
   HACKATHON_BANNER_ENABLED?: string;
   HACKATHON_BANNER_TEXT?: string;
   HACKATHON_EVENT_SLUG?: string;
@@ -36,21 +36,29 @@ export function resolveHackathonBannerActive(env: HackathonBannerEnv): boolean {
   return env.HACKATHON_BANNER_ENABLED === "true";
 }
 
-const DEFAULT_BANNER_LEAD_TEXT = "Databricks Developer Hackathon is live.";
+type HackathonBannerCopy = {
+  defaultLeadText: string;
+  linkText: string;
+};
 
-function bannerLinkHtml(slug: string): string {
+// English fallbacks; the banner component passes locale-aware copy instead.
+const DEFAULT_BANNER_COPY: HackathonBannerCopy = {
+  defaultLeadText: "Databricks Developer Hackathon is live.",
+  linkText: "See resources",
+};
+
+function bannerLinkHtml(slug: string, linkText: string): string {
   const target = slug ? `/hackathon/${slug}` : "/hackathon";
-  return `<a href="${target}"><span class="banner-link-text">See resources</span></a>`;
+  return `<a href="${target}"><span class="banner-link-text">${linkText}</span></a>`;
 }
 
 export function getHackathonBannerConfig(
   env: HackathonBannerEnv = process.env as HackathonBannerEnv,
+  copy: HackathonBannerCopy = DEFAULT_BANNER_COPY,
 ): HackathonBannerConfig | undefined {
   if (!resolveHackathonBannerActive(env)) return undefined;
   const slug = (env.HACKATHON_EVENT_SLUG ?? "").trim();
-  const leadText = (
-    env.HACKATHON_BANNER_TEXT ?? DEFAULT_BANNER_LEAD_TEXT
-  ).trim();
+  const leadText = (env.HACKATHON_BANNER_TEXT ?? copy.defaultLeadText).trim();
   return {
     // Non-dismissible by design: the banner is the only on-site entry point to
     // the event during its window, so we don't want visitors to close it and
@@ -60,7 +68,7 @@ export function getHackathonBannerConfig(
     // HACKATHON_BANNER_TEXT overrides only the lead-in copy; the "See
     // resources" link is always appended so visitors can never end up on a
     // banner with no way to reach the event.
-    content: `<span class="banner-lead-text">${leadText}</span>${bannerLinkHtml(slug)}`,
+    content: `<span class="banner-lead-text">${leadText}</span>${bannerLinkHtml(slug, copy.linkText)}`,
     backgroundColor: "#FF5F46",
     textColor: "#040406",
     isCloseable: false,

@@ -13,12 +13,15 @@
     "src/lib/content-tabs-state.ts",
     "src/lib/mdx-plugins/**",
     "src/lib/products/**",
-    "src/app/(website)/product/**",
+    "src/app/[locale]/(website)/product/**",
     "public/raw-docs/**",
     "public/appkit-preview/**",
     "public/js/home-hero-player.js",
     "scripts/render-resource-image.mjs",
-    "scripts/serve-mcp.ts"
+    "scripts/serve-mcp.ts",
+    "src/getLocale.ts",
+    "src/getRegion.ts",
+    "src/loadTranslations.ts"
   ],
   "ignoreDependencies": [
     "@base-ui/react",
@@ -58,8 +61,8 @@
       "exports": ["GET", "POST", "DELETE"]
     },
     {
-      "file": "src/app/not-found.tsx",
-      "exports": ["metadata"]
+      "file": "src/app/**/not-found.tsx",
+      "exports": ["generateMetadata"]
     },
     {
       "file": "src/lib/content-markdown.ts",

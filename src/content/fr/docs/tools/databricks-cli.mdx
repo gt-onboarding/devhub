@@ -1,0 +1,96 @@
+---
+title: Databricks CLI
+sourceOfTruth:
+  skills:
+    - databricks-core
+  docs:
+    - https://docs.databricks.com/aws/en/dev-tools/cli/
+---
+
+# Databricks CLI \{#databricks-cli\}
+
+La Databricks CLI (interface en ligne de commande) vous permet d&#39;interagir avec la plateforme Databricks depuis votre terminal local ou via un agent de codage. L&#39;installation et l&#39;authentification de la CLI sont indispensables pour développer des applications sur Databricks et pour exécuter les [modèles](/fr/templates) de ce site.
+
+Cette page couvre l&#39;installation et l&#39;authentification. Pour la référence complète des commandes, consultez la [documentation officielle de la CLI](https://docs.databricks.com/aws/en/dev-tools/cli/).
+
+## Installer ou mettre à niveau \{#install-or-upgrade\}
+
+Depuis votre terminal, exécutez les commandes suivantes pour installer ou mettre à niveau la CLI :
+
+<Tabs groupId="os">
+  <TabItem value="mac-linux" label="macOS / Linux">
+    ```bash
+    brew tap databricks/tap
+    brew install databricks
+
+    brew update && brew upgrade databricks
+    ```
+  </TabItem>
+
+  <TabItem value="windows" label="Windows">
+    ```bash
+    winget install Databricks.DatabricksCLI
+
+    winget upgrade Databricks.DatabricksCLI
+    ```
+  </TabItem>
+
+  <TabItem value="curl" label="curl (toutes plateformes)">
+    ```bash
+    curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+    ```
+
+    Sous Windows, utilisez WSL. Si `/usr/local/bin` n&#39;est pas accessible en écriture, relancez la commande avec `sudo`. Réexécuter le script met également à niveau une installation existante.
+  </TabItem>
+</Tabs>
+
+:::note
+Tous les modèles DevHub partent du principe que la Databricks CLI est en version `1.0.0+`.
+:::
+
+## Authentification \{#authenticate\}
+
+Pour développer des applications sur Databricks, vous devez vous authentifier via la CLI. Celle-ci peut ainsi interagir avec votre workspace Databricks et effectuer des actions en votre nom.
+
+Pour vous authentifier, exécutez la commande suivante :
+
+```bash
+databricks auth login
+```
+
+Un nom de profil vous est alors demandé (`DEFAULT` par défaut), puis un navigateur s&#39;ouvre pour vous permettre de vous connecter et de choisir un workspace.
+
+Une fois l&#39;authentification effectuée, les identifiants sont enregistrés dans `~/.databrickscfg`.
+
+Pour vous authentifier auprès d&#39;un workspace précis ou pour nommer le profil, utilisez les options `--host` et `--profile` :
+
+```bash
+databricks auth login --host <workspace-url> --profile <PROFILE>
+```
+
+Si vous disposez de plusieurs profils authentifiés, vous pouvez ajouter `--profile <PROFILE>` aux commandes suivantes pour cibler un profil précis.
+
+Pour afficher la liste de tous les profils enregistrés, exécutez la commande suivante :
+
+```bash
+databricks auth profiles
+```
+
+Exemple de sortie :
+
+```text
+Name              Host                                             Valid
+DEFAULT           https://adb-1234567890.12.azuredatabricks.net    YES
+my-prod-workspace https://mycompany.cloud.databricks.com           YES
+```
+
+* **Name** est le libellé du profil.
+* **Host** est l&#39;URL du workspace.
+* **Valid** indique le résultat d&#39;une vérification d&#39;authentification effectuée en temps réel auprès du workspace. `NO` signifie que la vérification a échoué ; relancez `databricks auth login --profile <NAME>` pour vous authentifier à nouveau.
+
+Pour la CI/CD, utilisez les identifiants client OAuth ou l&#39;authentification par jeton (sans étape dans le navigateur). Consultez [Authentification CLI](https://docs.databricks.com/aws/en/dev-tools/cli/authentication).
+
+## Pour aller plus loin \{#where-to-next\}
+
+* [Installez les agent skills](/fr/docs/tools/ai-tools/agent-skills) pour doter les assistants de codage IA d&#39;une connaissance de la plateforme Databricks.
+* Configurez le [Docs MCP Server de DevHub](/fr/docs/tools/ai-tools/docs-mcp-server) pour donner aux assistants de codage IA l&#39;accès à la documentation DevHub.

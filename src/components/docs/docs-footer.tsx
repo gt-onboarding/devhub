@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { T } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -52,7 +53,7 @@ export function DocsFooter({
             {previous ? (
               <p className="flex flex-col gap-y-3">
                 <span className="relative z-10 inline-flex text-[0.8125rem]/none whitespace-nowrap text-[#A1A1AA]">
-                  Previous
+                  <T>Previous</T>
                 </span>
                 <DocsFooterLink
                   className="text-orange hover:text-db-lava text-sm leading-none no-underline hover:no-underline"
@@ -67,7 +68,7 @@ export function DocsFooter({
             {next ? (
               <p className="ml-auto flex flex-col items-end gap-y-3 text-right">
                 <span className="relative z-10 inline-flex text-[0.8125rem]/none whitespace-nowrap text-[#A1A1AA]">
-                  Next
+                  <T>Next</T>
                 </span>
                 <DocsFooterLink
                   className="text-orange hover:text-db-lava text-sm leading-none no-underline hover:no-underline"

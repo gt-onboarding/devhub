@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { track } from "@vercel/analytics";
+import { Branch, T, useGT } from "gt-next";
 import { Check, LoaderCircle } from "lucide-react";
 
 import { getBootstrapPromptApiPath } from "@/lib/bootstrap-prompt";
@@ -18,6 +19,7 @@ interface HeroProps {
 }
 
 function HeroCopyPromptButton() {
+  const gt = useGT();
   const apiPath = getBootstrapPromptApiPath();
   const [copyState, setCopyState] = useState<"idle" | "copying" | "copied">(
     "idle",
@@ -46,11 +48,15 @@ function HeroCopyPromptButton() {
       className="h-10 gap-x-4.5 font-mono text-base leading-none tracking-tight text-black uppercase shadow-none lg:h-11"
       onClick={handleCopy}
       disabled={copyState === "copying"}
-      title="Copy agent prompt"
+      title={gt("Copy agent prompt")}
       size="xl"
       variant="orange"
     >
-      {copyState === "copied" ? "Copied" : "Copy agent prompt"}
+      <T>
+        <Branch branch={copyState} copied="Copied">
+          Copy agent prompt
+        </Branch>
+      </T>
       {copyState === "copying" ? (
         <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />
       ) : copyState === "copied" ? (
@@ -62,7 +68,7 @@ function HeroCopyPromptButton() {
   );
 }
 
-function HeroTitleHighlight({ children }: { children: string }) {
+function HeroTitleHighlight({ children }: { children: ReactNode }) {
   return (
     <span className="text-db-lava relative inline-block md:whitespace-nowrap">
       <span
@@ -106,18 +112,22 @@ function Hero({ className }: HeroProps) {
         <header className="pointer-events-none relative z-10 flex flex-col justify-end">
           <div className="pointer-events-auto mx-auto grid w-full max-w-400 grid-cols-1 px-5 md:px-8 xl:grid-cols-[1fr_auto] xl:items-end xl:gap-7">
             <h1 className="font-heading max-w-md pb-1 text-4xl/none tracking-normal text-white md:max-w-4xl md:text-5xl/none lg:text-[4rem]/none 2xl:text-7xl/none">
-              <span className="relative z-10">Build </span>
-              <HeroTitleHighlight>agentic applications</HeroTitleHighlight>
-              <br />
-              <span className="relative z-10">
-                in&nbsp;minutes, not months.
-              </span>
+              <T>
+                <span className="relative z-10">Build </span>
+                <HeroTitleHighlight>agentic applications</HeroTitleHighlight>
+                <br />
+                <span className="relative z-10">
+                  in&nbsp;minutes, not months.
+                </span>
+              </T>
             </h1>
-            <p className="text-grey-80 order-last mt-4 max-w-sm text-base/tight tracking-normal xl:order-0 xl:row-span-2 xl:mt-0">
-              Copy the prompt into Cursor, Claude Code, Codex, or any coding
-              agent — it will walk you through building a complete app, step by
-              step.
-            </p>
+            <T>
+              <p className="text-grey-80 order-last mt-4 max-w-sm text-base/tight tracking-normal xl:order-0 xl:row-span-2 xl:mt-0">
+                Copy the prompt into Cursor, Claude Code, Codex, or any coding
+                agent — it will walk you through building a complete app, step
+                by step.
+              </p>
+            </T>
             <div className="mt-4.5 flex flex-col gap-x-5 gap-y-3 sm:flex-row md:mt-5 lg:mt-6 xl:mt-0">
               <Button
                 className="h-10 rounded-none bg-white px-7 font-mono text-base leading-none font-medium tracking-tight text-black uppercase shadow-none hover:bg-white/90 lg:h-11"
@@ -127,7 +137,7 @@ function Hero({ className }: HeroProps) {
                   className="no-underline hover:no-underline"
                   href="/docs/start-here"
                 >
-                  Read the docs
+                  <T>Read the docs</T>
                 </Link>
               </Button>
               <HeroCopyPromptButton />

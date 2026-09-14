@@ -1,8 +1,9 @@
 import type { ReactNode, SVGProps } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { msg, useGT, useMessages } from "gt-next";
 
-import { COPYRIGHT_LINE, LEGAL_LINKS } from "@/lib/legal-links";
+import { COPYRIGHT_LINE, COPYRIGHT_YEAR, LEGAL_LINKS } from "@/lib/legal-links";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { YourPrivacyChoicesLink } from "@/components/your-privacy-choices-link";
@@ -24,7 +25,7 @@ type FooterVariant = "stacked" | "inline";
 
 const FOOTER_SECTIONS: FooterSection[] = [
   {
-    title: "Products",
+    title: msg("Products"),
     items: [
       { label: "Databricks Apps", to: "/product/databricks-apps" },
       { label: "Lakebase", to: "/product/lakebase" },
@@ -33,15 +34,15 @@ const FOOTER_SECTIONS: FooterSection[] = [
     ],
   },
   {
-    title: "Resources",
+    title: msg("Resources"),
     items: [
-      { label: "Docs", to: "/docs/start-here" },
-      { label: "Templates", to: "/templates" },
-      { label: "Solutions", to: "/solutions" },
+      { label: msg("Docs"), to: "/docs/start-here" },
+      { label: msg("Templates"), to: "/templates" },
+      { label: msg("Solutions"), to: "/solutions" },
     ],
   },
   {
-    title: "COMMUNITY",
+    title: msg("COMMUNITY"),
     items: [
       {
         label: "Reddit",
@@ -95,18 +96,20 @@ function FooterItemIcon({ icon }: { icon?: FooterItem["icon"] }) {
 }
 
 function FooterItemLabel({ item }: { item: FooterItem }) {
+  const m = useMessages();
+
   if (item.icon) {
     return (
       <>
         <FooterItemIcon icon={item.icon} />
-        <span>{item.label}</span>
+        <span>{m(item.label)}</span>
       </>
     );
   }
 
   return (
     <>
-      {item.label}
+      {m(item.label)}
       {item.externalArrow && (
         <ExternalArrowIcon className="size-3.5 shrink-0" aria-hidden="true" />
       )}
@@ -141,20 +144,23 @@ function FooterLinkItem({ item }: { item: FooterItem }): ReactNode {
 }
 
 function LegalLinks({ className }: { className?: string }): ReactNode {
+  const gt = useGT();
+  const m = useMessages();
+
   return (
     <nav
-      aria-label="Legal links"
+      aria-label={gt("Legal links")}
       className={cn("flex flex-wrap gap-x-4 gap-y-3", className)}
     >
       {LEGAL_LINKS.map((link) => (
         <Link
           className="text-grey-40 hover:text-grey-70 focus-visible:outline-db-cyan inline-flex w-fit items-center rounded-sm text-[0.8125rem] leading-none tracking-tight no-underline transition-colors hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-4"
-          key={link.label}
+          key={link.href}
           rel="noopener noreferrer"
           target="_blank"
           href={link.href}
         >
-          {link.label}
+          {m(link.label)}
         </Link>
       ))}
       <YourPrivacyChoicesLink className="text-grey-40 hover:text-grey-70 focus-visible:outline-db-cyan w-fit rounded-sm text-[0.8125rem] leading-none tracking-tight no-underline transition-colors hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-4" />
@@ -169,6 +175,8 @@ function CopyrightAndLegal({
   className?: string;
   desktop?: boolean;
 }): ReactNode {
+  const m = useMessages();
+
   return (
     <div className={className}>
       <p
@@ -177,7 +185,7 @@ function CopyrightAndLegal({
           desktop && "lg:text-[0.8125rem]",
         )}
       >
-        {COPYRIGHT_LINE}
+        {m(COPYRIGHT_LINE, { year: COPYRIGHT_YEAR })}
       </p>
       <LegalLinks className={desktop ? "mt-2.5" : "mt-4"} />
     </div>
@@ -191,6 +199,8 @@ function Footer({
   className?: string;
   variant?: FooterVariant;
 }): ReactNode {
+  const gt = useGT();
+  const m = useMessages();
   const isInline = variant === "inline";
 
   return (
@@ -215,7 +225,7 @@ function Footer({
             )}
           >
             <Link
-              aria-label="Databricks Developer home"
+              aria-label={gt("Databricks Developer home")}
               className="inline-flex max-w-48 rounded lg:mr-auto"
               href="/"
             >
@@ -236,7 +246,7 @@ function Footer({
                 key={section.title}
               >
                 <span className="font-sans text-[0.625rem] leading-none tracking-normal text-white uppercase">
-                  {section.title}
+                  {m(section.title)}
                 </span>
                 <div className="flex flex-col gap-5">
                   {section.items.map((item) => (

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactNode } from "react";
+import { useGT } from "gt-next";
 import { CircleArrowUp } from "lucide-react";
 import { AnimatePresence, domAnimation, LazyMotion } from "motion/react";
 import * as m from "motion/react-m";
@@ -15,9 +16,10 @@ type BackToTopProps = {
 
 export function BackToTop({
   className,
-  label = "Back to top",
+  label,
   withSeparator = false,
 }: BackToTopProps): ReactNode {
+  const gt = useGT();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -66,7 +68,7 @@ export function BackToTop({
               transition={{ duration: 0.2 }}
             >
               <CircleArrowUp size={20} aria-hidden="true" />
-              {label}
+              {label ?? gt("Back to top")}
             </m.button>
           </>
         ) : (

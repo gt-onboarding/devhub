@@ -41,9 +41,15 @@ function readAppKitDocExamplesRegistry(): string {
   return readFileSync(APPKIT_DOC_EXAMPLES_REGISTRY_PATH, "utf-8");
 }
 
+// Pages are prerendered once per locale under the `[locale]` segment; the
+// default-locale (English) render is the one served at the unprefixed URL.
+const DEFAULT_LOCALE_DIR = "en";
+
 function readRouteHtml(routePath: string): string {
   const trimmedRoute = routePath.replace(/^\/+|\/+$/g, "");
-  const htmlPath = trimmedRoute ? `${trimmedRoute}.html` : "index.html";
+  const htmlPath = trimmedRoute
+    ? `${DEFAULT_LOCALE_DIR}/${trimmedRoute}.html`
+    : `${DEFAULT_LOCALE_DIR}.html`;
   return readFileSync(resolve(NEXT_APP_DIR, htmlPath), "utf-8");
 }
 
@@ -152,9 +158,9 @@ describe("production build smoke tests", () => {
   });
 
   test("solutions RSS feed route is included in the build output", () => {
-    expect(
-      existsSync(resolve(NEXT_APP_DIR, "(website)", "solutions", "rss.xml")),
-    ).toBe(true);
+    expect(existsSync(resolve(NEXT_APP_DIR, "solutions", "rss.xml"))).toBe(
+      true,
+    );
   });
 
   test("llms.txt internal links use the resolved site URL", () => {

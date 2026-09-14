@@ -38,6 +38,17 @@ Next.js loads `.env.local` automatically. Restart the dev server after editing t
 
 A flag is **enabled only when its value is exactly `"true"`** — any other value (empty, `"1"`, `"yes"`) is treated as disabled.
 
+### Internationalization
+
+The site and the docs are localized with [gt-next](https://generaltranslation.com/docs/next) and the `gt` CLI. `gt.config.json` is the single source of truth for the locale list; English (`en`) is the source language.
+
+- **Routing.** Pages live under `src/app/[locale]/`. `src/proxy.ts` rewrites unprefixed URLs to the default locale (`/docs/start-here` renders `/en/docs/start-here` internally) and redirects other visitors to their locale prefix (`/fr/docs/start-here`). API routes, `/raw-docs`, `llms.txt`, `*.md`, and `rss.xml` stay locale-free and English.
+- **UI copy.** Wrap JSX in `<T>` and string props in `useGT()` / `getGT()` (async server components). Module-scope constants use `msg()` and are resolved with `useMessages()` / `getMessages()` where rendered. Markdown content is never wrapped in code.
+- **Docs.** `gt translate` writes translated copies of `src/content/docs/**` to `src/content/<locale>/docs/`; `src/lib/docs-content.ts` reads the translated file when it exists and falls back to English.
+- **Docs syntax.** DevHub parses every doc (`.md` included) as MDX but strips `<!-- -->` comments first, so `gt.config.json` lists the `.md` files under the `mdx` key and sets `options.skipFileValidation.mdx` to skip the CLI's strict pre-parse. Translated headings carry an explicit `\{#english-slug\}` suffix (added by `experimentalLocalizeStaticUrls`) so cross-doc anchors keep working; `src/lib/markdown-heading-ids.ts` reads it and hides it from the rendered heading.
+- **Generating translations.** Set `GT_PROJECT_ID` and `GT_API_KEY` (production key, `gtx-api-...`) in `.env.local`, then run `pnpm translate`. Generated UI strings land in `public/_gt/<locale>.json`; commit them together with the translated docs. `pnpm translate:dry` validates extraction without calling the API.
+- **On Vercel.** `prebuild` runs `scripts/translate-content.mjs` after the AppKit docs sync, so the synced AppKit docs (which are never committed) get translated as part of the deploy. The step only runs when `VERCEL=1` (or `GT_TRANSLATE_ON_BUILD=true`) and both env vars are set on the project; without them it skips and those pages render in English. The first deploy translates everything and can take several minutes; later deploys only download unchanged content.
+
 ### Site Announcement Banner
 
 The reusable site-wide announcement bar is driven by env vars, resolved by [`src/lib/site-banner-server.ts`](./src/lib/site-banner-server.ts), and rendered by [`SiteBanner`](./src/components/site-banner/site-banner.tsx) in the website layout (above the hackathon banner; not on Perspectives). It is **non-dismissible**.

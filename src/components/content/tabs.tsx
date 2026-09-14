@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useMemo, type KeyboardEvent, type ReactNode } from "react";
+import { useGT } from "gt-next";
 
 import { useTabs, type TabValue } from "@/lib/content-tabs-state";
 import { getNextTabIndex } from "@/lib/tab-keyboard-navigation";
@@ -24,6 +25,8 @@ export function Tabs({
   queryString?: boolean | string;
   tabs: Tab[];
 }) {
+  const gt = useGT();
+
   if (tabs.length === 0) {
     return null;
   }
@@ -64,7 +67,7 @@ export function Tabs({
   return (
     <div className="markdown-tabs mt-5 mb-6 w-full max-w-full overflow-hidden">
       <div
-        aria-label="Content tabs"
+        aria-label={gt("Content tabs")}
         className="border-grey-30 flex h-11 w-full gap-x-5 overflow-x-auto border-b"
         role="tablist"
       >

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
+import { msg, T, useMessages } from "gt-next";
 
 import { Checkbox } from "@/components/ui/checkbox";
 
@@ -32,9 +33,9 @@ type ChecklistStep = { id: string; title: string; body?: ReactNode };
 const steps: ChecklistStep[] = [
   {
     id: "install-agent",
-    title: "Install a coding agent",
+    title: msg("Install a coding agent"),
     body: (
-      <>
+      <T>
         <p className="m-0">
           We suggest{" "}
           <a
@@ -122,14 +123,14 @@ const steps: ChecklistStep[] = [
             </p>
           </div>
         </details>
-      </>
+      </T>
     ),
   },
   {
     id: "free-edition",
-    title: "Create a Free Edition account",
+    title: msg("Create a Free Edition account"),
     body: (
-      <>
+      <T>
         <p className="m-0">
           Sign up for{" "}
           <a
@@ -153,37 +154,41 @@ const steps: ChecklistStep[] = [
           Databricks account. Building and demoing on Free Edition keeps every
           team on the same playing field.
         </p>
-      </>
+      </T>
     ),
   },
   {
     id: "get-dataset",
-    title: "Get the hackathon dataset",
+    title: msg("Get the hackathon dataset"),
     body: (
       <>
-        <ul className={bulletList}>
-          <li>
-            After clicking the{" "}
-            <strong className={strong}>Open in Databricks</strong> button,
-            you&rsquo;ll be prompted to sign in.
-          </li>
-          <li>
-            Use the same personal account you used to sign up for Free Edition.
-          </li>
-          <li>
-            Once you&rsquo;re logged in, you&rsquo;ll be redirected to the
-            dataset page.
-          </li>
-          <li>
-            Click the <strong className={strong}>Get instant access</strong>{" "}
-            button in the top-right corner and accept the terms and conditions.
-          </li>
-          <li>
-            Once the terms and conditions are accepted, an{" "}
-            <strong className={strong}>Open</strong> button will appear. Click
-            it to add the dataset to your Databricks workspace.
-          </li>
-        </ul>
+        <T>
+          <ul className={bulletList}>
+            <li>
+              After clicking the{" "}
+              <strong className={strong}>Open in Databricks</strong> button,
+              you&rsquo;ll be prompted to sign in.
+            </li>
+            <li>
+              Use the same personal account you used to sign up for Free
+              Edition.
+            </li>
+            <li>
+              Once you&rsquo;re logged in, you&rsquo;ll be redirected to the
+              dataset page.
+            </li>
+            <li>
+              Click the <strong className={strong}>Get instant access</strong>{" "}
+              button in the top-right corner and accept the terms and
+              conditions.
+            </li>
+            <li>
+              Once the terms and conditions are accepted, an{" "}
+              <strong className={strong}>Open</strong> button will appear. Click
+              it to add the dataset to your Databricks workspace.
+            </li>
+          </ul>
+        </T>
         <div className="mt-4">
           <DatasetButton href={datasetUrl} />
         </div>
@@ -192,54 +197,60 @@ const steps: ChecklistStep[] = [
   },
   {
     id: "install-cli",
-    title: "Install the Databricks CLI",
+    title: msg("Install the Databricks CLI"),
     body: (
-      <p className="m-0">
-        Follow the{" "}
-        <Link href="/docs/tools/databricks-cli" className={inlineLink}>
-          Databricks CLI
-        </Link>{" "}
-        guide to install it on your machine.
-      </p>
+      <T>
+        <p className="m-0">
+          Follow the{" "}
+          <Link href="/docs/tools/databricks-cli" className={inlineLink}>
+            Databricks CLI
+          </Link>{" "}
+          guide to install it on your machine.
+        </p>
+      </T>
     ),
   },
   {
     id: "auth-cli",
-    title: "Make sure your CLI is authenticated",
+    title: msg("Make sure your CLI is authenticated"),
     body: (
-      <p className="m-0">
-        The CLI guide covers this when you install it &mdash; just double-check
-        you&rsquo;re authenticated to your personal Free Edition workspace (the
-        same one you added the dataset to), not a work or enterprise workspace.
-        See{" "}
-        <Link
-          href="/docs/tools/databricks-cli#authenticate"
-          className={inlineLink}
-        >
-          Authenticate
-        </Link>{" "}
-        in the CLI guide.
-      </p>
+      <T>
+        <p className="m-0">
+          The CLI guide covers this when you install it &mdash; just
+          double-check you&rsquo;re authenticated to your personal Free Edition
+          workspace (the same one you added the dataset to), not a work or
+          enterprise workspace. See{" "}
+          <Link
+            href="/docs/tools/databricks-cli#authenticate"
+            className={inlineLink}
+          >
+            Authenticate
+          </Link>{" "}
+          in the CLI guide.
+        </p>
+      </T>
     ),
   },
   {
     id: "install-skills",
-    title: "Install agent skills",
+    title: msg("Install agent skills"),
     body: (
-      <p className="m-0">
-        Install{" "}
-        <Link href="/docs/tools/ai-tools/agent-skills" className={inlineLink}>
-          agent skills
-        </Link>{" "}
-        so your coding agent knows how to build on Databricks.
-      </p>
+      <T>
+        <p className="m-0">
+          Install{" "}
+          <Link href="/docs/tools/ai-tools/agent-skills" className={inlineLink}>
+            agent skills
+          </Link>{" "}
+          so your coding agent knows how to build on Databricks.
+        </p>
+      </T>
     ),
   },
   {
     id: "scaffold-app",
-    title: "Scaffold a Databricks app with Lakebase",
+    title: msg("Scaffold a Databricks app with Lakebase"),
     body: (
-      <>
+      <T>
         <p className="m-0">
           To get started quickly, use the{" "}
           <Link href="/templates/app-with-lakebase" className={inlineLink}>
@@ -258,7 +269,7 @@ const steps: ChecklistStep[] = [
           </Link>{" "}
           template to bring it into Lakebase.
         </p>
-      </>
+      </T>
     ),
   },
 ];
@@ -296,7 +307,7 @@ function DatasetButton({ href }: { href: string }): ReactNode {
       rel="noopener noreferrer"
       className="bg-orange hover:bg-db-lava-light focus-visible:ring-orange/70 inline-flex h-9 items-center px-4.5 font-mono text-sm/none font-medium tracking-tight text-black uppercase no-underline transition-colors hover:text-black hover:no-underline focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
     >
-      Open in Databricks
+      <T>Open in Databricks</T>
     </a>
   );
 }
@@ -395,6 +406,7 @@ function StepCard({
   checked: boolean;
   onToggle: () => void;
 }): ReactNode {
+  const m = useMessages();
   return (
     <li className="border-grey-20 border-t py-5 first:border-t last:pb-0">
       <label className="flex cursor-pointer items-start gap-4">
@@ -403,10 +415,10 @@ function StepCard({
           onCheckedChange={onToggle}
           className="border-grey-30 data-[state=checked]:border-orange data-[state=checked]:bg-orange dark:data-[state=checked]:bg-orange relative top-1 size-5 rounded-none bg-transparent text-white shadow-none data-[state=checked]:text-white dark:bg-transparent"
           indicatorIcon={<ChecklistCheckIcon className="size-4" />}
-          aria-label={step.title}
+          aria-label={m(step.title)}
         />
         <span className="text-lg/snug font-medium tracking-tight text-white md:text-xl/snug">
-          {index}. {step.title}
+          {index}. {m(step.title)}
         </span>
       </label>
       {step.body && (
@@ -439,7 +451,7 @@ export function QuickStartChecklist(): ReactNode {
       <div className="flex items-center justify-between gap-4 pb-5">
         <div className="flex min-w-0 items-center gap-5">
           <h2 className="m-0 text-xl leading-tight font-medium tracking-tight text-white md:text-2xl/snug">
-            Hackathon checklist
+            <T>Hackathon checklist</T>
           </h2>
           {completed > 0 && (
             <span className="bg-grey-5 border-grey-30 text-grey-80 flex h-7 w-12 items-center justify-center border font-mono text-sm/none font-medium md:h-8 md:w-14">
@@ -457,7 +469,7 @@ export function QuickStartChecklist(): ReactNode {
                 window.localStorage.removeItem(STORAGE_KEY);
               }}
             >
-              Reset
+              <T>Reset</T>
               <ResetIcon />
             </button>
           )}

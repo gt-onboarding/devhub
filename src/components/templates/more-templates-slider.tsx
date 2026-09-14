@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { T, useGT, useMessages } from "gt-next";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -25,20 +26,23 @@ function MoreTemplateCard({
   item: MoreTemplateItem;
   index: number;
 }) {
+  const gt = useGT();
+  const m = useMessages();
   const { name, description, href, lightUrl, darkUrl } = item;
+  const displayName = m(name);
 
   return (
     <article className="group w-[calc(100vw-4rem)] shrink-0 snap-start md:w-xl">
       <Link
         className="block no-underline hover:no-underline"
         href={href}
-        aria-label={`Read ${name}`}
+        aria-label={gt("Read {name}", { name: displayName })}
       >
         <div className="border-db-navy bg-db-oat-medium relative aspect-video w-full overflow-hidden border">
           <TemplatePreviewImage
             lightUrl={lightUrl}
             darkUrl={darkUrl}
-            alt={`${name} preview`}
+            alt={gt("{name} preview", { name: displayName })}
             fallback={<FallbackCardArt index={index} />}
             loading="eager"
           />
@@ -60,7 +64,7 @@ function MoreTemplateCard({
           className="text-inherit no-underline hover:no-underline"
           href={href}
         >
-          <span className="text-black">{name}.</span> [{description}]
+          <span className="text-black">{displayName}.</span> [{m(description)}]
         </Link>
       </h3>
     </article>
@@ -68,6 +72,7 @@ function MoreTemplateCard({
 }
 
 export function MoreTemplatesSlider({ items }: { items: MoreTemplateItem[] }) {
+  const gt = useGT();
   const slider = useScrollSlider({ itemCount: items.length });
 
   if (items.length === 0) return null;
@@ -81,7 +86,7 @@ export function MoreTemplatesSlider({ items }: { items: MoreTemplateItem[] }) {
     <section className="overflow-hidden pt-18 text-black md:pt-22 lg:pt-26 xl:pt-30">
       <div className="mx-auto w-full max-w-400 px-5 md:px-8">
         <h2 className="m-0 text-3xl leading-tight font-normal tracking-[-0.04em] md:text-5xl/[1.125] lg:text-[3.5rem]">
-          Explore more templates
+          <T>Explore more templates</T>
         </h2>
 
         <div className="mt-6 flex items-center gap-x-4 md:gap-8 lg:mt-14 xl:mt-18">
@@ -108,7 +113,7 @@ export function MoreTemplatesSlider({ items }: { items: MoreTemplateItem[] }) {
               type="button"
               onClick={() => slider.scrollToIndex(slider.currentIndex - 1)}
               disabled={slider.currentIndex === 0}
-              aria-label="Previous template"
+              aria-label={gt("Previous template")}
             >
               <SliderArrowIcon className="size-6 rotate-180" />
             </Button>
@@ -124,7 +129,7 @@ export function MoreTemplatesSlider({ items }: { items: MoreTemplateItem[] }) {
               type="button"
               onClick={() => slider.scrollToIndex(slider.currentIndex + 1)}
               disabled={slider.currentIndex === slider.lastIndex}
-              aria-label="Next template"
+              aria-label={gt("Next template")}
             >
               <SliderArrowIcon className="size-6" />
             </Button>
