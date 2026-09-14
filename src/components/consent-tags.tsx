@@ -99,7 +99,10 @@ export function ConsentTags(): ReactNode {
       />
       <script
         src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
-        data-document-language="true"
+        // The Databricks OneTrust template only has complete copy for a
+        // few languages (the banner title is missing in fr/pt/ja), so keep the
+        // banner in English instead of following <html lang>.
+        data-language="en"
         type="text/javascript"
         charSet="UTF-8"
         data-domain-script={

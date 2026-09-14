@@ -432,7 +432,7 @@ function DeployingText({
   return (
     <span
       aria-live="polite"
-      className="relative inline-block w-[8ch] text-center whitespace-nowrap"
+      className="relative inline-block min-w-[8ch] text-center whitespace-nowrap"
     >
       <m.span
         animate={isVisible ? { opacity: [1, 1, 0], y: [0, 0, -6] } : undefined}

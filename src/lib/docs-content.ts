@@ -8,7 +8,10 @@ import matter from "gray-matter";
 import { renderMarkdownContent } from "@/lib/content-markdown-renderer";
 import { substituteAboutDevhubLlmsUrl } from "@/lib/copy-preamble";
 import { expandLocalMdxImports } from "@/lib/expand-mdx";
-import { getMarkdownHeadingId } from "@/lib/markdown-heading-ids";
+import {
+  getMarkdownHeadingId,
+  splitExplicitHeadingId,
+} from "@/lib/markdown-heading-ids";
 import { buildSeoDescription } from "@/lib/seo-description";
 import { resolveSiteUrl } from "@/lib/site-url";
 import { getSuggestEditsUrl } from "@/lib/suggest-edits-url";
@@ -185,7 +188,8 @@ function resolveDocFile(slug: string): ResolvedDocFile | null {
 
 function readFirstMarkdownHeading(content: string): string | null {
   const match = content.match(/^#\s+(.+)$/m);
-  return match ? match[1].trim() : null;
+  // Translated docs carry `\{#id\}` anchors on headings; labels never show them.
+  return match ? splitExplicitHeadingId(match[1].trim()).text : null;
 }
 
 /**
