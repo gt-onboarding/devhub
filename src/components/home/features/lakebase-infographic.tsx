@@ -237,10 +237,7 @@ function BranchCard({
         </Badge>
       </div>
       <div className="mt-2 flex items-center gap-1 text-[8px] leading-tight tracking-tight whitespace-nowrap text-black/60 @md/infographic:mt-3.5 @md/infographic:gap-2 @md/infographic:text-[10px]">
-        <T
-          $context="Very short stat label inside a tiny diagram card; one short word (abbreviate if needed)"
-          $maxChars={10}
-        >
+        <T>
           <span>
             Size: <Var>{size}</Var>
           </span>
@@ -248,10 +245,7 @@ function BranchCard({
         {tables && tables > 0 ? (
           <>
             <span>/</span>
-            <T
-              $context="Very short stat label inside a tiny diagram card; one short word (abbreviate if needed)"
-              $maxChars={12}
-            >
+            <T>
               <span>
                 Tables: <Num>{tables}</Num>
               </span>
@@ -318,7 +312,7 @@ export function LakebaseInfographic() {
                   Instant branching
                 </h4>
               </T>
-              <div className="relative z-20 mx-auto mt-3 w-full max-w-37">
+              <div className="relative z-20 mx-auto mt-3 w-fit max-w-full min-w-37">
                 <BranchCard
                   name="main"
                   isProductionBranch={true}
