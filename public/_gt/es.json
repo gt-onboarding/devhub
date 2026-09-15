@@ -82,6 +82,7 @@
   "1561bf00337a8eeb": "Crea aplicaciones con Agent Bricks",
   "15d7653343aaead7": "Ingresos totales",
   "162ac5ea47538ce2": "Buscar en DevHub",
+  "18bac145d496d816": "Diseñado para empresas.",
   "19173aca84fa3703": "Arquitectura de branching de bases de datos de copia en escritura y prácticas que habilita en Databricks Lakebase",
   "19aa17a80ac7d9cd": "Aplica controles de acceso y gobernanza de forma predeterminada",
   "1a48f38ba79fc396": "Gestión de entornos de Lakebase para aplicaciones fuera de la plataforma",
@@ -728,31 +729,6 @@
   "7fa0bf8247ed38cf": "Acceso nativo a SQL, Lakebase y almacenamiento",
   "7fa2a0d4cfaa7576": "CTO",
   "8090ea0dda86abf5": "¡Copiado!",
-  "80e4836eca44afd8": [
-    {
-      "c": "Diseñado para empresas.",
-      "i": 1,
-      "t": "span"
-    },
-    {
-      "c": [
-        " ",
-        {
-          "c": "Elegido por",
-          "i": 3,
-          "t": "span"
-        },
-        " ",
-        {
-          "c": "desarrolladores.",
-          "i": 4,
-          "t": "span"
-        }
-      ],
-      "i": 2,
-      "t": "span"
-    }
-  ],
   "80e5ca232c405212": "Haz preguntas",
   "811527ff5e5ed442": "Leer la documentación",
   "81c1821a798da1fe": "Plantillas",
@@ -961,6 +937,7 @@
   "ab17961f8b93fced": "Buscar plantillas...",
   "abc9ba8a4c515837": "Use Lakebase desde aplicaciones alojadas fuera de Databricks App Platform (por ejemplo, en AWS, Vercel o Netlify) con patrones portátiles para variables de entorno, tokens y Drizzle.",
   "ac08114696847bc2": "La autenticación, el acceso a datos y los servicios funcionan juntos desde el primer momento, lo que elimina el código de integración.",
+  "ac645482e33ff1df": "desarrolladores.",
   "ad1a7440f54521e3": [
     {
       "c": "Este sitio contiene contenido generado por IA, que puede incluir errores, omisiones o imprecisiones. Verifica la información antes de basarte en ella. Úsalo bajo tu propia responsabilidad.",
@@ -1318,6 +1295,7 @@
   "f166aa3687a34b94": "Acceso on-behalf-of-user con controles granulares",
   "f1a1d5bbe0c78854": "Código",
   "f1ac2e8fe27eb538": "Crea aplicaciones inteligentes de datos e IA en minutos, no meses",
+  "f1c057e8cd9bb22d": "Preferido por",
   "f1fb215aaa0e344f": {
     "c": "Siguiente diapositiva",
     "i": 1,

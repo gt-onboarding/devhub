@@ -82,6 +82,7 @@
   "1561bf00337a8eeb": "Créez des applications avec Agent Bricks",
   "15d7653343aaead7": "Chiffre d’affaires total",
   "162ac5ea47538ce2": "Rechercher dans DevHub",
+  "18bac145d496d816": "Conçu pour les entreprises.",
   "19173aca84fa3703": "Architecture de branchement de bases de données en copy-on-write et pratiques qu’elle permet sur Databricks Lakebase",
   "19aa17a80ac7d9cd": "Appliquez les contrôles d’accès et la gouvernance par défaut",
   "1a48f38ba79fc396": "Gestion des environnements Lakebase pour les applications hors plateforme",
@@ -597,7 +598,7 @@
       "t": "CTATitleHighlight"
     },
     {
-      "c": " en quelques minutes&nbsp;?",
+      "c": " en quelques minutes ?",
       "i": 3,
       "t": "span"
     }
@@ -728,31 +729,6 @@
   "7fa0bf8247ed38cf": "Accès natif à SQL, Lakebase et au stockage",
   "7fa2a0d4cfaa7576": "Directeur technique",
   "8090ea0dda86abf5": "Copié !",
-  "80e4836eca44afd8": [
-    {
-      "c": "Conçu pour les entreprises.",
-      "i": 1,
-      "t": "span"
-    },
-    {
-      "c": [
-        " ",
-        {
-          "c": "Adopté par les",
-          "i": 3,
-          "t": "span"
-        },
-        " ",
-        {
-          "c": "développeurs.",
-          "i": 4,
-          "t": "span"
-        }
-      ],
-      "i": 2,
-      "t": "span"
-    }
-  ],
   "80e5ca232c405212": "Poser des questions",
   "811527ff5e5ed442": "Lire la documentation",
   "81c1821a798da1fe": "Modèles",
@@ -961,6 +937,7 @@
   "ab17961f8b93fced": "Rechercher des modèles...",
   "abc9ba8a4c515837": "Utilisez Lakebase depuis des applications hébergées hors de Databricks App Platform (par exemple sur AWS, Vercel ou Netlify), grâce à des approches portables pour les variables d’environnement, les jetons et Drizzle.",
   "ac08114696847bc2": "L’authentification, l’accès aux données et les services fonctionnent ensemble dès le départ, ce qui élimine le code d’intégration.",
+  "ac645482e33ff1df": "développeurs.",
   "ad1a7440f54521e3": [
     {
       "c": "Ce site contient du contenu généré par l’IA, qui peut comporter des erreurs, des omissions ou des inexactitudes. Vérifiez les informations avant de vous y fier. Utilisez-le à vos propres risques.",
@@ -1318,6 +1295,7 @@
   "f166aa3687a34b94": "Accès on-behalf-of-user avec contrôles granulaires",
   "f1a1d5bbe0c78854": "Code",
   "f1ac2e8fe27eb538": "Créez des applications intelligentes exploitant les données et l’IA en quelques minutes, pas en quelques mois",
+  "f1c057e8cd9bb22d": "Adopté par les",
   "f1fb215aaa0e344f": {
     "c": "Diapositive suivante",
     "i": 1,

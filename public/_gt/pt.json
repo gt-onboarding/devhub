@@ -82,6 +82,7 @@
   "1561bf00337a8eeb": "Crie apps com Agent Bricks",
   "15d7653343aaead7": "Receita total",
   "162ac5ea47538ce2": "Pesquisar no DevHub",
+  "18bac145d496d816": "Feito para empresas.",
   "19173aca84fa3703": "Arquitetura de branches de banco de dados copy-on-write e as práticas que ela viabiliza no Databricks Lakebase",
   "19aa17a80ac7d9cd": "Aplique controles de acesso e governança por padrão",
   "1a48f38ba79fc396": "Gerenciamento de Ambiente do Lakebase para Aplicações Fora da Plataforma",
@@ -728,31 +729,6 @@
   "7fa0bf8247ed38cf": "Acesso nativo a SQL, Lakebase e armazenamento",
   "7fa2a0d4cfaa7576": "CTO",
   "8090ea0dda86abf5": "Copiado!",
-  "80e4836eca44afd8": [
-    {
-      "c": "Feito para empresas.",
-      "i": 1,
-      "t": "span"
-    },
-    {
-      "c": [
-        " ",
-        {
-          "c": "Adorado por",
-          "i": 3,
-          "t": "span"
-        },
-        " ",
-        {
-          "c": "desenvolvedores.",
-          "i": 4,
-          "t": "span"
-        }
-      ],
-      "i": 2,
-      "t": "span"
-    }
-  ],
   "80e5ca232c405212": "Faça perguntas",
   "811527ff5e5ed442": "Leia a documentação",
   "81c1821a798da1fe": "Modelos",
@@ -962,6 +938,7 @@
   "ab17961f8b93fced": "Pesquisar modelos...",
   "abc9ba8a4c515837": "Use o Lakebase em apps hospedados fora da plataforma Databricks Apps (por exemplo, na AWS, Vercel ou Netlify) com padrões portáteis para variáveis de ambiente, tokens e Drizzle.",
   "ac08114696847bc2": "Autenticação, acesso a dados e serviços funcionam juntos prontos para uso — eliminando código de integração.",
+  "ac645482e33ff1df": "desenvolvedores.",
   "ad1a7440f54521e3": [
     {
       "c": "Este site contém conteúdo gerado por IA, que pode apresentar erros, omissões ou imprecisões. Verifique as informações antes de confiar nelas. Use por sua própria conta e risco.",
@@ -1319,6 +1296,7 @@
   "f166aa3687a34b94": "Acesso on-behalf-of-user com controles granulares",
   "f1a1d5bbe0c78854": "Código",
   "f1ac2e8fe27eb538": "Desenvolva aplicações inteligentes de dados e IA em minutos, não em meses",
+  "f1c057e8cd9bb22d": "Adorado por",
   "f1fb215aaa0e344f": {
     "c": "Próximo slide",
     "i": 1,
