@@ -9,8 +9,8 @@ export function Hero(): ReactNode {
       id="templates-hero"
       className="3xl:pb-29 bg-black py-8 text-white md:py-12 lg:pt-18 lg:pb-16 xl:pt-40"
     >
-      <div className="relative mx-auto flex w-full max-w-400 flex-col gap-6 px-5 md:px-8">
-        <h1 className="max-w-330 font-sans text-3xl/[1.125] font-normal tracking-normal text-balance md:text-5xl/[1.125] lg:text-6xl/[1.125] xl:text-[4rem]/[1.125] 2xl:text-7xl/[1.125]">
+      <div className="relative mx-auto flex w-full max-w-400 flex-col gap-6 px-5 md:px-8 xl:flex-row xl:items-end xl:justify-between xl:gap-10">
+        <h1 className="max-w-330 font-sans text-3xl/[1.125] font-normal tracking-normal text-balance md:text-5xl/[1.125] lg:text-6xl/[1.125] xl:min-w-0 xl:flex-1 xl:text-[4rem]/[1.125] 2xl:text-7xl/[1.125]">
           <T>
             <span className="inline md:block xl:ml-24 2xl:ml-50">
               <span className="text-db-lava">Templates</span>{" "}
@@ -21,7 +21,7 @@ export function Hero(): ReactNode {
             </span>
           </T>
         </h1>
-        <div className="flex flex-col xl:absolute xl:right-8 xl:bottom-0 xl:pb-2">
+        <div className="flex flex-col xl:w-96 xl:shrink-0 xl:pb-2 2xl:w-104">
           <T>
             <p className="text-lg/normal font-medium tracking-tight text-pretty text-white xl:text-base/normal 2xl:text-lg/normal">
               Copy-paste prompts that build your app.

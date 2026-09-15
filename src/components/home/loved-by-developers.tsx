@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { T } from "gt-next";
+import { useEffect, useRef, type CSSProperties } from "react";
+import { useGT } from "gt-next";
 
 import { cn } from "@/lib/utils";
 
@@ -106,8 +106,50 @@ function LovedMetricValue({
   );
 }
 
+/** Width of the widest unbreakable word, in em, treating CJK glyphs as full-width. */
+function widestWordEm(...lines: string[]): number {
+  return Math.max(
+    0,
+    ...lines
+      .flatMap((line) => line.split(/\s+/))
+      .map((word) =>
+        [...word].reduce(
+          (width, char) =>
+            width +
+            (/[\u3000-\u9fff\uf900-\ufaff\uff00-\uffef]/.test(char) ? 1 : 0.55),
+          0,
+        ),
+      ),
+  );
+}
+
+const ENGLISH_HEADLINE_WORD_EM = widestWordEm("Loved by", "developers.");
+
+/**
+ * The staggered headline is sized for the English "developers."; longer
+ * translated words would break mid-word, so scale the type down until the
+ * widest word matches the English width. English stays at 1.
+ */
+function headingFitScale(...lines: string[]): number {
+  const widest = widestWordEm(...lines);
+  return widest > ENGLISH_HEADLINE_WORD_EM
+    ? Math.round((ENGLISH_HEADLINE_WORD_EM / widest) * 100) / 100
+    : 1;
+}
+
 function LovedByDevelopers({ className }: { className?: string }) {
   const sectionRef = useRef<HTMLElement>(null);
+  const gt = useGT();
+  const builtFor = gt("Built for enterprise.");
+  const lovedBy = gt("Loved by", {
+    $context:
+      "First line of the two-line headline 'Loved by developers.' in a very large display font; the second line is 'developers.'",
+  });
+  const developers = gt("developers.", {
+    $context:
+      "Second line of the two-line headline 'Loved by developers.' in a very large display font; keep it to one word if possible",
+  });
+  const headingFit = headingFitScale(lovedBy, developers);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -130,21 +172,20 @@ function LovedByDevelopers({ className }: { className?: string }) {
     >
       <div className="3xl:max-w-400 3xl:py-46 relative z-10 mx-auto flex max-w-272 flex-col px-5 pt-18 pb-14 md:px-8 md:py-24 lg:py-32 xl:max-w-304 xl:py-46 2xl:max-w-360 2xl:py-35">
         <header className="relative z-10 flex flex-col">
-          <h2 className="font-heading 3xl:text-[13.125rem] max-w-sm text-5xl leading-none font-normal tracking-normal sm:max-w-none md:text-7xl/none lg:text-9xl/none xl:text-[10rem] 2xl:text-[12rem]">
-            <T>
-              <span className="block max-w-342 text-balance">
-                Built for enterprise.
+          <h2
+            className="font-heading 3xl:text-[calc(13.125rem*var(--heading-fit))] max-w-sm text-[calc(3rem*var(--heading-fit))] leading-none font-normal tracking-normal sm:max-w-none md:text-[calc(4.5rem*var(--heading-fit))] lg:text-[calc(8rem*var(--heading-fit))] xl:text-[calc(10rem*var(--heading-fit))] 2xl:text-[calc(12rem*var(--heading-fit))]"
+            style={{ "--heading-fit": headingFit } as CSSProperties}
+          >
+            <span className="block max-w-342 text-balance">{builtFor}</span>
+            <span className="block">
+              {" "}
+              <span className="text-db-lava-light 3xl:ml-122 lg:ml-60 lg:block 2xl:ml-96">
+                {lovedBy}
+              </span>{" "}
+              <span className="3xl:ml-64 lg:ml-24 lg:block xl:translate-x-8 2xl:ml-52">
+                {developers}
               </span>
-              <span className="block">
-                {" "}
-                <span className="text-db-lava-light 3xl:ml-122 lg:ml-60 lg:block 2xl:ml-96">
-                  Loved by
-                </span>{" "}
-                <span className="3xl:ml-64 lg:ml-24 lg:block xl:translate-x-8 2xl:ml-52">
-                  developers.
-                </span>
-              </span>
-            </T>
+            </span>
           </h2>
         </header>
 
